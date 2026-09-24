@@ -1,0 +1,234 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Colour appearance and viewing conditions — The Book of Color</title><meta name="description" content="Can fixed XYZ values have different predicted appearances?"><link rel="canonical" href="https://yalkongs.github.io/cspace/labs/appearance/"><link rel="alternate" hreflang="en" href="https://yalkongs.github.io/cspace/labs/appearance/"><link rel="alternate" hreflang="ko" href="https://yalkongs.github.io/cspace/ko/labs/appearance/"><meta property="og:title" content="Colour appearance and viewing conditions"><meta property="og:url" content="https://yalkongs.github.io/cspace/labs/appearance/"><style>:root{color-scheme:light;--wall:#dedcd6;--paper:#eeece6;--ink:#211f1c;--muted:#57544e;--line:#aaa69b}*{box-sizing:border-box}body{margin:0;background:var(--wall);color:var(--ink);font:16px/1.75 system-ui,-apple-system,"Apple SD Gothic Neo",sans-serif}a{color:inherit;text-underline-offset:4px}a:hover{text-decoration-thickness:2px}a:focus-visible,input:focus-visible,select:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #215591;outline-offset:4px}.skip{position:absolute;left:20px;top:-100px;background:white;padding:12px;z-index:5}.skip:focus{top:0}.masthead{max-width:1200px;margin:auto;padding:22px 28px;display:flex;align-items:center;justify-content:space-between;gap:20px;border-bottom:1px solid var(--line)}.brand{font:italic 23px Georgia,serif;text-decoration:none}.masthead nav{display:flex;gap:18px;align-items:center;font-size:14px}.masthead nav a{padding:7px 0}main{max-width:1140px;margin:auto;padding:42px 28px 65px}.breadcrumb{font-size:13px;color:var(--muted);margin-bottom:32px}.kicker{text-transform:uppercase;letter-spacing:.14em;font-size:12px;color:var(--muted)}h1{font:400 clamp(32px,5vw,62px)/1.2 Georgia,"Noto Serif KR",serif;letter-spacing:-.035em;margin:18px 0 24px;max-width:950px;word-break:keep-all}h2{font-size:21px;font-weight:500;line-height:1.4;margin:0 0 14px}h3{font-size:17px;margin:10px 0}.lead{max-width:800px;font-size:19px;line-height:1.8}.intro{max-width:800px;color:var(--muted)}.lab-workbench{margin:38px 0;display:grid;grid-template-columns:270px minmax(0,1fr);border:1px solid var(--line);background:var(--paper)}.controls{padding:26px;border-right:1px solid var(--line)}.control{display:block;margin-bottom:22px;font-size:14px}.control-line{display:flex;justify-content:space-between;gap:8px;align-items:baseline}.control output{font-variant-numeric:tabular-nums;color:var(--muted);white-space:nowrap}input[type=range]{width:100%;min-height:36px;accent-color:#474e52;margin:4px 0 0}input[type=color]{display:block;width:100%;height:42px;border:1px solid var(--line);background:none;margin-top:8px}select,button{font:inherit;color:inherit;border:1px solid #8b887f;background:var(--paper);border-radius:3px;min-height:44px;padding:8px 12px}select{width:100%;margin-top:8px}button{cursor:pointer}button:hover{background:#fff}.results{min-width:0;padding:26px}.results h2{font-size:16px}.swatches{display:grid;grid-template-columns:repeat(auto-fit,minmax(125px,1fr));gap:14px;margin:16px 0 24px}.swatch{min-width:0}.patch{height:105px;border:1px solid #777;margin-bottom:7px;border-radius:2px}.swatch strong{font-size:13px;display:block;font-weight:500}.swatch small{font-size:12px;color:var(--muted);display:block;overflow-wrap:anywhere}.gamut{color:#794315!important}.readout{font:13px/1.8 ui-monospace,SFMono-Regular,monospace;overflow-wrap:anywhere;white-space:pre-line;margin:18px 0}.chart{width:100%;height:auto;display:block;margin:12px 0}.chart text{fill:#45433f;font:12px system-ui,sans-serif}.legend{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:12px}.legend span:before{content:'';display:inline-block;width:18px;border-top:3px solid var(--stroke);margin-right:6px;vertical-align:middle}.gradient{height:38px;border:1px solid #888;margin:10px 0}.label{font-size:13px}.observation{border-top:1px solid var(--line);padding-top:18px;margin-top:22px;font-size:14px}.text-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:42px;margin:35px 0}.text-grid p{margin-top:0}.note{background:#e7e4dc;border-left:3px solid #8b8677;padding:22px 24px;font-size:14px}.formula{font:13px/1.9 ui-monospace,monospace;overflow-wrap:anywhere;padding:16px;background:#e5e2da}details{margin:30px 0;border-top:1px solid var(--line);padding-top:18px}summary{cursor:pointer;min-height:44px;font-size:17px}details li{margin-bottom:10px}.pager{display:flex;justify-content:space-between;gap:24px;border-top:1px solid var(--line);padding-top:25px;margin-top:38px;font-size:14px}.pager a{max-width:45%}.pager a:last-child{text-align:right}footer{max-width:1140px;padding:24px 28px;margin:auto;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:36px 0}.card{display:block;border:1px solid var(--line);padding:27px;text-decoration:none;background:var(--paper)}.card:hover{background:#f5f3ed}.card h2{font:25px/1.4 Georgia,"Noto Serif KR",serif;margin:12px 0}.card p{margin:10px 0 0;font-size:14px;color:var(--muted)}.steps{display:flex;flex-wrap:wrap;gap:12px 28px;font-size:13px;color:var(--muted);padding:0;list-style-position:inside}.metrics{width:100%;border-collapse:collapse;font-size:13px;font-variant-numeric:tabular-nums}.metrics th,.metrics td{text-align:left;padding:10px 6px;border-bottom:1px solid var(--line)}canvas{display:block;width:100%;height:auto;max-width:640px;border:1px solid #999}noscript p{padding:18px;background:#fff}.sources{font-size:14px}.source-data{font-size:12px;color:var(--muted)}@media(max-width:760px){main{padding:30px 20px 45px}.masthead{padding:15px 20px;align-items:flex-start}.masthead nav{gap:12px;font-size:12px}.brand{font-size:19px}.lab-workbench{grid-template-columns:1fr}.controls{border-right:0;border-bottom:1px solid var(--line);padding:22px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 20px}.controls h2,.controls button{grid-column:1/-1}.results{padding:22px}.text-grid{grid-template-columns:1fr;gap:20px}.cards{grid-template-columns:1fr}.patch{height:85px}.control-line{flex-wrap:wrap;gap:0 6px}.lead{font-size:17px}}@media(max-width:380px){.masthead{gap:10px;flex-wrap:wrap}.controls{grid-template-columns:1fr}.swatches{grid-template-columns:1fr 1fr}}@media print{.masthead,.controls,.pager{display:none}.lab-workbench{display:block}.results{break-inside:avoid}.cards{display:block}.card{margin-bottom:15px}body{background:white}details{display:block}}
+</style></head><body><a class="skip" href="#main">Skip to content</a><header class="masthead"><a class="brand" href="https://yalkongs.github.io/cspace/">The Book of Color</a><nav aria-label="Main navigation"><a href="https://yalkongs.github.io/cspace/labs/">Laboratory</a><a href="https://yalkongs.github.io/cspace/ko/labs/appearance/" lang="ko">한국어</a></nav></header><main id="main"><div class="breadcrumb"><a href="https://yalkongs.github.io/cspace/">Book</a> / <a href="https://yalkongs.github.io/cspace/labs/">The colour laboratory</a> / 06</div><div class="kicker">The Book of Color / Laboratory 06</div><h1>Colour appearance and viewing conditions</h1><p class="lead">Can fixed XYZ values have different predicted appearances?</p><p class="intro">Keep a colour stimulus fixed and change the adaptation luminance, background, surround and reference white in a CAM16 forward model. Compare each correlate with the default condition.</p><ol class="steps"><li>Predict</li><li>Change one variable</li><li>Compare</li><li>Explain</li></ol><p class="note">Choose a moderately colourful stimulus. Change adaptation luminance while holding XYZ fixed. Do J, Q and M move by the same amount? Now compare average, dim and dark surrounds.</p><noscript><p>Enable JavaScript to run the experiment. The theory and sources remain readable below.</p></noscript><div class="lab-workbench"><form class="controls" id="controls"><h2>Change a variable</h2></form><section class="results" id="results" aria-label="Experiment results"></section></div><div class="text-grid"><section><h2>What this explains</h2><p>Lightness J is relative to white; brightness Q is an absolute appearance correlate. Chroma C is colour strength relative to white, colourfulness M is absolute colour strength, and saturation s relates colourfulness to brightness. Viewing-condition inputs help connect these different meanings rather than collapsing them into one saturation slider.</p><p class="formula">J = 100 (A/A_w)^(c·z); M = C·F_L^(1/4); s = 100 √(M/Q)</p></section><aside class="note"><h2>Model and limits</h2><p>The stimulus patch deliberately stays unchanged as viewing parameters move. These are model predictions, not a calibrated change in your screen luminance or a rendered corresponding colour. This educational CAM16 implementation is not a conformance claim for the CIE standard and does not explain every visual illusion.</p></aside></div><details><summary>Sources, data and calculation notes</summary><ul class="sources"><li><a href="https://doi.org/10.1002/col.22131">Li et al. (2017): CAM16, CAT16 and CAM16-UCS</a></li><li><a href="https://www.cie.co.at/publications/cie-2016-colour-appearance-model-colour-management-systems-ciecam16">CIE 248:2022 — CIECAM16</a></li></ul><p>All previews are sRGB approximations. Compare numbers and curves as well as patches; display settings and ambient light affect what you see.</p></details><p>Read the related chapters: <a href="https://yalkongs.github.io/cspace/interaction/">8. Interaction</a> · <a href="https://yalkongs.github.io/cspace/practice2/">14. Display & Production</a></p><nav class="pager" aria-label="Experiment navigation"><a href="https://yalkongs.github.io/cspace/labs/gamut-mapping/">← From screen white to paper white</a><a href="https://yalkongs.github.io/cspace/labs/halftone/">Dots that become a tone →</a></nav><script id="observer-data" type="application/json">{"two":[[380.0,0.001368,3.9e-05,0.006450001],[385.0,0.002236,6.4e-05,0.01054999],[390.0,0.004243,0.00012,0.02005001],[395.0,0.00765,0.000217,0.03621],[400.0,0.01431,0.000396,0.06785001],[405.0,0.02319,0.00064,0.1102],[410.0,0.04351,0.00121,0.2074],[415.0,0.07763,0.00218,0.3713],[420.0,0.13438,0.004,0.6456],[425.0,0.21477,0.0073,1.0390501],[430.0,0.2839,0.0116,1.3856],[435.0,0.3285,0.01684,1.62296],[440.0,0.34828,0.023,1.74706],[445.0,0.34806,0.0298,1.7826],[450.0,0.3362,0.038,1.77211],[455.0,0.3187,0.048,1.7441],[460.0,0.2908,0.06,1.6692],[465.0,0.2511,0.0739,1.5281],[470.0,0.19536,0.09098,1.28764],[475.0,0.1421,0.1126,1.0419],[480.0,0.09564,0.13902,0.8129501],[485.0,0.05795001,0.1693,0.6162],[490.0,0.03201,0.20802,0.46518],[495.0,0.0147,0.2586,0.3533],[500.0,0.0049,0.323,0.272],[505.0,0.0024,0.4073,0.2123],[510.0,0.0093,0.503,0.1582],[515.0,0.0291,0.6082,0.1117],[520.0,0.06327,0.71,0.07824999],[525.0,0.1096,0.7932,0.05725001],[530.0,0.1655,0.862,0.04216],[535.0,0.2257499,0.9148501,0.02984],[540.0,0.2904,0.954,0.0203],[545.0,0.3597,0.9803,0.0134],[550.0,0.4334499,0.9949501,0.008749999],[555.0,0.5120501,1.0,0.005749999],[560.0,0.5945,0.995,0.0039],[565.0,0.6784,0.9786,0.002749999],[570.0,0.7621,0.952,0.0021],[575.0,0.8425,0.9154,0.0018],[580.0,0.9163,0.87,0.001650001],[585.0,0.9786,0.8163,0.0014],[590.0,1.0263,0.757,0.0011],[595.0,1.0567,0.6949,0.001],[600.0,1.0622,0.631,0.0008],[605.0,1.0456,0.5668,0.0006],[610.0,1.0026,0.503,0.00034],[615.0,0.9384,0.4412,0.00024],[620.0,0.8544499,0.381,0.00019],[625.0,0.7514,0.321,0.0001],[630.0,0.6424,0.265,4.999999e-05],[635.0,0.5419,0.217,3e-05],[640.0,0.4479,0.175,2e-05],[645.0,0.3608,0.1382,1e-05],[650.0,0.2835,0.107,0.0],[655.0,0.2187,0.0816,0.0],[660.0,0.1649,0.061,0.0],[665.0,0.1212,0.04458,0.0],[670.0,0.0874,0.032,0.0],[675.0,0.0636,0.0232,0.0],[680.0,0.04677,0.017,0.0],[685.0,0.0329,0.01192,0.0],[690.0,0.0227,0.00821,0.0],[695.0,0.01584,0.005723,0.0],[700.0,0.01135916,0.004102,0.0],[705.0,0.008110916,0.002929,0.0],[710.0,0.005790346,0.002091,0.0],[715.0,0.004109457,0.001484,0.0],[720.0,0.002899327,0.001047,0.0],[725.0,0.00204919,0.00074,0.0],[730.0,0.001439971,0.00052,0.0],[735.0,0.0009999493,0.0003611,0.0],[740.0,0.0006900786,0.0002492,0.0],[745.0,0.0004760213,0.0001719,0.0],[750.0,0.0003323011,0.00012,0.0],[755.0,0.0002348261,8.48e-05,0.0],[760.0,0.0001661505,6e-05,0.0],[765.0,0.000117413,4.24e-05,0.0],[770.0,8.307527e-05,3e-05,0.0],[775.0,5.870652e-05,2.12e-05,0.0],[780.0,4.150994e-05,1.499e-05,0.0]],"ten":[[380.0,0.000159952,1.7364e-05,0.000704776],[385.0,0.00066244,7.156e-05,0.0029278],[390.0,0.0023616,0.0002534,0.0104822],[395.0,0.0072423,0.0007685,0.032344],[400.0,0.0191097,0.0020044,0.0860109],[405.0,0.0434,0.004509,0.19712],[410.0,0.084736,0.008756,0.389366],[415.0,0.140638,0.014456,0.65676],[420.0,0.204492,0.021391,0.972542],[425.0,0.264737,0.029497,1.2825],[430.0,0.314679,0.038676,1.55348],[435.0,0.357719,0.049602,1.7985],[440.0,0.383734,0.062077,1.96728],[445.0,0.386726,0.074704,2.0273],[450.0,0.370702,0.089456,1.9948],[455.0,0.342957,0.106256,1.9007],[460.0,0.302273,0.128201,1.74537],[465.0,0.254085,0.152761,1.5549],[470.0,0.195618,0.18519,1.31756],[475.0,0.132349,0.21994,1.0302],[480.0,0.080507,0.253589,0.772125],[485.0,0.041072,0.297665,0.57006],[490.0,0.016172,0.339133,0.415254],[495.0,0.005132,0.395379,0.302356],[500.0,0.003816,0.460777,0.218502],[505.0,0.015444,0.53136,0.159249],[510.0,0.037465,0.606741,0.112044],[515.0,0.071358,0.68566,0.082248],[520.0,0.117749,0.761757,0.060709],[525.0,0.172953,0.82333,0.04305],[530.0,0.236491,0.875211,0.030451],[535.0,0.304213,0.92381,0.020584],[540.0,0.376772,0.961988,0.013676],[545.0,0.451584,0.9822,0.007918],[550.0,0.529826,0.991761,0.003988],[555.0,0.616053,0.99911,0.001091],[560.0,0.705224,0.99734,0.0],[565.0,0.793832,0.98238,0.0],[570.0,0.878655,0.955552,0.0],[575.0,0.951162,0.915175,0.0],[580.0,1.01416,0.868934,0.0],[585.0,1.0743,0.825623,0.0],[590.0,1.11852,0.777405,0.0],[595.0,1.1343,0.720353,0.0],[600.0,1.12399,0.658341,0.0],[605.0,1.0891,0.593878,0.0],[610.0,1.03048,0.527963,0.0],[615.0,0.95074,0.461834,0.0],[620.0,0.856297,0.398057,0.0],[625.0,0.75493,0.339554,0.0],[630.0,0.647467,0.283493,0.0],[635.0,0.53511,0.228254,0.0],[640.0,0.431567,0.179828,0.0],[645.0,0.34369,0.140211,0.0],[650.0,0.268329,0.107633,0.0],[655.0,0.2043,0.081187,0.0],[660.0,0.152568,0.060281,0.0],[665.0,0.11221,0.044096,0.0],[670.0,0.0812606,0.0318004,0.0],[675.0,0.05793,0.0226017,0.0],[680.0,0.0408508,0.0159051,0.0],[685.0,0.028623,0.0111303,0.0],[690.0,0.0199413,0.0077488,0.0],[695.0,0.013842,0.0053751,0.0],[700.0,0.00957688,0.00371774,0.0],[705.0,0.0066052,0.00256456,0.0],[710.0,0.00455263,0.00176847,0.0],[715.0,0.0031447,0.00122239,0.0],[720.0,0.00217496,0.00084619,0.0],[725.0,0.0015057,0.00058644,0.0],[730.0,0.00104476,0.00040741,0.0],[735.0,0.00072745,0.000284041,0.0],[740.0,0.000508258,0.00019873,0.0],[745.0,0.00035638,0.00013955,0.0],[750.0,0.000250969,9.8428e-05,0.0],[755.0,0.00017773,6.9819e-05,0.0],[760.0,0.00012639,4.9737e-05,0.0],[765.0,9.0151e-05,3.55405e-05,0.0],[770.0,6.45258e-05,2.5486e-05,0.0],[775.0,4.6339e-05,1.83384e-05,0.0],[780.0,3.34117e-05,1.3249e-05,0.0]]}</script><script id="lab-config" type="application/json">{"slug": "appearance", "lang": "en"}</script><script>/* Educational colour calculations. XYZ uses Y=1; CAM16 alone uses Y=100.
+ * Sources and data licences: experiments/data/README.md and each lab page. */
+(function (root) {
+  'use strict';
+  const clamp = (x, lo=0, hi=1) => Math.min(hi, Math.max(lo, x));
+  const mul = (m, v) => m.map(row => row.reduce((s,x,i) => s+x*v[i],0));
+  const mix = (a,b,t) => a.map((x,i) => x*(1-t)+b[i]*t);
+  const decode = x => x <= .04045 ? x/12.92 : ((x+.055)/1.055)**2.4;
+  const encode = x => x <= .0031308 ? 12.92*x : 1.055*x**(1/2.4)-.055;
+  const RGB_XYZ = [[.4123907993,.3575843394,.1804807884],[.2126390059,.7151686788,.0721923154],[.0193308187,.1191947798,.9505321522]];
+  const XYZ_RGB = [[3.2409699419,-1.5373831776,-.4986107603],[-.9692436363,1.8759675015,.0415550574],[.0556300797,-.2039769589,1.0569715142]];
+  const D65 = [.9504559271,1,1.0890577508];
+  const rgbXYZ = rgb => mul(RGB_XYZ,rgb.map(decode));
+  const xyzRGB = xyz => mul(XYZ_RGB,xyz).map(encode);
+  const inGamut = rgb => rgb.every(x => x >= -1e-6 && x <= 1+1e-6);
+  const css = rgb => 'rgb('+rgb.map(x=>Math.round(clamp(x)*255)).join(',')+')';
+  const hex = rgb => '#'+rgb.map(x=>Math.round(clamp(x)*255).toString(16).padStart(2,'0')).join('');
+  const fromHex = h => [1,3,5].map(i=>parseInt(h.slice(i,i+2),16)/255);
+  function xyzLab(xyz, white=D65) {
+    const f = xyz.map((x,i)=>x/white[i]).map(t=>t>216/24389?Math.cbrt(t):(24389/27*t+16)/116);
+    return [116*f[1]-16,500*(f[0]-f[1]),200*(f[1]-f[2])];
+  }
+  function labXYZ(lab, white=D65) {
+    const y=(lab[0]+16)/116, f=[y+lab[1]/500,y,y-lab[2]/200];
+    return f.map((t,i)=>white[i]*(t>6/29?t**3:(116*t-16)/(24389/27)));
+  }
+  function rgbOK(rgb) {
+    const lms=mul([[.4122214708,.5363325363,.0514459929],[.2119034982,.6806995451,.1073969566],[.0883024619,.2817188376,.6299787005]],rgb.map(decode)).map(Math.cbrt);
+    return mul([[.2104542553,.793617785,-.0040720468],[1.9779984951,-2.428592205,.4505937099],[.0259040371,.7827717662,-.808675766]],lms);
+  }
+  function okRGB(lab) {
+    const lms=mul([[1,.3963377774,.2158037573],[1,-.1055613458,-.0638541728],[1,-.0894841775,-1.291485548]],lab).map(x=>x**3);
+    return mul([[4.0767416621,-3.3077115913,.2309699292],[-1.2684380046,2.6097574011,-.3413193965],[-.0041960863,-.7034186147,1.707614701]],lms).map(encode);
+  }
+  const delta76=(a,b)=>Math.hypot(...a.map((v,i)=>v-b[i]));
+  function delta00(lab1,lab2) {
+    const rad=Math.PI/180, deg=180/Math.PI;
+    const [L1,a1,b1]=lab1,[L2,a2,b2]=lab2;
+    const Cbar=(Math.hypot(a1,b1)+Math.hypot(a2,b2))/2;
+    const G=.5*(1-Math.sqrt(Cbar**7/(Cbar**7+25**7)));
+    const ap1=(1+G)*a1,ap2=(1+G)*a2,C1=Math.hypot(ap1,b1),C2=Math.hypot(ap2,b2);
+    const hue=(a,b)=>Math.hypot(a,b)<1e-14?0:(Math.atan2(b,a)*deg+360)%360;
+    const h1=hue(ap1,b1),h2=hue(ap2,b2),dL=L2-L1,dC=C2-C1;
+    let dh=h2-h1;
+    if(C1*C2===0) dh=0; else if(dh>180) dh-=360; else if(dh< -180) dh+=360;
+    const dH=2*Math.sqrt(C1*C2)*Math.sin(dh*rad/2),L=(L1+L2)/2,C=(C1+C2)/2;
+    let h=h1+h2;
+    if(C1*C2!==0) h=Math.abs(h1-h2)<=180?h/2:(h<360?(h+360)/2:(h-360)/2);
+    const T=1-.17*Math.cos((h-30)*rad)+.24*Math.cos(2*h*rad)+.32*Math.cos((3*h+6)*rad)-.20*Math.cos((4*h-63)*rad);
+    const SL=1+.015*(L-50)**2/Math.sqrt(20+(L-50)**2),SC=1+.045*C,SH=1+.015*C*T;
+    const RT=-2*Math.sqrt(C**7/(C**7+25**7))*Math.sin(60*Math.exp(-(((h-275)/25)**2))*rad);
+    return Math.sqrt((dL/SL)**2+(dC/SC)**2+(dH/SH)**2+RT*dC/SC*dH/SH);
+  }
+  // Bradford adaptation, used only to illustrate media-white adaptation.
+  function adapt(xyz, source, target) {
+    const M=[[.8951,.2664,-.1614],[-.7502,1.7135,.0367],[.0389,-.0685,1.0296]];
+    const I=[[.9869929,-.1470543,.1599627],[.4323053,.5183603,.0492912],[-.0085287,.0400428,.9684867]];
+    const s=mul(M,source),t=mul(M,target);
+    return mul(I,mul(M,xyz).map((v,i)=>v*t[i]/s[i]));
+  }
+  function cam16(xyz, white=[95.05,100,108.88], LA=64, Yb=20, surround='average') {
+    const [F,c,Nc]=({average:[1,.69,1],dim:[.9,.59,.9],dark:[.8,.525,.8]})[surround];
+    const M=[[.401288,.650173,-.051461],[-.250268,1.204414,.045854],[-.002079,.048952,.953127]];
+    const rgbw=mul(M,white),D=clamp(F*(1-Math.exp((-LA-42)/92)/3.6));
+    const k=1/(5*LA+1),FL=.2*k**4*5*LA+.1*(1-k**4)**2*Math.cbrt(5*LA);
+    const n=Yb/white[1],z=1.48+Math.sqrt(n),Nbb=.725*n**(-.2);
+    const response=v=>mul(M,v).map((x,i)=>{
+      const rc=x*(D*white[1]/rgbw[i]+1-D),p=(FL*Math.abs(rc)/100)**.42;
+      return Math.sign(rc)*400*p/(p+27.13)+.1;
+    });
+    const ach=r=>(2*r[0]+r[1]+r[2]/20-.305)*Nbb;
+    const Aw=ach(response(white)),r=response(xyz),A=Math.max(0,ach(r));
+    const a=r[0]-12*r[1]/11+r[2]/11,b=(r[0]+r[1]-2*r[2])/9;
+    const hr=Math.atan2(b,a),h=(hr*180/Math.PI+360)%360,J=100*(A/Aw)**(c*z);
+    const et=(Math.cos(hr+2)+3.8)/4;
+    const t=(50000/13)*Nc*Nbb*et*Math.hypot(a,b)/(r[0]+r[1]+21*r[2]/20);
+    const C=Math.max(0,t)**.9*(1.64-.29**n)**.73*Math.sqrt(J/100),Mcol=C*FL**.25;
+    const Q=4/c*Math.sqrt(J/100)*(Aw+4)*FL**.25;
+    return {J,Q,C,M:Mcol,s:Q>0?100*Math.sqrt(Mcol/Q):0,h,D};
+  }
+  const gaussian=(w,peak,width)=>Math.exp(-.5*((w-peak)/width)**2);
+  const planck=(w,T)=>1/(w**5*Math.expm1(1.438776877e7/(w*T)));
+  function integrate(spd, cmf, reflectance=null) {
+    return [0,1,2].map(j=>cmf.reduce((s,row,i)=>s+spd[i]*(reflectance?reflectance[i]:1)*row[j+1]*5,0));
+  }
+  function normalizeSPD(spd,cmf) {
+    const Y=integrate(spd,cmf)[1]; return spd.map(x=>x/Y);
+  }
+  function solve3(m,b) {
+    const a=m.map((r,i)=>[...r,b[i]]);
+    for(let j=0;j<3;j++) {
+      let p=j; for(let i=j+1;i<3;i++) if(Math.abs(a[i][j])>Math.abs(a[p][j]))p=i;
+      [a[j],a[p]]=[a[p],a[j]];
+      if(Math.abs(a[j][j])<1e-15)throw Error('Singular matrix');
+      const d=a[j][j]; a[j]=a[j].map(x=>x/d);
+      for(let i=0;i<3;i++)if(i!==j){const f=a[i][j];a[i]=a[i].map((x,k)=>x-f*a[j][k]);}
+    }
+    return a.map(r=>r[3]);
+  }
+  function matchedLights(cmf,T=6500) {
+    const broad=normalizeSPD(cmf.map(r=>planck(r[0],T)),cmf);
+    const bands=[450,540,610].map(p=>cmf.map(r=>gaussian(r[0],p,12)));
+    const xyz=bands.map(b=>integrate(b,cmf));
+    const weights=solve3([0,1,2].map(i=>xyz.map(x=>x[i])),integrate(broad,cmf));
+    if(weights.some(x=>x<0))throw Error('Unphysical negative light weight');
+    return {broad,narrow:cmf.map((_,i)=>bands.reduce((s,b,j)=>s+b[i]*weights[j],0)),weights};
+  }
+  // Air / lossless film / air, Fresnel coefficients and Airy interference.
+  function filmReflectance(wavelength, thickness, n, angle) {
+    const theta=angle*Math.PI/180,c0=Math.cos(theta),c1=Math.sqrt(1-(Math.sin(theta)/n)**2);
+    const phase=4*Math.PI*n*thickness*c1/wavelength;
+    const rs=(c0-n*c1)/(c0+n*c1),rp=(n*c0-c1)/(n*c0+c1);
+    const airy=r=>{const R=r*r;return 2*R*(1-Math.cos(phase))/(1+R*R-2*R*Math.cos(phase));};
+    return (airy(rs)+airy(rp))/2;
+  }
+  const dotArea=(a,gain)=>clamp(a+gain*4*a*(1-a));
+  const halftoneReflectance=(a,n=1)=>((1-a)+a*.03**(1/n))**n;
+  const api={clamp,mul,mix,decode,encode,D65,rgbXYZ,xyzRGB,xyzLab,labXYZ,rgbOK,okRGB,inGamut,css,hex,fromHex,delta76,delta00,adapt,cam16,gaussian,planck,integrate,normalizeSPD,matchedLights,filmReflectance,dotArea,halftoneReflectance};
+  if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.ColorMath=api;
+})(typeof globalThis!=='undefined'?globalThis:this);
+
+/* No network, animation loop or dependencies: all data is embedded at build time. */
+(() => {
+ 'use strict';
+ const C=ColorMath, config=JSON.parse(document.getElementById('lab-config').textContent);
+ const ko=config.lang==='ko',t=(en,kr)=>ko?kr:en;
+ const data=JSON.parse(document.getElementById('observer-data').textContent),cmf=data.two;
+ const controls=document.getElementById('controls'),result=document.getElementById('results');
+ const fmt=(x,n=3)=>Number(x).toFixed(n),vec=(a,n=3)=>a.map(x=>fmt(x,n)).join(', ');
+ let update=()=>{};
+ function range(id,en,kr,min,max,value,step=1,unit=''){
+  controls.insertAdjacentHTML('beforeend',`<label class="control" for="${id}"><span class="control-line"><span>${t(en,kr)}</span><output id="${id}-value" for="${id}">${value}${unit}</output></span><input id="${id}" type="range" min="${min}" max="${max}" value="${value}" step="${step}" data-unit="${unit}"></label>`);
+ }
+ function color(id,en,kr,value){controls.insertAdjacentHTML('beforeend',`<label class="control" for="${id}">${t(en,kr)}<input id="${id}" type="color" value="${value}"></label>`);}
+ function select(id,en,kr,options){controls.insertAdjacentHTML('beforeend',`<label class="control" for="${id}">${t(en,kr)}<select id="${id}">${options.map(([v,e,k])=>`<option value="${v}">${t(e,k)}</option>`).join('')}</select></label>`);}
+ const val=id=>document.getElementById(id).value,num=id=>+val(id);
+ const clipped=t('sRGB preview clipped','sRGB 근사색 클리핑');
+ function patch(name,rgb,detail=''){
+  return `<div class="swatch"><div class="patch" style="background:${C.css(rgb)}" role="img" aria-label="${name}: ${C.hex(rgb)}"></div><strong>${name}</strong><small>${detail||C.hex(rgb)}</small>${C.inGamut(rgb)?'':`<small class="gamut">⚠ ${clipped}</small>`}</div>`;
+ }
+ function gradient(colors){return `<div class="gradient" role="img" aria-label="${t('Colour progression','색의 변화')}" style="background:linear-gradient(to right,${colors.map(C.css).join(',')})"></div>`;}
+ const inks=['#9b483e','#38695b','#3b5791','#67513e'];
+ function plot(series,labels,x0=380,x1=780,xLabel='nm',fixedMax=null){
+  const max=fixedMax||Math.max(1e-12,...series.flat()),W=580,H=205,left=44,right=564,top=16,bottom=168;
+  let s=`<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="${labels.join(', ')}; ${x0}–${x1} ${xLabel}"><title>${labels.join(', ')}</title>`;
+  for(let i=0;i<=4;i++){const y=bottom-(bottom-top)*i/4;s+=`<path d="M${left} ${y}H${right}" stroke="#cbc7bd"/><text x="2" y="${y+4}">${fmt(max*i/4,max>3?1:2)}</text>`;}
+  series.forEach((ys,j)=>{const points=ys.map((v,i)=>`${left+i*(right-left)/(ys.length-1)},${bottom-v/max*(bottom-top)}`).join(' ');s+=`<polyline points="${points}" fill="none" stroke="${inks[j%4]}" stroke-width="2.5" ${j%2?'stroke-dasharray="7 3"':''}/>`;});
+  for(let i=0;i<=4;i++)s+=`<text text-anchor="middle" x="${left+i*(right-left)/4}" y="190">${fmt(x0+(x1-x0)*i/4,0)}</text>`;
+  return s+`<text text-anchor="end" x="${right}" y="204">${xLabel}</text></svg><div class="legend">${labels.map((l,i)=>`<span style="--stroke:${inks[i%4]}">${l}${i%2?t(' (dashed)',' (점선)'):''}</span>`).join('')}</div>`;
+ }
+ function observation(en,kr){return `<p class="observation">${t(en,kr)}</p>`;}
+ const spectrumRGB=(xyz,white)=>C.xyzRGB(C.adapt(xyz,white,C.D65));
+ const methods=[(a,b,p)=>C.mix(a,b,p),(a,b,p)=>C.mix(a.map(C.decode),b.map(C.decode),p).map(C.encode),(a,b,p)=>C.okRGB(C.mix(C.rgbOK(a),C.rgbOK(b),p))];
+ switch(config.slug){
+ case 'xyz': {
+  range('peak','Peak wavelength','중심 파장',400,700,530,5,' nm');range('width','Spectral width (σ)','대역 폭 (σ)',5,100,15,1,' nm');
+  select('observer','Standard observer','표준 관찰자',[['two','1931 · 2°','1931 · 2°'],['ten','1964 · 10°','1964 · 10°']]);
+  for(const [id,en,kr] of [['red','Red code','빨강 코드'],['green','Green code','초록 코드'],['blue','Blue code','파랑 코드']])range(id,en,kr,0,255,id==='green'?150:40);
+  update=()=>{
+   const spd=cmf.map(r=>C.gaussian(r[0],num('peak'),num('width'))),xyz=C.integrate(spd,cmf),scale=.25/xyz[1];
+   const normalized=spd.map(x=>x*scale),target=xyz.map(x=>x*scale),selected=C.integrate(normalized,data[val('observer')]);
+   const rgb=['red','green','blue'].map(id=>num(id)/255),matched=C.rgbXYZ(rgb),sum=selected.reduce((a,b)=>a+b);
+   const required=C.xyzRGB(target).map(C.decode);
+   result.innerHTML=`<h2>${t('Target and your RGB match (2° preview)','시험광과 RGB 맞추기 (2° 미리보기)')}</h2><div class="swatches">${patch(t('Spectral target','시험광'),C.xyzRGB(target))}${patch(t('Your match','나의 혼합'),rgb)}</div><div class="readout">${t('Selected observer XYZ','선택 관찰자 XYZ')}: ${vec(selected)}\nxyY: ${vec([selected[0]/sum,selected[1]/sum,selected[1]])}\n${t('Required linear sRGB (2°)','필요한 선형 sRGB (2°)')}: ${vec(required)}\n${t('Your XYZ (2°)','나의 XYZ (2°)')}: ${vec(matched)}\n${t('XYZ Euclidean mismatch (not ΔE)','XYZ 유클리드 오차 (ΔE 아님)')}: ${fmt(C.delta76(target,matched),4)}</div>${plot([spd,...[1,2,3].map(j=>data[val('observer')].map(r=>r[j]))],[t('SPD (peak=1)','SPD (최댓값=1)'),'x̄','ȳ','z̄'])}${observation(required.some(x=>x<0)?'A negative primary is required. Positive RGB controls cannot reach this target.':'Compare the numerical XYZ mismatch, not just the clipped patches.',required.some(x=>x<0)?'음의 원색이 필요합니다. 양의 RGB 조절만으로 이 목표에 도달할 수 없습니다.':'클리핑된 색 패치뿐 아니라 XYZ 수치 오차를 비교하세요.')}`;
+  };break;
+ }
+ case 'gamma': {
+  color('first','First colour','첫 번째 색','#000000');color('second','Second colour','두 번째 색','#ffffff');range('ratio','Second colour','두 번째 색 비율',0,100,50,1,'%');
+  update=()=>{const a=C.fromHex(val('first')),b=C.fromHex(val('second')),p=num('ratio')/100,names=['sRGB',t('Linear light','선형광'),'OKLab'];
+   const rows=methods.map(f=>Array.from({length:41},(_,i)=>f(a,b,i/40))),current=methods.map(f=>f(a,b,p));
+   result.innerHTML=`<div class="swatches">${current.map((r,i)=>patch(names[i],r,`${vec(r.map(x=>C.clamp(x)*255),0)} · Y=${fmt(C.rgbXYZ(r.map(x=>C.clamp(x)))[1])}`)).join('')}</div>${rows.map((r,i)=>`<div class="label">${names[i]}</div>${gradient(r)}`).join('')}${plot(rows.map(r=>r.map(rgb=>C.rgbXYZ(rgb.map(x=>C.clamp(x)))[1])),names,0,100,'%',1)}${observation('Solid/dashed curves compare displayed relative luminance. Linear light is the energy average; OKLab is a perceptual interpolation.','실선·점선은 표시색의 상대 휘도입니다. 선형광은 빛의 에너지 평균, OKLab은 지각적 보간입니다.')}`;
+  };break;
+ }
+ case 'delta-e': {
+  range('lightness','Base L*','기준 L*',25,75,55);range('chroma','Base C*','기준 C*',0,45,30);range('hue','Base hue','기준 색상각',0,360,45,1,'°');range('distance','Displacement ΔE76','변위 ΔE76',0,20,8,.5);range('direction','a*b* displacement angle','a*b* 변위 방향',0,360,0,1,'°');
+  update=()=>{const h=num('hue')*Math.PI/180,d=num('direction')*Math.PI/180,dist=num('distance'),a=num('chroma')*Math.cos(h),b=num('chroma')*Math.sin(h);
+   const bases=[[num('lightness'),a,b],[num('lightness')-20,a,b],[num('lightness'),a*.25,b*.25]],names=[t('Base pair','기준 쌍'),t('Darker pair','어두운 쌍'),t('Lower-chroma pair','낮은 크로마 쌍')];
+   result.innerHTML=bases.map((base,i)=>{const next=[base[0],base[1]+dist*Math.cos(d),base[2]+dist*Math.sin(d)];return `<h2>${names[i]} · ΔE76 ${fmt(C.delta76(base,next),2)} / ΔE00 ${fmt(C.delta00(base,next),2)}</h2><div class="swatches">${patch('A',C.xyzRGB(C.labXYZ(base)),`Lab: ${vec(base,1)}`)}${patch('B',C.xyzRGB(C.labXYZ(next)),`Lab: ${vec(next,1)}`)}</div>`;}).join('')+observation('The Lab displacement is identical in every pair; the CIEDE2000 weighting depends on its location.','세 쌍의 Lab 변위는 같습니다. CIEDE2000의 가중치는 색 공간 안의 위치에 따라 달라집니다.');
+  };break;
+ }
+ case 'rendering': {
+  range('narrow','Narrow-band contribution','좁은 대역 비중',0,100,100,1,'%');range('temperature','Reference Planck spectrum','기준 플랑크 스펙트럼',4000,8000,6500,100,' K');
+  update=()=>{const {broad,narrow}=C.matchedLights(cmf,num('temperature')),light=C.mix(broad,narrow,num('narrow')/100),white=C.integrate(broad,cmf),white2=C.integrate(light,cmf);
+   const samples=[cmf.map(()=>.5),...[[440,22],[500,35],[550,18],[610,35],[670,30]].map(([p,w])=>cmf.map(r=>.06+.80*C.gaussian(r[0],p,w)))];
+   const pairs=samples.map(r=>[C.integrate(broad,cmf,r),C.integrate(light,cmf,r)]),diff=pairs.map(([a,b])=>C.delta00(C.xyzLab(a,white),C.xyzLab(b,white)));
+   result.innerHTML=`<div class="readout">${t('White XYZ mismatch','백색 XYZ 오차')}: ${C.delta76(white,white2).toExponential(2)}\n${t('Sample mean ΔE00 (NOT Ra / Rf)','표본 평균 ΔE00 (Ra / Rf 아님)')}: ${fmt(diff.reduce((s,x)=>s+x)/diff.length,2)}</div>${plot([broad,light],[t('Broad reference SPD','넓은 기준 SPD'),t('Test SPD','시험 SPD')])}<div class="swatches">${patch(t('Reference white','기준 백색'),spectrumRGB(white,white))}${patch(t('Test white','시험 백색'),spectrumRGB(white2,white))}</div>${pairs.map(([a,b],i)=>`<h2>${t('Synthetic sample','가상 표본')} ${i+1} · ΔE00 ${fmt(diff[i],2)}</h2><div class="swatches">${patch(t('Reference','기준'),spectrumRGB(a,white))}${patch(t('Test','시험'),spectrumRGB(b,white))}</div>`).join('')}${plot(samples.slice(1,4),[t('Sample 2 reflectance','표본 2 반사율'),t('Sample 3 reflectance','표본 3 반사율'),t('Sample 4 reflectance','표본 4 반사율')],380,780,'nm',1)}${observation('The neutral sample stays matched; selective reflectances expose differences hidden by the matching white point.','중성 표본은 계속 일치합니다. 특정 파장을 선택하는 반사율은 같은 백색점에 가려진 스펙트럼 차이를 드러냅니다.')}`;
+  };break;
+ }
+ case 'gamut-mapping': {
+  range('lightness','Source L*','원본 L*',20,90,65);range('chroma','Source C*','원본 C*',0,100,70);range('hue','Source hue','원본 색상각',0,360,40,1,'°');range('limit','Model chroma limit','모형 크로마 한계',10,100,40);range('paper','Paper warmth','종이 백색의 따뜻함',0,100,60,1,'%');
+  update=()=>{const h=num('hue')*Math.PI/180,L=num('lightness'),limit=num('limit'),white=C.mix(C.D65,[.96422,1,.82521],num('paper')/100);
+   const source=c=>C.labXYZ([L,c*Math.cos(h),c*Math.sin(h)]);
+   const clipXYZ=xyz=>{let lab=C.xyzLab(xyz,white),ch=Math.hypot(lab[1],lab[2]),s=ch>limit?limit/ch:1;return C.labXYZ([C.clamp(lab[0],0,100),lab[1]*s,lab[2]*s],white);};
+   const render=(c,type)=>{const xyz=source(c);if(type==='absolute')return clipXYZ(xyz);return C.adapt(source(type==='relative'?Math.min(c,limit):c*limit/100),C.D65,white);};
+   const names=[t('Source','원본'),t('Relative example','상대 예시'),t('Absolute example','절대 예시'),t('Perceptual example','지각적 예시')],types=['relative','absolute','perceptual'];
+   result.innerHTML=`<div class="swatches">${patch(names[0],C.xyzRGB(source(num('chroma'))))}${types.map((type,i)=>patch(names[i+1],C.xyzRGB(render(num('chroma'),type)))).join('')}</div><h2>${t('What happens to source white?','원본 백색은 어떻게 되는가?')}</h2><div class="swatches">${patch(t('Paper / relative white','종이 / 상대 백색'),C.xyzRGB(white))}${patch(t('Absolute source white','절대 원본 백색'),C.xyzRGB(clipXYZ(C.D65)))}</div>${types.map((type,i)=>`<div class="label">${names[i+1]} · C* 0–100</div>${gradient(Array.from({length:31},(_,j)=>C.xyzRGB(render(j*100/30,type))))}`).join('')}${plot([Array.from({length:101},(_,c)=>Math.min(c,limit)),Array.from({length:101},(_,c)=>c*limit/100)],[t('Relative chroma clipping','상대 크로마 클리핑'),t('Example compression','예시 압축')],0,100,'C*',100)}${observation('Clipping merges high-chroma colours; compression changes even colours already inside the target. Paper-white adaptation is a separate decision.','클리핑은 높은 크로마의 차이를 합치고, 압축은 출력 색역 안에 있던 색도 바꿉니다. 종이 백색에 대한 순응은 별도의 결정입니다.')}`;
+  };break;
+ }
+ case 'appearance': {
+  color('stimulus','Fixed stimulus (sRGB)','고정 자극 (sRGB)','#b36c52');range('adaptation','Adaptation luminance L_A','적응 휘도 L_A',1,500,64,1,' cd/m²');range('background','Background Y_b','배경 Y_b',1,80,20);
+  select('surround','Surround','주변 조건',[['average','Average','평균'],['dim','Dim','어두움'],['dark','Dark','암흑']]);select('white','Reference white','기준 백색',[['D65','D65','D65'],['D50','D50','D50']]);
+  update=()=>{const rgb=C.fromHex(val('stimulus')),xyz=C.rgbXYZ(rgb).map(x=>x*100),white=val('white')==='D65'?[95.05,100,108.88]:[96.422,100,82.521];
+   const ref=C.cam16(xyz),cur=C.cam16(xyz,white,num('adaptation'),num('background'),val('surround'));
+   const labels=[['J',t('Lightness','명도')],['Q',t('Brightness','밝기')],['C',t('Chroma','크로마')],['M',t('Colourfulness','색채감')],['s',t('Saturation','채도')],['h',t('Hue angle','색상각')]];
+   result.innerHTML=`<div class="swatches">${patch(t('Unchanged physical RGB','변하지 않는 실제 RGB'),rgb,`XYZ (Yw=100): ${vec(xyz,2)}`)}</div><table class="metrics"><thead><tr><th>${t('Correlate','외관 속성')}</th><th>${t('Default','기본 조건')}</th><th>${t('Current','현재 조건')}</th></tr></thead><tbody>${labels.map(([k,l])=>`<tr><th scope="row">${k} · ${l}</th><td>${fmt(ref[k],2)}</td><td>${fmt(cur[k],2)}</td></tr>`).join('')}</tbody></table><div class="readout">${t('Degree of adaptation D','순응도 D')}: ${fmt(cur.D)}\n${t('Default: D65, L_A=64, Y_b=20, average surround','기본: D65, L_A=64, Y_b=20, 평균 주변')}</div>${observation('Only predicted appearance correlates change. The display patch does not simulate physical viewing conditions.','변하는 것은 외관 속성의 예측값입니다. 색 패치는 실제 관찰 환경을 시뮬레이션하지 않습니다.')}`;
+  };break;
+ }
+ case 'halftone': {
+  range('coverage','Nominal coverage','명목 면적률',0,100,50,1,'%');range('zoom','Dot spacing / magnification','점 간격 / 확대율',4,48,16,1,' px');range('gain','Physical gain at midtone','중간톤의 물리적 게인',0,20,0,1,'%p');range('optical','Optical parameter n','광학 매개변수 n',1,3,1,.1);select('second','Second screen (moiré only)','두 번째 망점 (모아레 관찰용)',[['off','Off','끄기'],['on','On','켜기']]);range('angle','Second screen angle','두 번째 망점 각도',0,90,5,1,'°');
+  update=()=>{const a=C.dotArea(num('coverage')/100,num('gain')/100),R=C.halftoneReflectance(a,num('optical')),r=C.encode(R);
+   result.innerHTML=`<canvas id="dots" width="640" height="340" role="img" aria-label="${t('Halftone screen','망점 화면')}; ${fmt(a*100,1)}%"></canvas><div class="swatches">${patch(t('Single-screen predicted mean','단일 망점 예측 평균'),[r,r,r],`R = ${fmt(R)} · ${t('effective area','실효 면적')} ${fmt(a*100,1)}%`)}</div><div class="readout">${t('Geometry: square AM dots; average: Yule–Nielsen model','기하: 사각 AM 망점 / 평균: Yule–Nielsen 모형')}</div>${observation('Zoom changes dot spacing, not area coverage. A second rotated grid can form large-scale moiré patterns; it is excluded from the single-screen mean.','확대율은 점 간격만 바꾸고 면적률은 바꾸지 않습니다. 두 번째 격자를 회전하면 큰 모아레 무늬가 나타날 수 있으며, 이는 단일 망점 평균 계산에서 제외됩니다.')}`;
+   const ctx=document.getElementById('dots').getContext('2d'),space=num('zoom'),size=space*Math.sqrt(a);ctx.fillStyle='#fff';ctx.fillRect(0,0,640,340);
+   const draw=(angle,alpha)=>{ctx.save();ctx.translate(320,170);ctx.rotate(angle*Math.PI/180);ctx.fillStyle=`rgba(48,48,48,${alpha})`;for(let x=-700;x<=700;x+=space)for(let y=-700;y<=700;y+=space)ctx.fillRect(x-size/2,y-size/2,size,size);ctx.restore();};
+   draw(0,1);if(val('second')==='on')draw(num('angle'),.6);
+  };break;
+ }
+ case 'thin-film': {
+  range('thickness','Film thickness','막 두께',0,1200,350,5,' nm');range('index','Refractive index n','굴절률 n',1.1,2.2,1.5,.01);range('angle','Incidence angle in air','공기 중 입사각',0,75,0,1,'°');
+  const light=C.normalizeSPD(cmf.map(r=>C.planck(r[0],6500)),cmf),white=C.integrate(light,cmf);
+  update=()=>{const n=num('index'),angle=num('angle'),spectrum=d=>cmf.map(r=>C.filmReflectance(r[0],d,n,angle));
+   const R=spectrum(num('thickness')),xyz=C.integrate(light,cmf,R),rgb=spectrumRGB(xyz,white);
+   result.innerHTML=`<div class="swatches">${patch(t('Reflected light','반사광'),rgb,`Y = ${fmt(xyz[1],4)}`)}${patch(t('Incident white reference','입사 백색 기준'),spectrumRGB(white,white))}</div>${plot([R],[t('Unpolarized reflectance','비편광 반사율')],380,780,'nm',1)}<h2>${t('Thickness sweep · 0–1200 nm','두께 변화 · 0–1200 nm')}</h2>${gradient(Array.from({length:121},(_,i)=>spectrumRGB(C.integrate(light,cmf,spectrum(i*10)),white)))}<div class="readout">${t('Mean spectral reflectance','분광 반사율 산술 평균')}: ${fmt(R.reduce((a,b)=>a+b)/R.length)}\n${t('Fixed illumination; no per-colour brightness normalization','고정 조명 / 색별 밝기 재정규화 없음')}</div>${observation('The colour comes from wavelength-dependent interference, not a rotating colour wheel. A zero-thickness layer has zero reflection in this air–film–air model.','색상환을 회전한 것이 아니라 파장별 간섭으로 색이 생깁니다. 공기–막–공기 모형에서 두께 0인 층은 반사하지 않습니다.')}`;
+  };break;
+ }
+ default: throw new Error('Unknown experiment');
+ }
+ controls.insertAdjacentHTML('beforeend',`<button type="reset">${t('Reset experiment','실험 초기화')}</button>`);
+ function refresh(){for(const input of controls.querySelectorAll('input[type=range]'))document.getElementById(input.id+'-value').textContent=input.value+input.dataset.unit;update();}
+ controls.addEventListener('input',refresh);
+ controls.addEventListener('reset',()=>{requestAnimationFrame(refresh);});
+ refresh();
+})();
+</script></main><footer><p>CIE observer data (2019), adapted to 380–780 nm / 5 nm; 1964 z̄ uses zero extrapolation above 559 nm. Dataset and adaptation: CC BY-SA 4.0. Analytical spectra are educational models. <a href="https://doi.org/10.25039/CIE.DS.xvudnb9b">CIE 1931</a> · <a href="https://doi.org/10.25039/CIE.DS.sqksu2n5">CIE 1964</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://github.com/yalkongs/cspace/tree/main/experiments/data">Original data & changes</a></p></footer></body></html>
