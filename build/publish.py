@@ -30,7 +30,8 @@ def main():
         if refs.strip():
             run('git', 'fetch', '--depth=1', 'origin', 'gh-pages', cwd=checkout)
             run('git', 'reset', '--soft', 'FETCH_HEAD', cwd=checkout)
-        shutil.copytree(ROOT / 'site', checkout, dirs_exist_ok=True)
+        shutil.copytree(ROOT / 'site', checkout, dirs_exist_ok=True,
+                        ignore=shutil.ignore_patterns('.DS_Store', '._*'))
         shutil.copy2(ROOT / 'LICENSE', checkout / 'LICENSE')
         run('git', 'add', '--all', cwd=checkout)
         changed = run('git', 'status', '--porcelain', cwd=checkout, capture=True)
