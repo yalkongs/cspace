@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About · The Book of Color</title>
+  <meta name="description" content="About The Book of Color — how it was made, the principal sources it rests on, and the license under which it is shared.">
+  <link rel="canonical" href="https://yalkongs.github.io/cspace/about/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="About · The Book of Color">
+  <meta property="og:description" content="How the book was made, what sources it rests on, and the license under which it is shared.">
+  <meta property="og:image" content="https://yalkongs.github.io/cspace/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://yalkongs.github.io/cspace/og-image.png">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><defs><linearGradient id='s' x1='0' y1='0' x2='1' y2='0'><stop offset='0' stop-color='%236d4aff'/><stop offset='0.18' stop-color='%232f6df0'/><stop offset='0.36' stop-color='%2300a6c4'/><stop offset='0.54' stop-color='%232ba84a'/><stop offset='0.72' stop-color='%23e0a400'/><stop offset='0.86' stop-color='%23e8590c'/><stop offset='1' stop-color='%23d62828'/></linearGradient></defs><rect x='6' y='6' width='52' height='52' rx='8' fill='%23d6d4ce' stroke='%23211f1c' stroke-width='2.6'/><rect x='15.5' y='15.5' width='33' height='33' rx='3.5' fill='url(%23s)'/></svg>">
+  <style>
+    :root {
+      --wall: #dedcd6; --wall-deep: #d4d2cc; --wall-lit: #ebe9e3;
+      --ink: #211f1c; --ink-soft: #46433d; --ink-faint: #767168;
+      --frame: #b8b4ab; --frame-soft: #c8c4ba;
+      --serif: 'Spectral', Georgia, 'Times New Roman', serif;
+      --sans:  'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+      --mono:  'JetBrains Mono', 'SF Mono', ui-monospace, monospace;
+    }
+    *{box-sizing:border-box; margin:0; padding:0;}
+    html{ background:var(--wall); }
+    body{
+      font-family:var(--serif); font-size:17px; line-height:1.7;
+      color:var(--ink); background:var(--wall);
+      -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+    }
+    .topbar{
+      position:fixed; top:0; left:0; right:0; z-index:100;
+      display:flex; align-items:center; justify-content:space-between;
+      height:56px; padding:0 24px;
+      background:rgba(222,220,214,0.94);
+      backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px);
+      border-bottom:1px solid var(--frame-soft);
+    }
+    .wordmark{
+      font-family:var(--serif); font-size:18px; font-weight:600;
+      letter-spacing:.005em; text-decoration:none; color:var(--ink);
+      display:flex; align-items:center; gap:9px;
+    }
+    .wordmark .mk{
+      width:15px; height:15px; border-radius:3px; border:1.6px solid var(--ink);
+      background:linear-gradient(100deg,#6d4aff,#2f6df0,#00a6c4,#2ba84a,#e0a400,#e8590c,#d62828);
+    }
+    .topbar-meta{
+      font-family:var(--sans); font-size:11px; letter-spacing:.22em;
+      text-transform:uppercase; color:var(--ink-faint); margin-right:96px;
+    }
+    .container{ max-width:1140px; margin:0 auto; padding:0 36px; }
+    .page{ padding:120px 0 90px; }
+    .chapter-num{
+      font-family:var(--sans); font-size:12px; letter-spacing:.18em;
+      text-transform:uppercase; color:var(--ink-soft);
+      display:flex; align-items:center; gap:14px; margin-bottom:24px;
+    }
+    .chapter-num .glyph{
+      display:inline-flex; align-items:center; justify-content:center;
+      width:26px; height:26px; border:1px solid var(--frame); border-radius:50%;
+      font-family:var(--mono); font-size:11px; color:var(--ink-soft);
+    }
+    h1{
+      font-size:clamp(46px, 7vw, 80px); font-weight:500;
+      letter-spacing:-0.012em; line-height:1.05; margin-bottom:22px;
+    }
+    .standfirst{
+      font-family:var(--serif); font-style:italic; font-size:22px;
+      color:var(--ink-soft); margin-bottom:46px; max-width:620px;
+    }
+    .prose{ max-width:660px; }
+    .prose p{ margin-bottom:20px; }
+    .prose em{ font-style:italic; }
+    .prose strong{ font-weight:600; }
+    .prose a{
+      color:var(--ink); text-decoration:none;
+      border-bottom:1px solid var(--ink-faint);
+      transition:border-color .2s ease;
+    }
+    .prose a:hover{ border-bottom-color:var(--ink); }
+    h2{
+      font-size:28px; font-weight:500; letter-spacing:-0.005em;
+      margin:54px 0 18px; max-width:660px;
+    }
+    ul{
+      max-width:660px; margin:0 0 20px 22px;
+    }
+    ul li{
+      margin-bottom:8px; line-height:1.6;
+    }
+    .ref{
+      font-family:var(--mono); font-size:13.5px;
+      color:var(--ink-soft);
+    }
+    footer{
+      margin-top:90px; padding:36px 0 60px;
+      border-top:1px solid var(--frame-soft);
+    }
+    .footer-fine{
+      font-family:var(--sans); font-size:11.5px; letter-spacing:.06em;
+      color:var(--ink-faint); line-height:1.7;
+    }
+    .footer-fine a{
+      color:var(--ink-soft); text-decoration:none;
+      border-bottom:1px solid var(--ink-faint);
+    }
+    .footer-fine .div{ margin:0 9px; opacity:.5; }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="wordmark" href="/cspace/"><span class="mk"></span>The Book of Color</a>
+    <span class="topbar-meta">About</span>
+  </header>
+
+  <main class="container">
+    <article class="page">
+      <p class="chapter-num"><span class="glyph">·</span>The Book of Color</p>
+      <h1>About</h1>
+      <p class="standfirst">How the book was made, what it rests on, and the license under which it is shared.</p>
+
+      <div class="prose">
+        <p>This essay is published <strong>anonymously</strong> under the wordmark <em>The Book of Color</em>. The author has stepped back so that the work — and the colours it discusses — can be read without the distraction of personality. If you wish to cite it, the publisher of record is "The Book of Color" itself.</p>
+
+        <h2>How it was made</h2>
+        <p>The essay is a <strong>single HTML file</strong>. There is no framework. There is no build pipeline beyond a small Python translator that produces ten language versions from one source. There is no analytics. There are no accounts. There is no newsletter that asks for your email.</p>
+        <p>All of the interactive figures — the prism, the spectrum slider, the cone-response graph, the metamerism analyzer, the OKLCH solid comparator, the Land two-colour projection, the Hering cancellation experiment, the harmony explorer, the gamut viewfinder, and the rest — are written in vanilla JavaScript with HTML5 Canvas and SVG. No Three.js, no D3, no React. The reasoning is simple: the essay should outlast its tooling, and the reader's machine should pay no rent.</p>
+        <p>Where a figure departs from the received physical values (most notably the deliberately exaggerated dispersion in §1, Newton's Prism, where the Cauchy coefficient is set to roughly four times that of true crown glass so the fan is visible at the canvas size), the deviation is acknowledged in the figure's caption.</p>
+
+        <h2>Method, in one sentence</h2>
+        <p><em>Each chapter is written, then a figure is built that lets the reader move what the text describes; then the figure is checked against the source it claims to follow.</em></p>
+
+        <h2>Principal sources</h2>
+        <p>Every chapter rests on primary literature or its accepted modern synthesis. The principal references are:</p>
+        <ul>
+          <li><span class="ref">Newton, I.</span> <em>Opticks: or, A Treatise of the Reflexions, Refractions, Inflexions and Colours of Light.</em> London, 1704.</li>
+          <li><span class="ref">Goethe, J. W. von.</span> <em>Zur Farbenlehre.</em> Tübingen, 1810.</li>
+          <li><span class="ref">Young, T.</span> "The Bakerian Lecture: On the Theory of Light and Colours." <em>Philosophical Transactions of the Royal Society</em> 92 (1802): 12–48.</li>
+          <li><span class="ref">Helmholtz, H. von.</span> <em>Handbuch der physiologischen Optik.</em> Leipzig, 1867.</li>
+          <li><span class="ref">Maxwell, J. C.</span> "On the Theory of Compound Colours, and the Relations of the Colours of the Spectrum." <em>Philosophical Transactions of the Royal Society</em> 150 (1860): 57–84.</li>
+          <li><span class="ref">Chevreul, M.-E.</span> <em>De la loi du contraste simultané des couleurs.</em> Paris, 1839.</li>
+          <li><span class="ref">Hering, E.</span> <em>Zur Lehre vom Lichtsinne.</em> Vienna, 1878.</li>
+          <li><span class="ref">Helmholtz, H. von &amp; Kohlrausch, F.</span> Effect on perceived brightness from chromatic stimuli, in <em>Annalen der Physik</em>, 1907.</li>
+          <li><span class="ref">Munsell, A. H.</span> <em>A Color Notation.</em> Boston, 1905.</li>
+          <li><span class="ref">Kubelka, P. &amp; Munk, F.</span> "Ein Beitrag zur Optik der Farbanstriche." <em>Zeitschrift für technische Physik</em> 12 (1931): 593–601.</li>
+          <li><span class="ref">CIE.</span> <em>CIE 1931 Standard Colorimetric Observer.</em> Commission internationale de l'éclairage, 1931 (and its subsequent revisions).</li>
+          <li><span class="ref">Itten, J.</span> <em>Kunst der Farbe.</em> Ravensburg, 1961.</li>
+          <li><span class="ref">Albers, J.</span> <em>Interaction of Color.</em> Yale University Press, 1963.</li>
+          <li><span class="ref">Land, E. H.</span> "Experiments in Color Vision." <em>Scientific American</em> 200, no. 5 (May 1959): 84–99.</li>
+          <li><span class="ref">Land, E. H. &amp; McCann, J. J.</span> "Lightness and Retinex Theory." <em>Journal of the Optical Society of America</em> 61 (1971): 1–11.</li>
+          <li><span class="ref">CIE.</span> <em>Recommendations on Uniform Color Spaces — Color-Difference Equations, Psychometric Color Terms.</em> Supplement No. 2 to CIE Publication No. 15 (E.-1.3.1) 1971/(TC-1.3.) 1978.</li>
+          <li><span class="ref">Ottosson, B.</span> "A perceptual color space for image processing." <em>bottosson.github.io</em>, 2020.</li>
+          <li><span class="ref">Berlin, B. &amp; Kay, P.</span> <em>Basic Color Terms: Their Universality and Evolution.</em> University of California Press, 1969.</li>
+          <li><span class="ref">Web Content Accessibility Guidelines (WCAG) 2.2.</span> W3C Recommendation, 2023.</li>
+          <li><span class="ref">APCA-W3 (Accessible Perceptual Contrast Algorithm).</span> Myndex Research, 2019–.</li>
+        </ul>
+        <p>The book is a <em>synthesis</em>, not original research. Where it adds anything of its own, that addition is in the figures — the live, manipulable demonstrations that let a reader feel what the text only describes.</p>
+
+        <h2>License</h2>
+        <p>The work — its text, illustrations, and interactive figures — is licensed under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)</a>.</p>
+        <p>You may <strong>share</strong> the material (copy and redistribute) and <strong>adapt</strong> it (remix, transform, build upon), under three terms:</p>
+        <ul>
+          <li><strong>Attribution.</strong> Credit "The Book of Color" and link back here.</li>
+          <li><strong>NonCommercial.</strong> Not for commercial use.</li>
+          <li><strong>ShareAlike.</strong> Distribute derivatives under the same license.</li>
+        </ul>
+        <p>For educational, scholarly, and personal use — including translation into additional languages, classroom adoption, and adaptation as study material — these terms should pose no barrier.</p>
+
+        <h2>Languages</h2>
+        <p>The essay is available in English, 한국어, 日本語, Español, 中文, Français, Deutsch, Português, Italiano, and Tiếng Việt, with a partial Bahasa Indonesia edition. Some passages retain English fallback text; translations are a work in progress.</p>
+        <p>Each translation is a first draft by a large language model, reviewed for terminology fidelity against a per-language locked glossary (Newton, Goethe, Munsell, Itten, Albers, Ottosson, etc. all spelled per the host language's scholarly convention). The book welcomes corrections.</p>
+
+        <h2>Read offline</h2>
+        <p>Archived single-volume PDF editions from May 2026. The interactive figures are presented in a static reading state. These PDFs are preserved separately and may differ from the current website.</p>
+        <ul style="font-family:var(--sans); font-size:13.5px; line-height:1.9; padding-left:0; list-style:none;">
+          <li><a href="/cspace/pdf/book-of-color-en.pdf">English (.pdf)</a></li>
+          <li><a href="/cspace/pdf/book-of-color-ko.pdf">한국어 (.pdf)</a></li>
+          <li><a href="/cspace/pdf/book-of-color-ja.pdf">日本語 (.pdf)</a></li>
+          <li><a href="/cspace/pdf/book-of-color-es.pdf">Español (.pdf)</a></li>
+          <li><a href="/cspace/pdf/book-of-color-zh.pdf">中文 (.pdf)</a></li>
+          <li><a href="/cspace/pdf/book-of-color-fr.pdf">Français (.pdf)</a></li>
+          <li><a href="/cspace/pdf/book-of-color-de.pdf">Deutsch (.pdf)</a></li>
+          <li><a href="/cspace/pdf/book-of-color-pt.pdf">Português (.pdf)</a></li>
+          <li><a href="/cspace/pdf/book-of-color-it.pdf">Italiano (.pdf)</a></li>
+          <li><a href="/cspace/pdf/book-of-color-vi.pdf">Tiếng Việt (.pdf)</a></li>
+        </ul>
+        <p style="font-size:13.5px; color:var(--ink-faint);">PDFs are regenerated with each substantive revision. The text matches the live site at the time of generation; the chronology and coda are included.</p>
+
+        <h2>Contact &amp; corrections</h2>
+        <p>The book deliberately collects no email addresses and runs no feedback form — both would compromise the analytics-free promise. If you have a correction, a fact to add, or a translation suggestion, the simplest channel is to post it publicly anywhere on the web; the project monitors mentions through search-engine alerts on the exact phrase "The Book of Color".</p>
+
+        <p style="margin-top:42px; font-style:italic; color:var(--ink-soft);">— The Book of Color</p>
+      </div>
+    </article>
+
+    <footer>
+      <p class="footer-fine">
+        <a href="/cspace/">Return to the book</a>
+        <span class="div">·</span>
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-NC-SA 4.0</a>
+        <span class="div">·</span>
+        Anonymously published
+      </p>
+    </footer>
+  </main>
+</body>
+</html>
