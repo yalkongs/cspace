@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How to cite · The Book of Color</title>
+  <meta name="description" content="Citation formats for The Book of Color — APA, Chicago, MLA, and BibTeX for the whole book or any single chapter.">
+  <link rel="canonical" href="https://cspace-beryl.vercel.app/cite">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="How to cite · The Book of Color">
+  <meta property="og:image" content="https://cspace-beryl.vercel.app/og-image.png">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><defs><linearGradient id='s' x1='0' y1='0' x2='1' y2='0'><stop offset='0' stop-color='%236d4aff'/><stop offset='0.18' stop-color='%232f6df0'/><stop offset='0.36' stop-color='%2300a6c4'/><stop offset='0.54' stop-color='%232ba84a'/><stop offset='0.72' stop-color='%23e0a400'/><stop offset='0.86' stop-color='%23e8590c'/><stop offset='1' stop-color='%23d62828'/></linearGradient></defs><rect x='6' y='6' width='52' height='52' rx='8' fill='%23d6d4ce' stroke='%23211f1c' stroke-width='2.6'/><rect x='15.5' y='15.5' width='33' height='33' rx='3.5' fill='url(%23s)'/></svg>">
+  <style>
+    :root {
+      --wall:#dedcd6; --wall-deep:#d4d2cc; --wall-lit:#ebe9e3;
+      --ink:#211f1c; --ink-soft:#46433d; --ink-faint:#767168;
+      --frame:#b8b4ab; --frame-soft:#c8c4ba;
+      --serif:'Spectral',Georgia,'Times New Roman',serif;
+      --sans:'Inter',-apple-system,BlinkMacSystemFont,system-ui,sans-serif;
+      --mono:'JetBrains Mono','SF Mono',ui-monospace,monospace;
+    }
+    *{box-sizing:border-box;margin:0;padding:0;}
+    html{background:var(--wall);}
+    body{
+      font-family:var(--serif); font-size:17px; line-height:1.7;
+      color:var(--ink); background:var(--wall);
+      -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+    }
+    .topbar{
+      position:fixed; top:0; left:0; right:0; z-index:100;
+      display:flex; align-items:center; justify-content:space-between;
+      height:56px; padding:0 24px;
+      background:rgba(222,220,214,0.94);
+      backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px);
+      border-bottom:1px solid var(--frame-soft);
+    }
+    .wordmark{
+      font-family:var(--serif); font-size:18px; font-weight:600;
+      letter-spacing:.005em; text-decoration:none; color:var(--ink);
+      display:flex; align-items:center; gap:9px;
+    }
+    .wordmark .mk{
+      width:15px; height:15px; border-radius:3px; border:1.6px solid var(--ink);
+      background:linear-gradient(100deg,#6d4aff,#2f6df0,#00a6c4,#2ba84a,#e0a400,#e8590c,#d62828);
+    }
+    .topbar-meta{
+      font-family:var(--sans); font-size:11px; letter-spacing:.22em;
+      text-transform:uppercase; color:var(--ink-faint); margin-right:96px;
+    }
+    .container{ max-width:1140px; margin:0 auto; padding:0 36px; }
+    .page{ padding:120px 0 90px; }
+    h1{
+      font-size:clamp(46px,7vw,80px); font-weight:500;
+      letter-spacing:-0.012em; line-height:1.05; margin-bottom:22px;
+    }
+    .standfirst{
+      font-style:italic; font-size:22px; color:var(--ink-soft);
+      margin-bottom:46px; max-width:660px;
+    }
+    .prose{ max-width:660px; }
+    .prose p{ margin-bottom:18px; }
+    .prose a{ color:var(--ink); border-bottom:1px solid var(--ink-faint); text-decoration:none; }
+    .prose a:hover{ border-bottom-color:var(--ink); }
+
+    .picker{
+      max-width:660px; margin:40px 0 30px;
+      padding:18px 22px;
+      background:var(--wall-lit); border:1px solid var(--frame-soft);
+      border-radius:6px;
+      display:flex; gap:18px; align-items:center; flex-wrap:wrap;
+    }
+    .picker label{
+      font-family:var(--sans); font-size:12px; font-weight:600;
+      letter-spacing:.08em; text-transform:uppercase; color:var(--ink-soft);
+    }
+    .picker select{
+      font-family:var(--serif); font-size:16px; padding:8px 12px;
+      background:var(--wall); border:1px solid var(--frame); border-radius:4px;
+      color:var(--ink); cursor:pointer; min-width:300px;
+    }
+
+    .format-block{
+      max-width:660px; margin:18px 0;
+      padding:18px 22px;
+      background:var(--wall-lit); border:1px solid var(--frame-soft);
+      border-radius:6px;
+    }
+    .format-block .head{
+      display:flex; justify-content:space-between; align-items:center;
+      font-family:var(--sans); font-size:12px; font-weight:600;
+      letter-spacing:.08em; text-transform:uppercase; color:var(--ink-soft);
+      margin-bottom:10px;
+    }
+    .format-block .copy{
+      background:transparent; border:1px solid var(--frame); border-radius:3px;
+      padding:4px 10px; font-family:var(--sans); font-size:11px;
+      color:var(--ink-soft); cursor:pointer;
+      transition:border-color .2s, color .2s;
+    }
+    .format-block .copy:hover{ border-color:var(--ink); color:var(--ink); }
+    .format-block .copy.flash{ background:var(--ink); color:var(--wall-lit); border-color:var(--ink); }
+    .format-block pre{
+      font-family:var(--mono); font-size:13px; line-height:1.6;
+      color:var(--ink); white-space:pre-wrap; word-wrap:break-word;
+      margin:0;
+    }
+    .note{
+      max-width:660px; margin:36px 0;
+      padding:14px 18px;
+      background:rgba(33,31,28,0.05);
+      border-left:3px solid var(--ink-faint);
+      font-family:var(--sans); font-size:13.5px; color:var(--ink-soft);
+      line-height:1.55;
+    }
+    footer{
+      margin-top:90px; padding:36px 0 60px;
+      border-top:1px solid var(--frame-soft);
+    }
+    .footer-fine{
+      font-family:var(--sans); font-size:11.5px; letter-spacing:.06em;
+      color:var(--ink-faint); line-height:1.7;
+    }
+    .footer-fine a{ color:var(--ink-soft); text-decoration:none; border-bottom:1px solid var(--ink-faint); }
+    .footer-fine .div{ margin:0 9px; opacity:.5; }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="wordmark" href="/"><span class="mk"></span>The Book of Color</a>
+    <span class="topbar-meta">How to cite</span>
+  </header>
+
+  <main class="container">
+    <article class="page">
+      <h1>How to cite</h1>
+      <p class="standfirst">Citation formats for the whole book or any single chapter. Pick the part you cited, then copy the format your style guide asks for.</p>
+
+      <div class="prose">
+        <p>The Book of Color is an evolving online essay; if you cite it in scholarly or educational work, please include the exact URL you read and the access date so future readers can locate the same version.</p>
+      </div>
+
+      <div class="picker">
+        <label for="ch-pick">You cited:</label>
+        <select id="ch-pick">
+          <option value="book">The whole book</option>
+          <option value="light">Chapter One · Light</option>
+          <option value="eye">Chapter Two · The Eye</option>
+          <option value="mixing">Chapter Three · Mixing</option>
+          <option value="wheel">Chapter Four · The Wheel</option>
+          <option value="space">Chapter Five · Three Dimensions</option>
+          <option value="harmony">Chapter Six · Harmony</option>
+          <option value="spaces">Chapter Seven · Color Spaces</option>
+          <option value="interaction">Chapter Eight · The Interaction of Color</option>
+          <option value="practice">Chapter Nine · Color in Practice</option>
+          <option value="glossary">Chapter Ten · A Glossary of Color</option>
+          <option value="names">Chapter Eleven · Names</option>
+          <option value="pigments">Chapter Twelve · Pigments</option>
+          <option value="nature">Chapter Thirteen · Nature</option>
+          <option value="practice2">Chapter Fourteen · Practice</option>
+        </select>
+      </div>
+
+      <div class="format-block">
+        <div class="head">
+          <span>APA (7th ed.)</span>
+          <button class="copy" data-target="apa">Copy</button>
+        </div>
+        <pre id="apa"></pre>
+      </div>
+
+      <div class="format-block">
+        <div class="head">
+          <span>Chicago (author-date)</span>
+          <button class="copy" data-target="chicago">Copy</button>
+        </div>
+        <pre id="chicago"></pre>
+      </div>
+
+      <div class="format-block">
+        <div class="head">
+          <span>MLA (9th ed.)</span>
+          <button class="copy" data-target="mla">Copy</button>
+        </div>
+        <pre id="mla"></pre>
+      </div>
+
+      <div class="format-block">
+        <div class="head">
+          <span>BibTeX</span>
+          <button class="copy" data-target="bibtex">Copy</button>
+        </div>
+        <pre id="bibtex"></pre>
+      </div>
+
+      <div class="note">
+        The author is the wordmark <em>The Book of Color</em>. The essay is published anonymously; if your citation manager requires an individual name, "The Book of Color (Anonymous)" is acceptable. A DOI may be added in a future revision (Zenodo); when that lands, update your citation.
+      </div>
+
+      <p class="prose"><a href="/about">About the book</a> &nbsp;·&nbsp; <a href="/">Return to the essay</a></p>
+    </article>
+
+    <footer>
+      <p class="footer-fine">
+        <a href="/">Return to the book</a>
+        <span class="div">·</span>
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-NC-SA 4.0</a>
+        <span class="div">·</span>
+        Anonymously published
+      </p>
+    </footer>
+  </main>
+
+  <script>
+  (function(){
+    var BASE = 'https://cspace-beryl.vercel.app';
+    var CHAPTERS = {
+      'book':        { title: 'The Book of Color · An Interactive Essay on Color Theory', url: BASE + '/' },
+      'light':       { title: 'Chapter One · Light',                 url: BASE + '/light' },
+      'eye':         { title: 'Chapter Two · The Eye',               url: BASE + '/eye' },
+      'mixing':      { title: 'Chapter Three · Mixing',              url: BASE + '/mixing' },
+      'wheel':       { title: 'Chapter Four · The Wheel',            url: BASE + '/wheel' },
+      'space':       { title: 'Chapter Five · Three Dimensions',     url: BASE + '/space' },
+      'harmony':     { title: 'Chapter Six · Harmony',               url: BASE + '/harmony' },
+      'spaces':      { title: 'Chapter Seven · Color Spaces',        url: BASE + '/spaces' },
+      'interaction': { title: 'Chapter Eight · The Interaction of Color', url: BASE + '/interaction' },
+      'practice':    { title: 'Chapter Nine · Color in Practice',    url: BASE + '/practice' },
+      'glossary':    { title: 'Chapter Ten · A Glossary of Color',   url: BASE + '/glossary' },
+      'names':       { title: 'Chapter Eleven · Names',              url: BASE + '/names' },
+      'pigments':    { title: 'Chapter Twelve · Pigments',           url: BASE + '/pigments' },
+      'nature':      { title: 'Chapter Thirteen · Nature',           url: BASE + '/nature' },
+      'practice2':   { title: 'Chapter Fourteen · Practice',         url: BASE + '/practice2' }
+    };
+    var YEAR = '2026';
+    var AUTHOR = 'The Book of Color';
+
+    function today(){
+      var d = new Date();
+      var m = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+      return m[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear();
+    }
+
+    function bibKey(slug){
+      return 'bookofcolor' + (slug === 'book' ? '' : '-' + slug);
+    }
+
+    function update(){
+      var slug = document.getElementById('ch-pick').value;
+      var ch = CHAPTERS[slug];
+      if (!ch.url.endsWith('/')) ch.url += '/';
+      var dateAccessed = today();
+      var bookTitle = 'The Book of Color';
+      var fullTitle = slug === 'book'
+        ? bookTitle + ': An Interactive Essay on Color Theory'
+        : ch.title + '. In ' + bookTitle + ': An Interactive Essay on Color Theory';
+
+      // APA 7
+      var apa = AUTHOR + '. (' + YEAR + '). ' +
+        (slug === 'book'
+          ? bookTitle + ': An interactive essay on color theory.'
+          : ch.title + '. In ' + bookTitle + ': An interactive essay on color theory.') +
+        ' ' + ch.url;
+
+      // Chicago (author-date)
+      var chicago = AUTHOR + '. ' + YEAR + '. "' +
+        (slug === 'book' ? bookTitle + ': An Interactive Essay on Color Theory' : ch.title) +
+        '." ' + (slug === 'book' ? '' : 'In ' + bookTitle + ': An Interactive Essay on Color Theory. ') +
+        ch.url + '.';
+
+      // MLA 9
+      var mla = AUTHOR + '. "' +
+        (slug === 'book' ? bookTitle + ': An Interactive Essay on Color Theory' : ch.title) +
+        '." ' + (slug === 'book' ? '' : bookTitle + ': An Interactive Essay on Color Theory, ') +
+        YEAR + ', ' + ch.url + '. Accessed ' + dateAccessed + '.';
+
+      // BibTeX
+      var bib = '@online{' + bibKey(slug) + ',\n' +
+        '  author = {{The Book of Color}},\n' +
+        '  title  = {' + (slug === 'book'
+          ? bookTitle + ': An Interactive Essay on Color Theory'
+          : ch.title) + '},\n' +
+        (slug !== 'book' ? '  booktitle = {' + bookTitle + ': An Interactive Essay on Color Theory},\n' : '') +
+        '  year   = {' + YEAR + '},\n' +
+        '  url    = {' + ch.url + '},\n' +
+        '  urldate = {' + new Date().toISOString().slice(0,10) + '}\n' +
+        '}';
+
+      document.getElementById('apa').textContent = apa;
+      document.getElementById('chicago').textContent = chicago;
+      document.getElementById('mla').textContent = mla;
+      document.getElementById('bibtex').textContent = bib;
+    }
+
+    document.getElementById('ch-pick').addEventListener('change', update);
+    document.querySelectorAll('.copy').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        var pre = document.getElementById(btn.dataset.target);
+        if(navigator.clipboard){
+          navigator.clipboard.writeText(pre.textContent).then(function(){
+            btn.classList.add('flash');
+            var orig = btn.textContent; btn.textContent = 'Copied';
+            setTimeout(function(){ btn.classList.remove('flash'); btn.textContent = orig; }, 1400);
+          });
+        }
+      });
+    });
+
+    update();
+  })();
+  </script>
+</body>
+</html>

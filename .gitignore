@@ -1,0 +1,17 @@
+.vercel
+.DS_Store
+__pycache__/
+site/
+dist/
+antigravity_builds/
+audit/
+.claude/
+.vercelignore
+vercel.json
+scratch_chrome.py
+index[1-9].html
+index[12][0-9].html
+index3[01].html
+review-brief-*.md
+i18n/cross-review/
+awwwards/

@@ -1,0 +1,1130 @@
+{
+  "_meta": {
+    "scope": "FULL — Hero + §1–§10 + Cronología + Coda + Footer + meta/JSON-LD + jsStrings",
+    "source_en": "i18n/en.json",
+    "translator": "Claude Opus 4.7 — primer borrador",
+    "voice": "Presente indicativo, prosa formal. Imperativo 2.ª persona singular (tú).",
+    "title_decision": "«El libro del color». Título pensado para traducción a 10 lenguas."
+  },
+  "page": {
+    "title": "El libro del color · Un ensayo interactivo sobre la teoría del color",
+    "description": "Un ensayo interactivo sobre la teoría del color. Toca el espectro visible, observa cómo tus conos construyen el color a partir de la luz y mezcla luz contra pigmento — ciencia del color que mueves con las manos.",
+    "keywords": "teoría del color, círculo cromático, espectro visible, longitud de onda, visión tricromática, conos, mezcla aditiva, mezcla sustractiva, RGB, CMYK, mezcla de colores, Newton, ciencia del color, percepción del color",
+    "author": "El libro del color",
+    "og": {
+      "title": "El libro del color · Un ensayo interactivo sobre la teoría del color",
+      "description": "De dónde viene el color, cómo lo construye el ojo y la geometría serena que hace cantar juntos a algunos colores. Cada figura es tuya para tocar.",
+      "siteName": "El libro del color"
+    },
+    "twitter": {
+      "title": "El libro del color · Un ensayo interactivo sobre la teoría del color",
+      "description": "Toca el espectro visible, observa cómo tus conos construyen el color, mezcla luz contra pigmento. Ciencia del color que mueves con las manos."
+    }
+  },
+  "jsonld": {
+    "learningResource": {
+      "name": "El libro del color",
+      "description": "Un ensayo interactivo sobre la teoría del color — desde una sola longitud de onda de luz hasta una paleta que funciona para cada ojo.",
+      "teaches": [
+        "El espectro visible y la longitud de onda",
+        "La visión tricromática y el metamerismo",
+        "La mezcla aditiva y sustractiva",
+        "El círculo cromático y su historia",
+        "Tono, valor y croma — el sólido del color",
+        "La armonía cromática",
+        "Espacios de color: RGB, HSL, CIE y OKLCH",
+        "El contraste simultáneo y las posimágenes",
+        "El contraste cromático y la accesibilidad"
+      ],
+      "about": [
+        "Teoría del color",
+        "Visión cromática",
+        "Óptica",
+        "Percepción del color"
+      ]
+    },
+    "article": {
+      "headline": "El libro del color — Un ensayo interactivo sobre la teoría del color",
+      "description": "De dónde viene el color, cómo lo construye el ojo y la geometría serena que hace cantar juntos a algunos colores.",
+      "articleSection": "Teoría del color",
+      "authorName": "El libro del color"
+    }
+  },
+  "hero": {
+    "ariaLabel": "Introducción",
+    "eyebrow": "Un ensayo interactivo",
+    "titleLine1": "El libro del",
+    "titleLine2": "color",
+    "lede": "El color no es una propiedad de las cosas. Es un acontecimiento — un encuentro de luz, materia y mente. Este es un manual de campo para ese acontecimiento.",
+    "meta1": "De dónde viene el color",
+    "meta2": "Cómo lo construye el ojo",
+    "meta3": "Cada figura, tuya para tocar",
+    "greynoteLabel": "Una nota sobre el gris",
+    "greynoteBody": "Toda superficie aquí — cada panel, botón y marco — es deliberadamente <b>gris</b>. Una interfaz coloreada distorsionaría en silencio tu juicio sobre los colores que rodea. Lo único saturado en esta página es el color del que estamos hablando.",
+    "scrollcue": "Empezar"
+  },
+  "ch1": {
+    "num": "Capítulo Uno",
+    "title": "Luz",
+    "standfirst": "No hay rojo en una rosa.",
+    "leadIn": "Una rosa no contiene color alguno. Lo que tiene es una superficie que absorbe la mayor parte de la luz que la alcanza y devuelve el resto — sobre todo las ondas largas que hemos aprendido a llamar rojo. El color no está en la flor. Tampoco está en la luz. Está en el encuentro.",
+    "newton": "En 1666 Isaac Newton oscureció una habitación, dejó pasar un solo rayo de sol por un prisma y observó cómo se abría en una banda ordenada de color. El prisma, argumentó en <em>Opticks</em> (1704), no añade nada. La luz blanca ya es una multitud de colores que viajan juntos; el vidrio sencillamente desvía a cada uno en una medida distinta y separa así la multitud.",
+    "wavelengthIntro": "Cada color puro de esa banda corresponde a una sola <strong>longitud de onda</strong> de luz — un color <em>espectral</em>. El ojo responde a una cinta estrecha de longitudes de onda, aproximadamente de 380 nanómetros (violeta) a 700 (rojo), una astilla del espectro electromagnético, que va desde las ondas de radio de kilómetros de largo hasta los rayos gamma más pequeños que un átomo. Arrastra a lo largo de esa cinta abajo.",
+    "fig": {
+      "prism": {
+        "title": "El prisma de Newton",
+        "hint": "Arrastra el deslizador · abre o cierra el ápice",
+        "svgAria": "Un prisma de vidrio con luz blanca horizontal entrando por su cara izquierda y un abanico arcoíris saliendo por la derecha. A medida que el deslizador del ángulo del ápice se ensancha, el abanico se abre más; a medida que se estrecha, el abanico se cierra.",
+        "apexLabel": "Ángulo del ápice del prisma",
+        "apexAria": "Ángulo del ápice del prisma en grados",
+        "cap": "La luz blanca no es blanca a la manera en que el agua está mojada — es una coexistencia de cada longitud de onda visible. El vidrio desvía cada longitud de onda en una medida ligeramente distinta, y la pequeña desviación de cada cara se compone en un abanico visible. Newton llamó <em>espectro</em> a lo que salía por el otro lado; el arcoíris en una pared es la misma demostración escrita por el cielo."
+      },
+      "spectrum": {
+        "title": "El espectro visible",
+        "hint": "Arrastra, haz clic, o enfoca y usa ← →",
+        "canvasAria": "El espectro visible de 380 a 700 nanómetros",
+        "rangeAria": "Longitud de onda en nanómetros",
+        "ultraviolet": "← ultravioleta",
+        "infrared": "infrarrojo →",
+        "cap": "Cerca de cada extremo el color parece oscurecerse — no porque la luz se atenúe, sino porque la sensibilidad del ojo decae. Más allá de los bordes las ondas continúan; sencillamente nos volvemos ciegos a ellas."
+      }
+    },
+    "note": {
+      "label": "Guarda esta idea",
+      "body": "El espectro es una <em>línea</em>. Tiene dos extremos — violeta profundo y rojo profundo — y están en lados opuestos. Sin embargo, todo círculo cromático que hayas visto los une en un anillo. ¿Quién lo autorizó? El Capítulo Cuatro responde. El Capítulo Dos proporciona el motivo."
+    }
+  },
+  "ch2": {
+    "num": "Capítulo Dos",
+    "title": "El ojo",
+    "standfirst": "El color se construye, no se recibe.",
+    "leadIn": "La retina no mide la longitud de onda. No puede. En el fondo del ojo se asientan tres tipos de conos, y cada uno es simplemente un cubo que se llena de luz — uno sintonizado a longitudes de onda cortas (<strong>S</strong>), uno a medias (<strong>M</strong>), uno a largas (<strong>L</strong>). Llega luz de una longitud de onda; los tres cubos se llenan a tres niveles distintos; y esos tres números son el mensaje entero enviado al cerebro.",
+    "trichromatic": "A partir de tres números, el cerebro fabrica cada color que has visto jamás. Este es el corazón de la visión <em>tricromática</em>, propuesta por primera vez por Thomas Young, refinada por Helmholtz, confirmada un siglo más tarde bajo el microscopio. Fija la longitud de onda abajo y observa cómo responden los tres conos.",
+    "metamerismIntro": "Dos consecuencias de largo alcance se siguen de un ojo de tres números.",
+    "metamerismBody": "La primera es el <strong>metamerismo</strong>. Si dos mezclas de luz completamente distintas llenan por casualidad los tres cubos a los mismos tres niveles, son — para ti — el <em>mismo color</em>. No parecidos. Idénticos. El ojo no tiene una verdad más profunda a la que recurrir.",
+    "spectralIntro": "Las dos luces de arriba son un único truco contado con rayos. El mismo truco ocurre con <em>superficies</em>. Dos pigmentos construidos a partir de espectros completamente distintos pueden coincidir a la perfección bajo una luz — y separarse en el instante en que la luz cambia. La industria llama a esto la forma operativa del metamerismo, y es la razón por la que una tela acordada bajo los fluorescentes de la tienda se ve mal junto a la ventana en casa.",
+    "magenta": "La segunda consecuencia es aún más extraña: el <strong>magenta</strong>. Búscalo en el espectro del Capítulo Uno — no lo encontrarás. No hay longitud de onda del magenta. Es el color que el cerebro produce cuando los conos <em>largos</em> y <em>cortos</em> están ambos excitados mientras el cono <em>medio</em> queda muy atrás — es decir, cuando el ojo recibe los dos <em>extremos</em> del espectro a la vez, con poco de su centro. El magenta es extraespectral — un color sin longitud de onda propia, cosido por el cerebro a partir de los dos extremos del espectro.",
+    "adaptation": "Y el cerebro hace más que inventar: también <strong>equilibra</strong>. Sal de una habitación incandescente hacia la luz del día y por un instante todo parece demasiado azul; un minuto después vuelve a ser lo que es. El ojo reequilibra la luz por la que ve, de modo que una hoja de papel sigue siendo blanca bajo cualquier sol. Al mecanismo se le llama <strong>adaptación cromática</strong>, y corre, en silencio, en cada momento de la vida despierta.",
+    "adaptationRebound": "Pruébalo con el deslizador de arriba: asiéntate en un extremo — digamos 9000 K, un cielo frío — y mira fijamente el gris enmarcado durante treinta segundos, luego desplázalo bruscamente a 2500 K, una vela cálida. Durante unos momentos cada parche parecerá exageradamente cálido — el gris brillará levemente rosado, los rojos se profundizarán — y luego tu ojo alcanzará el cambio y la sala se normalizará. Ese momento breve y caliente es el rebote: el sistema visual, encerrado en la referencia fría, tarda un segundo en soltar su compensación cuando la referencia salta. La adaptación cromática no es un interruptor sino un bucle lento.",
+    "rods": "En la otra dirección, cuando la luz se apaga, el ojo está construido para fallar con elegancia. Los conos — las células diurnas de la figura anterior — necesitan luz para disparar, y al anochecer empiezan a ceder el relevo a una segunda tripulación: los <strong>bastones</strong>, más numerosos, mucho más sensibles y ciegos al color. El relevo desplaza lo que es brillante. Los conos alcanzan su pico de sensibilidad en las longitudes de onda largas; los bastones lo alcanzan cerca de 498 nanómetros, mucho más abajo en el espectro. Por eso de día una amapola roja resplandece; al anochecer se oscurece primero, mientras los verdes y azules de las hojas y el cielo de al lado se mantienen hasta la última luz. El anatomista checo Jan Evangelista Purkinje advirtió el efecto en sus paseos en 1819, y el desplazamiento ha llevado su nombre desde entonces.",
+    "closing": "Y ese es el motivo que se nos prometió. Porque los dos extremos de la línea espectral, violeta y rojo, pueden verse juntos como un único color nuevo, la línea queda libre para curvarse y cerrarse. Los próximos capítulos la doblan en un círculo — y luego abren el círculo en un espacio.",
+    "fig": {
+      "cone": {
+        "title": "Respuesta de los conos",
+        "hint": "Esquemático — un diagrama didáctico, no datos medidos",
+        "canvasAria": "Curvas de sensibilidad de los conos S, M y L a lo largo del espectro visible",
+        "nmLabel": "Longitud de onda de la luz que entra al ojo",
+        "nmAria": "Longitud de onda en nanómetros",
+        "sShort": "corta",
+        "mMedium": "media",
+        "lLong": "larga",
+        "verdictPrefix": "Tu cerebro informa: ",
+        "verdictNote": "A partir de esta proporción de tres señales — y nada más — se ensambla el color."
+      },
+      "spectralMeta": {
+        "title": "De dónde viene el metamerismo",
+        "hint": "Arrastra los nodos de reflectancia · cambia la luz",
+        "svgAria": "Dos curvas de reflectancia a lo largo del espectro visible de 380 a 730 nanómetros. El eje vertical es la reflectancia de 0 a 1. Arrastra los pequeños tiradores de cualquiera de las curvas para remodelarla; las dos muestras de color de abajo se redibujan para mostrar cómo se ve cada superficie bajo la luz elegida.",
+        "legendA": "Muestra A — reflectancia",
+        "legendB": "Muestra B — reflectancia",
+        "illumGroupAria": "Elegir un iluminante estándar",
+        "illumLabel": "Luz:",
+        "btnD65": "Luz diurna · D65",
+        "btnTungsten": "Tungsteno · A",
+        "btnFluorescent": "Fluorescente · F2",
+        "btnAutoMatch": "Auto-ajustar B a A bajo D65",
+        "patchLabelA": "Muestra A",
+        "patchLabelB": "Muestra B",
+        "patchAriaA": "Muestra A bajo la luz elegida",
+        "patchAriaB": "Muestra B bajo la luz elegida",
+        "verdictInitial": "Arrastra los nodos de cualquiera de las curvas, o pulsa Auto-ajustar.",
+        "cap": "Cada curva es lo que su superficie devuelve de la luz que la incide, longitud de onda por longitud de onda. El color que ves es el producto de tres cosas — esa curva, la luz que la ilumina y los tres conos del ojo — sumado a lo largo del espectro. <strong>Pulsa Auto-ajustar</strong> y luego cambia la luz: dos superficies que coincidían bajo la luz diurna se separan bajo el tungsteno o el fluorescente, porque sus <em>espectros</em> nunca fueron iguales, sólo los tres números a los que casualmente sumaban."
+      },
+      "meta": {
+        "title": "Una coincidencia imposible",
+        "sub": "Dos luces distintas. Un solo color. Tu ojo no halla diferencia.",
+        "btnGroupAria": "Elegir una fuente de luz",
+        "btnA": "Una longitud de onda pura · 580 nm",
+        "btnB": "Luz verde + luz roja",
+        "canvasAria": "La luz física presente, mostrada como picos en el eje de longitud de onda",
+        "initialText": "Una sola longitud de onda pura de luz amarilla — 580 nanómetros."
+      },
+      "adapt": {
+        "title": "El balance de blancos silencioso del cerebro",
+        "hint": "Arrastra el deslizador · luz de cálida a fría",
+        "sceneAria": "Una fila de siete parches coloreados bajo un mismo iluminante. A medida que el deslizador de temperatura de color se mueve, todos los parches se desplazan juntos; el parche enmarcado del centro es un gris neutro fijo que, en la vida real, seguiría viéndose gris para un observador completamente adaptado.",
+        "cctLabel": "Temperatura de color de la luz",
+        "cctAria": "Temperatura de color del iluminante en kelvin",
+        "cap": "Cada cuadrado es un pigmento fijo; solo cambia la luz. En una habitación real tu cerebro deshacería casi por completo este desplazamiento — el gris enmarcado seguiría siendo gris. La página no tiene un cerebro que lo haga por ti, así que observa cómo el gris vaga a medida que la luz se calienta o se enfría."
+      },
+      "purkinje": {
+        "title": "El efecto Purkinje",
+        "hint": "Arrastra el deslizador · de mediodía hacia medianoche",
+        "sceneAria": "Una fila de seis parches coloreados — rojo, naranja, amarillo, verde, azul y violeta. A medida que el deslizador del nivel de luz cae del día a la noche, los parches se atenúan de forma desigual: el extremo cálido (rojo y naranja) se oscurece primero y más rápido, mientras que el extremo frío (verdes y azules) se atenúa más despacio y es el último en desvanecerse.",
+        "ambientLabel": "Luz ambiente, de día pleno a noche profunda",
+        "ambientAria": "Nivel de luz ambiente en porcentaje",
+        "cap": "Los mismos seis pigmentos a cada nivel de luz. A medida que los bastones toman el relevo, el extremo cálido del espectro — rojos y naranjas — se hunde primero en la oscuridad, mientras que el extremo frío — verdes y azules — permanece más tiempo. Por este fenómeno algunas flotas de emergencia modernas han pasado a un amarillo-verde fluorescente compatible con Purkinje para tareas de alta visibilidad, incluso donde el rojo sigue siendo la tradición."
+      }
+    }
+  },
+  "ch3": {
+    "num": "Capítulo Tres",
+    "title": "Mezcla",
+    "standfirst": "Dos lógicas opuestas — y una caja de pinturas que disiente de una pantalla.",
+    "leadIn": "Pregúntale a un niño qué dan el rojo y el verde. Marrón, dirá, y tiene razón — tiene una caja de pinturas. Pregúntale a un ingeniero de iluminación: amarillo, dirá, y también tiene razón — tiene un escenario. Ambas respuestas son correctas porque hay dos maneras enteramente opuestas de hacer un color, y corren en direcciones opuestas.",
+    "additiveBody": "La mezcla <strong>aditiva</strong> es la lógica de la <em>luz</em>. Empieza en la oscuridad y suma. Cada haz que añades solo puede hacer las cosas más brillantes. Luz roja y luz verde se superponen en amarillo; añade azul y llegas al blanco. Esta es la lógica de las pantallas, los proyectores y las luces de escenario — y de la luz solar, una mezcla amplia de longitudes de onda que abarca todo el rango visible. Arrastra las tres luces juntas abajo.",
+    "subtractiveBody": "La mezcla <strong>sustractiva</strong> es la lógica del <em>pigmento</em>. Empieza con papel blanco — luz ya completa — y quita. Cada pigmento es un filtro: absorbe, <em>sustrae</em>, parte del espectro y refleja el resto. Pon cian sobre amarillo y entre ambos eliminan el rojo y el azul, dejando verde. Apila los tres y casi nada escapa: te aproximas al negro. Esta es la lógica de las <strong>tintas de imprenta</strong> y los <strong>filtros</strong> transparentes — exacta para cian, magenta y amarillo en capas, y un primer modelo razonable también para la pintura.",
+    "paintBody": "Pero la pintura, en verdad, es más extraña. La luz no la atraviesa como a un filtro; entra en la película húmeda, rebota en innumerables granos de pigmento y solo una parte vuelve. El cian y el amarillo de la tinta de un impresor están diseñados para que el modelo de filtro se cumpla — entre ambos dejan pasar solo el verde. Mezcla el <em>azul ultramar</em> y el <em>amarillo de cadmio</em> del pintor y el ojo aún ve verde; multiplica esos mismos dos como números en una pantalla y caen en un barro casi negro. Paul Kubelka y Franz Munk escribieron la aritmética más antigua en 1931 — el mismo año en que se dibujó el diagrama de cromaticidad del Capítulo Siete — y sigue siendo el modelo de trabajo de cada paleta de pintor hasta hoy.",
+    "maxwellIntro": "La luz y el pigmento son las dos aritméticas enseñadas arriba. Hay una tercera, nacida del movimiento. James Clerk Maxwell, a principios de la década de 1860, montó sectores pintados en una peonza y descubrió que el ojo los suma en el tiempo: un disco dividido entre rojo y verde, girado lo bastante rápido, se asienta en amarillo — no sobre el disco sino en la retina, que no puede seguir la alternancia. Esto es <strong>mezcla aditiva temporal</strong>: el ojo, al que se le pide integrar demasiado rápido, se rinde y promedia.",
+    "closing": "Los primarios difieren porque las lógicas difieren. La luz se construye desde <strong>rojo, verde, azul</strong>; la tinta de imprenta desde <strong>cian, magenta, amarillo</strong>; los tubos del pintor desde un rojo, un amarillo y un azul. Ningún conjunto es sagrado — no existe tal cosa como <em>los</em> colores primarios, solo los primarios correctos para la dirección en que viajas. Lo cual plantea la pregunta sobre la que se construye el próximo capítulo: si los primarios son una elección, ¿en qué forma deberíamos disponerlos?",
+    "fig": {
+      "mixer": {
+        "title": "Dos maneras de hacer un color",
+        "hint": "Arrastra los discos · o enfoca uno y usa las teclas de flecha",
+        "additive": {
+          "name": "Aditiva",
+          "kind": "luz, sobre oscuridad",
+          "fieldAria": "Mezclador aditivo: tres luces coloreadas sobre un campo oscuro",
+          "redAria": "Luz roja — arrastra, o usa las teclas de flecha para mover",
+          "greenAria": "Luz verde — arrastra, o usa las teclas de flecha para mover",
+          "blueAria": "Luz azul — arrastra, o usa las teclas de flecha para mover",
+          "footCap": "Empieza en negro. Las superposiciones se aclaran hacia el <strong>blanco</strong>.",
+          "resetAria": "Restablecer el mezclador aditivo"
+        },
+        "subtractive": {
+          "name": "Sustractiva",
+          "kind": "pigmento, sobre papel",
+          "fieldAria": "Mezclador sustractivo: tres pigmentos sobre papel blanco",
+          "cyanAria": "Pigmento cian — arrastra, o usa las teclas de flecha para mover",
+          "magentaAria": "Pigmento magenta — arrastra, o usa las teclas de flecha para mover",
+          "yellowAria": "Pigmento amarillo — arrastra, o usa las teclas de flecha para mover",
+          "footCap": "Empieza en blanco. Las superposiciones se oscurecen hacia el <strong>negro</strong>.",
+          "resetAria": "Restablecer el mezclador sustractivo"
+        },
+        "resetBtn": "Restablecer",
+        "cap": "Las mismas tres regiones, leídas de dos modos. En luz, las superposiciones de <strong>rojo, verde, azul</strong> dan cian, magenta, amarillo. En pigmento, las superposiciones de <strong>cian, magenta, amarillo</strong> dan rojo, verde, azul. Cada conjunto de primarios es exactamente el complemento del otro — las dos lógicas son imágenes especulares."
+      },
+      "paint": {
+        "title": "Dos aritméticas de la mezcla",
+        "hint": "Arrastra el deslizador · ultramar ↔ amarillo de cadmio",
+        "multTag": "Multiplicado",
+        "multSub": "matemática de filtro",
+        "kmTag": "Kubelka–Munk",
+        "kmSub": "pigmento real",
+        "multCanvasAria": "Una barra de gradiente que muestra la mezcla por multiplicación del ultramar y el amarillo de cadmio en cada proporción — el centro es turbio y oscuro, no verde.",
+        "kmCanvasAria": "Una barra de gradiente que muestra la mezcla Kubelka–Munk de los mismos dos pigmentos en cada proporción — el centro es claramente verde.",
+        "sliderAria": "Proporción de mezcla: porcentaje de amarillo de cadmio frente a ultramar",
+        "pigmentYellow": "amarillo de cadmio",
+        "pigmentUltramarine": "ultramar",
+        "swMultTitle": "Lo que da la aritmética de filtro de la pantalla",
+        "swKmTitle": "Lo que Kubelka–Munk dice que hace la pintura",
+        "cap": "Ambas barras corren del <em>ultramar puro</em> a la izquierda al <em>amarillo de cadmio puro</em> a la derecha. La barra superior multiplica los dos colores de pantalla en cada paso — el centro cae en un oscuro turbio, del modo en que lo harían dos muestras RGB. La barra inferior mezcla los mismos dos pigmentos por Kubelka–Munk — luz que entra en la pintura húmeda y se dispersa entre los granos — y encuentra verde en el centro, del modo en que lo hacen dos tubos."
+      },
+      "maxwell": {
+        "title": "Los discos giratorios de Maxwell",
+        "hint": "Gira el disco · el parche a la derecha es lo que el ojo resolvería",
+        "discAria": "Un disco de dos sectores girando. A bajas velocidades los dos colores alternan visiblemente; a altas velocidades el ojo los mezcla.",
+        "fusedAria": "El color que el ojo resolvería a una tasa de refresco infinita — un promedio en luz lineal de los dos colores de sector, ponderados por su parte angular.",
+        "labelDisc": "El disco giratorio",
+        "labelFused": "Lo que el ojo resolvería a >50 Hz",
+        "labelColorA": "Sector A",
+        "labelColorB": "Sector B",
+        "labelShare": "Parte del sector A",
+        "labelRpm": "Velocidad de rotación (RPM)",
+        "ariaShare": "Parte angular del sector A en el disco, en grados de 360",
+        "ariaRpm": "Velocidad de rotación en revoluciones por minuto",
+        "cap": "El disco a la izquierda gira a la velocidad que tú pongas; el parche a la derecha es el color que el ojo de Maxwell resolvería en fusión, calculado como un promedio en luz lineal de los dos colores de sector ponderados por su parte angular. El punto es una tercera lógica de mezcla, junto a la luz (la aditiva del Capítulo Tres) y el pigmento (sustractiva): cuando se presentan al ojo dos colores en alternancia rápida, los promedia en el <em>tiempo</em> de la misma forma que la pantalla blanca los promedia en el espacio. <em>Advertencia de pantalla: tu monitor refresca a unos 60 Hz, así que por encima de unas 30 RPM verás un parpadeo estroboscópico en lugar de fusión verdadera. El parche a la derecha muestra lo que tu corteza visual resolvería a una tasa de refresco infinita.</em>"
+      }
+    }
+  },
+  "ch4": {
+    "num": "Capítulo Cuatro",
+    "title": "El círculo cromático",
+    "standfirst": "Dobla la línea hasta que sus dos extremos se toquen.",
+    "leadIn": "El espectro es una línea, y una línea tiene extremos. El Capítulo Uno nos dejó con esa incomodidad: violeta profundo en un extremo, rojo profundo en el otro, y ningún camino entre ellos. El Capítulo Dos proporcionó el puente — magenta, el color extraespectral que el ojo construye cuando solo los dos extremos del espectro están encendidos. El magenta es el empalme. Con él, la línea puede levantarse por ambos extremos y curvarse hasta que el rojo se encuentre con el violeta, y el espectro se cierra en un anillo sin principio ni fin.",
+    "circleBody": "Ese anillo es el <strong>círculo cromático</strong> — no un descubrimiento sino una invención, y una invención útil. En un círculo, cada tono tiene vecinos a ambos lados y exactamente un color frente a él al otro lado del centro: su <strong>complementario</strong>. Gira el marcador abajo, y alterna el círculo entre sus dos grandes tradiciones.",
+    "primariesBody": "Dónde situar los tonos, y cuáles coronar como <em>primarios</em>, nunca se ha resuelto — porque no puede resolverse. Es una elección, y la historia la ha hecho más de una vez.",
+    "newtonGoetheItten": "En 1704 Isaac Newton dibujó el primer círculo del color, en su <em>Opticks</em>, y — siendo Newton — no pudo resistirse a una afirmación más profunda: dio a sus siete colores arcos dimensionados a los siete pasos de una escala musical, para que el espectro y la octava pudieran compartir una sola geometría. (El ensayo hermano de este, <a href=\"https://circle5-eight.vercel.app\" target=\"_blank\" rel=\"noopener noreferrer\">El círculo de quintas</a>, recorre la versión musical de ese mismo círculo.) Un siglo después, Goethe — que desconfiaba de Newton — construyó un círculo más pequeño de seis y emparejó cada color con un sentimiento. Y en la Bauhaus, Johannes Itten enseñó con un círculo de doce, levantado sobre los primarios del pintor: <strong>rojo, amarillo, azul</strong>.",
+    "physicistPainter": "Esos no son los primarios del físico. La luz se mezcla a partir de rojo, verde y azul; el pigmento, como mostró el Capítulo Tres, a partir de cian, magenta y amarillo; la tradición del estudio conserva rojo, amarillo y azul. Alterna el círculo de arriba entre la disposición de la luz y la del pintor, y observa cómo el complemento de un color cambia ante tus ojos — el rojo está frente al cian en un círculo y frente al verde en el otro. Ninguno es un error. Son respuestas a preguntas distintas.",
+    "fig": {
+      "wheel": {
+        "title": "El círculo cromático",
+        "hint": "Arrastra el marcador · o enfócalo y usa ← →",
+        "segGroupAria": "Disposición del círculo",
+        "segBtnRGB": "Círculo de luz · RGB",
+        "segBtnRYB": "Círculo del pintor · RYB",
+        "handleAria": "Tono en el círculo",
+        "pairRoleMain": "El color",
+        "pairRoleComp": "Su complemento",
+        "pairLinkFaces": "está frente a",
+        "capInitial": "El círculo de luz, con sus tonos en orden espectral."
+      },
+      "history": {
+        "title": "Tres círculos, tres siglos",
+        "newtonAria": "El círculo de siete colores de Newton con arcos desiguales, proporcionados musicalmente",
+        "newtonCap": "<b>Newton</b>, 1704 — siete colores, arcos dimensionados a una escala musical.",
+        "goetheAria": "El círculo de seis colores de Goethe",
+        "goetheCap": "<b>Goethe</b>, 1810 — seis colores, cada uno ligado a un sentimiento.",
+        "ittenAria": "El círculo de doce colores de Itten",
+        "ittenCap": "<b>Itten</b>, c. 1920 — doce, sobre el rojo-amarillo-azul del pintor."
+      }
+    },
+    "note": {
+      "label": "Hacia un espacio",
+      "body": "Un círculo contiene cada tono — pero solo tono. No tiene nada que decir sobre una rosa pálida junto a un carmesí profundo, o un ladrillo apagado junto a un escarlata vivo: en el círculo, todos son simplemente <em>rojo</em>. Para retener esas diferencias, el círculo debe hacer crecer dos dimensiones más. El Capítulo Cinco le da profundidad."
+    }
+  },
+  "ch5": {
+    "num": "Capítulo Cinco",
+    "title": "Tres dimensiones",
+    "standfirst": "El tono es un número. Un color necesita tres.",
+    "leadIn": "El círculo del Capítulo Cuatro es una simplificación magnífica, y como toda simplificación miente un poco. Muestra cada tono, y <em>solo</em> tono. Pero di un color en voz alta — <em>rojo</em> — y casi no has nombrado nada. Un camión de bomberos, una teja de arcilla, el forro rosa de una concha, una mancha de sangre seca: cada uno es rojo, y no hay dos del mismo color.",
+    "valueChroma": "Lo que los separa son dos medidas adicionales. La primera es el <strong>valor</strong> — cuán claro u oscuro es el color, su lugar en el camino del negro al blanco. La segunda es el <strong>croma</strong> — cuán puro o apagado es, su distancia a un gris neutro. Tono, valor, croma: tres números, tres direcciones independientes. El color no es un círculo. Es un <em>sólido</em> — el círculo era una rebanada del mismo, tomada en un solo valor.",
+    "munsellBody": "El primero en cartografiar este sólido mediante medición en lugar de geometría fue Albert Munsell, pintor y profesor, hacia 1905. Había perdido la paciencia con nombres de colores que no significaban nada fiable — «rosa», «paja», «pardo» — y dio a cada color tres coordenadas claras en su lugar: tono, valor, croma. Su propio modelo no era una esfera ni un cilindro ordenados sino un árbol desigual, y honestamente así — un amarillo vivo es claro y un azul vivo es oscuro, de modo que los tonos se hinchan hacia fuera a distintas alturas. El espacio del color tiene una forma real e irregular, y Munsell la dibujó tal cual.",
+    "tintShadeTone": "Dentro de ese sólido, los pintores siempre han conocido tres maneras de mover un color. Una <strong>tinta clara</strong> añade blanco y lo eleva hacia la luz. Una <strong>sombra</strong> añade negro y lo baja hacia la oscuridad. Un <strong>tono</strong> añade gris y lo arrastra hacia dentro, hacia el núcleo incoloro. Elige un color en el panel de abajo — su tono, luego cuán saturado y cuán claro es — y observa cómo se abren los tres caminos desde él.",
+    "fig": {
+      "solid": {
+        "title": "Dos sólidos de color",
+        "hint": "Arrastra cualquier lienzo para rotar · desliza para cortar",
+        "hslAria": "El sólido de color HSL — una forma bicónica simétrica con el matiz alrededor del eje, la luminosidad subiendo de una base negra a una cima blanca, y la saturación alcanzando radialmente. Arrastra para rotar.",
+        "okAria": "El sólido de color OKLCH — la gama sRGB real medida en un espacio perceptualmente uniforme. La forma es asimétrica: el amarillo se hincha alto y pálido, el azul se hunde profundo y oscuro. Arrastra para rotar; rota junto con el sólido HSL.",
+        "hslLabel": "HSL · bicónico, simétrico por número",
+        "okLabel": "OKLCH · gama sRGB, asimétrico por ojo",
+        "cutLabel": "Cortar horizontalmente en luminosidad",
+        "cutAria": "Cortar los sólidos horizontalmente: luminosidad de 0 (solo la base) a 1 (sólido completo). Valores más bajos cortan las capas superiores, más claras, de ambos sólidos a la vez.",
+        "cap": "Ambos sólidos muestran cada color que una pantalla puede mostrar — pero en sistemas de coordenadas diferentes. HSL <strong>define</strong> su forma (un bicónico simétrico, más ancho en L = 0.5); OKLCH la <strong>mide</strong> desde el ojo, y lo que sale es un cuerpo desequilibrado — el amarillo se hincha alto y pálido, el azul se hunde profundo y estrecho, el magenta alcanza más lejos que el verde. Los dos son el mismo conjunto de colores, ajustados a dos reglas distintas. Arrastra cualquier lienzo para rotarlos juntos; tira del deslizador para levantar la cima y ver dentro. La asimetría a la derecha es el árbol de Munsell, dibujado esta vez por las matemáticas."
+      },
+      "picker": {
+        "title": "Una rebanada del sólido",
+        "hint": "Arrastra en el panel · o enfoca el marcador y usa las teclas de flecha",
+        "markerAria": "Punto de color — arrastra, o usa las teclas de flecha para cambiar saturación y valor",
+        "axisX": "↑ claro · valor · oscuro ↓   ·   ← gris · saturación · vivo →",
+        "hueLabel": "Tono",
+        "rampTint": "Tintas claras — el color llevado hacia el blanco",
+        "rampShade": "Sombras — el color llevado hacia el negro",
+        "rampTone": "Tonos — el color llevado hacia el gris"
+      }
+    },
+    "note": {
+      "label": "De un color a muchos",
+      "body": "Ahora podemos fijar cualquier color exactamente — un punto, tres coordenadas, en algún lugar del sólido. Pero un color rara vez se elige solo. Casi siempre se elige por compañía, para colocarlo junto a otros. El Capítulo Seis pregunta qué colores pertenecen juntos, y por qué."
+    }
+  },
+  "ch6": {
+    "num": "Capítulo Seis",
+    "title": "Armonía",
+    "standfirst": "Los colores guardan su mejor compañía por la geometría.",
+    "leadIn": "A un color casi nunca se le encuentra solo. Un cartel, una habitación, una pintura, una página como esta — cada uno es un acorde de varios colores sonados juntos, y algunos acordes suenan claros mientras otros chirrían. Durante la mayor parte de la historia, saber cuál era cuál se llamaba <em>gusto</em>, y no podía enseñarse. El círculo cromático cambió eso: convirtió la pregunta en geometría. Los colores armoniosos, propuso, son sencillamente los que se sitúan en una figura limpia y repetible sobre el círculo.",
+    "chooseBody": "Elige un color base y una figura abajo. El círculo dibuja la forma; la paleta y la pequeña composición a su lado muestran esos colores en acción.",
+    "temperamentBody": "Cada figura tiene un temperamento. Los <strong>complementarios</strong> se sitúan justo enfrente uno del otro — tan lejos en tono como pueden estar dos colores — y por ello encuentran el ojo con el contraste más afilado que una pareja puede contener; puestos lado a lado parecen vibrar a lo largo de su frontera, una tensión que el Capítulo Ocho explicará. Los <strong>análogos</strong> son vecinos, de una familia, y reposan tranquilos juntos. La <strong>tríada</strong> y las figuras de cuatro vértices reparten el círculo de manera uniforme: vivos, pero equilibrados, porque ninguna dirección está favorecida. El <strong>complementario dividido</strong> mantiene la tensión de un complemento pero suaviza su brusquedad. El <strong>monocromático</strong> abandona del todo el contraste de tono y trabaja solo en valor y croma — el esquema más sereno de todos.",
+    "grammarBody": "Nada de esto es una ley. Es una <em>gramática</em> — del mismo tipo que las progresiones de acordes del ensayo musical hermano de este, <a href=\"https://circle5-eight.vercel.app\" target=\"_blank\" rel=\"noopener noreferrer\">El círculo de quintas</a>. Una gramática no escribe la oración; te dice qué oraciones serán entendidas. El mejor color, como la mejor escritura, viene a menudo de conocer la regla exactamente — y luego, por una razón, romperla.",
+    "fig": {
+      "harmony": {
+        "title": "El explorador de armonía",
+        "hint": "Arrastra el marcador · o enfócalo y usa ← →",
+        "typesGroupAria": "Tipo de armonía",
+        "btnComplementary": "Complementaria",
+        "btnAnalogous": "Análoga",
+        "btnTriadic": "Tríada",
+        "btnSplit": "Complementario dividido",
+        "btnTetradic": "Tétrada",
+        "btnMonochromatic": "Monocromática",
+        "handleAria": "Tono base de la armonía",
+        "paletteAria": "La paleta de la armonía",
+        "nameInitial": "Tríada",
+        "copyBtn": "Copiar paleta",
+        "capInitial": "Tres tonos separados por un tercio igual del círculo — equilibrado, vivo y estable."
+      }
+    },
+    "note": {
+      "label": "Una grieta en el círculo",
+      "body": "Cada figura dibujada en ese círculo se midió en grados iguales de tono — como si un paso de treinta grados fuese del mismo tamaño en cualquier punto del círculo. No lo es. El círculo que hemos usado está espaciado uniformemente por números, no por el ojo. El Capítulo Siete reconstruye el espacio a la medida del propio ojo."
+    }
+  },
+  "ch7": {
+    "num": "Capítulo Siete",
+    "title": "Espacios de color",
+    "standfirst": "Un mapa es tan honesto como su rejilla.",
+    "leadIn": "El Capítulo Seis terminó en una confesión: el círculo estaba espaciado por números, no por el ojo. Y el sólido del Capítulo Cinco también. Un <strong>espacio de color</strong> es sencillamente un sistema de coordenadas para el color — una manera de fijar cualquier color con una breve lista de números — y la única pregunta que vale la pena hacerle es si sus números concuerdan con lo que ves.",
+    "rgbHslBody": "El más familiar es <strong>RGB</strong>: tres valores, de cero a doscientos cincuenta y cinco, uno por cada luz primaria. Es la lengua materna de las pantallas, y perfectamente honesto sobre la máquina — pero no sobre el ojo. <strong>HSL</strong> — tono, saturación, luminosidad — fue inventado para ser más amable con las personas, y es más intuitivo de manejar. Pero su luminosidad es una ficción cortés. Pídele a HSL un <em>cincuenta por ciento de luminosidad</em> y te entregará un amarillo brillante y un azul profundo y apagado con la misma confianza, llamándolos iguales.",
+    "hkIntro": "HSL al menos es honesto al decir <em>luminosidad</em>. El truco más profundo es que incluso dentro de la propia luminosidad perceptual del ojo — incluso dentro de la L de OKLCH — hay un empujón residual que <em>el croma mismo</em> da al brillo percibido. Un color vivamente saturado, en igualdad de condiciones, se ve más claro que su gemelo gris. Hermann von Helmholtz y Friedrich Kohlrausch anotaron el efecto en 1907; el ojo, resulta, se niega a pesar el color como un solo número.",
+    "cieIntro": "Se habían intentado mapas honestos antes. En 1931 la Commission internationale de l'éclairage dibujó el primero de ellos a partir de mediciones reales de la visión humana — el <strong>diagrama de cromaticidad</strong> de abajo, una herradura que reúne cada tono y cada saturación que una persona puede ver en una sola forma, el conjunto del color extendido en plano.",
+    "gamutBody": "Su borde curvo es la luz pura del Capítulo Uno, el espectro doblado en un arco; su pie recto son los púrpuras, que no tienen longitud de onda y solo viven en la mente. Ninguna pantalla ni ninguna tinta puede reproducir el conjunto; cada una alcanza solo su propio retazo — un triángulo para las pantallas, una forma más irregular para la imprenta — y todo lo que está más allá de ese retazo es un color que puedes ver pero no mostrar. A esa carencia es a la que la palabra <strong>gama</strong> da nombre. El diagrama fue un monumento — y, sin embargo, aún desigual en sus rincones: distancias iguales a través de él no significaban diferencias iguales para el ojo. La reparación llevó casi un siglo.",
+    "gamutIntro": "La herradura de arriba es abstracta — cada cromaticidad que un humano puede ver, con los tres gamuts marcados. El visor de abajo es concreto: una imagen pintada directamente en el canvas Display P3 de gama amplia de la pantalla, con motas deliberadas de color fuera de sRGB. Arrastra la lupa circular sobre él y observa los píxeles que captura aparecer, en tiempo real, como puntos en la herradura. Cambia el gamut objetivo para ver qué puntos caen fuera — esos son los colores que tu pantalla aplastaría, o que la impresora inventaría un sustituto para, camino de su superficie.",
+    "oklabBody": "En 2020 Björn Ottosson publicó <strong>OKLab</strong>, y su forma cilíndrica <strong>OKLCH</strong> — un espacio afinado para que pasos iguales se vean iguales, y la luminosidad, por fin, signifique luminosidad. Desde entonces se ha incorporado al estándar CSS y funciona en casi todos los navegadores hechos. Es el círculo cromático del Capítulo Cuatro y el sólido del Capítulo Cinco, construidos una vez más — y medidos, esta vez, no por números sino por el ojo.",
+    "fig": {
+      "hslVsOk": {
+        "title": "HSL frente a OKLCH",
+        "hint": "Arrastra el deslizador para leer cualquier tono",
+        "canvasAria": "Dos tiras, cada una recorriendo todos los tonos. La tira HSL, mantenida en luminosidad 50 por ciento, varía de forma salvaje en brillo percibido; la tira OKLCH, mantenida en luminosidad 70 por ciento, se mantiene perceptualmente uniforme.",
+        "hueLabel": "Tono, el mismo paso en todo el círculo",
+        "hueAria": "Tono en grados",
+        "cap": "Cada par de bandas recorre todos los tonos. La banda ancha es el color; la banda estrecha debajo es la luminosidad que tu ojo realmente percibe. La banda HSL sube y baja entre brillante y oscuro — su «50 %» nombra un brillo distinto en cada tono. La banda OKLCH se mantiene plana: su luminosidad <em>es</em> la del ojo. (Las dos están fijadas en números distintos a propósito — el «50 %» de HSL no tiene un significado perceptual fijo, así que igualar los números solo compararía brillos, no pondría a prueba la afirmación.)"
+      },
+      "hk": {
+        "title": "El efecto Helmholtz–Kohlrausch",
+        "hint": "Iguala el gris al brillo del color — a ojo",
+        "patchAriaGrey": "Muestra gris neutra — arrastra el deslizador de luminosidad del gris",
+        "patchAriaColor": "Muestra de color saturado, fijada en OKLCH L = 0.60",
+        "tagGrey": "Gris neutro · tú ajustas",
+        "tagColor": "Color saturado · OKLCH L = 0.60",
+        "labelHue": "Tono del color",
+        "labelChroma": "Croma del color",
+        "labelGreyL": "Luminosidad del gris — deslízala hasta que ambas muestras se sientan igualmente brillantes",
+        "ariaHue": "Tono en grados",
+        "ariaChroma": "Croma del color en unidades OKLCH",
+        "ariaGreyL": "L OKLCH del gris neutro",
+        "btnReveal": "Mostrar el veredicto",
+        "btnReset": "Restablecer a equivalente",
+        "cap": "Las dos muestras comparten una restricción: el color está fijo en <strong>OKLCH L = 0.60</strong>. Tu tarea es deslizar la luminosidad del gris hasta que las dos se sientan igualmente brillantes a tu ojo, y luego pulsar <strong>Mostrar el veredicto</strong>. El veredicto muestra cuánta luminosidad extra — en OKLCH y en luminancia Y bruta — tuviste que dar al gris para igualar un color que el ojo insiste en que es más brillante de lo que sus números dicen. El empuje depende del tono (es más fuerte en los azules y rojos profundos) y crece con el croma. <em>Aviso de calibración: la igualdad exacta depende de tu monitor y de la luz ambiente; lo que importa es la dirección y la magnitud aproximada.</em>"
+      },
+      "cie": {
+        "title": "La herradura de 1931",
+        "hint": "Arrastra el deslizador a lo largo del espectro",
+        "canvasAria": "El diagrama de cromaticidad CIE 1931. Un campo en forma de herradura contiene cada cromaticidad que el ojo humano puede ver; su borde curvo son las longitudes de onda espectrales puras de 380 a 700 nanómetros, y el borde recto a través de su pie son los púrpuras, que no tienen longitud de onda propia. Dentro del campo, tres triángulos marcan gamas de trabajo: el triángulo continuo es el sRGB estándar, el de trazos el Display P3 más amplio, y el punteado — menor que cualquiera — es una aproximación C/M/Y de la gama de impresión offset a cuatro colores, cuya verdadera forma es un polígono de seis vértices. Toda la región entre los triángulos y el borde es visible para el ojo pero está más allá de lo que una pantalla puede mostrar, y se dibuja pálida.",
+        "nmLabel": "Una longitud de onda pura, marcada en el borde",
+        "nmAria": "Longitud de onda en nanómetros",
+        "legendSrgb": "Gama sRGB",
+        "legendP3": "Gama Display P3",
+        "legendCmyk": "Impresión offset (CMYK)",
+        "legendD65": "Punto blanco D65",
+        "cap": "<strong>Arrastra el deslizador</strong> para caminar el marcador a lo largo del borde — cada punto una longitud de onda pura, el espectro del Capítulo Uno enroscado en un arco. Los tres triángulos son <strong>gamas</strong> de trabajo: el continuo es sRGB, el estándar de la web; el de trazos es el Display P3 más amplio de las pantallas recientes; el triángulo punteado más pequeño es una aproximación C/M/Y de la gama de impresión offset (su verdadera forma es un polígono de seis vértices — el triángulo tiene aproximadamente el tamaño correcto, no la forma correcta). Por eso un gráfico vivo en pantalla pierde algo de vida al llegar a una página impresa. Cada color fuera del triángulo continuo sRGB se dibuja pálido a propósito: queda más allá de la gama en la que esta misma página está dibujada, así que el diagrama solo puede gesticular hacia un color que no puede mostrar de verdad."
+      },
+      "gamutView": {
+        "title": "El visor de gama",
+        "hint": "Arrastra la lente · cambia el gamut objetivo",
+        "sideLabelImg": "Imagen origen de gama amplia",
+        "sideLabelCie": "Cromaticidad CIE 1931 · píxeles muestreados",
+        "imgAria": "Una imagen sintética de color de gama amplia pintada directamente en un canvas Display P3. Algunas regiones contienen colores fuera del triángulo sRGB. Arrastra o enfoca para posicionar la lupa circular.",
+        "cieAria": "El diagrama de cromaticidad CIE 1931. Los píxeles bajo la lupa aparecen como puntos; los píxeles fuera del gamut objetivo elegido se resaltan con un contorno rojo.",
+        "targetAriaGroup": "Gamut objetivo para el contorno de advertencia",
+        "targetLabel": "Gamut objetivo:",
+        "targetSRGB": "sRGB (web)",
+        "targetP3": "Display P3 (pantallas nuevas)",
+        "targetCMYK": "CMYK (impresión offset)",
+        "cap": "El canvas origen se renderiza en <strong>Display P3</strong> donde el navegador lo soporta (Safari 15+, Chrome 110+, Firefox 113+); en navegadores más antiguos cae a sRGB y las advertencias fuera de gamut quedan en silencio. Cada punto en la herradura es un píxel bajo la lupa, transformado a través de la matriz estándar sRGB (o P3) en CIE XYZ y luego en <em>xy</em>. Los tres triángulos son los mismos que en la herradura de arriba. El contorno rojo cuenta cuántos de los píxeles que has capturado caen fuera del objetivo que elijas — verdes y cianes vivos suelen rendirse primero a sRGB; naranjas y rojos profundos tienden a morir en el paso a CMYK."
+      }
+    },
+    "note": {
+      "label": "El color que no verás",
+      "body": "Ahora podemos situar un color, medirlo y confiar en la medición. Y sin embargo esa medición sigue sin ser el color que verás — porque el ojo nunca juzga un color solo. Juzga cada color por los colores que tiene alrededor. El Capítulo Ocho trata de esa traición."
+    }
+  },
+  "ch8": {
+    "num": "Capítulo Ocho",
+    "title": "La interacción del color",
+    "standfirst": "Ningún color se ve jamás solo.",
+    "leadIn": "Josef Albers enseñó color durante cuarenta años — en la Bauhaus, en Black Mountain, en Yale — y en 1963 dejó todo por escrito en un libro titulado <em>La interacción del color</em>. Su primer principio es también el más difícil: el color es el medio más relativo del arte. Un color nunca se ve como es. Siempre se ve en compañía de lo que lo rodea, y esa compañía lo cambia.",
+    "heringIntro": "Detrás de esa relatividad hay un cableado. El capítulo dos mostró tres conos; lo que aún no se mostró es que el cerebro recodifica de inmediato sus señales en <strong>pares opuestos</strong> — rojo contra verde, amarillo contra azul. El fisiólogo alemán Ewald Hering propuso el esquema en 1892, contra el consenso de tres receptores de Helmholtz, y tenía razón: ambos son verdad, en capas. La predicción más difícil de su teoría es que los dos miembros de un par <em>no pueden coexistir</em> en el mismo parche de visión. No existe tal cosa como un verde rojizo, o un amarillo azulado, así como sí existe un azul rojizo (violeta) o un verde amarillento (chartreuse). Abajo está el experimento de cancelación que te permite sentir esa restricción con tus propios ojos.",
+    "proveBody": "Los dos cuadrados del centro de los paneles de abajo están pintados de un único color — exactamente el mismo color, los mismos tres números. Establece sus alrededores, y observa cómo se niegan a coincidir.",
+    "simContrastBody": "Esto es el <strong>contraste simultáneo</strong>, nombrado por el químico Michel-Eugène Chevreul en 1839, cuando fue enviado a explicar por qué la misma lana parecía equivocada en tejidos distintos en la Manufactura de los Gobelinos. El ojo califica cada color frente a su entorno: un color sobre un fondo más oscuro se eleva, el mismo color sobre un fondo más claro se hunde — como acaban de mostrar los dos cuadrados centrales de arriba. El contraste actúa tanto en tono como en luminosidad — un gris puesto junto al naranja se enfría hacia el azul, junto al azul se calienta hacia el naranja — pero la lección es una sola: el ojo informa de diferencias, nunca de absolutos.",
+    "bezoldBody": "La influencia también puede extenderse. En el <strong>efecto Bezold</strong> — advertido por el meteorólogo Wilhelm von Bezold mientras diseñaba alfombras — cambiar un color en un patrón repetido desplaza el tono y el matiz del diseño entero a la vez, ya que ese único color recorre cada forma que toca.",
+    "neonIntro": "Un caso extremo de esa difusión es la <strong>difusión de color neón</strong>, descrita por primera vez por Dario Varin y Harrie van Tuijl en los años 1970. Donde un trazo delgado de color cruza un contorno de otro color sobre un fondo oscuro, el ojo rellena el interior del contorno con el color que lo cruza, como si se hubiera puesto un disco teñido detrás. El color está sólo en los trazos — el resto es inventado.",
+    "successiveBody": "Ese fantasma es un <strong>contraste sucesivo</strong>, una posimagen. El ojo no se limita a contar sus tres conos; en la etapa siguiente los pone unos contra otros en pares opuestos — rojo contra verde, azul contra amarillo. Mantén un color fijo en un parche de la retina y los conos que lo llevan se cansan lentamente; cuando el color se retira, su lado agotado calla mientras el opuesto responde sin oposición, y ves el complemento, pintado sobre nada en absoluto. Es la misma oposición la que pone a los colores complementarios a vibrar cuando se colocan lado a lado: el ojo se construyó para responder al contraste, y no se le puede decir que pare.",
+    "landIntro": "Si esto suena como si el ojo hiciera más que leer luz, lo hace. En 1959, el ingeniero y fundador de Polaroid Edwin Land mostró que podía hacer algo casi ridículo: a partir de <em>dos</em> fotografías en blanco y negro — una tomada a través de un filtro de longitud de onda larga, otra a través de uno más corto — proyectadas de vuelta a través de un filtro rojo y una lámpara blanca, respectivamente, el sistema visual reconstruye una imagen aparentemente <em>a todo color</em>. No hay luz verde, ni luz azul, en ninguna parte de la sala. El cerebro fabrica los tonos faltantes a partir de la estructura espacial de los dos registros, con los bordes y las proporciones haciendo el trabajo que la longitud de onda pura no puede. Land llamó la explicación subyacente la teoría <strong>retinex</strong>, por retina y córtex. La simulación de abajo te deja estar dentro de ese experimento.",
+    "fig": {
+      "hering": {
+        "title": "La cancelación de color de Hering",
+        "hint": "Empuja cada canal opuesto hacia cero",
+        "patchAria": "El color que se está neutralizando",
+        "tagPatch": "El color que estás cancelando",
+        "channelRG": "Canal Rojo ↔ Verde",
+        "channelYB": "Canal Amarillo ↔ Azul",
+        "axisRGLabel": "Eje Rojo–Verde",
+        "axisRGPoles": "← añadir rojo &nbsp;·&nbsp; añadir verde →",
+        "axisYBLabel": "Eje Amarillo–Azul",
+        "axisYBPoles": "← añadir amarillo &nbsp;·&nbsp; añadir azul →",
+        "ariaRG": "Cancelación opuesta Rojo–Verde",
+        "ariaYB": "Cancelación opuesta Amarillo–Azul",
+        "btnNew": "Nuevo color",
+        "cap": "El parche comienza en un desplazamiento aleatorio en el plano <em>a*</em>/<em>b*</em> de OKLab — el sustituto moderno de Ottosson de los dos canales de Hering. Tu tarea es deslizar cada eje en la dirección opuesta hasta que ambas barras colapsen a cero. Cuando lo hagan, el parche se asienta en un gris neutro — y acabas de realizar, con la mano, lo que la corteza visual hace en milisegundos cada vez que miras algo. La lección más profunda es estructural: la misma palabra de color — <em>verde</em>, por ejemplo — puede nombrar muchos espectros físicos, pero todos comparten una propiedad: su canal rojo–verde lee verde. El tono es lo que los dos canales reportan juntos. Pulsa <strong>Nuevo color</strong> para probar otro punto de partida."
+      },
+      "albers": {
+        "title": "Un color, dos colores",
+        "hint": "Ajusta los fondos, luego demuestra que los centros son iguales",
+        "labelLeft": "Fondo izquierdo",
+        "ariaLeft": "Luminosidad del fondo izquierdo",
+        "labelRight": "Fondo derecho",
+        "ariaRight": "Luminosidad del fondo derecho",
+        "labelCentre": "El color central",
+        "ariaCentre": "Tono del color central",
+        "labelPattern": "Patrón del entorno",
+        "ariaPattern": "Frecuencia del patrón en los entornos: cero es liso, mayor es rayas más finas",
+        "verdict": "Ambos cuadrados centrales tienen exactamente el mismo color.",
+        "proveBtn": "Demuéstralo",
+        "cap": "Cuanto mayor sea la brecha entre los dos fondos, más se parte en dos el único color central — hundiéndose oscuro contra el fondo claro, elevándose pálido contra el oscuro. El ojo lo está graduando frente a su entorno, sin leerlo nunca por sí solo. Mueve el deslizador inferior para una segunda lección: con rayas anchas el contraste alrededor del centro se afila, pero a medida que las rayas se hacen finas el ojo deja de separarlas del campo — el entorno promedia sobre sí mismo, y el centro se <em>asimila</em> hacia el color de la raya. Wilhelm von Bezold advirtió el efecto en 1874."
+      },
+      "neon": {
+        "title": "Difusión de color neón",
+        "hint": "Alterna el contorno ilusorio",
+        "svgAria": "Un campo oscuro cruzado por una rejilla blanca delgada. En las intersecciones centrales, un único trazo de color reemplaza al blanco. El ojo ve un disco teñido llenando la región central, aunque sólo los trazos cruzados llevan color.",
+        "labelColor": "Color del trazo",
+        "toggleLabel": "Mostrar el contorno ilusorio",
+        "note": "El anillo punteado, cuando se muestra, marca dónde el ojo pinta un disco teñido que no tiene pintura física dentro — sólo los pocos trazos coloreados dentro de ese anillo llevan pigmento.",
+        "cap": "Donde los paneles de Albers arriba mostraron colores vecinos empujándose entre sí (contraste simultáneo) y rayas finas fundiéndose en el campo (asimilación de Bezold), esta figura es la asimilación llevada al límite. El sistema visual, preparado por la rejilla cerrada para esperar una superficie continua, pinta el interior del \"anillo\" con el color que encuentra en su borde — incluso cuando casi todo el interior es fondo oscuro desnudo. La misma maquinaria subyace a las sombras coloreadas, los efectos de acuarela, y casi cada gesto de restricción del diseñador: <em>muestra un color en el borde, el interior se rellena solo</em>."
+      },
+      "afterimage": {
+        "title": "La posimagen",
+        "hint": "Mira fijamente la cruz, después aparta la vista",
+        "hueLabel": "El color a mirar",
+        "hueAria": "Tono de la forma",
+        "lookBtn": "Apartar la vista",
+        "cap": "Sostén la mirada en la pequeña cruz durante unos veinte segundos — no dejes que se desvíe — luego pulsa <em>Apartar la vista</em>. Sobre el campo gris desnudo, la forma vuelve como un fantasma, pintada en su complemento."
+      },
+      "land": {
+        "title": "La proyección de dos colores de Land",
+        "hint": "Pasa el cursor sobre la salida para leer R, G, B de un píxel",
+        "origLabel": "Escena original · de referencia",
+        "outLabel": "Proyección de Land · lo que la sala muestra",
+        "origAria": "La escena en color original de la que se tomaron los registros de onda larga y corta",
+        "outAria": "La salida simulada del montaje de dos proyectores de Land. Pasa el cursor o enfoca para leer los valores R, G, B reales de cualquier píxel — serán mucho más simples que el color que percibes.",
+        "modesAria": "Qué proyector mostrar",
+        "modesLabel": "Mostrar:",
+        "modeBoth": "Ambos proyectores",
+        "modeRed": "Sólo luz roja",
+        "modeWhite": "Sólo luz blanca",
+        "labelRed": "Intensidad del filtro rojo (registro de onda larga)",
+        "labelWhite": "Intensidad de la luz blanca (registro de onda corta)",
+        "ariaRed": "Intensidad del proyector con filtro rojo",
+        "ariaWhite": "Intensidad del proyector de luz blanca",
+        "cap": "El panel izquierdo muestra la escena en color de la que se \"tomaron\" las dos diapositivas en blanco y negro. El panel derecho es lo que un espectador en la sala de conferencias de Land vería realmente: sólo dos luces físicas, una roja y una blanca, moduladas por los dos registros en escala de grises. Pasa el cursor o enfoca el panel derecho y lee el veredicto — los píxeles que parecen naranjas, amarillos, o incluso teñidos de verde no contienen <em>ninguna luz verde ni ninguna luz azul</em> en absoluto. Sus números R, G, B lo mostrarán claramente. Los colores que ves de todos modos son el sistema visual rellenando, a partir de los bordes y el contexto del entorno, los tonos que la sala nunca envió. El efecto es más fuerte en una pantalla calibrada en una sala tenue; bajo luz brillante de oficina se debilita pero sigue visible en el lado cálido del espectro."
+      }
+    },
+    "note": {
+      "label": "Color que tiene que funcionar",
+      "body": "Si el color medido nunca es del todo el color que se ve, entonces quien construye con color para otras personas — un letrero, una interfaz, una página — trabaja sobre suelo movedizo. El último capítulo propiamente dicho trata de mantenerse de pie en él de todos modos: color que se mantiene legible, y se mantiene amable, para cada ojo."
+    }
+  },
+  "ch9": {
+    "num": "Capítulo Nueve",
+    "title": "El color en la práctica",
+    "standfirst": "Color que ha de ser leído por todo el mundo.",
+    "leadIn": "Ocho capítulos han ido a cómo se comporta el color. Este trata de un deber. Cuando se le pide al color que cargue significado — en un letrero, una pantalla, una página — debe llegar a cada lector, no solo a los bien iluminados y los típicamente videntes. Dos exigencias cubren casi todo: el color debe ser <strong>legible</strong>, y debe ser <strong>inclusivo</strong>.",
+    "contrastBody": "La legibilidad es, sobre todo, una cuestión de contraste. Un texto puede leerse cuando es lo bastante claro — o lo bastante oscuro — contra su fondo, y ese «bastante» puede traducirse a un solo número. Fija un color de texto y un fondo abajo.",
+    "wcagBody": "Las Web Content Accessibility Guidelines (WCAG) establecen los umbrales que prueban las insignias. El texto del cuerpo necesita una razón de al menos <strong>4,5 : 1</strong> para pasar al nivel ordinario, AA; el texto grande — alrededor de 24 píxeles, o 19 si es negrita — solo necesita <strong>3 : 1</strong>; el nivel estricto, AAA, pide <strong>7 : 1</strong> al texto del cuerpo. No son números burocráticos. Son el margen entre una oración que se lee y otra que se entorna, se abandona, o no se nota en absoluto — por un lector al sol, en una pantalla agonizante, o sencillamente con ojos más mayores.",
+    "apcaBody": "La figura también lee un número más nuevo junto a la razón: <strong>APCA</strong> (Accessible Perceptual Contrast Algorithm), la medida de contraste que el W3C está preparando para la próxima versión de las directrices. Donde WCAG cuenta solo la brecha de brillo, APCA lee la brecha como lo hace el ojo, y no finge que oscuro-sobre-claro y claro-sobre-oscuro sean el mismo problema. Su orientación adjunta entonces mínimos de <em>Lc</em> distintos a tamaños y pesos de tipografía distintos: el texto del cuerpo pide al menos <strong>Lc 75</strong>, el texto grande o en negrita 60, los encabezados 45, y el no-texto meramente visible 30. La escala (con signo, positivo para texto oscuro sobre fondo claro) llega hasta cerca de cien en el extremo.",
+    "inclusionBody": "La segunda exigencia es la inclusión. Entre personas de ascendencia europea, aproximadamente un hombre de cada doce y una mujer de cada doscientas — la tasa varía con la ascendencia — encuentran el color con un juego distinto de conos del que este ensayo ha asumido hasta ahora. Lo más frecuente es que un solo tipo de cono esté desplazado o ausente: la <strong>protanopia</strong> y la <strong>deuteranopia</strong> debilitan la línea entre rojo y verde; la más rara <strong>tritanopia</strong> difumina el azul frente al amarillo. Los ocho colores enviados a la pantalla de abajo nunca cambian; lo que cada ajuste muestra es cómo un ojo diferente los resolvería.",
+    "rulePracticalBody": "Observa cómo el rojo y el verde se deslizan hacia un mismo tono turbio bajo protanopia o deuteranopia, y la regla práctica se escribe sola: <strong>nunca dejes que el color sea la única señal</strong>. Una palabra roja y una palabra verde, iguales en todo lo demás, son dos palabras que muchísimos lectores no pueden distinguir. Añade un segundo canal — una forma, una etiqueta, un subrayado, una posición — y el color se vuelve un refuerzo bienvenido en lugar de una puerta cerrada. El color debería ser la manera más fácil de leer algo; nunca debe ser la única manera.",
+    "balanceBody": "Una última nota antes de que el camino termine. Una paleta no son solo tres colores buenos sino las <em>cuotas</em> que toman de la página. Los diseñadores se han apoyado durante mucho tiempo en una regla práctica: una habitación, un cartel o una pantalla se lee como <strong>equilibrado</strong> cuando un color hace cerca del sesenta por ciento del trabajo, un segundo alrededor del treinta, y el tercero solo cerca del diez. El dominante carga el espacio; el secundario lo apoya; el de acento atrae al ojo y luego se retira. Da a cada color una cuota igual y la composición pierde su centro.",
+    "fig": {
+      "contrast": {
+        "title": "El comprobador de contraste",
+        "hint": "Elige un color de texto y un fondo",
+        "labelText": "Texto",
+        "labelBg": "Fondo",
+        "contrastUnit": " : 1 contraste",
+        "wcagAria": "Resultados de contraste WCAG",
+        "apcaAria": "Contraste perceptual APCA",
+        "apcaUnit": "Lc · APCA",
+        "previewLg": "Texto grande, compuesto en grande.",
+        "previewSm": "Texto del cuerpo — el tamaño en que se compone la mayoría de las palabras de una página, y el tamaño que más exige al contraste.",
+        "cap": "El número es la <strong>razón de contraste</strong> — la luminancia del color más claro frente a la del más oscuro, de 1:1 (idénticos) a 21:1 (negro puro sobre blanco puro)."
+      },
+      "cvd": {
+        "title": "A través de otros ojos",
+        "hint": "Una simulación — elige un tipo de visión",
+        "typesGroupAria": "Tipo de visión cromática",
+        "btnNormal": "Visión típica",
+        "btnProtanopia": "Protanopia",
+        "btnDeuteranopia": "Deuteranopia",
+        "btnTritanopia": "Tritanopia",
+        "severityLabel": "Severidad — de tricromacia anómala a dicromacia completa",
+        "severityAria": "Severidad, porcentaje — en 0 la simulación es visión típica; valores intermedios aproximan la tricromacia anómala; 100 modela la dicromacia completa",
+        "swatchesAria": "Una paleta de ocho colores mostrada bajo el tipo de visión cromática seleccionado",
+        "capInitial": "Ocho colores distintos, para un ojo típico.",
+        "cap": "Una aproximación matemática. En <strong>severidad 100</strong> modela la dicromacia completa — un tipo de cono ausente; severidades intermedias aproximan la <strong>tricromacia anómala</strong> (un cono desplazado en lugar de ausente), la forma más leve y mucho más común. Ninguna pantalla ordinaria puede reproducir la experiencia verdadera."
+      },
+      "balance": {
+        "title": "Sesenta · treinta · diez",
+        "hint": "Elige los colores · desliza la cuota",
+        "mockAria": "Un diseño de página simulado en tres bandas coloreadas. El color dominante llena el cuerpo central, el secundario llena un encabezado arriba, y el de acento llena una banda fina al pie, con un pequeño botón en el cuerpo que recoge el color de acento. Las alturas relativas de las bandas muestran las proporciones de la paleta.",
+        "labelDominant": "Dominante",
+        "labelSecondary": "Secundario",
+        "labelAccent": "Acento",
+        "domShareLabel": "Cuota del dominante",
+        "domShareAria": "Cuota del color dominante, porcentaje",
+        "btn603010": "60 · 30 · 10",
+        "btnEqual": "Tercios iguales",
+        "continueBtn": "Continuar",
+        "cap": "Cada cambio reescribe el panel. Mueve el deslizador muy por debajo de sesenta y el ojo pierde un centro donde descansar; empújalo cerca de cien y solo sobrevive el dominante. La regla es una heurística, no una ley — pero robusta, y un buen punto de partida cuando se suelta una nueva paleta sobre una página."
+      }
+    },
+    "note": {
+      "label": "El final del camino",
+      "body": "Y este es el ensayo — desde una sola longitud de onda de luz hasta la disciplina de una paleta que funciona para cada ojo. Queda un capítulo breve: no un argumento sino una referencia, los términos del color reunidos en un solo lugar."
+    }
+  },
+  "ch10": {
+    "num": "Capítulo Diez",
+    "title": "Un glosario del color",
+    "standfirst": "Cada término en el que el ensayo se ha apoyado, reunido en un solo lugar.",
+    "leadIn": "Esta vez no un argumento, sino una referencia. Cada término de abajo tiene su hogar en uno de los nueve capítulos; el marcador a su lado señala el camino. Escribe en la casilla para acotar la lista.",
+    "fig": {
+      "terms": {
+        "title": "Los términos",
+        "searchPlaceholder": "Filtrar los términos…",
+        "searchAria": "Filtrar los términos del glosario",
+        "emptyMsg": "Ningún término coincide.",
+        "list": {
+          "additiveMixing": {
+            "name": "Mezcla aditiva",
+            "ref": "§3",
+            "def": "Hacer color combinando luz: empieza en la oscuridad y suma. La luz roja, verde y azul juntas dan blanco — la lógica de las pantallas y las luces de escenario."
+          },
+          "afterimage": {
+            "name": "Posimagen",
+            "ref": "§8",
+            "def": "El fantasma coloreado que se ve una vez retirado un color — su complemento, producido cuando los canales oponentes cansados del ojo rebotan."
+          },
+          "analogous": {
+            "name": "Análogos",
+            "ref": "§6",
+            "def": "Una armonía de tonos vecinos, próximos entre sí en el círculo — una familia, tranquila y a gusto."
+          },
+          "chroma": {
+            "name": "Croma (chroma)",
+            "ref": "§5",
+            "def": "Cuán puro o apagado es un color: su distancia a un gris neutro. Una de las tres dimensiones del color."
+          },
+          "chromaticity": {
+            "name": "Cromaticidad",
+            "ref": "§7",
+            "def": "El tono y la saturación de un color tomados juntos, considerados aparte de su brillo."
+          },
+          "cie1931": {
+            "name": "CIE 1931",
+            "ref": "§7",
+            "def": "El estándar colorimétrico construido a partir de la igualación cromática humana — y la fuente del diagrama de cromaticidad en herradura."
+          },
+          "cmyk": {
+            "name": "CMYK",
+            "ref": "§3",
+            "def": "Cian, magenta, amarillo y negro clave: los primarios sustractivos de la imprenta."
+          },
+          "colorSpace": {
+            "name": "Espacio de color",
+            "ref": "§7",
+            "def": "Un sistema de coordenadas para el color — una manera de fijar cualquier color con unos pocos números. RGB, HSL y OKLCH son espacios de color."
+          },
+          "cvd": {
+            "name": "Deficiencia de visión cromática",
+            "ref": "§9",
+            "def": "Una diferencia en los conos — usualmente uno ausente o desplazado — que debilita la línea entre ciertos colores, lo más frecuente rojo y verde."
+          },
+          "colorWheel": {
+            "name": "Círculo cromático",
+            "ref": "§4",
+            "def": "La línea espectral doblada en un anillo, con sus dos extremos unidos a través de los púrpuras no espectrales. Una invención, y útil."
+          },
+          "complementary": {
+            "name": "Complementarios",
+            "ref": "§4",
+            "def": "Dos colores que se enfrentan a través del círculo — el contraste más afilado que una pareja puede contener."
+          },
+          "coneCell": {
+            "name": "Cono",
+            "ref": "§2",
+            "def": "Uno de los tres receptores cromáticos de la retina — corto, medio y largo (S, M, L). Sus tres señales son el color entero visto a la luz del día."
+          },
+          "contrastRatio": {
+            "name": "Razón de contraste",
+            "ref": "§9",
+            "def": "La razón de luminancia de dos colores, de 1:1 a 21:1. WCAG pide al menos 4,5:1 al texto del cuerpo."
+          },
+          "gamut": {
+            "name": "Gama",
+            "ref": "§7",
+            "def": "El conjunto de colores que un dispositivo o espacio dado puede producir realmente — siempre menor que todo lo que el ojo puede ver."
+          },
+          "harmony": {
+            "name": "Armonía",
+            "ref": "§6",
+            "def": "Colores que pertenecen juntos, fijados por una geometría sencilla en el círculo: una gramática para combinar color, no una ley."
+          },
+          "hsl": {
+            "name": "HSL",
+            "ref": "§7",
+            "def": "Hue, Saturation, Lightness — un espacio de color intuitivo, aunque su luminosidad no es perceptualmente uniforme."
+          },
+          "hue": {
+            "name": "Tono",
+            "ref": "§4",
+            "def": "La cualidad que nombra una palabra de color — rojo, verde, azul — y la dimensión que recorre el círculo."
+          },
+          "metamerism": {
+            "name": "Metamerismo",
+            "ref": "§2",
+            "def": "Dos luces físicamente distintas que llenan los tres conos a los mismos niveles, y por eso parecen idénticas aunque no lo sean."
+          },
+          "munsell": {
+            "name": "Munsell",
+            "ref": "§5",
+            "def": "El sistema de orden cromático de Albert Munsell, hacia 1905 — el primero cartografiado por medición, situando cada color por tono, valor y croma."
+          },
+          "oklch": {
+            "name": "OKLCH",
+            "ref": "§7",
+            "def": "Un espacio de color perceptualmente uniforme (Björn Ottosson, 2020) donde pasos iguales se ven iguales — la forma cilíndrica de OKLab, ahora parte de CSS."
+          },
+          "opponentProcess": {
+            "name": "Proceso oponente",
+            "ref": "§8",
+            "def": "La segunda etapa de la visión cromática: las señales de los conos puestas unas contra otras en pares — rojo contra verde, azul contra amarillo."
+          },
+          "primaryColors": {
+            "name": "Colores primarios",
+            "ref": "§3",
+            "def": "Un conjunto elegido a partir del cual se mezclan los demás. No hay un único conjunto verdadero: RGB para la luz, CMY para el pigmento, RYB para el pintor."
+          },
+          "rgb": {
+            "name": "RGB",
+            "ref": "§3",
+            "def": "Red, Green, Blue: los primarios aditivos de la luz, y el espacio de color nativo de las pantallas."
+          },
+          "saturation": {
+            "name": "Saturación (saturation)",
+            "ref": "§5",
+            "def": "Cuán vivo o desvaído parece un color; en pantalla y en uso cotidiano, la prima útil del croma."
+          },
+          "simultaneousContrast": {
+            "name": "Contraste simultáneo",
+            "ref": "§8",
+            "def": "El desplazamiento que sufre un color por causa de sus vecinos. El ojo califica cada color frente a su entorno."
+          },
+          "spectralColor": {
+            "name": "Color espectral",
+            "ref": "§1",
+            "def": "Un color portado por una sola longitud de onda de luz. El magenta no lo es — no tiene longitud de onda propia."
+          },
+          "subtractiveMixing": {
+            "name": "Mezcla sustractiva",
+            "ref": "§3",
+            "def": "Hacer color quitando luz: empieza con blanco y quita. Cada pigmento absorbe parte del espectro."
+          },
+          "tintShadeTone": {
+            "name": "Tinta clara, sombra y tono",
+            "ref": "§5",
+            "def": "Tres maneras de mover un color: la tinta clara añade blanco, la sombra añade negro, el tono añade gris."
+          },
+          "trichromatic": {
+            "name": "Visión tricromática",
+            "ref": "§2",
+            "def": "La vista cromática humana: tres tipos de cono, y color ensamblado por el cerebro a partir de la razón de sus tres señales."
+          },
+          "value": {
+            "name": "Valor",
+            "ref": "§5",
+            "def": "Cuán claro u oscuro es un color — su lugar en el camino del negro al blanco. Una de las tres dimensiones del color."
+          },
+          "visibleSpectrum": {
+            "name": "Espectro visible",
+            "ref": "§1",
+            "def": "La banda estrecha de longitudes de onda que el ojo puede captar, aproximadamente de 380 nanómetros (violeta) a 700 nanómetros (rojo)."
+          },
+          "wavelength": {
+            "name": "Longitud de onda",
+            "ref": "§1",
+            "def": "La longitud de un ciclo de una onda de luz, en nanómetros — el estímulo que los conos absorben en proporciones distintas para hacer las tres señales que el cerebro lee como color."
+          }
+        }
+      }
+    },
+    "note": {
+      "label": "La última palabra",
+      "body": "Y aquí descansa el argumento. El color empezó como un hecho de física y termina como una disciplina de cuidado — y a lo largo de los diez capítulos no fue ni una sola vez una propiedad de las cosas. Es un acontecimiento: un encuentro de luz, materia y un ojo que mira, y dura exactamente lo que dura el mirar."
+    }
+  },
+  "ch11": {
+    "num": "Capítulo 11",
+    "title": "Nombres",
+    "standfirst": "El color es universal. Sus nombres son fabricados.",
+    "leadIn": "Los diez capítulos anteriores miraron al color como física, óptica, percepción, geometría y oficio. Hace falta un capítulo más, más callado. Si los capítulos previos trataron el color como objeto de observación, este pregunta qué decimos cuando <em>nombramos</em> un color. El verde tornasolado del cuello de un colibrí es la misma longitud de onda para toda retina capaz de resolverla, pero las palabras que se le aplican — <em>iridescent</em>, <em>gorget</em>, <em>fuchsia</em>, <em><em>tamamushiiro</em></em> — las hace el idioma que mira.",
+    "homer": "En 1858, William Gladstone — futuro primer ministro británico y a la vez clasicista serio — se sentó con Homero y notó algo extraño. La <em>Ilíada</em> y la <em>Odisea</em>, en miles de versos, apenas llamaban a los colores como un lector moderno esperaría. El mar era <em>oinops</em> — color de vino, o como el vino. Las ovejas eran moradas. La miel, verde. No existía una palabra separada para azul, y el cielo era nada menos que <em>broncíneo</em>. Gladstone concluyó que los griegos eran daltónicos. Se equivocó sobre la causa. Se había topado con un hecho más interesante: el griego antiguo del año 800 a.C. simplemente no dividía el mundo visual como lo hacía el inglés en 1858.",
+    "berlinKay": "Un siglo más tarde, en 1969, los antropólogos de Berkeley Brent Berlin y Paul Kay estudiaron cien lenguas y hallaron un patrón. Las lenguas no nombran los colores en orden arbitrario. Adquieren las palabras de color en un orden casi fijo. Casi siempre llega primero un par: <em>oscuro</em> y <em>claro</em> — que en español leemos como negro/blanco, aunque las palabras fueron más amplias en su origen. El tercer color es el rojo. El cuarto, amarillo o verde. El azul es el quinto, el marrón el sexto, y después entran morado, rosa, naranja y gris en cualquier orden. El griego de Homero, según Berlin y Kay, estaba en la etapa 3 o 4: tenía negro, blanco, rojo y un verde-amarillo aún sin separar, pero no había desprendido el azul del verde. Esa categoría cubre todo lo que el inglés llama bosque, mar, cielo y el gris azulado de los metales — exactamente lo que Homero llamó broncíneo, púrpura y vino.",
+    "japanese": "El japonés guarda una pequeña versión de la misma fisura. <em>Aoi</em> — traducido usualmente como azul — abarcó históricamente todo lo que llamamos azul y mucho de lo que llamamos verde, y en algunos compuestos lo sigue haciendo. La luz del semáforo japonés que significa «adelante» se llama oficialmente <em>aoi</em>, y sin embargo es perceptiblemente azulada-verde, porque cuando se introdujo el semáforo tuvo que caber en la palabra existente, y la palabra estiró al color hacia sí, no al revés. <em>Aoba</em> — hojas <em>aoi</em> — significa el follaje de primavera, claramente verde para un hablante de inglés. La separación entre <em>aoi</em> (azul-verde) y <em>midori</em> (verde inequívoco) es una importación del siglo XX, y parcial.",
+    "russian": "El ruso va en dirección opuesta y parte en dos el único azul del inglés. <em>Siniy</em> es el azul profundo y saturado del cielo claro al mediodía. <em>Goluboy</em> es el azul claro del cielo cerca del horizonte. Para un hablante de ruso son dos colores básicos tan distintos como el azul y el rojo lo son en inglés, no dos matices de la misma palabra. Un estudio de 2007 de Jonathan Winawer y colegas mostró que los hablantes de ruso, al elegir el tono coincidente de una fila, eran mensurablemente más rápidos en el límite <em>siniy</em>/<em>goluboy</em> que los anglófonos en cualquier límite dentro de <em>blue</em>. El idioma había dado al ojo una pregunta más rápida que hacer.",
+    "korean": "El coreano tiene un sistema más antiguo que liga los colores a los puntos cardinales. <em>Obangsaek</em>, los colores de las cinco direcciones, son <em>cheong</em> (azul, este), <em>baek</em> (blanco, oeste), <em>jeok</em> (rojo, sur), <em>heuk</em> (negro, norte) y <em>hwang</em> (amarillo, centro). Las mangas <em>saekdong</em> del traje nuevo de un niño en Año Nuevo — bandas de verde, rojo, amarillo, azul, blanco — no se eligieron por bonitas, sino que son las cinco direcciones ordenadas sobre la tela. El sistema es más antiguo que las palabras de color modernas del coreano, y las modernas todavía arrastran la lógica antigua debajo: <em>cheong</em> es un color que contiene azul y verde juntos, color del este, de la primavera, del elemento madera. La separación entre azul y verde entró tarde al coreano, y <em>cheong</em> permanece como la palabra más vieja, más ancha.",
+    "pirahã": "Los <em>pirahã</em> de la cuenca amazónica — objeto de gran discusión lingüística desde el trabajo de campo de Daniel Everett en los años 80 — no nombran los colores con una sola palabra. Las expresiones más cercanas son <em>biísai</em> (como sangre, para rojo), <em>xahoasai</em> (como negro, para oscuridad), <em>kohoaibíísai</em> (como el pájaro de cola amarilla): descripciones, no nombres. Si esto significa que los pirahã <em>ven</em> el color de modo distinto es la pregunta más aguda que la obra de Berlin y Kay planteó. La respuesta que va emergiendo es no: el ojo es el mismo; sencillamente la lengua aún no ha decidido fabricar palabras separadas.",
+    "iscc": "La estandarización intentó ponerse al día. En 1955, el <strong>Inter-Society Color Council</strong> y la <strong>National Bureau of Standards</strong> estadounidense publicaron conjuntamente el <em>ISCC-NBS Method of Designating Colors</em>, un vocabulario de 267 regiones nombradas del espacio del color — desde <em>vivid red</em> y <em>brilliant pink</em> hasta <em>moderate olive brown</em> y <em>dark greenish gray</em> — cada una ligada a un bloque específico de coordenadas Munsell, de modo que un nombre por fin significaba algo medible. El sistema nunca desplazó al uso cotidiano fuera de los laboratorios oficiales y los fabricantes de lápices de colores, pero sigue siendo el único intento en inglés de dar a cada color nombrable un nombre y una definición a la vez.",
+    "newNames": "Y el lenguaje sigue fabricando palabras. En 2014, el artista británico Anish Kapoor obtuvo derechos artísticos exclusivos sobre Vantablack, un recubrimiento que absorbe el 99,965% de la luz visible, y por primera vez un color tuvo dueño. Internet respondió con el pink de Stuart Semple — vendido a cualquiera salvo a Kapoor — y estalló una pequeña guerra por el nombre de un negro que ninguno de nosotros puede tocar. El <em>millennial pink</em> — el rosa melocotón que arrasó el diseño entre 2014 y 2019 — fue traído a la existencia por la redactora de una revista que lo nombró antes de que el color mismo se asentara. El <em>Klein Blue</em>, el ultramar patentado de Yves Klein, fue el primer color reclamado por el nombre de una persona, no de un lugar o una planta. Cada época ha sumado sus palabras; la nuestra solo ha acelerado el bautismo.",
+    "closing": "Cada capítulo previo a este miró al color como propiedad de la luz y trabajo del ojo. Este capítulo es para la tercera parte, aquella para la que Homero no tuvo palabra: la lengua. El color existe en el encuentro de tres cosas — lo que refleja, lo que recibe, y lo que lo nombra. Mueve cualquiera de las tres y el color, en el único sentido que importa a una oración, se ha movido.",
+    "fig": {
+      "stages": {
+        "title": "Las etapas de Berlin & Kay",
+        "hint": "Arrastra el deslizador · mira a una lengua adquirir sus palabras de color",
+        "stageAria": "Palabras de color que tiene una lengua en cada etapa de la secuencia de Berlin y Kay. Desliza desde la etapa 1 (solo oscuro y claro) hasta la etapa 7 (las once básicas).",
+        "stageLabel": "Etapa",
+        "stageRangeAria": "Etapa en la secuencia de adquisición de palabras de color de Berlin y Kay",
+        "cap": "Berlin y Kay encuestaron en 1969 cien lenguas y descubrieron que las palabras de color entran a una lengua en un orden casi fijo. Las lenguas de la etapa 1 (extremo izquierdo; casi ninguna lengua humana registrada se queda aquí hoy) solo tienen <em>oscuro</em> y <em>claro</em>. Sumar rojo da la etapa 2. Sumar verde o amarillo da la 3, ambos la 4. El azul entra en la 5 — y el griego homérico estaba aproximadamente ahí. El marrón en la 6, y los cuatro restantes (morado, rosa, naranja, gris) en cualquier orden en la 7. El inglés moderno, el coreano moderno y el japonés moderno están todos en la etapa 7; los pirahã parecen no haber dejado nunca la etapa 1."
+      }
+    },
+    "note": {
+      "label": "Lo que sigue",
+      "body": "El libro principal termina aquí, sobre la palabra. La cronología que sigue es el mapa de nombres y fechas en que se apoyaron los once capítulos previos, y la coda es un generador de paletas que funciona — la pequeña máquina para la que todo el ensayo fue manual. Ábrelos en el orden que quieras. El libro es, al fin, suyo para plegar."
+    }
+  },
+  "ch12": {
+    "num": "Capítulo 12",
+    "title": "Pigmentos",
+    "standfirst": "La historia del color es la historia de los pigmentos. Y los pigmentos se hicieron con química, comercio y poder.",
+    "leadIn": "Hasta finales del siglo XIX, el color fue casi siempre una cosa: piedra molida, conchas hervidas hasta sangrar, insectos raspados de un cactus. Antes de la llegada del químico, la historia del color fue en gran parte la de encontrar sustancias raras en lugares incómodos y trasladarlas, a gran coste, por el mundo.",
+    "earth": "Los pigmentos más antiguos son los más generosos: los que la tierra ya ha molido y esparcido. Hace 17.000 años, el pintor de Lascaux usó <strong>ocres amarillos y rojos</strong> — óxidos de hierro — que podía recoger del suelo en torno a la boca de la cueva. Quemar el ocre lo oscurecía a marrón; calentarlo más, lo convertía en un rojo más saturado. El <strong>bermellón</strong> — cinabrio, sulfuro de mercurio — se hallaba en vetas rojas y, molido, era el pigmento no-azul más caro del mundo antiguo. La <strong>malaquita</strong> verde y la <strong>azurita</strong> azul, ambos carbonatos de cobre, se extraían donde se extraía el cobre, y duraban milenios en las paredes de las tumbas.",
+    "ultramarine": "El más singular de todos los pigmentos preindustriales fue el <strong>ultramar</strong>: el azul del <em>lapislázuli</em>. La piedra se extraía de un solo valle del mundo, Sar-i Sang, en el actual noreste de Afganistán. Se llevaba en camello y en barco hasta Venecia, donde se amasaba con cera y ceniza, se refinaba y se distribuía por los talleres del Renacimiento. Hacia el siglo XV valía, por gramo, más que el oro. El azul del cuello de la <em>Joven de la perla</em> de Vermeer, el manto de toda madona italiana temprana, el oro de Tutankamón — todos vinieron de un valle afgano. <em>Ultramarino</em> significa simplemente <em>venido de allende el mar</em>.",
+    "tyrian": "La historia se repite con la <strong>púrpura de Tiro</strong>, el tinte reservado a los emperadores romanos. Procedía del múrex, un caracol del Mediterráneo (<em>Murex brandaris</em>) que producía la sustancia preciada solo bajo cierto estrés. La ciudad fenicia de Tiro perfeccionó la extracción hacia 2.000 a.C. Hacían falta unos 12.000 caracoles por gramo de tinte. La hediondez, dicen los historiadores, era insoportable a una manzana de distancia. Una libra de lana teñida valía casi su peso en plata. El color, en sentido moderno, era menos púrpura que un rojo profundo con iridiscencia violeta — pero era el color más caro jamás hecho, y por convención social se convirtió en el color del poder.",
+    "indian": "Otros pigmentos tuvieron biografías más extrañas. El <strong>amarillo indio</strong>, usado en pintura europea entre los siglos XVII y comienzos del XX, se fabricaba — según los registros — con la orina seca de vacas rurales de Bengala alimentadas solo con hojas de mango. La dieta hambreaba al animal y le rendía cada día un poco de un amarillo radiante, cuya química (sal de magnesio del ácido euxántico) los químicos europeos no descifraron hasta los años 1880. Fue prohibido en 1908 por motivos de bienestar animal. El amarillo indio moderno es sintético; los frascos viejos del cajón del museo son a veces lo último que dio una vaca.",
+    "mummy": "Más extraño aún: el <strong>marrón momia</strong>. Desde el siglo XVI los boticarios europeos importaron momias egipcias molidas — humanas y de gato — como pigmento. Era un marrón profundo y translúcido, codiciado para sombras y carnaciones. En la década de 1860, los prerrafaelitas lo usaron sin saber su origen; cuando Edward Burne-Jones lo supo, la leyenda dice que sacó su tubo al jardín y lo enterró. La producción declinó a lo largo del siglo XX; el último tubo comercial lo vendió Roberson de Londres en 1964 — explicaron cortésmente que se habían quedado sin momias.",
+    "mauve": "Todo cambió en 1856. <strong>William Henry Perkin</strong>, estudiante de química de 18 años en Londres, fracasó en sintetizar quinina contra la malaria y produjo un lodo oscuro que, al enjuagarlo del matraz, tiñó la tela de un violeta intenso. El color no se desvanecía ni se decoloraba — y podía fabricarse a partir de <em>alquitrán de hulla</em>, residuo de la industria del gas que entonces se acumulaba en montañas inútiles. Perkin patentó el tinte, lo llamó <strong>malva (mauve)</strong>, abrió una fábrica y se hizo rico a los 21. El descubrimiento lanzó toda la industria de los tintes sintéticos; en cuarenta años casi todos los pigmentos del pintor y del tintorero eran derivados del alquitrán, y las empresas fundadas para hacerlos — BASF, Hoechst, Bayer, Agfa — se volvieron gigantes químicos del siglo XX. La era de los pigmentos naturales terminó, de golpe.",
+    "cadmium": "La sustituyó un torrente de colores sintéticos, cada uno más saturado y resistente a la luz que el escaso material al que reemplazaba. El <strong>amarillo y rojo cadmio</strong>, descubiertos en 1817 y comercializados desde los 1840, dieron a pintores de Monet a Van Gogh sus naranjas y amarillos vibrantes. El <strong>azul cobalto</strong> (1802) reemplazó al ultramar en el uso diario, y el <strong>cerúleo</strong> (1860) se sumó al lado. El <strong>blanco de titanio</strong>, comercializado en 1916, sustituyó al blanco de plomo que había envenenado a los pintores durante 2.000 años — Vermeer, Caravaggio y muchos más murieron jóvenes, y el plomo que manejaban ha sido durante mucho tiempo señalado como una causa probable — el mismo blanco que hacía posibles sus luces. El nuevo blanco era, por primera vez, seguro. La nueva química ya no consistía en hallar lo raro, sino en diseñar la molécula.",
+    "vantablack": "Y el ciclo continúa. En 2014 la empresa británica <strong>Surrey NanoSystems</strong> anunció el <em>Vantablack</em>, un recubrimiento de nanotubos de carbono alineados verticalmente que absorbe el 99,965 % de la luz visible — la sustancia más negra medida. El escultor británico Anish Kapoor obtuvo el derecho exclusivo a su uso artístico, y se libró una pequeña guerra del arte sobre si un artista puede ser dueño de un color. El pintor Stuart Semple lanzó un pigmento rival, <em>Pinkest Pink</em>, con licencia que prohibía la venta a Kapoor. Kapoor, de todos modos, consiguió comprarlo. Los intercambios siguen, mitad jocosos, mitad serios; el punto bajo es más antiguo de lo que ellos creen: toda época que ha inventado un color nuevo ha peleado, al menos por un tiempo, sobre quién tenía derecho a usarlo.",
+    "astm": "A finales del siglo XX la química se había asentado lo suficiente como para que alguien tuviera que inventar una etiqueta. La <strong>American Society for Testing and Materials</strong> — ASTM, fundada en 1898 — publicó en 1982 la norma <strong>D4303</strong>, un procedimiento para medir la <em>solidez a la luz</em> de un pigmento: se pinta una franja, se expone la mitad a un año de luz solar, se mide el cambio de color y se gradúa el resultado de <em>I</em> (Excelente) a <em>V</em> (Fugitivo). Las obras de calidad museística usan solo I y II. Una segunda norma, <strong>D4236</strong>, se añadió en 1988 después de que la Ley estadounidense de Etiquetado de Materiales Artísticos Peligrosos exigiera advertencias de peligro crónico en cada tubo de pintura vendido a aficionados — cadmio por riesgo de cáncer, plomo por neurotoxicidad, cobalto por ambos. La frase «Conforms to ASTM D4236» en un tubo significa que un toxicólogo ha leído la fórmula. El tercer elemento es el <strong>código del Colour Index</strong> — <em>PR108</em> para el rojo cadmio, <em>PB29</em> para el ultramar, <em>PG7</em> para el verde ftalo — una designación de tres caracteres mantenida por la Society of Dyers and Colourists desde 1925, que permite a un químico saber exactamente qué compuesto hay en el tubo, llame el departamento de marketing al producto como quiera. Sostén un tubo moderno a contraluz y podrás leer su física, su peligro y su historia en menos de un centímetro cuadrado.",
+    "closing": "En general, los químicos ganaron esa discusión. El pintor de hoy puede comprar, por el precio de un almuerzo, tubos de todos los colores por los que un viejo maestro habría matado. Pero la lógica más antigua del color — que el matiz era materia, que la materia era lugar, y que el lugar imponía política — sigue viva en los nombres. <em>Amarillo Nápoles</em> vino del Vesubio. <em>Siena</em> vino de Siena. <em>Amarillo indio</em>, mientras lo usemos, aún apunta a la Bengala donde una vez se hizo. La era de la síntesis nos liberó de la materia; los nombres de los colores cargan los fantasmas de la materia.",
+    "fig": {
+      "timeline": {
+        "title": "Una línea de tiempo de los pigmentos",
+        "hint": "Pulsa un pigmento para leer su historia",
+        "stageAria": "Línea de tiempo horizontal desde el 2.000 a.C. hasta hoy. Cada pigmento marca el momento en que entró en uso amplio y está pintado con su propio color.",
+        "selectedPrompt": "Pulsa un punto de pigmento arriba para leer su historia.",
+        "cap": "Cada punto marca, aproximadamente, cuándo entró en uso un pigmento, y está dibujado con la saturación típica del propio material. Los pigmentos anteriores a 1850 son naturales — tierra, piedra, planta, concha. Después de 1856, la era sintética se abre con el malva de Perkin, y casi todos los pigmentos posteriores son derivados del alquitrán, óxidos metálicos o moléculas orgánicas diseñadas. El conjunto comprime 50.000 años de historia del pigmento en una sola línea recorrible."
+      },
+      "tube": {
+        "title": "Un tubo de pintura moderno, descifrado",
+        "hint": "Pasa el cursor por las etiquetas · lee qué significan",
+        "stageAria": "Ilustración de un tubo de Rojo Cadmio Medio. Cinco regiones etiquetadas: el nombre del color, la serie, el código del Colour Index (PR108), la calificación de solidez a la luz ASTM (I — Excelente) y la declaración de conformidad (Conforms to ASTM D4236). Pasa el cursor o toca cada etiqueta para leer qué significa.",
+        "readoutPrompt": "Pasa el cursor por una etiqueta para leer qué significa.",
+        "name": "Cadmium Red Medium",
+        "series": "Series 4",
+        "seriesNote": "La serie 4 es el nivel más caro. El pigmento de este tubo es sulfoselenuro de cadmio genuino, no un sustituto. Los fabricantes fijan el precio por coste de materia prima en series del 1 al 7 u 8 — la 1 son pigmentos de tierra, la 5 y superiores son cobalto, cadmio y los sintéticos modernos más raros.",
+        "ci": "PR108",
+        "ciNote": "<strong>Colour Index</strong>: PR108 = Pigment Red 108 = sulfoselenuro de cadmio. La primera letra es la familia de color (R, Y, B, G, Br, W, Bk, Vi, O, M); el número es el orden de descubrimiento dentro de esa familia. Registrado por la Society of Dyers and Colourists desde 1925. Dos tubos de marcas distintas con el mismo código CI contienen el mismo pigmento.",
+        "lf": "ASTM Lightfastness I",
+        "lfNote": "Calificación <strong>ASTM D4303</strong>. I (Excelente) y II (Muy bueno) son de calidad museística — bajo una exposición acelerada de un año al sol, el cambio de color queda por debajo del umbral de percepción. III es Aceptable. IV (Pobre) y V (Fugitivo) se decoloran visiblemente en meses y deben evitarse en cualquier obra destinada a perdurar.",
+        "conf": "Conforms to ASTM D4236",
+        "confNote": "<strong>ASTM D4236</strong>: norma estadounidense que exige etiquetado de peligro crónico en cualquier material artístico susceptible de ser inhalado, ingerido o absorbido. La frase significa que un toxicólogo ha revisado la fórmula. Los pigmentos de cadmio llevan además la advertencia «nocivo si se ingiere»; los de plomo se restringen a calidades profesionales; los de cobalto exigen una advertencia de polvo.",
+        "hue": "Hue vs Genuine",
+        "hueNote": "Un tubo etiquetado <em>Cadmium Red <strong>Hue</strong></em> no contiene cadmio — es un sustituto más barato, menos tóxico y generalmente menos opaco que reproduce el color. <em>Genuine</em> significa que el pigmento nombrado en la etiqueta está realmente presente. Los dos se ven idénticos al salir del tubo, pero se comportan de forma distinta en mezclas, capas y a lo largo de décadas.",
+        "cap": "Un tubo de pintura es uno de los pocos productos de consumo que legalmente debe declarar su contenido físico y químico. Lee las etiquetas en orden y tendrás la historia de las propias normas: el Colour Index (1925), la solidez ASTM D4303 (1982) y la conformidad de peligro crónico ASTM D4236 (1988). El tubo es un pequeño monumento a un siglo de intentos por hacer que una química peligrosa y bella sea segura de enseñar a un niño."
+      }
+    },
+    "note": {
+      "label": "Hacia la naturaleza",
+      "body": "El pigmento es como hacemos el color. El capítulo siguiente mira a cómo la naturaleza ya lo hace — sin nosotros, y a menudo mediante mecanismos que apenas empezamos a imitar."
+    }
+  },
+  "ch13": {
+    "num": "Capítulo 13",
+    "title": "Naturaleza",
+    "standfirst": "La naturaleza fabrica color de dos maneras: pigmento o estructura. Las dos funcionan sin diseñador alguno.",
+    "leadIn": "Mira un bosque, un arrecife de coral, un campo de flores, una bandada de loros. La primera impresión es la obra de un colorista enloquecido. Mirando más cerca, hallamos solo dos métodos, en proporciones distintas. Hojas, ojos de animal, escarabajos pardos, amapolas rojas: estos son <em>pigmento</em>: moléculas que absorben algunas longitudes de onda y reflejan el resto. La cola del pavo real, la garganta del colibrí, el ala de la mariposa morfo, la superficie de una pompa de jabón: estos son <em>estructura</em>: no absorción sino interferencia, el modo en que la luz se dobla y se superpone en capas más delgadas que ella misma.",
+    "chlorophyll": "El pigmento más extendido en la Tierra es la <strong>clorofila</strong>, la molécula que vuelve verdes las hojas. Absorbe más fuertemente el rojo y el azul y refleja las longitudes intermedias — el verde. En cierto sentido, es ineficiente. El pico de energía del sol está en el verde; una molécula que absorbiera el verde y reflejara el rojo y el azul recogería más luz. No hay buena explicación de por qué las plantas acabaron con clorofila y no con su imagen especular. Una hipótesis influyente es que las bacterias fotosintéticas púrpuras tempranas, que usaban bacteriorrodopsina, ya ocupaban la banda verde cuando evolucionaron las plantas basadas en clorofila; la clorofila trabajó con lo que quedaba. La Tierra es verde no porque el verde sea lo mejor, sino porque una vez fue la segunda opción.",
+    "melanin": "La piel, el pelaje y el pelo de los animales llevan otra familia de pigmentos: la <strong>melanina</strong>. La <em>eumelanina</em> es marrón-negro, el pigmento del pelo oscuro, la piel oscura y las manchas del leopardo. La <em>feomelanina</em> es amarillo enrojecido, el pigmento del pelo rojo, las pecas y el naranja del gato carey. Ambas se hacen del mismo precursor, la tirosina, y su proporción — controlada por unos pocos genes — produce casi toda la variación del color del cabello humano. Las plumas de las aves, las escamas de los peces y el iris del ojo humano usan también esos dos pigmentos en proporciones distintas. La melanina absorbe también el ultravioleta, por eso la piel oscura protege de las quemaduras solares — el pigmento es un protector solar inventado miles de millones de años antes de la industria química.",
+    "carotenoids": "Los amarillos y naranjas rosados de las frutas, las hojas otoñales, la yema del huevo y los flamencos son <strong>carotenoides</strong> — moléculas de cadena larga, de las cuales el beta-caroteno es el más famoso. Los animales no pueden fabricarlas; deben comerlas. Los flamencos son rosados porque su dieta de camarones y algas es rica en carotenoides; quita los camarones y los flamencos pierden el color paulatinamente. Los canarios son amarillos por la misma razón. Las zanahorias son naranjas porque la planta usa el caroteno para proteger la clorofila del exceso de luz; al comerlas, recuperamos el color.",
+    "structural": "El pigmento es un método. El <strong>color estructural</strong> es el otro, y es más antiguo y más extraño. El ala de la mariposa <em>morfo</em> es parda — al microscopio la quitina real es de un marrón sin brillo —, pero su superficie está labrada en crestas que hacen que la luz azul reflejada en esas capas interfiera constructivamente, produciendo desde una superficie sin pigmento un azul iridiscente intenso. La cola del pavo real hace el mismo truco a otra escala: los ocelos no están pintados sino <em>estructurados</em> — el color surge de finas capas de queratina dentro de las barbas. Las películas de jabón, el aceite sobre el asfalto mojado, la superficie de un CD — todos son color estructural. Caliéntalos, mójalos o ráspales y el color desaparece, porque lo dañado no es la molécula sino la geometría.",
+    "rayleigh": "El mayor color estructural de la Tierra es el cielo. La luz del sol es blanca; la atmósfera dispersa más las longitudes de onda cortas (azul) que las largas (rojo), efecto que <strong>Lord Rayleigh (John William Strutt)</strong> resolvió en 1871. Mira arriba, lejos del sol, y verás luz dispersada: azul. Mira hacia el sol al ponerse y la luz ha atravesado muchas veces más aire para llegar a ti; el azul ya se dispersó casi todo, en alguna parte detrás del horizonte; lo que llega es el rojo, lo que menos se dispersa. Marte, con su atmósfera tenue y polvorienta, tiene cielos color caramelo al mediodía y atardeceres azulados — al revés de los nuestros — porque sus partículas de polvo dispersan más las longitudes largas. El cielo no es un color; el cielo es un haz de aire que la luz del sol atraviesa.",
+    "biolumin": "Algunos animales fabrican su propia luz. Las luciérnagas, los rapes abisales, el plancton dinoflagelado que a veces vuelve las olas que rompen en la playa de un azul luminoso — todos usan una familia de enzimas, las <em>luciferasas</em>, que catalizan una reacción en la que la energía se libera como fotones en vez de calor. La mayor parte de la bioluminiscencia está en una banda estrecha azul-verde — la longitud de onda que más lejos viaja en agua marina — la de los insectos terrestres se ha desplazado a amarillos y naranjas porque el aire no impone la misma restricción. La luz es fría — casi nada de infrarrojo — y tan eficiente que los ingenieros llevan veinte años intentando copiarla en una lámpara. Aún sin éxito.",
+    "fluorescent": "Y un color que el mundo humano produce en abundancia y casi no existe en la naturaleza es la <strong>fluorescencia</strong>: absorción de ultravioleta y reemisión de la energía en longitudes visibles. Los rotuladores marcadores, los chalecos de alta visibilidad, las pulseras luminosas de discoteca — todos brillan con una intensidad que nada en la naturaleza iguala, porque emiten más luz visible que la luz visible que les llega; han tomado energía prestada del ultravioleta. Algunos corales, algunos escorpiones y los sombreros de ciertos hongos lo hacen débilmente; el resto es química humana. Ese resplandor del chaleco al borde de la carretera al anochecer es, en tiempo evolutivo, muy nuevo.",
+    "closing": "Pigmento, estructura, dispersión, emisión. Cuatro métodos, usados por 4.000 millones de años de biología y por cada químico desde entonces, y el inventario de cómo una cosa llega a ser su color queda completo. Mira algo coloreado — la página ante ti, los ojos que la leen, el cielo detrás — y uno de los cuatro métodos está funcionando.",
+    "fig": {
+      "sky": {
+        "title": "El cielo de Rayleigh",
+        "hint": "Arrastra el sol · de mediodía a ocaso",
+        "stageAria": "Simulación del cielo: la altitud del sol controla cuánta atmósfera atraviesa su luz. A mediodía (sol alto) el camino atmosférico es corto, el cielo es azul y el sol amarillo pálido. Al bajar el sol, el camino por el aire se alarga, más azul se dispersa fuera, y el sol y el cielo en torno se vuelven rojos como un ocaso.",
+        "altitudeLabel": "Altitud del sol",
+        "altitudeRangeAria": "Ángulo de altitud del sol sobre el horizonte",
+        "cap": "Dispersión de Rayleigh de la luz solar a través de la atmósfera terrestre, en versión cómic. A mediodía el sol está alto, la luz cruza una rebanada delgada de aire y solo las longitudes cortas (azul) se dispersan fuertemente — el cielo es azul. Al bajar el sol, la luz pasa por más atmósfera; cuando llega hasta ti, ha perdido por dispersión casi todo su azul, y el disco solar y el cielo en torno se mueven hacia el rojo. La misma atmósfera hace dos cosas a la vez."
+      }
+    },
+    "note": {
+      "label": "Hacia la pantalla que hicimos",
+      "body": "Los capítulos 11–13 miraron cómo se nombra, se hace y crece el color. El capítulo último vuelve al lugar donde la mayoría que lee esto está mirando: el rectángulo de luz calibrada de unas pulgadas, y pregunta qué hay que mirar al elegirlo."
+    }
+  },
+  "ch14": {
+    "num": "Capítulo 14",
+    "title": "Práctica",
+    "standfirst": "La pantalla es la última superficie a la que llega el color. También es la que más miente sobre sí misma.",
+    "leadIn": "Si haces algo con color — un sitio web, una foto, una película, un cartel, un libro, un artículo de marca — terminas pagando una pantalla para verlo. La tienda vende diez por diez precios, y la etiqueta de la caja casi nunca es simple. Este capítulo es una guía del lector para esa etiqueta, y un breve recorrido por los conductos de producción (web, imprenta, fotografía, cine) por los que pasa el color en su viaje del ojo al mundo — y de vuelta.",
+    "monitorSpecs": "El número aislado más importante en la ficha técnica de un monitor es la <strong>cobertura de gama</strong>, expresada como porcentaje de un espacio de color estándar. <em>99 % sRGB</em> significa que la pantalla puede representar el 99 % del espacio web estándar — mínimo para cualquier trabajo de color. <em>95 % DCI-P3</em> (o la variante de Apple, <em>Display P3</em>) significa que la pantalla alcanza la gama más amplia del cine y los móviles modernos — la cifra a mirar si se edita foto o vídeo. <em>99 % Adobe RGB</em> es un tercer estándar, algo más estrecho que P3 en los rojos y más amplio en los verdes — preferido por quienes imprimen en CMYK. Una pantalla por encima del 95 % en los tres es de gama amplia auténtica; citar solo el número sRGB no lo es.",
+    "deltaE": "Después de la gama viene la <strong>precisión</strong>. La cifra a mirar es <em>ΔE</em> (Delta E) — la distancia perceptiva entre el color que se pide mostrar y el que realmente muestra, promediada sobre muchas muestras. ΔE inferior a 2 es preciso a niveles invisibles; inferior a 1 es de laboratorio. ΔE inferior a 3 sirve para la mayoría del diseño; 5 o más empieza a verse claramente fuera. Un monitor de consumo que no cita ΔE no ha sido medido y no debe confiarse para trabajo de color.",
+    "panel": "La <strong>tecnología del panel</strong> determina los ángulos de visión, el contraste y la velocidad de respuesta. Los paneles <em>IPS</em> (in-plane switching) tienen los ángulos más amplios y el color más exacto; casi todo monitor de trabajo de color es IPS. Los paneles <em>OLED</em> tienen negro perfecto (cada píxel es su propia fuente y puede apagarse del todo), el mayor contraste y los colores más saturados, pero son propensos al quemado de imagen con interfaces estáticas durante mucho tiempo. Los <em>VA</em> tienen más contraste que los IPS pero ángulos más estrechos. Los <em>TN</em> son los más baratos, los más rápidos y los peores en color: bien para ofimática y juegos competitivos, no para diseño.",
+    "depth": "La <strong>profundidad de bits</strong> controla los pasos por color que la pantalla muestra. Un panel de 8 bits muestra 256 pasos por canal, 16,7 millones de colores en total — suficiente para la mayoría del trabajo, pero puede mostrar bandas en degradados. <em>8-bit + FRC</em> (control de frecuencia de cuadro) hace parpadear rápidamente entre dos pasos adyacentes para simular 10 bits — suficientemente bueno para que la mayoría no note la diferencia. El <em>10-bit auténtico</em> muestra 1.070 millones de colores y es estándar para vídeo HDR y retoque fotográfico serio. Casi toda pantalla anunciada como «10-bit» en 2024–6 es 8-bit + FRC; la etiqueta rara vez aclara cuál.",
+    "hdr": "<strong>HDR</strong> (high dynamic range) es un haz de funciones: gama más amplia, mayor brillo de pico, negros más profundos, a menudo color de 10 bits. Las certificaciones DisplayHDR (HDR400, HDR600, HDR1000) especifican el brillo de pico en nits. HDR400 apenas es HDR pese al nombre; verdadero HDR comienza en HDR600 con atenuación local, y el contenido más espectacular pide HDR1000 o más. En trabajo de escritorio, HDR importa sobre todo para el grado de vídeo; en tareas ofimáticas, apágalo y olvídalo.",
+    "calibration": "Ninguna pantalla, por cara que sea, sale calibrada de fábrica. La <strong>calibración</strong> — un procedimiento único de una hora con un colorímetro (X-Rite i1Display, Datacolor SpyderX, unos 200 €) — mide los colores que la pantalla produce realmente y escribe un perfil de corrección. Muchos monitores de gama alta salen precalibrados con certificado Pantone o Calman; algunos incluyen calibración por hardware que ajusta directamente la LUT del panel, no la del sistema operativo. Si no puedes o no vas a calibrar, compra una pantalla precalibrada.",
+    "icc": "A través de toda la cadena, los <strong>perfiles ICC</strong> — pequeños archivos que describen el comportamiento de color de un dispositivo — mantienen el color honesto al pasar de la cámara al monitor a la impresora. La cámara etiqueta el RAW con el espacio que usó. El editor de imagen lee la etiqueta, convierte al perfil del monitor para mostrar y al perfil de la impresora para exportar. El navegador hace lo mismo perezosamente — asumiendo el perfil sRGB. Si falta o falla cualquier eslabón, el color se mueve — normalmente de un modo que solo se ve cuando la pieza final llega a destino. La mayor mejora que puede hacer un flujo de trabajo de color profesional es que todo dispositivo esté perfilado y nada se asuma.",
+    "closing": "No hay pantalla perfecta; solo una pantalla suficientemente exacta para el trabajo que haces. Un diseñador web necesita 99 % sRGB y ΔE inferior a 2 calibrado. Un retocador fotográfico añade 95 % Adobe RGB o P3, 10 bits y certificación Pantone. Un colorista de vídeo necesita todo lo anterior más HDR1000+ y un monitor de referencia. Un lector general de este ensayo puede usar cualquier pantalla — visto correctamente en una habitación con luz no más fuerte que la que usaría para un libro de papel —, que es el truco de gestión de color que el resto de este capítulo olvidó mencionar.",
+    "fig": {
+      "specs": {
+        "title": "Qué especificación para qué trabajo",
+        "hint": "Elige un uso · ve las especificaciones mínimas",
+        "stageAria": "Guía de especificaciones de monitor por caso de uso. Al elegir un uso, abajo se resaltan los valores recomendados de cobertura sRGB, cobertura P3 o Adobe RGB, precisión ΔE, tecnología del panel, profundidad de bits, HDR y calibración.",
+        "btnWeb": "Diseño web",
+        "btnIllust": "Ilustración",
+        "btnPhoto": "Edición fotográfica",
+        "btnVideo": "Grado de vídeo",
+        "btnGeneral": "Ofimática general",
+        "labelSrgb": "Cobertura sRGB",
+        "labelWide": "Gama amplia",
+        "labelDeltaE": "Precisión ΔE",
+        "labelPanel": "Tipo de panel",
+        "labelDepth": "Profundidad",
+        "labelHdr": "HDR",
+        "labelCalib": "Calibración",
+        "cap": "Una hoja de referencia para elegir monitor según el trabajo. Cuanto más exige el trabajo al color, más se aprietan los números: la ofimática necesita casi nada de esta lista, el coloreado de vídeo casi todo. La mayoría de los creadores está entre la columna de foto y vídeo; en la duda, la fila de foto es una buena base sin precio desorbitado."
+      }
+    },
+    "note": {
+      "label": "Fin de la práctica",
+      "body": "Catorce capítulos han mirado el color desde su origen hasta su superficie. La cronología que sigue es la espina dorsal de fechas en que cuelga el libro; la coda es un pequeño generador de paletas que mezcla todo lo que se acaba de leer. Ábralos en el orden que quiera — el libro, al fin, es suyo."
+    }
+  },
+  "chronology": {
+    "num": "Cronología",
+    "title": "Cronología",
+    "standfirst": "Tres siglos y medio de color, en una sola línea.",
+    "intro": "La historia tiene nombres y fechas. Aquí están — las figuras y publicaciones en las que este ensayo se ha apoyado, desde el primer prisma de Newton hasta el espacio de color que se embarca en los navegadores hoy.",
+    "fig": {
+      "stageAria": "Una cronología de la ciencia y el diseño del color, de 1666 a 2023",
+      "events": [
+        {
+          "year": "1666",
+          "title": "El prisma de Newton, Woolsthorpe",
+          "blurb": "Durante los años de la peste, en la finca familiar de Lincolnshire, Newton oscurece una habitación y demuestra que la luz blanca es una mezcla, separable en los colores del espectro."
+        },
+        {
+          "year": "1704",
+          "title": "Newton, <em>Opticks</em>",
+          "blurb": "El tratado que dio nombre a los colores de la luz y fundó la ciencia de la óptica."
+        },
+        {
+          "year": "1810",
+          "title": "Goethe, <em>Zur Farbenlehre</em>",
+          "blurb": "La respuesta del artista — el color como experiencia, atendido con cuidado fenomenológico."
+        },
+        {
+          "year": "1839",
+          "title": "Chevreul, <em>De la loi du contraste simultané</em>",
+          "blurb": "Trabajando en la Manufactura de los Gobelinos, el químico da nombre a la ley de que todo color se lee frente a sus vecinos."
+        },
+        {
+          "year": "Década de 1860",
+          "title": "Teoría tricromática de Young–Helmholtz",
+          "blurb": "Hermann von Helmholtz formaliza la conjetura anterior de Thomas Young: la visión humana descansa sobre tres tipos de receptores."
+        },
+        {
+          "year": "1874",
+          "title": "Observaciones de patrón de Bezold",
+          "blurb": "Wilhelm von Bezold advierte que las rayas finas no aumentan el contraste sino que se funden con su campo — el efecto de asimilación del Capítulo Ocho."
+        },
+        {
+          "year": "1905",
+          "title": "Munsell, el primer sólido del color medido",
+          "blurb": "Albert Munsell da a cada color tres coordenadas claras — tono, valor, croma — y dibuja el sólido tal como es, no como la geometría desea."
+        },
+        {
+          "year": "1923",
+          "title": "Itten en la Bauhaus",
+          "blurb": "Johannes Itten, enseñando el Vorkurs en Weimar, codifica el círculo cromático de doce tonos y las armonías sobre él; su libro, <em>Kunst der Farbe</em>, llega en 1961."
+        },
+        {
+          "year": "1931",
+          "title": "Diagrama de cromaticidad CIE 1931",
+          "blurb": "La Commission internationale de l'éclairage publica la tabla del observador estándar — la herradura del Capítulo Siete."
+        },
+        {
+          "year": "1931",
+          "title": "Teoría de pigmentos de Kubelka y Munk",
+          "blurb": "Paul Kubelka y Franz Munk publican la aritmética de la mezcla de pintura — dispersión y absorción juntas — y explican por qué el ultramar y el amarillo de cadmio se vuelven verde."
+        },
+        {
+          "year": "1963",
+          "title": "Albers, <em>La interacción del color</em>",
+          "blurb": "El volumen delgado de Josef Albers enseña que el color es el medio más relativo del arte — su lección hecha carne en el Capítulo Ocho."
+        },
+        {
+          "year": "1976",
+          "title": "CIE L*a*b*",
+          "blurb": "El primer intento ampliamente usado de un espacio de color perceptualmente uniforme — mejorado, medio siglo después, por OKLab."
+        },
+        {
+          "year": "1996",
+          "title": "sRGB propuesto",
+          "blurb": "Hewlett-Packard y Microsoft proponen el espacio de color que, formalizado como IEC 61966-2-1 en 1999, se convierte en el predeterminado de la web y de la mayoría de pantallas de consumo."
+        },
+        {
+          "year": "2015",
+          "title": "Display P3 en pantallas de consumo",
+          "blurb": "Apple embarca una variante de gama más amplia de DCI-P3 (2010) en sus iMacs y, poco después, iPhones — ampliando los colores de pantalla del Capítulo Siete más allá del límite sRGB anterior."
+        },
+        {
+          "year": "2020",
+          "title": "Ottosson, OKLab",
+          "blurb": "Björn Ottosson publica un espacio de color perceptualmente uniforme ajustado a datos modernos — por fin, pasos iguales se ven iguales."
+        },
+        {
+          "year": "2023",
+          "title": "CSS Color 4 en los principales navegadores",
+          "blurb": "OKLCH, P3 y las nuevas funciones de color llegan a casi todos los navegadores hechos — las matemáticas del ensayo, ahora escribibles directamente en una hoja de estilos."
+        }
+      ]
+    }
+  },
+  "coda": {
+    "num": "Coda",
+    "title": "Una paleta propia",
+    "standfirst": "El ensayo se ha leído. Esto es para lo que servía.",
+    "leadIn": "Diez capítulos sobre el color están, al final, al servicio de un acto ordinario y gozoso: elegir colores que pertenezcan juntos. Así que aquí va un regalo de despedida — una pequeña máquina que hace justo eso, del modo en que el ensayo lo enseñó. Cada paleta que ofrece está levantada sobre una armonía real del Capítulo Seis, con sus cinco colores espaciados por la medida honesta del Capítulo Siete. Pulsa el botón; luego púlsalo otra vez.",
+    "fig": {
+      "generator": {
+        "title": "El generador de paletas",
+        "hint": "Haz clic en cualquier color para copiarlo",
+        "paletteAria": "Una paleta de color generada",
+        "actionsAria": "Copiar la paleta en un formato",
+        "btnHex": "Hex",
+        "btnHexTitle": "Copiar como códigos hex simples",
+        "btnCss": "CSS",
+        "btnCssTitle": "Copiar como propiedades personalizadas CSS",
+        "btnTw": "Tailwind",
+        "btnTwTitle": "Copiar como fragmento de configuración de Tailwind",
+        "btnSvg": "SVG",
+        "btnSvgTitle": "Copiar como paleta SVG",
+        "btnAnother": "Otra →",
+        "cap": "Cada paleta es un tono base, una armonía y cinco colores fijados en pasos iguales de luminosidad en OKLCH — la mismísima maquinaria que el ensayo construyó, ahora funcionando para ti."
+      }
+    },
+    "note": {
+      "label": "Ve bien",
+      "body": "Cada paleta que esta máquina llegará a hacer es solo una sugerencia — una oración en la gramática, nunca la última palabra. La última palabra, como lo ha sido desde la primera página, es tuya. Sal y mira algo, y ve cuánto de ello estaba allí desde siempre."
+    }
+  },
+  "footer": {
+    "mark": "El libro del color",
+    "line": "Un ensayo interactivo sobre la teoría del color — compañero del ensayo musical <a href=\"https://circle5-eight.vercel.app\" target=\"_blank\" rel=\"noopener noreferrer\">El círculo de quintas</a>. Diez capítulos de diez — el ensayo completo: desde una sola longitud de onda de luz hasta una paleta que funciona para cada ojo.",
+    "fine": "Un único archivo HTML, sin paso de compilación — sin frameworks, sin analytics, sin cuentas. <span class=\"div\">·</span>Revisión 34 <span class=\"div\">·</span>Última actualización {LAST_UPDATED} <span class=\"div\">·</span><a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0/\" target=\"_blank\" rel=\"noopener noreferrer\">CC BY-NC-SA 4.0</a> <span class=\"div\">·</span>Tras Newton, Goethe, Young, Helmholtz, Maxwell, Munsell e Itten."
+  },
+  "jsStrings": {
+    "_meta": "Cadenas dinámicas de JS — build.py las sustituye en el área JS de index32.html.",
+    "spectralName": {
+      "deepViolet": "violeta profundo",
+      "violet": "violeta",
+      "blue": "azul",
+      "cyan": "cian",
+      "green": "verde",
+      "yellowGreen": "amarillo-verde",
+      "yellow": "amarillo",
+      "orange": "naranja",
+      "red": "rojo",
+      "deepRed": "rojo profundo"
+    },
+    "spectralDesc": [
+      "Las ondas más cortas que el ojo admite. La sensibilidad es baja aquí — el violeta parece tenue por brillante que sea la luz.",
+      "Ondas cortas. El cono S está cerca de su pico; el mundo del cielo y de la sombra.",
+      "La bisagra azul-verde, donde los conos S y M se intercambian el liderazgo.",
+      "Ondas medias. El ojo está más alerta aquí — el verde se lee como el tono más brillante de todos.",
+      "Los conos L y M se disparan casi juntos. Un pequeño desplazamiento en longitud de onda cambia rápido el tono.",
+      "Ondas largas. El cono L domina; el cono M se desvanece.",
+      "Las ondas más largas que el ojo puede captar. Más allá de este borde está el infrarrojo — calor que sientes pero que no puedes ver."
+    ],
+    "nameRyb": [
+      "rojo",
+      "rojo-naranja",
+      "naranja",
+      "amarillo-naranja",
+      "amarillo",
+      "amarillo-verde",
+      "verde",
+      "azul-verde",
+      "azul",
+      "azul-violeta",
+      "violeta",
+      "rojo-violeta"
+    ],
+    "nameRgb": [
+      "rojo",
+      "naranja",
+      "amarillo",
+      "chartreuse",
+      "verde",
+      "verde primavera",
+      "cian",
+      "azur",
+      "azul",
+      "violeta",
+      "magenta",
+      "rosa"
+    ],
+    "harmoniesCap": {
+      "complementary": "Dos tonos justo enfrente uno del otro en el círculo — el contraste más afilado que una pareja puede contener.",
+      "analogous": "Tres tonos vecinos — una familia, tranquila y a gusto juntos.",
+      "triadic": "Tres tonos separados por un tercio igual del círculo — equilibrado, vivo y estable.",
+      "split": "Un tono base con los dos vecinos de su complemento — tensión, suavemente atenuada.",
+      "tetradic": "Cuatro tonos en los cuartos del círculo — dos pares complementarios, un acorde rico que pide un color que lleve la voz cantante.",
+      "monochromatic": "Un único tono, variado solo en valor y croma — el esquema más sereno de todos."
+    },
+    "ariaValueText": {
+      "nmWithName": "{val} nanómetros — {name}",
+      "degrees": "{val} grados",
+      "kelvinWithName": "{val} Kelvin — {name}",
+      "percentAmbient": "{val} por ciento de luz ambiente — {name}",
+      "huePercent": "Saturación {sat}%, valor {val}%",
+      "baseHue": "tono base {val} grados — {label}",
+      "apex": "Ángulo del ápice {val} grados",
+      "valueSlice": "Mostrando el rango completo de valor"
+    },
+    "statusMessages": {
+      "perceivedPrefix": "percibido ≈ ",
+      "diskReset": "Los tres discos volvieron a sus posiciones iniciales.",
+      "harmonyUpdated": "Armonía {label} — paleta actualizada.",
+      "copyBtnDefault": "Copiar paleta",
+      "copyBtnFlash": "¡Copiado!",
+      "saturationPrefix": "Saturación ",
+      "valuePrefix": ", valor ",
+      "fromLeft": " — {pct}% desde la izquierda, {pcy}% desde arriba.",
+      "paletteList": "Paleta {label} — {list}"
+    },
+    "spectralMeta": {
+      "illD65": "luz diurna (D65)",
+      "illA": "tungsteno (A)",
+      "illF2": "fluorescente (F2)",
+      "verdictIndistinguishable": "Indistinguibles bajo {name}.",
+      "verdictVeryClose": "Muy cercanos bajo {name} (ΔE≈{de}).",
+      "verdictNoticeably": "Notablemente diferentes bajo {name} (ΔE≈{de}).",
+      "verdictClearly": "Claramente diferentes bajo {name} (ΔE≈{de})."
+    },
+    "hk": {
+      "verdictHead": "Fijaste el gris en OKLCH L = {gl}; el color está en OKLCH L = {cl}.",
+      "greyBar": "Y del gris",
+      "colorBar": "Y del color",
+      "yDiff": "Diferencia de luminancia lineal Y: {dy}.",
+      "noBoost": "Igualaste con casi el mismo OKLCH L — a este croma el empuje H-K es muy pequeño.",
+      "boost": "Diste al gris {dl} más OKLCH L que al color para hacerlos sentir igualmente brillantes. Ese extra es el empuje Helmholtz–Kohlrausch: el croma añade luminosidad aparente que los números no registran.",
+      "inverse": "Diste al gris {dl} menos OKLCH L que al color. En este tono y croma el color te pareció más oscuro — una dirección menos común del efecto, sensible a la calibración del monitor."
+    },
+    "hering": {
+      "firing": "Dos canales todavía disparando — mueve ambos deslizadores hasta que cada barra colapse a su línea central.",
+      "rgDone": "Canal rojo–verde en reposo. El canal amarillo–azul aún dispara — continúa.",
+      "ybDone": "Canal amarillo–azul en reposo. El canal rojo–verde aún dispara — continúa.",
+      "zero": "Ambos canales opuestos en reposo. El color se lee como gris neutro — Hering diría que acabas de realizar una cancelación."
+    },
+    "land": {
+      "pickInit": "Pasa el cursor por cualquier parte de la proyección para leer sus valores R, G, B brutos.",
+      "pickBoth": "Píxel R = {r}, G = {g}, B = {b}. El color que ves es la corteza rellenando a partir de los bordes.",
+      "pickRedOnly": "Píxel R = {r}, G = 0, B = 0 — aquí sólo contribuye el proyector rojo.",
+      "pickWhiteOnly": "Píxel R = {r}, G = {g}, B = {b} (los tres iguales) — aquí sólo contribuye el proyector blanco."
+    },
+    "gamutView": {
+      "pickInit": "Arrastra la lupa por la imagen para muestrear píxeles.",
+      "pickInside": "{n} píxeles muestreados · {ok} dentro de {target}, {bad} fuera.",
+      "pickAllIn": "{n} píxeles muestreados · todos dentro de {target}."
+    },
+    "namesGrid": {
+      "stageCaptions": [
+        "Etapa 1 — sólo oscuro y claro. Casi ninguna lengua humana registrada hoy se queda aquí.",
+        "Etapa 2 — se añade el rojo. Casi en toda lengua, la primera palabra de color.",
+        "Etapa 3 — se incorpora el verde o el amarillo.",
+        "Etapa 4 — verde y amarillo, ambos dentro. El griego de Homero estaba aproximadamente aquí.",
+        "Etapa 5 — el azul se separa del verde. El japonés moderno se quedó aquí hasta el siglo XX.",
+        "Etapa 6 — se añade el marrón.",
+        "Etapa 7 — morado, rosa, naranja y gris entran en cualquier orden. Inglés, coreano y japonés modernos están aquí."
+      ]
+    }
+  }
+}

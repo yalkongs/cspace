@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="spectrum" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0.00"  stop-color="#5a2789"/>
+      <stop offset="0.13"  stop-color="#4b40ca"/>
+      <stop offset="0.26"  stop-color="#3464d3"/>
+      <stop offset="0.38"  stop-color="#1da3a6"/>
+      <stop offset="0.50"  stop-color="#3fcb3f"/>
+      <stop offset="0.62"  stop-color="#d5d600"/>
+      <stop offset="0.74"  stop-color="#ee9400"/>
+      <stop offset="0.85"  stop-color="#dc4f1c"/>
+      <stop offset="1.00"  stop-color="#b41818"/>
+    </linearGradient>
+    <linearGradient id="markgrad" x1="0" x2="1">
+      <stop offset="0"    stop-color="#6d4aff"/>
+      <stop offset="0.18" stop-color="#2f6df0"/>
+      <stop offset="0.36" stop-color="#00a6c4"/>
+      <stop offset="0.54" stop-color="#2ba84a"/>
+      <stop offset="0.72" stop-color="#e0a400"/>
+      <stop offset="0.86" stop-color="#e8590c"/>
+      <stop offset="1"    stop-color="#d62828"/>
+    </linearGradient>
+    <linearGradient id="fadeBand" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0"    stop-color="#dedcd6" stop-opacity="0"/>
+      <stop offset="0.5"  stop-color="#dedcd6" stop-opacity="0"/>
+      <stop offset="0.92" stop-color="#dedcd6" stop-opacity="0.5"/>
+      <stop offset="1"    stop-color="#dedcd6" stop-opacity="1"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="#dedcd6"/>
+
+  <g transform="translate(60, 60)">
+    <rect width="22" height="22" rx="4" stroke="#211f1c" stroke-width="2" fill="url(#markgrad)"/>
+    <text x="34" y="17" font-family="Spectral, Georgia, serif" font-size="20" font-weight="600" fill="#211f1c">The Book of Color</text>
+  </g>
+
+  <text x="1140" y="76" font-family="Inter, sans-serif" font-size="13" font-weight="500" letter-spacing="3.5" fill="#767168" text-anchor="end">AN INTERACTIVE ESSAY</text>
+
+  <g transform="translate(0, 240)">
+    <rect x="0" y="0" width="1200" height="140" fill="url(#spectrum)"/>
+    <rect x="0" y="0" width="1200" height="140" fill="url(#fadeBand)" opacity="0.35"/>
+  </g>
+
+  <text x="60" y="490" font-family="Spectral, Georgia, serif" font-size="78" font-weight="500" letter-spacing="-0.012em" fill="#211f1c">The Book of</text>
+  <text x="60" y="565" font-family="Spectral, Georgia, serif" font-size="78" font-weight="500" letter-spacing="-0.012em" font-style="italic" fill="#211f1c">Color</text>
+
+  <text x="1140" y="555" font-family="Spectral, Georgia, serif" font-size="22" font-style="italic" fill="#46433d" text-anchor="end">From a single wavelength of light</text>
+  <text x="1140" y="585" font-family="Spectral, Georgia, serif" font-size="22" font-style="italic" fill="#46433d" text-anchor="end">to a palette that works for every eye.</text>
+
+  <text x="60" y="600" font-family="JetBrains Mono, monospace" font-size="12" letter-spacing="0.14em" fill="#767168">BOOKOFCOLOR.ORG</text>
+</svg>

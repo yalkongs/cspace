@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found · The Book of Color</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%23211f1c'/%3E%3Crect x='3' y='3' width='10' height='10' rx='1.5' fill='url(%23g)'/%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1'%3E%3Cstop offset='0' stop-color='%236d4aff'/%3E%3Cstop offset='.5' stop-color='%232ba84a'/%3E%3Cstop offset='1' stop-color='%23d62828'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E">
+  <style>
+    :root {
+      --wall: #dedcd6;
+      --wall-deep: #d4d2cc;
+      --ink: #211f1c;
+      --ink-soft: #46433d;
+      --ink-faint: #767168;
+      --frame: #b8b4ab;
+      --frame-soft: #c8c4ba;
+      --serif: 'Spectral', Georgia, 'Times New Roman', serif;
+      --sans: 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+      --mono: 'JetBrains Mono', 'SF Mono', ui-monospace, monospace;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      height: 100%;
+      background: var(--wall);
+      color: var(--ink);
+      font-family: var(--serif);
+      font-size: 17px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    body {
+      display: flex; align-items: center; justify-content: center;
+      padding: 36px;
+    }
+    .stage {
+      max-width: 540px;
+      text-align: left;
+    }
+    .num {
+      font-family: var(--mono);
+      font-size: 12.5px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      margin-bottom: 24px;
+    }
+    .num .mark {
+      display: inline-block;
+      width: 13px; height: 13px;
+      vertical-align: -2px;
+      margin-right: 10px;
+      border-radius: 3px;
+      border: 1.4px solid var(--ink);
+      background: linear-gradient(100deg, #6d4aff, #2f6df0, #00a6c4, #2ba84a, #e0a400, #e8590c, #d62828);
+    }
+    h1 {
+      font-size: clamp(34px, 5vw, 52px);
+      font-weight: 500;
+      letter-spacing: -0.012em;
+      line-height: 1.1;
+      margin-bottom: 22px;
+    }
+    .lede {
+      font-style: italic;
+      font-size: 19px;
+      color: var(--ink-soft);
+      margin-bottom: 30px;
+    }
+    .ways {
+      font-family: var(--sans);
+      font-size: 14px;
+      color: var(--ink-soft);
+      line-height: 1.7;
+    }
+    .ways a {
+      color: var(--ink);
+      text-decoration: none;
+      border-bottom: 1px solid var(--ink-faint);
+      transition: border-color 0.2s ease;
+    }
+    .ways a:hover { border-bottom-color: var(--ink); }
+    .ways .div { margin: 0 10px; opacity: 0.5; }
+    .swatch-row {
+      display: flex; gap: 4px;
+      margin: 32px 0;
+    }
+    .sw {
+      flex: 1; height: 8px; border-radius: 2px;
+    }
+  </style>
+</head>
+<body>
+  <main class="stage">
+    <p class="num"><span class="mark"></span>The Book of Color · 404</p>
+    <h1>This page has not been written.</h1>
+    <p class="lede">The colour you were looking for is not on this shelf — or the spine has been re-bound. Try the table of contents.</p>
+    <div class="swatch-row" aria-hidden="true">
+      <span class="sw" style="background:#6d4aff"></span>
+      <span class="sw" style="background:#2f6df0"></span>
+      <span class="sw" style="background:#00a6c4"></span>
+      <span class="sw" style="background:#2ba84a"></span>
+      <span class="sw" style="background:#e0a400"></span>
+      <span class="sw" style="background:#e8590c"></span>
+      <span class="sw" style="background:#d62828"></span>
+    </div>
+    <p class="ways">
+      <a href="/">Return to the book</a>
+      <span class="div">·</span>
+      <a href="/#light">Chapter One · Light</a>
+      <span class="div">·</span>
+      <a href="/#glossary">Glossary</a>
+    </p>
+  </main>
+</body>
+</html>

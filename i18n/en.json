@@ -1,0 +1,1281 @@
+{
+  "_meta": {
+    "scope": "Pilot — Hero + §1 Light + page-level meta/JSON-LD",
+    "source": "index32.html lines 1-55, 1370-1502",
+    "convention": "Values are raw HTML (innerHTML). Inline <em>/<strong>/<b> preserved. Dynamic JS values (e.g. wavelength readout) are NOT in this file; they live in jsStrings (later batch)."
+  },
+  "page": {
+    "title": "The Book of Color · An Interactive Essay on Color Theory",
+    "description": "An interactive essay on color theory. Touch the visible spectrum, watch your cone cells build color out of light, and mix light against pigment — color science you can move with your hands.",
+    "keywords": "color theory, color wheel, interactive, visible spectrum, wavelength, trichromatic vision, cone cells, additive color, subtractive color, RGB, CMYK, color mixing, Newton, color science, color perception",
+    "author": "The Book of Color",
+    "og": {
+      "title": "The Book of Color · An Interactive Essay on Color Theory",
+      "description": "Where color comes from, how the eye builds it, and the quiet geometry that makes some colors sing together. Every figure is yours to touch.",
+      "siteName": "The Book of Color"
+    },
+    "twitter": {
+      "title": "The Book of Color · An Interactive Essay on Color Theory",
+      "description": "Touch the visible spectrum, watch your cones build color, mix light against pigment. Color science you can move with your hands."
+    }
+  },
+  "jsonld": {
+    "learningResource": {
+      "name": "The Book of Color",
+      "description": "An interactive essay on color theory — from a single wavelength of light to a palette that works for every eye.",
+      "teaches": [
+        "The visible spectrum and wavelength",
+        "Trichromatic color vision and metamerism",
+        "Additive and subtractive color mixing",
+        "The color wheel and its history",
+        "Hue, value, and chroma — the color solid",
+        "Color harmony",
+        "Color spaces: RGB, HSL, CIE, and OKLCH",
+        "Simultaneous contrast and afterimages",
+        "Color contrast and accessibility"
+      ],
+      "about": [
+        "Color theory",
+        "Color vision",
+        "Optics",
+        "Color perception"
+      ]
+    },
+    "article": {
+      "headline": "The Book of Color — An Interactive Essay on Color Theory",
+      "description": "Where color comes from, how the eye builds it, and the quiet geometry that makes some colors sing together.",
+      "articleSection": "Color theory",
+      "authorName": "The Book of Color"
+    }
+  },
+  "hero": {
+    "ariaLabel": "Introduction",
+    "eyebrow": "An Interactive Essay",
+    "titleLine1": "The Book of",
+    "titleLine2": "Color",
+    "lede": "Color is not a property of things. It is an event — a meeting of light, matter, and mind. This is a field guide to that event.",
+    "meta1": "Where color comes from",
+    "meta2": "How the eye builds it",
+    "meta3": "Every figure yours to touch",
+    "greynoteLabel": "A note on grey",
+    "greynoteBody": "Every surface here — every panel, button, and frame — is deliberately <b>grey</b>. A colored interface would quietly distort your judgment of the colors it surrounds. The only saturated thing on this page is the color we are discussing.",
+    "scrollcue": "Begin"
+  },
+  "ch1": {
+    "num": "Chapter One",
+    "title": "Light",
+    "standfirst": "There is no red in a rose.",
+    "leadIn": "A rose contains no color. What it has is a surface that absorbs most of the light striking it and throws back the rest — chiefly the long waves we have learned to call red. The color is not in the flower. It is not even in the light. It is in the meeting.",
+    "newton": "In 1666 Isaac Newton darkened a room, let a single beam of sunlight through a prism, and watched it fan into an ordered band of color. The prism, he argued in <em>Opticks</em> (1704), adds nothing. White light is already a crowd of colors travelling together; the glass merely bends each by a different amount and so pulls the crowd apart.",
+    "wavelengthIntro": "Each pure color in that band corresponds to a single <strong>wavelength</strong> of light — a <em>spectral</em> color. The eye answers to a narrow ribbon of wavelengths, roughly 380 nanometres (violet) to 700 (red), a sliver of the electromagnetic spectrum, which runs from radio waves kilometres long to gamma rays smaller than an atom. Drag across that ribbon below.",
+    "abney": "Newton showed the line, but the eye is not literal about it. Take a single pure wavelength — a narrow band of blue at 475 nm, say — and dilute it with a little white light. By the physics, you are just adding broad-spectrum white to a narrow blue, and the wavelength of the peak does not move. But the perceived <em>hue</em> moves. The blue, mixed with white, drifts subtly toward violet; a pure yellow drifts toward orange. The effect was named for the nineteenth-century British physicist <strong>William de Wiveleslie Abney</strong>, who measured it in 1909. It is one of several reminders that the diagram in our heads is not the diagram on the spectroscope.",
+    "planck": "One more correction before the wheel. Pure wavelengths are rare in nature; almost every light we ever see is a <em>distribution</em> across many wavelengths at once. The most common natural distribution is the glow of a hot body. Heat any black surface — a filament, a candle wick, the surface of a star — and as the temperature rises, the radiation it gives off shifts from invisible infrared up through dull red, glowing orange, white, and at very high temperatures into the blue. The exact spectrum at each temperature is given by <strong>Planck's law</strong> (1900), and the curve every temperature traces in chromaticity coordinates is called the <em>Planckian locus</em>. It is the spine of color temperature.",
+    "fig": {
+      "prism": {
+        "title": "Newton's Prism",
+        "hint": "Drag the slider · open or close the apex",
+        "svgAria": "A glass prism with horizontal white light entering its left face and a rainbow fan exiting the right. As the apex-angle slider widens, the fan opens further; as it narrows, the fan tightens.",
+        "apexLabel": "Apex angle of the prism",
+        "apexAria": "Apex angle of the prism in degrees",
+        "cap": "White light is not white the way water is wet — it is a coexistence of every visible wavelength. Glass bends each wavelength by a slightly different amount, and the small bend at each face compounds into a visible fan. Newton called what came out the other side a <em>spectrum</em>; the rainbow on a wall is the same demonstration written by the sky."
+      },
+      "spectrum": {
+        "title": "The Visible Spectrum",
+        "hint": "Drag, click, or focus and use ← →",
+        "canvasAria": "The visible spectrum from 380 to 700 nanometres",
+        "rangeAria": "Wavelength in nanometres",
+        "ultraviolet": "← ultraviolet",
+        "infrared": "infrared →",
+        "cap": "Near each end the color appears to darken — not because the light dims, but because the eye's sensitivity falls away. Beyond the edges the waves continue; we simply go blind to them."
+      },
+      "abney": {
+        "title": "The Abney effect",
+        "hint": "Dilute a pure wavelength with white · watch the hue drift",
+        "stageAria": "Two coloured patches side by side. The left patch shows a pure wavelength diluted with white light, with the colour drifting subtly toward a different hue as more white is added (the Abney effect). The right patch shows the same wavelength with the perceived hue corrected back to the pure colour. Slide between zero and one hundred percent white admixture.",
+        "labelShift": "Pure wavelength + white (drifts)",
+        "labelPure": "Same wavelength, perceived-hue corrected",
+        "labelWavelength": "Wavelength",
+        "labelWhite": "White admixture (purity loss)",
+        "ariaWavelength": "Pure wavelength in nanometres",
+        "ariaWhite": "Percent white light added to the pure wavelength",
+        "cap": "A pure spectral wavelength, diluted with increasing amounts of white light. The left patch is the physically correct mixture — at high white admixture the perceived hue drifts toward an adjacent region of the wheel (blue toward violet, yellow toward orange). The right patch holds the perceived hue constant by walking back along the Abney correction. The lines on CIE 1931 that connect equal-perceived-hue points are called <em>lines of constant hue</em>; they are noticeably curved, not the straight radii one might expect."
+      },
+      "planck": {
+        "title": "The Planckian locus",
+        "hint": "Slide the temperature · watch the glow shift",
+        "stageAria": "A simulation of black-body radiation. On the left, a glowing square shows the colour of a black body at the selected temperature, from dull red below 2000 K through orange, white near 6500 K, and into pale blue above 10,000 K. On the right, a small wavelength-versus-intensity graph shows the Planck spectrum at the same temperature, with the peak shifting from infrared into the visible and then into the violet end as temperature rises.",
+        "labelTemp": "Temperature",
+        "ariaTemp": "Black-body temperature in kelvin, 1000 to 20000",
+        "cap": "A candle flame is about 1850 K (warm orange); a tungsten bulb 2700–3000 K; midday sunlight at the equator is near 5500–6000 K; the standard daylight reference D65 is 6504 K; the dim blue of a clear north sky can exceed 15,000 K. Note how the painter's intuition (red = warm, blue = cool) inverts the physics (red = cool body, blue = hot body); the painter speaks of skin and fire, the physicist speaks of stars and filaments."
+      }
+    },
+    "note": {
+      "label": "Hold this thought",
+      "body": "The spectrum is a <em>line</em>. It has two ends — deep violet and deep red — and they sit at its opposite ends. Yet every color wheel you have ever seen joins them into a loop. Who authorized that? Chapter Four answers. Chapter Two supplies the motive."
+    }
+  },
+  "ch2": {
+    "num": "Chapter Two",
+    "title": "The Eye",
+    "standfirst": "Color is built, not received.",
+    "leadIn": "The retina does not measure wavelength. It cannot. At the back of the eye sit three kinds of cone cells, and each is simply a bucket that fills with light — one tuned to short wavelengths (<strong>S</strong>), one to medium (<strong>M</strong>), one to long (<strong>L</strong>). Light of one wavelength arrives; the three buckets fill to three different levels; and those three numbers are the entire message sent to the brain.",
+    "trichromatic": "From three numbers, the brain manufactures every color you have ever seen. This is the heart of <em>trichromatic</em> vision, first proposed by Thomas Young, refined by Helmholtz, confirmed a century later under the microscope. Set the wavelength below and watch the three cones respond.",
+    "metamerismIntro": "Two far-reaching consequences follow from a three-number eye.",
+    "metamerismBody": "The first is <strong>metamerism</strong>. If two completely different mixtures of light happen to fill the three buckets to the same three levels, they are — to you — the <em>same color</em>. Not similar. Identical. The eye has no deeper truth to consult.",
+    "spectralIntro": "The two lights above are a single trick told with beams. The same trick happens with <em>surfaces</em>. Two pigments built from completely different spectra can agree perfectly under one light — and split apart the moment the light changes. Industry calls this the working form of metamerism, and it is the reason a fabric matched under the store's fluorescents looks wrong by the window at home.",
+    "magenta": "The second consequence is stranger still: <strong>magenta</strong>. Look for it on the spectrum in Chapter One — you will not find it. There is no wavelength of magenta. It is the color the brain produces when the <em>long</em> and <em>short</em> cones are both excited while the <em>medium</em> cone is left far behind — that is, when the eye receives the two <em>ends</em> of the spectrum at once, with little from its middle. Magenta is extra-spectral — a color with no wavelength of its own, stitched by the brain from the spectrum's two ends.",
+    "adaptation": "And the brain does more than invent: it also <strong>balances</strong>. Step out of an incandescent room into the daylight and for an instant everything seems too blue; a minute later it is back to itself. The eye rebalances the light by which it sees, so a sheet of paper stays white under any sun. The mechanism is called <strong>chromatic adaptation</strong>, and it runs, quietly, every moment of waking life.",
+    "adaptationRebound": "Try this with the slider above: settle on one extreme — say 9000 K, a cool sky — and stare at the framed grey for thirty seconds, then swing it sharply to 2500 K, a warm candle. For a few moments every patch will look exaggeratedly warm — the grey will glow faintly pink, the reds will deepen — and then your eye will catch up and the room will normalise. That brief, hot moment is the rebound: the visual system, locked onto the cool reference, takes a second to release its compensation when the reference jumps. Chromatic adaptation is not a switch but a slow loop.",
+    "rods": "In the other direction, when the light fades, the eye is built to fail gracefully. The cones — the daylight cells of the previous figure — need light to fire, and at dusk they begin to hand off to a second crew: the <strong>rods</strong>, more numerous, far more sensitive, and blind to colour. The handoff shifts what is bright. Cones peak in sensitivity at the long wavelengths; rods peak near 498 nanometres, well down the spectrum. So in the day a red poppy glows; at dusk it darkens first, while the greens and blues of the leaves and sky beside it hold on into the last light. The Czech anatomist Jan Evangelista Purkinje noticed the effect on his walks in 1819, and the shift has carried his name ever since.",
+    "closing": "And that is the motive we were promised. Because the two ends of the spectral line, violet and red, can be seen together as a single new color, the line is free to curl around and close. The next chapters bend it into a wheel — and then open the wheel into a space.",
+    "benham": "A century before Purkinje, in 1894, the English toy-maker <strong>Charles Benham</strong> noticed something stranger. A disk painted in only black and white — half of it solid black, the other half scored with a few thin black arcs at different radii — spun at the right speed appears to flash colour. Pale yellow at the outermost arcs, dim red toward the centre, blue if you reverse the spin. The colours are <em>Fechner colours</em>, named for the nineteenth-century psychophysicist <strong>Gustav Fechner</strong>, who described them in 1838. They are produced not by the disk but by the eye: the cones respond at slightly different speeds, so a black arc sweeping the retina pulses the channels out of phase, and the brain reads the unmatched signal as a pigment that is not there. The disk below is a reduced version of Benham's original — change the spin and watch a still grey ring colour itself.",
+    "bezoldBrucke": "Light level changes lightness, as Purkinje saw. It also subtly changes <em>hue</em>. Take a single pure wavelength and crank up the brightness, and the colour does not stay put: a yellowish-green drifts toward pure yellow, a violet drifts toward blue, an orange drifts toward yellow. The effect was measured by the German physicists <strong>Wilhelm von Bezold</strong> and <strong>Ernst Brücke</strong> in 1873 and has carried both their names ever since. Three special wavelengths — near 478 nm, 503 nm, and 578 nm — sit on it and do not move; these <em>invariant points</em> are the boundaries of the opponent channels we will meet at the end of Chapter Eight. Push the slider and you can measure the drift yourself.",
+    "fig": {
+      "cone": {
+        "title": "Cone Response",
+        "hint": "Schematic — a teaching diagram, not measured data",
+        "canvasAria": "Sensitivity curves of the S, M, and L cone cells across the visible spectrum",
+        "nmLabel": "Wavelength of light entering the eye",
+        "nmAria": "Wavelength in nanometres",
+        "sShort": "short",
+        "mMedium": "medium",
+        "lLong": "long",
+        "verdictPrefix": "Your brain reports: ",
+        "verdictNote": "From this ratio of three signals — and nothing else — the color is assembled."
+      },
+      "meta": {
+        "title": "An Impossible Match",
+        "sub": "Two different lights. One color. Your eye finds no difference.",
+        "btnGroupAria": "Choose a light source",
+        "btnA": "One pure wavelength · 580 nm",
+        "btnB": "Green light + red light",
+        "btnC": "Custom Matcher",
+        "canvasAria": "The physical light present, shown as spikes on the wavelength axis",
+        "initialText": "A single pure wavelength of yellow light — 580 nanometres.",
+        "target": "Target",
+        "mix": "Your Mix",
+        "labelR": "Red Light (650 nm)",
+        "labelG": "Green Light (540 nm)",
+        "labelB": "Blue Light (450 nm)",
+        "goalNote": "Adjust the intensities to match the target yellow (580 nm) S, M, L response."
+      },
+      "spectralMeta": {
+        "title": "Where the metamerism comes from",
+        "hint": "Drag the reflectance nodes · switch the light",
+        "svgAria": "Two reflectance curves across the visible spectrum from 380 to 730 nanometres. The vertical axis is reflectance from 0 to 1. Drag the small handles on either curve to reshape it; the two coloured patches below redraw to show what each surface looks like under the chosen light source.",
+        "legendA": "Patch A — reflectance",
+        "legendB": "Patch B — reflectance",
+        "illumGroupAria": "Choose a standard illuminant",
+        "illumLabel": "Light:",
+        "btnD65": "Daylight · D65",
+        "btnTungsten": "Tungsten · A",
+        "btnFluorescent": "Fluorescent · F2",
+        "btnAutoMatch": "Auto-match B to A under D65",
+        "patchLabelA": "Patch A",
+        "patchLabelB": "Patch B",
+        "patchAriaA": "Patch A under the chosen light",
+        "patchAriaB": "Patch B under the chosen light",
+        "verdictInitial": "Drag the nodes on either curve, or press Auto-match.",
+        "cap": "Each curve is what its surface gives back of the light that hits it, wavelength by wavelength. The colour you see is the product of three things — that curve, the light shining on it, and the eye's three cones — summed across the spectrum. <strong>Press Auto-match</strong>, then switch the light: two surfaces that agreed under daylight come apart under tungsten or fluorescent, because their <em>spectra</em> were never the same, only the three numbers they happened to add up to."
+      },
+      "adapt": {
+        "title": "The Brain's Quiet White Balance",
+        "hint": "Drag the slider · light from warm to cool",
+        "sceneAria": "A row of seven coloured patches under one illuminant. As the colour-temperature slider moves, every patch shifts together; the framed centre patch is a fixed neutral grey that would, in real life, still look grey to a fully adapted observer.",
+        "cctLabel": "Colour temperature of the light",
+        "cctAria": "Illuminant colour temperature in Kelvin",
+        "cap": "Each square is a fixed pigment; only the light changes. In a real room your brain would almost entirely undo this shift — the framed grey would stay grey. The page has no brain to do it for you, so watch the grey wander as the light warms or cools."
+      },
+      "purkinje": {
+        "title": "The Purkinje Shift",
+        "hint": "Drag the slider · noon toward midnight",
+        "sceneAria": "A row of six coloured patches — red, orange, yellow, green, blue, and violet. As the light-level slider falls from day to night, the patches dim unequally: the warm end (red and orange) darkens first and fastest, while the cool end (greens and blues) dims more slowly and is the last to fade.",
+        "ambientLabel": "Ambient light, from full day to deep night",
+        "ambientAria": "Ambient light level percent",
+        "cap": "The same six pigments at every light level. As the rods take over, the warm end of the spectrum — reds and oranges — sinks first into the dark, while the cool end — greens and blues — lingers longest. The phenomenon is why some modern emergency fleets have moved to a Purkinje-friendly fluorescent yellow-green for high-visibility work, even where red remains the tradition."
+      },
+      "benham": {
+        "title": "Benham's top",
+        "hint": "Spin the disk · see colour from nothing",
+        "stageAria": "A black-and-white disk modelled on Charles Benham's 1894 top: half the disk is solid black, the other half is scored with thin black arcs at three different radii. When the disk is spun, the eye sees pale colour at the moving arcs — yellow at the outer ring, red in the middle, blue near the centre — even though no ink on the disk is coloured. Slowing or reversing the spin changes which colour appears at each ring.",
+        "speedLabel": "Spin speed",
+        "speedRangeAria": "Spin speed in rotations per minute, 0 (stopped) to 300",
+        "cap": "Charles Benham's 1894 <em>artificial spectrum top</em> — a disk painted only in black and white that, when spun, produces apparent colour at the moving arcs. The colour comes from the eye, not the disk: the L, M, and S cones differ slightly in response time, so a sweeping black-and-white edge pulses them out of phase. The brain integrates the mismatched timing as a hue — pale yellow at the outer arcs, dim red middle, blue near the centre. The effect is called <em>Fechner colour</em>, after Gustav Fechner, who described it in 1838. On most modern screens the colour is fainter than on the original spinning paper disk, because LCD refresh and pixel response interfere with the cone-timing trick; a high-refresh OLED shows it best."
+      },
+      "bezoldBrucke": {
+        "title": "The Bezold–Brücke shift",
+        "hint": "Boost the luminance · the perceived hue drifts",
+        "stageAria": "Two coloured patches side by side, both starting at the same chosen wavelength. The left patch shows the colour at a low reference luminance; the right patch shows the same wavelength at a higher luminance. As the luminance slider is pushed up, the right patch drifts in hue: reds toward yellow, greens toward yellow, violets toward blue. At three special wavelengths (near 478, 503, and 578 nanometres) the patches stay identical no matter the luminance.",
+        "labelLow": "Low luminance reference",
+        "labelHigh": "High luminance (drifts)",
+        "labelWavelength": "Wavelength",
+        "labelLum": "Luminance boost",
+        "ariaWavelength": "Pure wavelength in nanometres",
+        "ariaLum": "Luminance multiplier from 1 to 50",
+        "cap": "A single pure wavelength shown at two luminances. The left patch is the reference; the right patch is the same wavelength played louder. Below about 500 nm the brightened patch drifts toward blue; above about 580 nm it drifts toward yellow. Try 478 nm, 503 nm, or 578 nm — the three <em>invariant points</em> on the Bezold–Brücke curve — and the two patches stay in lockstep no matter how loud the second one gets. The invariants mark where the L–M and S–(L+M) opponent channels see zero imbalance; everywhere else the system reads a tilt and reports it as hue."
+      }
+    }
+  },
+  "ch3": {
+    "num": "Chapter Three",
+    "title": "Mixing",
+    "standfirst": "Two opposite logics — and a paintbox that disagrees with a screen.",
+    "leadIn": "Ask a child what red and green make. Brown, they say, and they are right — they have a paintbox. Ask a lighting engineer: yellow, they say, and they are also right — they have a stage. Both answers are correct because there are two entirely opposite ways to make a color, and they run in opposite directions.",
+    "additiveBody": "<strong>Additive</strong> mixing is the logic of <em>light</em>. Begin in darkness and add. Each beam you add can only make things brighter. Red light and green light overlap into yellow; add blue and you arrive at white. This is the logic of screens, projectors, and stage lights — and of sunlight, a broad blend of wavelengths spanning the whole visible range. Drag the three lights together below.",
+    "subtractiveBody": "<strong>Subtractive</strong> mixing is the logic of <em>pigment</em>. Begin with white paper — light already complete — and take away. Every pigment is a filter: it absorbs, <em>subtracts</em>, part of the spectrum and reflects the remainder. Lay cyan over yellow and between them they remove the red and the blue, leaving green. Pile all three and almost nothing escapes: you approach black. This is the logic of <strong>printing inks</strong> and transparent <strong>filters</strong> — exact for layered cyan, magenta, and yellow, and a fair first model for paint as well.",
+    "paintBody": "But paint, in truth, is stranger. Light does not pass through it like a filter; it enters the wet film, bounces off countless pigment grains, and only some of it returns. The cyan and yellow of a printer's ink are engineered so the filter model holds — between them they let only green through. Mix the painter's <em>ultramarine blue</em> and <em>cadmium yellow</em> and the eye still sees green; multiply those same two as numbers on a screen and they fall into a near-black mud. Paul Kubelka and Franz Munk wrote down the older arithmetic in 1931 — the same year the chromaticity diagram of Chapter Seven was drawn — and it remains the working model of every painter's palette to this day.",
+    "maxwellIntro": "Light and pigment are the two arithmetics taught above. There is a third, born of motion. James Clerk Maxwell, in the early 1860s, mounted painted sectors on a spinning top and discovered that the eye sums them in time: a disc split between red and green, spun fast enough, settles into yellow — not on the disc but in the retina, which cannot keep up with the alternation. This is <strong>temporal additive mixing</strong>: the eye, asked to integrate too quickly, surrenders and averages.",
+    "closing": "The primaries differ because the logics differ. Light builds from <strong>red, green, blue</strong>; printing ink from <strong>cyan, magenta, yellow</strong>; the painter's tubes from a red, a yellow, and a blue. Neither set is sacred — there is no such thing as <em>the</em> primary colors, only the right primaries for the direction you are travelling. Which raises the question the next chapter is built on: if the primaries are a choice, what shape should we arrange them in?",
+    "fig": {
+      "mixer": {
+        "title": "Two Ways to Make a Color",
+        "hint": "Drag the disks · or focus one and use arrow keys",
+        "additive": {
+          "name": "Additive",
+          "kind": "light, on darkness",
+          "fieldAria": "Additive mixer: three colored lights on a dark field",
+          "redAria": "Red light — drag, or use arrow keys to move",
+          "greenAria": "Green light — drag, or use arrow keys to move",
+          "blueAria": "Blue light — drag, or use arrow keys to move",
+          "footCap": "Begins black. Overlaps brighten toward <strong>white</strong>.",
+          "resetAria": "Reset the additive mixer"
+        },
+        "subtractive": {
+          "name": "Subtractive",
+          "kind": "pigment, on paper",
+          "fieldAria": "Subtractive mixer: three pigments on white paper",
+          "cyanAria": "Cyan pigment — drag, or use arrow keys to move",
+          "magentaAria": "Magenta pigment — drag, or use arrow keys to move",
+          "yellowAria": "Yellow pigment — drag, or use arrow keys to move",
+          "footCap": "Begins white. Overlaps darken toward <strong>black</strong>.",
+          "resetAria": "Reset the subtractive mixer"
+        },
+        "resetBtn": "Reset",
+        "cap": "The same three regions, read two ways. In light, the overlaps of <strong>red, green, blue</strong> give cyan, magenta, yellow. In pigment, the overlaps of <strong>cyan, magenta, yellow</strong> give red, green, blue. Each set of primaries is precisely the other's complement — the two logics are mirror images."
+      },
+      "paint": {
+        "title": "Two Arithmetics of Mixing",
+        "hint": "Drag the slider · ultramarine ↔ cadmium yellow",
+        "multTag": "Multiplied",
+        "multSub": "filter math",
+        "kmTag": "Kubelka–Munk",
+        "kmSub": "real pigment",
+        "multCanvasAria": "A gradient bar showing the multiply blend of ultramarine and cadmium yellow at every proportion — the centre is muddy and dark, not green.",
+        "kmCanvasAria": "A gradient bar showing the Kubelka–Munk mix of the same two pigments at every proportion — the centre is recognisably green.",
+        "sliderAria": "Mix proportion: percent cadmium yellow against ultramarine",
+        "pigmentYellow": "cadmium yellow",
+        "pigmentUltramarine": "ultramarine",
+        "swMultTitle": "What the screen's filter arithmetic gives",
+        "swKmTitle": "What Kubelka–Munk says paint does",
+        "cap": "Both bars run from <em>pure ultramarine</em> on the left to <em>pure cadmium yellow</em> on the right. The upper bar multiplies the two screen colours at every step — the centre falls into a muddy dark, the way two RGB swatches would. The lower bar mixes the same two pigments by Kubelka–Munk — light entering wet paint, scattering off grains — and finds green at the centre, the way two tubes do."
+      },
+      "maxwell": {
+        "title": "Maxwell's Spinning Discs",
+        "hint": "Spin the disc · the patch on the right is what the eye would resolve",
+        "discAria": "A two-sector disc being spun. At low speeds the two colours alternate visibly; at high speeds the eye blends them.",
+        "fusedAria": "The colour the eye would resolve at infinite refresh rate — a linear-light average of the two sector colours, weighted by their angular share.",
+        "labelDisc": "The spinning disc",
+        "labelFused": "What the eye would resolve at &gt;50 Hz",
+        "labelColorA": "Sector A",
+        "labelColorB": "Sector B",
+        "labelShare": "Sector A share",
+        "labelRpm": "Rotation speed (RPM)",
+        "ariaShare": "Angular share of sector A on the disc, in degrees out of 360",
+        "ariaRpm": "Rotation speed in revolutions per minute",
+        "cap": "The disc on the left spins under whatever speed you set; the patch on the right is the colour Maxwell's eye would resolve at fusion, computed as a linear-light average of the two sector colours weighted by their angular share. The point is a third logic of mixing, alongside light (Chapter Three's additive) and pigment (subtractive): when the eye is presented with two colours in quick alternation, it averages them in <em>time</em> the way the white screen averages them in space. <em>Screen caveat: your monitor refreshes at about 60 Hz, so above roughly 30 RPM you will see stroboscopic flicker rather than true fusion. The patch on the right shows what your visual cortex would resolve at an infinite refresh rate.</em>"
+      }
+    }
+  },
+  "ch4": {
+    "num": "Chapter Four",
+    "title": "The Wheel",
+    "standfirst": "Bend the line until its two ends touch.",
+    "leadIn": "A spectrum is a line, and a line has ends. Chapter One left us with that discomfort: deep violet at one extreme, deep red at the other, and no road between them. Chapter Two supplied the bridge — magenta, the extra-spectral color the eye builds when only the spectrum's two ends are lit. Magenta is the splice. With it, the line can be lifted at both ends and curved until red meets violet, and the spectrum closes into a ring with no beginning and no end.",
+    "circleBody": "That ring is the <strong>color wheel</strong> — not a discovery but an invention, and a useful one. On a wheel every hue has neighbours to either side and exactly one color facing it across the centre: its <strong>complement</strong>. Turn the marker below, and switch the wheel between its two great traditions.",
+    "primariesBody": "Where to place the hues, and which to crown as <em>primary</em>, has never been settled — because it cannot be. It is a choice, and history has made it more than once.",
+    "newtonGoetheItten": "In 1704 Isaac Newton drew the first color circle, in his <em>Opticks</em>, and — being Newton — could not resist a deeper claim: he gave his seven colors arcs sized to the seven steps of a musical scale, so that the spectrum and the octave might share one geometry. (The companion to this essay, <a href=\"https://circle5-eight.vercel.app\" target=\"_blank\" rel=\"noopener noreferrer\">The Circle of Fifths</a>, walks the musician's version of that same circle.) A century on, Goethe — who distrusted Newton — built a smaller wheel of six and paired every color with a feeling. And at the Bauhaus, Johannes Itten taught with a wheel of twelve, raised on the painter's primaries: <strong>red, yellow, blue</strong>.",
+    "physicistPainter": "Those are not the physicist's primaries. Light mixes from red, green, and blue; pigment, as Chapter Three showed, from cyan, magenta, and yellow; the studio tradition keeps red, yellow, and blue. Switch the wheel above between the light arrangement and the painter's, and watch a color's complement change under your eye — red faces cyan on the one wheel and green on the other. Neither is an error. They are answers to different questions.",
+    "fig": {
+      "wheel": {
+        "title": "The Color Wheel",
+        "hint": "Drag the marker · or focus it and use ← →",
+        "segGroupAria": "Wheel arrangement",
+        "segBtnRGB": "Light wheel · RGB",
+        "segBtnRYB": "Painter's wheel · RYB",
+        "handleAria": "Hue on the wheel",
+        "pairRoleMain": "The color",
+        "pairRoleComp": "Its complement",
+        "pairLinkFaces": "faces",
+        "capInitial": "The light wheel, its hues in spectral order."
+      },
+      "history": {
+        "title": "Three Wheels, Three Centuries",
+        "newtonAria": "Newton's seven-color wheel with unequal, musically proportioned arcs",
+        "newtonCap": "<b>Newton</b>, 1704 — seven colors, arcs sized to a musical scale.",
+        "goetheAria": "Goethe's six-color wheel",
+        "goetheCap": "<b>Goethe</b>, 1810 — six colors, each tied to a feeling.",
+        "ittenAria": "Itten's twelve-color wheel",
+        "ittenCap": "<b>Itten</b>, c. 1920 — twelve, on the painter's red-yellow-blue."
+      }
+    },
+    "note": {
+      "label": "Toward a space",
+      "body": "A wheel holds every hue — but only hue. It has nothing to say about a pale rose beside a deep crimson, or a dull brick beside a vivid scarlet: on the wheel, all of them are simply <em>red</em>. To hold those differences the wheel must grow two further dimensions. Chapter Five gives it depth."
+    }
+  },
+  "ch5": {
+    "num": "Chapter Five",
+    "title": "Three Dimensions",
+    "standfirst": "Hue is one number. A color needs three.",
+    "leadIn": "The wheel of Chapter Four is a magnificent simplification, and like every simplification it lies a little. It shows each hue, and <em>only</em> hue. But say a color aloud — <em>red</em> — and you have named almost nothing. A fire engine, a clay roof tile, the pink lining of a shell, a dried bloodstain: every one of them is red, and no two are the same color.",
+    "valueChroma": "What separates them are two further measurements. The first is <strong>value</strong> — how light or dark the color is, its place on the road from black to white. The second is <strong>chroma</strong> — how pure or how muted it is, its distance from a neutral grey. Hue, value, chroma: three numbers, three independent directions. Color is not a wheel. It is a <em>solid</em> — the wheel was a slice through it, taken at one value.",
+    "munsellBody": "The first to map this solid by measurement rather than by geometry was Albert Munsell, a painter and teacher, around 1905. He had lost patience with color names that meant nothing dependable — \"rose\", \"straw\", \"drab\" — and gave each color three plain coordinates instead: hue, value, chroma. His own model was not a tidy sphere or cylinder but a lopsided tree, and honestly so — a vivid yellow is light and a vivid blue is dark, so the hues swell outward at different heights. The space of color has a real and irregular shape, and Munsell drew it as it is.",
+    "tintShadeTone": "Within that solid, painters have always known three ways to move a color. A <strong>tint</strong> adds white and lifts it toward the light. A <strong>shade</strong> adds black and lowers it toward the dark. A <strong>tone</strong> adds grey and draws it inward, toward the colorless core. Choose a color in the panel below — its hue, then how saturated and how light it is — and watch the three paths open from it.",
+    "fig": {
+      "solid": {
+        "title": "Two Color Solids",
+        "hint": "Drag either canvas to rotate · slide to slice",
+        "hslAria": "The HSL color solid — a symmetric biconic shape with hue around the axis, lightness rising from a black base to a white top, and saturation reaching radially. Drag to rotate.",
+        "okAria": "The OKLCH color solid — the actual sRGB gamut measured in a perceptually uniform space. The shape is asymmetric: yellow swells high and pale, blue sinks deep and dark. Drag to rotate; rotates together with the HSL solid.",
+        "hslLabel": "HSL · biconic, symmetric by number",
+        "okLabel": "OKLCH · sRGB gamut, asymmetric by eye",
+        "cutLabel": "Cut horizontally at lightness",
+        "cutAria": "Slice the solids horizontally: lightness from 0 (only base) to 1 (full solid). Lower values cut away the upper, lighter layers from both solids at once.",
+        "cap": "Both solids show every colour a screen can display — but in different coordinate systems. HSL <strong>defines</strong> its shape (a symmetric biconic, widest at L = 0.5); OKLCH <strong>measures</strong> it from the eye, and what comes out is a lopsided body — yellow swells high and pale, blue sinks deep and narrow, magenta reaches farther than green. The two are the same set of colours, fit to two different rulers. Drag either canvas to rotate them together; pull the slider to lift the top and see inside. The asymmetry on the right is Munsell's tree, drawn by mathematics this time."
+      },
+      "picker": {
+        "title": "A Slice of the Solid",
+        "hint": "Drag in the panel · or focus the marker and use arrow keys",
+        "markerAria": "Color point — drag, or use arrow keys to change saturation and value",
+        "axisX": "↑ light · value · dark ↓   ·   ← grey · saturation · vivid →",
+        "hueLabel": "Hue",
+        "rampTint": "Tints — the color carried toward white",
+        "rampShade": "Shades — the color carried toward black",
+        "rampTone": "Tones — the color carried toward grey"
+      }
+    },
+    "note": {
+      "label": "From one color to many",
+      "body": "We can now fix any single color exactly — one point, three coordinates, somewhere in the solid. But a color is rarely chosen alone. Almost always it is chosen for company, to be set beside others. Chapter Six asks which colors belong together, and why."
+    }
+  },
+  "ch6": {
+    "num": "Chapter Six",
+    "title": "Harmony",
+    "standfirst": "Colors keep their best company by geometry.",
+    "leadIn": "A color is almost never met alone. A poster, a room, a painting, a page like this one — each is a chord of several colors sounded together, and some chords ring while others jar. For most of history, knowing which was which was called <em>taste</em>, and could not be taught. The color wheel changed that: it turned the question into geometry. Harmonious colors, it proposed, are simply the ones that stand in a clean, repeatable figure on the wheel.",
+    "chooseBody": "Choose a base color and a figure below. The wheel draws the shape; the palette and the small composition beside it show those colors at work.",
+    "temperamentBody": "Each figure has a temperament. <strong>Complementary</strong> colors sit straight across from each other — as far apart in hue as two colors can be — and so meet the eye with the sharpest contrast a pair can hold; set side by side they seem to buzz along their border, a tension Chapter Eight will explain. <strong>Analogous</strong> colors are neighbours, of one family, and lie quietly together. <strong>Triadic</strong> and the four-cornered figures spread the circle evenly: vivid, yet balanced, because no direction is favoured. <strong>Split-complementary</strong> keeps a complement's tension but softens its bluntness. <strong>Monochromatic</strong> gives up hue contrast altogether and works in value and chroma alone — the most serene scheme of all.",
+    "grammarBody": "None of this is a law. It is a <em>grammar</em> — the same kind of thing as the chord progressions in this essay's musical companion, <a href=\"https://circle5-eight.vercel.app\" target=\"_blank\" rel=\"noopener noreferrer\">The Circle of Fifths</a>. A grammar does not write the sentence; it tells you which sentences will be understood. The finest color, like the finest writing, often comes from knowing the rule exactly — and then, for a reason, breaking it.",
+    "newton": "The musical analogy is not incidental. <strong>Isaac Newton</strong>, in <em>Opticks</em> (1704), already divided his prism's spectrum into seven bands and proposed that each band corresponded to a step of the diatonic scale — red to <em>do</em>, orange to <em>re</em>, and so on up to violet at <em>ti</em>. The mapping is arbitrary in its specifics (Newton mostly wanted seven of something, and the seven notes were at hand), but the underlying intuition — that color shares the structure of a chord — has never gone away. Press a key below and you can hear what Newton heard.",
+    "fig": {
+      "harmony": {
+        "title": "The Harmony Explorer",
+        "hint": "Drag the marker · or focus it and use ← →",
+        "typesGroupAria": "Harmony type",
+        "btnComplementary": "Complementary",
+        "btnAnalogous": "Analogous",
+        "btnTriadic": "Triadic",
+        "btnSplit": "Split-complementary",
+        "btnTetradic": "Tetradic",
+        "btnMonochromatic": "Monochromatic",
+        "handleAria": "Base hue of the harmony",
+        "paletteAria": "The harmony's palette",
+        "nameInitial": "Triadic",
+        "copyBtn": "Copy palette",
+        "capInitial": "Three hues an equal third of the circle apart — balanced, lively, and stable."
+      },
+      "newtonKeyboard": {
+        "title": "Newton's color-music keyboard",
+        "hint": "Click a key · hear a note, see its colour",
+        "stageAria": "A seven-key piano keyboard, one octave from C to B. Each key is bordered with the colour Newton assigned to it in 1704: C red, D orange, E yellow, F green, G blue, A indigo, B violet. Clicking a key plays a sine-wave tone at the corresponding musical pitch and lights the colour above. Pressing more than one key at a time blends the colours additively on the panel above.",
+        "cap": "Newton mapped the seven notes of the diatonic scale (C major, do–re–mi–fa–sol–la–ti) onto the seven bands he drew across his prism's spectrum, in <em>Opticks</em> (1704). Pressing more than one key sounds the chord and adds the colours on the panel above — the music of a C-major triad is the additive mix of red, yellow, and blue. Newton's pairing is historically influential and physically arbitrary; the <em>frequencies</em> of audible sound and visible light differ by a factor of more than ten trillion. But the structural intuition — that harmony is a matter of intervals, in colour as in tone — has outlived the arithmetic."
+      }
+    },
+    "note": {
+      "label": "A crack in the wheel",
+      "body": "Every figure drawn on that wheel was measured in equal degrees of hue — as though a step of thirty degrees were the same size everywhere on the circle. It is not. The wheel we have used is spaced evenly by number, not by the eye. Chapter Seven rebuilds the space to the eye's own measure."
+    }
+  },
+  "ch7": {
+    "num": "Chapter Seven",
+    "title": "Color Spaces",
+    "standfirst": "A map is only as honest as its grid.",
+    "leadIn": "Chapter Six ended on a confession: the wheel was spaced by number, not by the eye. So was the solid of Chapter Five. A <strong>color space</strong> is simply a coordinate system for color — a way to pin any color with a short list of numbers — and the only question worth asking of one is whether its numbers agree with what you see.",
+    "rgbHslBody": "The most familiar is <strong>RGB</strong>: three values, nought to two hundred and fifty-five, one for each primary light. It is the native tongue of screens, and perfectly honest about the machine — but not about the eye. <strong>HSL</strong> — hue, saturation, lightness — was invented to be kinder to people, and it is more intuitive to handle. But its lightness is a polite fiction. Ask HSL for <em>fifty percent lightness</em> and it will hand you a brilliant yellow and a deep, dim blue with equal confidence, and call them equals.",
+    "hkIntro": "HSL is at least honest about saying <em>lightness</em>. The deeper trick is that even within the eye's own perceptual lightness — even OKLCH's L — there is a residual nudge that <em>chroma itself</em> gives to perceived brightness. A vividly saturated colour, all else equal, looks lighter than its grey twin. Hermann von Helmholtz and Friedrich Kohlrausch noted the effect in 1907; the eye, it turns out, refuses to weigh colour as a single number.",
+    "cieIntro": "Honest maps had been attempted before. In 1931 the Commission internationale de l'éclairage drew the first of them from real measurements of human vision — the <strong>chromaticity diagram</strong> below, a horseshoe that gathers every hue and every saturation a person can see into one shape, the whole of color laid flat.",
+    "gamutBody": "Its curved rim is the pure light of Chapter One, the spectrum bent into an arc; its straight foot is the purples, which have no wavelength and live only in the mind. No screen and no ink can reproduce the whole of it; each reaches only its own patch — a triangle for the screens, a more irregular shape for the printer — and everything beyond that patch is a color you can see but cannot show. That shortfall is what the word <strong>gamut</strong> names. The diagram was a monument — and yet still uneven in its corners: equal distances across it did not mean equal differences to the eye. The repair took most of a century.",
+    "gamutIntro": "The horseshoe above is abstract — every chromaticity a human can see, with the three gamuts marked. The viewfinder below is concrete: an image painted directly into the screen's wide-gamut Display P3 canvas, with deliberate flecks of colour outside sRGB. Drag the circular magnifier across it and watch the pixels it captures appear, in real time, as dots on the horseshoe. Switch the target gamut to see which dots fall outside — those are the colours your screen would crush, or the printer would invent a stand-in for, on the way to its surface.",
+    "oklabBody": "In 2020 Björn Ottosson published <strong>OKLab</strong>, and its cylindrical form <strong>OKLCH</strong> — a space tuned so that equal steps look equal, and lightness, at last, means lightness. It has since been written into the CSS standard and runs in almost every browser made. It is the color wheel of Chapter Four and the solid of Chapter Five, built once more — and measured, this time, not by number but by the eye.",
+    "helmholtzKohlrausch": "One last warning before we leave the spaces. Even OKLCH, which promises that equal numbers in <em>L</em> are equal in perceived lightness, has a small lie in it: highly saturated colours look <em>brighter</em> than their measured luminance predicts. The effect was first measured by <strong>Hermann von Helmholtz</strong> in the 1850s and refined by <strong>F. Kohlrausch</strong> in 1920, and is called the <em>Helmholtz–Kohlrausch effect</em>. Place a saturated red square and a neutral grey square side by side and adjust their luminances until they look equally bright. Then read the luminance meter: the red has substantially less physical light coming off it than the grey. The match is in the eye; the meter never agrees.",
+    "fig": {
+      "hslVsOk": {
+        "title": "HSL Against OKLCH",
+        "hint": "Drag the slider to read any hue",
+        "canvasAria": "Two strips, each sweeping through every hue. The HSL strip, held at lightness 50 percent, varies wildly in perceived brightness; the OKLCH strip, held at lightness 70 percent, stays perceptually even.",
+        "hueLabel": "Hue, the same step everywhere on the circle",
+        "hueAria": "Hue in degrees",
+        "cap": "Each pair of bands runs through every hue. The wide band is the color; the narrow band below it is the lightness your eye actually perceives. The HSL band heaves from bright to dark and back — its \"50%\" names a different brightness at every hue. The OKLCH band holds level: its lightness <em>is</em> the eye's. (The two are set at different numbers on purpose — HSL's \"50%\" has no fixed perceptual meaning, so matching the numbers would only compare brightnesses, not test the claim.)"
+      },
+      "hk": {
+        "title": "The Helmholtz–Kohlrausch Effect",
+        "hint": "Match the grey to the colour's brightness — by eye",
+        "patchAriaGrey": "Neutral grey patch — drag the grey lightness slider to set it",
+        "patchAriaColor": "Saturated colour patch, fixed at OKLCH L equals 0.60",
+        "tagGrey": "Neutral grey · you adjust",
+        "tagColor": "Saturated colour · OKLCH L = 0.60",
+        "labelHue": "Hue of the colour",
+        "labelChroma": "Chroma of the colour",
+        "labelGreyL": "Grey lightness — slide until the two patches feel equally bright",
+        "ariaHue": "Hue in degrees",
+        "ariaChroma": "Chroma of the colour in OKLCH units",
+        "ariaGreyL": "OKLCH L of the neutral grey",
+        "btnReveal": "Reveal the verdict",
+        "btnReset": "Reset to match",
+        "cap": "Both swatches share one constraint: the colour is fixed at <strong>OKLCH L = 0.60</strong>. Your task is to slide the grey's lightness until the two feel equally bright to your eye, then press <strong>Reveal</strong>. The verdict shows how much extra lightness — in OKLCH and in raw luminance Y — you had to give the grey to match a colour the eye insists is brighter than its numbers say. The boost depends on hue (it is strongest in the deep blues and reds) and grows with chroma. <em>Calibration disclaimer: the exact match depends on your monitor and ambient light; what matters is the direction and rough magnitude.</em>"
+      },
+      "cie": {
+        "title": "The 1931 Horseshoe",
+        "hint": "Drag the slider along the spectrum",
+        "canvasAria": "The CIE 1931 chromaticity diagram. A horseshoe-shaped field holds every chromaticity the human eye can see; its curved rim is the pure spectral wavelengths from 380 to 700 nanometres, and the straight edge across its foot is the purples, which have no wavelength of their own. Inside the field, three triangles mark working gamuts: the solid triangle is standard sRGB, the dashed one is the wider Display P3, and the dotted one — smaller than either — is a C/M/Y approximation of the four-colour offset-print gamut, whose true shape is a six-vertex polygon. The whole region between the triangles and the rim is visible to the eye but lies beyond what a screen can show, and is drawn pale.",
+        "nmLabel": "A pure wavelength, marked on the rim",
+        "nmAria": "Wavelength in nanometres",
+        "legendSrgb": "sRGB gamut",
+        "legendP3": "Display P3 gamut",
+        "legendCmyk": "Offset print (CMYK)",
+        "legendD65": "D65 white point",
+        "cap": "<strong>Drag the slider</strong> to walk the marker along the rim — each point one pure wavelength, the spectrum of Chapter One curled into an arc. The three triangles are working <strong>gamuts</strong>: solid is sRGB, the standard of the web; dashed is the wider Display P3 of recent screens; the smaller dotted triangle is a C/M/Y approximation of the offset-print gamut (its true shape is a six-vertex polygon — the triangle has roughly the right size, not the right shape). This is why a vivid screen graphic loses some life when it reaches a printed page. Every colour outside the solid sRGB triangle is drawn pale on purpose: it lies beyond the gamut this page is itself drawn in, so the diagram can only gesture toward a colour it cannot truly show."
+      },
+      "gamutView": {
+        "title": "The Gamut Viewfinder",
+        "hint": "Drag the lens · switch the target gamut",
+        "sideLabelImg": "Wide-gamut source image",
+        "sideLabelCie": "CIE 1931 chromaticity · sampled pixels plotted",
+        "imgAria": "A synthetic wide-gamut colour image painted directly into a Display P3 canvas. Some regions contain colours outside the sRGB triangle. Drag or focus to position the circular magnifier.",
+        "cieAria": "The CIE 1931 chromaticity diagram. Pixels currently under the magnifier appear as dots; pixels outside the chosen target gamut are highlighted with a red outline.",
+        "targetAriaGroup": "Target gamut for the warning outline",
+        "targetLabel": "Target gamut:",
+        "targetSRGB": "sRGB (web)",
+        "targetP3": "Display P3 (new screens)",
+        "targetCMYK": "CMYK (offset print)",
+        "cap": "The source canvas is rendered in <strong>Display P3</strong> where the browser supports it (Safari 15+, Chrome 110+, Firefox 113+); on older browsers it falls back to sRGB and the out-of-gamut warnings stay quiet. Each dot on the horseshoe is one pixel under the magnifier, transformed through the standard sRGB (or P3) matrix into CIE XYZ and then into <em>xy</em>. The three triangles are the same as in the horseshoe above. The red outline counts how many of the pixels you have caught lie outside whichever target you choose — vivid greens and cyans usually surrender to sRGB first; deep oranges and reds tend to die in the move to CMYK."
+      },
+      "helmholtzKohlrausch": {
+        "title": "The Helmholtz–Kohlrausch effect",
+        "hint": "Match the brightness · then read the luminance gap",
+        "stageAria": "A saturated coloured square on the left next to a neutral grey square on the right. Two sliders set the colour's hue and the grey's luminance independently. The reader's task is to drag the grey luminance until the two squares look equally bright; the readout reports the physical luminance of each square. For high-chroma colours the matching grey is consistently darker — sometimes by 20 to 40 percent — than the coloured square, even though the brain reads them as equally bright. That gap is the Helmholtz-Kohlrausch effect.",
+        "labelHue": "Hue of the coloured patch",
+        "labelL": "Grey lightness (match the brightness by eye)",
+        "labelGap": "Physical luminance gap (colour minus grey)",
+        "ariaHue": "Hue of the coloured patch in degrees, 0 to 360",
+        "ariaL": "Grey lightness percent, 0 to 100",
+        "cap": "If the match is genuine, the gap reads positive — the saturated colour is dimmer in measured photons than the matching grey, and yet the eye accepts them as the same brightness. The gap is largest for blues and purples (where it can exceed 40 ΔY) and smallest in the yellow-greens where the eye is already near peak sensitivity. The effect is why a fully saturated phthalo blue tube of paint reads as &laquo;bright&raquo; despite being measurably dark, and why the HSL model — which has no chroma-to-lightness term — places saturated blues at the same numerical value as pale ones."
+      },
+      "gamutMap": {
+        "title": "Gamut Mapping: Clipping vs. Chroma Preserved",
+        "hint": "Adjust Hue, Lightness, and Chroma · see how out-of-gamut colors map",
+        "canvasAria": "A 2D plot showing Lightness vs Chroma for the selected Hue. The white curve shows the sRGB gamut boundary. A red dot represents the chosen color, mapping to its clipped and chroma-reduced targets.",
+        "labelH": "Hue (H)",
+        "labelL": "Lightness (L)",
+        "labelC": "Chroma (C)",
+        "swatchOrig": "Original (Target)",
+        "swatchClip": "Clipped sRGB",
+        "swatchMap": "Chroma Mapped",
+        "infoClip": "Shifted L, C, H",
+        "infoMap": "Preserves L, H",
+        "cap": "When a color falls outside the sRGB triangle, your monitor cannot display it. <strong>Relative Colorimetric Clipping</strong> clamps each RGB channel independently, which shifts the color's hue and changes its lightness. <strong>Chroma Preserved Mapping</strong> reduces only the chroma (vividness) horizontally in the OKLCH space, keeping the lightness and hue constant. The white curve in the graph shows the boundary of sRGB for the chosen Hue. Notice how clipping shifts the coordinates, while mapping slides them directly onto the boundary."
+      }
+    },
+    "note": {
+      "label": "The color you will not see",
+      "body": "We can now place a color, and measure it, and trust the measurement. And yet that measurement is still not the color you will see — because the eye never judges a color alone. It judges every color by the colors around it. Chapter Eight is about that betrayal."
+    }
+  },
+  "ch8": {
+    "num": "Chapter Eight",
+    "title": "The Interaction of Color",
+    "standfirst": "No color is ever seen alone.",
+    "leadIn": "Josef Albers taught color for forty years — at the Bauhaus, at Black Mountain, at Yale — and in 1963 he set the whole of it down in a book called <em>Interaction of Color</em>. Its first principle is also its hardest: color is the most relative medium in art. A color is never seen as it is. It is always seen in the company of whatever surrounds it, and that company changes it.",
+    "heringIntro": "Behind that relativity lies a piece of wiring. Chapter Two showed three cones; what was not yet shown is that the brain immediately recodes their signals into <strong>opposite pairs</strong> — red against green, yellow against blue. The German physiologist Ewald Hering proposed the scheme in 1892, against Helmholtz's three-receptor consensus, and he was right: both are true, layered. The hardest prediction of his theory is that the two members of a pair <em>cannot coexist</em> in the same patch of vision. There is no such thing as a reddish-green, or a bluish-yellow, the way there is a reddish-blue (violet) or a yellowish-green (chartreuse). Below is the cancellation experiment that lets you feel that constraint with your own eyes.",
+    "proveBody": "The two squares at the centre of the panels below are painted in a single color — the very same color, the same three numbers. Set their surroundings, and watch them refuse to agree.",
+    "simContrastBody": "This is <strong>simultaneous contrast</strong>, named by the chemist Michel-Eugène Chevreul in 1839, when he was sent to explain why the same wool looked wrong in different weaves at the Gobelins tapestry works. The eye grades every color against its surroundings: a color on a darker ground lifts, the very same color on a lighter ground sinks — as the two centre squares above have just shown. Contrast works in hue as well as in lightness — a grey set beside orange cools toward blue, beside blue it warms toward orange — but the lesson is single: the eye reports differences, never absolutes.",
+    "bezoldBody": "The influence can spread, too. In the <strong>Bezold effect</strong> — noticed by the meteorologist Wilhelm von Bezold while designing rugs — changing one color in a repeating pattern shifts the hue and tone of the whole design at once, as that single color carries through every shape it touches.",
+    "neonIntro": "An extreme case of that spreading is <strong>neon color spreading</strong>, first described by Dario Varin and Harrie van Tuijl in the 1970s. Where a thin coloured stroke crosses a contour of a different colour on a dark ground, the eye fills the interior of the contour with the crossing colour as though a tinted disc had been laid behind it. The colour is in the strokes only — the rest is invented.",
+    "successiveBody": "That ghost is a <strong>successive contrast</strong>, an afterimage. The eye does not merely count its three cones; at the next stage it sets them against one another in opposed pairs — red against green, blue against yellow. Hold a color still on one patch of the retina and the cones that carry it slowly tire; when the color is withdrawn, its worn-out side falls quiet while the opposing one answers unopposed, and you see the complement, painted upon nothing at all. It is the same opposition that sets complementary colors buzzing when they are placed side by side: the eye was built to answer contrast, and it cannot be told to stop.",
+    "landIntro": "If that sounds like the eye is doing more than reading light, it is. In 1959 the engineer and Polaroid founder Edwin Land showed it could do something almost ridiculous: from <em>two</em> black-and-white photographs — one taken through a long-wavelength filter, one through a shorter — projected back through a red filter and a white lamp, respectively, the visual system reconstructs an apparently <em>full colour</em> image. There is no green light, no blue light, anywhere in the room. The brain manufactures the missing hues from the spatial structure of the two records, edges and ratios doing the work that pure wavelength cannot. Land called the underlying account the <strong>retinex</strong> theory, for retina and cortex. The simulation below lets you stand inside that experiment.",
+    "hering": "Behind all of these effects is a structural fact about the visual pathway, first proposed by <strong>Ewald Hering</strong> in 1892: the signal that leaves the retina is not a list of three cone activations, but a difference. The output of L and M cones is subtracted to form a <em>red–green</em> channel; the output of S is subtracted from the sum of L and M to form a <em>yellow–blue</em> channel; and L+M+S becomes the brightness channel. Inside each opponent channel, the two poles cannot coexist — there is no such thing as a reddish-green or a yellowish-blue, the way there is a reddish-orange. The dial below lets you push a sample colour along the two opponent axes and watch the nervous system's \"two-poles-only\" rule do its work.",
+    "goethe": "Goethe, two centuries before Hering, had already collected a catalogue of phenomena the eye produced of its own accord. The most beautiful was the <em>coloured shadow</em>: light a white wall with two lamps, one of any spectral colour, the other neutral white, and the shadow cast by a finger or pencil in front of the coloured lamp is not grey but vivid in the <em>complement</em> of the lamp's colour. A red lamp casts a cyan shadow on a white wall, an orange lamp a blue one, a yellow lamp a violet one. The physics is uncontroversial — only the white lamp's light reaches the shadow, and that light contains the complement of the coloured lamp's hue in roughly equal measure to everything else — but the saturation of the perceived colour goes far beyond what the physical mixture predicts. The nervous system, having decided that the room is &laquo;the colour of the coloured lamp&raquo;, treats anything dimmer as a deviation in the opposite direction, and renders it accordingly.",
+    "assim": "One last reverse. Albers and Bezold showed that two colours in close geometric contact push each other apart in perception (<em>simultaneous contrast</em>). At very fine spatial scales — thin stripes, dot patterns, small textures — the same two colours do the opposite: they pull each other together, blending in the eye until each is taken to be a little more like its neighbour. This is <em>color assimilation</em>, or the <em>Bezold effect</em>, and it is the reason a thin red line on a green field looks more like a red-orange line on a teal field, and a stamp printed in magenta dots on yellow paper reads as a warm orange from a metre away. The threshold at which contrast flips to assimilation is a matter of spatial frequency — how many edges per degree of visual angle — and it shifts with viewing distance and lighting.",
+    "fig": {
+      "hering": {
+        "title": "Hering's opponent channels",
+        "hint": "Push along red↔green and yellow↔blue · the channels cancel at zero",
+        "stageAria": "A grey reference patch on the left and a coloured target patch on the right. Two opposed sliders push the target along the red-green axis and the yellow-blue axis. At zero on both sliders the target is neutral grey; pushing one axis colours the patch in that direction; setting opposite signs on the two axes produces familiar in-between colours (orange, teal, magenta, chartreuse); pushing the same axis to its limit and the opposite axis to its limit produces no muddier middle, only the dominant pole — the system refuses to render a reddish-green.",
+        "labelRG": "Red ↔ Green",
+        "labelYB": "Yellow ↔ Blue",
+        "ariaRG": "Red to green opponent channel, negative is green, positive is red",
+        "ariaYB": "Yellow to blue opponent channel, negative is blue, positive is yellow",
+        "cap": "Hering's <em>opponent-process theory</em> (1892) replaced Helmholtz's three-cone model as the explanation of what the eye ships upstream. The two are not in conflict; the retina has three receptors (Helmholtz), but the retinal ganglion cells combine and subtract their outputs into three opponent channels (Hering) before the signal leaves the eye. The colour you see is the brain's reading of those differences. The familiar names of impossible colours — <em>reddish-green</em>, <em>yellowish-blue</em> — describe combinations the opponent channels cannot encode; the names refer to nothing in the world, only to the rules of the channel."
+      },
+      "albers": {
+        "title": "One Color, Two Colors",
+        "hint": "Adjust the grounds, then prove the centres equal",
+        "labelLeft": "Left ground",
+        "ariaLeft": "Lightness of the left ground",
+        "labelRight": "Right ground",
+        "ariaRight": "Lightness of the right ground",
+        "labelCentre": "The centre color",
+        "ariaCentre": "Hue of the centre color",
+        "labelPattern": "Surround pattern",
+        "ariaPattern": "Pattern frequency on the surrounds: zero is solid, higher is finer stripes",
+        "verdict": "Both centre squares hold the very same color.",
+        "proveBtn": "Prove it",
+        "cap": "The wider the gap between the two grounds, the more the single centre color splits in two — sinking dark against the light ground, lifting pale against the dark. The eye is grading it against its surroundings, never reading it on its own. Turn the lower slider for a second lesson: at wide stripes the contrast around the centre sharpens, but as the stripes go fine the eye stops separating them from the field — the surround averages itself, and the centre <em>assimilates</em> toward the stripe colour. Wilhelm von Bezold noticed the effect in 1874."
+      },
+      "neon": {
+        "title": "Neon Color Spreading",
+        "hint": "Toggle the illusory contour",
+        "svgAria": "A dark field crossed by a thin white grid. At the central intersections, a single coloured stroke replaces the white. The eye sees a tinted disc filling the central region, although only the crossing strokes carry colour.",
+        "labelColor": "Stroke colour",
+        "toggleLabel": "Show the illusory contour",
+        "note": "The dotted ring, when shown, marks where the eye paints a tinted disc that has no physical paint in it — only the few coloured strokes inside that ring carry pigment.",
+        "cap": "Where the Albers panels above showed neighbouring colours pushing each other apart (simultaneous contrast) and fine stripes melting into the field (Bezold assimilation), this figure is assimilation pushed to its limit. The visual system, primed by the closed grid to expect a continuous surface, paints the inside of the \"ring\" with the colour it finds at its boundary — even when almost the entire inside is bare dark ground. The same machinery underlies coloured shadows, watercolour effects, and almost every designer's reach for restraint: <em>show a colour at the edge, the interior fills itself in</em>."
+      },
+      "afterimage": {
+        "title": "The Afterimage",
+        "hint": "Stare at the cross, then look away",
+        "hueLabel": "The color to stare at",
+        "hueAria": "Hue of the shape",
+        "lookBtn": "Look away",
+        "cap": "Hold your gaze on the small cross for twenty seconds or so — do not let it wander — then press <em>Look away</em>. On the bare grey field, the shape returns as a ghost, painted in its complement."
+      },
+      "land": {
+        "title": "Land's Two-Color Projection",
+        "hint": "Hover the output to read a pixel's R, G, B",
+        "origLabel": "Original scene · for reference",
+        "outLabel": "Land's projection · what the room shows",
+        "origAria": "The original colour scene that the long-wave and short-wave records were taken from",
+        "outAria": "The simulated output of Land's two-projector setup. Hover or focus to read the actual R, G, B values of any pixel — they will be much simpler than the colour you perceive.",
+        "modesAria": "Which projector to show",
+        "modesLabel": "Show:",
+        "modeBoth": "Both projectors",
+        "modeRed": "Red light only",
+        "modeWhite": "White light only",
+        "labelRed": "Red filter intensity (long-wave record)",
+        "labelWhite": "White light intensity (short-wave record)",
+        "ariaRed": "Intensity of the red-filtered projector",
+        "ariaWhite": "Intensity of the white-light projector",
+        "cap": "The left panel shows the colour scene the two black-and-white slides were \"taken\" from. The right panel is what a viewer in Land's lecture room would actually see: only two physical lights, a red and a white, modulated by the two grayscale records. Hover or focus the right panel and read the verdict — pixels that look orange, yellow, or even green-tinted have <em>no green light and no blue light</em> in them at all. Their R, G, B numbers will show this plainly. The colours you see anyway are the visual system filling in, from edges and surround context, the hues the room never sent. The effect is strongest on a calibrated screen in a dim room; under bright office light it weakens but is still visible on the warm side of the spectrum."
+      },
+      "goethe": {
+        "title": "Goethe's coloured shadow",
+        "hint": "Pick a lamp colour · watch the shadow take on its complement",
+        "stageAria": "A white wall lit by two lamps. The left lamp is white; the right lamp is a coloured lamp whose hue the reader chooses. A small figure casts two shadows on the wall: the shadow on the left, away from the white lamp, falls in the light of the coloured lamp and is dim and tinted by it; the shadow on the right, away from the coloured lamp, falls in white light alone and looks neutral grey at first — but is perceived strongly as the complement of the coloured lamp's hue.",
+        "labelHue": "Coloured lamp hue",
+        "ariaHue": "Hue of the coloured lamp on the right, 0 to 360 degrees",
+        "cap": "Two lamps, one white, one coloured. The shadow on the side away from the white lamp is lit only by the coloured lamp, and shows that colour faintly. The shadow on the side away from the coloured lamp is lit only by white — but the visual system, having read the dominant lamp colour as the room's white point, treats anything else as a deviation toward the complement and renders the right-hand shadow in vivid cyan, blue, violet, or chartreuse, according to the choice of lamp. The effect was the first item in Goethe's <em>Theory of Colours</em> (1810), and is still the most direct demonstration of the opponent-channel rule working in the wild."
+      },
+      "assim": {
+        "title": "Color assimilation: when contrast becomes blending",
+        "hint": "Make the stripes finer · watch contrast invert into blending",
+        "stageAria": "A square field divided horizontally into a top half and a bottom half. Each half contains the same coloured target stripes; the top half is overlaid with thin black grid lines and the bottom half with thin white grid lines. As the stripe spacing narrows, the coloured target in the top half appears to darken and the same target in the bottom half appears to lighten — the visual system has begun to mix the surround into the target instead of contrasting against it.",
+        "labelSpacing": "Stripe spacing",
+        "ariaSpacing": "Pixel spacing between stripes, 2 to 40",
+        "cap": "The same orange target in two halves of the field. Thin black lines overlaid on the top half pull the target toward darkness; thin white lines on the bottom half pull it toward light. Narrow the lines and the assimilation strengthens until, near the resolution limit of the eye, the target on the top half is darker than its physical RGB value and the target on the bottom half is lighter — neither change is in the pixel data, both are in the eye. The phenomenon was studied carefully by <strong>Wilhelm von Bezold</strong> in 1874 and is the inverse of the simultaneous contrast Albers built his pedagogy around."
+      }
+    },
+    "note": {
+      "label": "Color that has to work",
+      "body": "If the measured color is never quite the color that is seen, then anyone who builds with color for other people — a sign, an interface, a page — is working on shifting ground. The last full chapter is about standing on it regardless: color that stays legible, and stays kind, for every eye."
+    }
+  },
+  "ch9": {
+    "num": "Chapter Nine",
+    "title": "Color in Practice",
+    "standfirst": "Color that has to be read by everyone.",
+    "leadIn": "Eight chapters have gone to how color behaves. This one is about a duty. When color is asked to carry meaning — on a sign, a screen, a page — it has to reach every reader, not only the well-lit and the typically sighted. Two demands cover most of it: color must be <strong>legible</strong>, and it must be <strong>inclusive</strong>.",
+    "contrastBody": "Legibility is, above all else, a matter of contrast. Text can be read when it is light enough — or dark enough — against its background, and that \"enough\" can be put to a single number. Set a text color and a background below.",
+    "wcagBody": "The Web Content Accessibility Guidelines set the thresholds the badges test. Body text needs a ratio of at least <strong>4.5 : 1</strong> to pass at the ordinary level, AA; large text — around 24 pixels, or 19 if bold — needs only <strong>3 : 1</strong>; the strict level, AAA, asks <strong>7 : 1</strong> of body text. These are not bureaucratic numbers. They are the margin between a sentence that is read and one that is squinted at, given up on, or never noticed at all — by a reader in sunlight, on a dying screen, or simply with older eyes.",
+    "apcaBody": "The figure also reads a newer number beside the ratio: <strong>APCA</strong>, the contrast measure W3C is preparing for the next version of the guidelines. Where WCAG counts only the brightness gap, APCA reads the gap as the eye does, and it does not pretend that dark-on-light and light-on-dark are the same problem. Its guidance then attaches different <em>Lc</em> minimums to different sizes and weights of type: body text wants at least <strong>Lc 75</strong>, large or bold text 60, headings 45, and merely visible non-text 30. The scale (signed, with positive for darker text on lighter ground) runs to about a hundred at the extreme.",
+    "inclusionBody": "The second demand is inclusion. Among people of European descent, roughly one man in twelve and one woman in two hundred — the rate shifts with ancestry — meet color with a different set of cones than this essay has so far assumed. Most often a single cone type is shifted or absent: <strong>protanopia</strong> and <strong>deuteranopia</strong> weaken the line between red and green; the rarer <strong>tritanopia</strong> blurs blue against yellow. The eight colors sent to the screen below never change; what each setting shows is how a different eye would resolve them.",
+    "rulePracticalBody": "Watch the red and the green slide toward one muddy tone under protanopia or deuteranopia, and the practical rule writes itself: <strong>never let color be the only signal</strong>. A red word and a green word, alike in every other respect, are two words a great many readers cannot tell apart. Add a second channel — a shape, a label, an underline, a position — and color becomes a welcome reinforcement rather than a locked door. Color should be the easiest way to read a thing; it must never be the only way.",
+    "balanceBody": "One last note before the road ends. A palette is not just three good colours but the <em>shares</em> they take of the page. Designers have long leaned on a rule of thumb: a room, a poster, or a screen reads as <strong>balanced</strong> when one colour does about sixty per cent of the work, a second around thirty, and the third only about ten. The dominant carries the space; the secondary supports it; the accent draws the eye and then steps back. Give every colour an equal share and the composition loses its centre.",
+    "fig": {
+      "contrast": {
+        "title": "The Contrast Checker",
+        "hint": "Pick a text color and a background",
+        "labelText": "Text",
+        "labelBg": "Background",
+        "contrastUnit": ": 1 contrast",
+        "wcagAria": "WCAG contrast results",
+        "apcaAria": "APCA perceptual contrast",
+        "apcaUnit": "Lc · APCA",
+        "previewLg": "Large text, set big.",
+        "previewSm": "Body text — the size most words on a page are set in, and the size that asks the most of contrast.",
+        "cap": "The number is the <strong>contrast ratio</strong> — the lighter color's luminance against the darker's, running from 1:1 (identical) to 21:1 (pure black on pure white)."
+      },
+      "cvd": {
+        "title": "Through Other Eyes",
+        "hint": "A simulation — choose a kind of vision",
+        "typesGroupAria": "Kind of color vision",
+        "btnNormal": "Typical vision",
+        "btnProtanopia": "Protanopia",
+        "btnDeuteranopia": "Deuteranopia",
+        "btnTritanopia": "Tritanopia",
+        "severityLabel": "Severity — anomalous trichromacy to complete dichromacy",
+        "severityAria": "Severity, percent — at 0 the simulation is typical vision; intermediate values approximate anomalous trichromacy; 100 models complete dichromacy",
+        "swatchesAria": "An eight-color palette shown under the selected kind of color vision",
+        "capInitial": "Eight distinct colors, to a typical eye.",
+        "cap": "A mathematical approximation. At <strong>severity 100</strong> it models complete dichromacy — a missing cone; intermediate severities approximate <strong>anomalous trichromacy</strong> (a cone shifted rather than absent), the milder and far more common form. No ordinary screen can reproduce the true experience."
+      },
+      "balance": {
+        "title": "Sixty · Thirty · Ten",
+        "hint": "Pick the colours · slide the share",
+        "mockAria": "A mock page layout in three coloured bands. The dominant colour fills the central body, the secondary fills a header above, and the accent fills a thin band at the foot, with a small button on the body that picks up the accent colour. The bands' relative heights show the palette's proportions.",
+        "labelDominant": "Dominant",
+        "labelSecondary": "Secondary",
+        "labelAccent": "Accent",
+        "domShareLabel": "Dominant share",
+        "domShareAria": "Dominant colour share, percent",
+        "btn603010": "60 · 30 · 10",
+        "btnEqual": "Equal thirds",
+        "continueBtn": "Continue",
+        "cap": "Each change rewrites the panel. Move the slider far below sixty and the eye loses a centre to rest on; push it close to a hundred and only the dominant survives. The rule is a heuristic, not a law — but a sturdy one, and a good starting place when a new palette is set loose on a page."
+      },
+      "hueTest": {
+        "title": "Farnsworth-Munsell Hue Test",
+        "hint": "Arrange the tiles in a smooth color gradient. Click a tile, then click another to swap.",
+        "tilesAria": "Color tiles to arrange",
+        "btnCheck": "Check Score",
+        "btnReset": "Reset Test",
+        "badgeTitle": "Color IQ Test",
+        "btnShare": "Share Result",
+        "cap": "The Farnsworth-Munsell 100 Hue Test is the clinical standard for measuring color vision. The two end tiles (marked with an anchor) are locked in place. Tap any tile, then tap another to swap their positions. Your goal is to arrange the tiles so they transition smoothly from violet to orange. Once you're done, check your score and share your Color IQ badge!"
+      }
+    },
+    "note": {
+      "label": "The end of the road",
+      "body": "And that is the essay — from a single wavelength of light to the discipline of a palette that works for every eye. One short chapter remains: not an argument but a reference, the terms of color gathered in a single place."
+    }
+  },
+  "ch10": {
+    "num": "Chapter Ten",
+    "title": "A Glossary of Color",
+    "standfirst": "Every term the essay leaned on, gathered in one place.",
+    "leadIn": "Not an argument this time, but a reference. Each term below has its home in one of the nine chapters; the marker beside it points the way. Type in the box to narrow the list.",
+    "fig": {
+      "terms": {
+        "title": "The Terms",
+        "searchPlaceholder": "Filter the terms…",
+        "searchAria": "Filter the glossary terms",
+        "emptyMsg": "No term matches that.",
+        "list": {
+          "additiveMixing": {
+            "name": "Additive mixing",
+            "ref": "§3",
+            "def": "Making color by combining light: begin in darkness and add. Red, green, and blue light together make white — the logic of screens and stage lights."
+          },
+          "afterimage": {
+            "name": "Afterimage",
+            "ref": "§8",
+            "def": "The colored ghost seen once a color is withdrawn — its complement, produced as the eye's tired opponent channels rebound."
+          },
+          "analogous": {
+            "name": "Analogous",
+            "ref": "§6",
+            "def": "A harmony of neighbouring hues, close together on the wheel — one family, quietly at ease."
+          },
+          "chroma": {
+            "name": "Chroma",
+            "ref": "§5",
+            "def": "How pure or how muted a color is: its distance from a neutral grey. One of color's three dimensions."
+          },
+          "chromaticity": {
+            "name": "Chromaticity",
+            "ref": "§7",
+            "def": "A color's hue and saturation taken together, considered apart from its brightness."
+          },
+          "cie1931": {
+            "name": "CIE 1931",
+            "ref": "§7",
+            "def": "The colorimetric standard built from human color-matching — and the source of the horseshoe chromaticity diagram."
+          },
+          "cmyk": {
+            "name": "CMYK",
+            "ref": "§3",
+            "def": "Cyan, magenta, yellow, and key black: the subtractive primaries of print."
+          },
+          "colorSpace": {
+            "name": "Color space",
+            "ref": "§7",
+            "def": "A coordinate system for color — a way to fix any color with a few numbers. RGB, HSL, and OKLCH are color spaces."
+          },
+          "cvd": {
+            "name": "Color vision deficiency",
+            "ref": "§9",
+            "def": "A difference in the cones — usually one missing or shifted — that weakens the line between certain colors, most often red and green."
+          },
+          "colorWheel": {
+            "name": "Color wheel",
+            "ref": "§4",
+            "def": "The spectral line bent into a ring, its two ends joined through the non-spectral purples. An invention, and a useful one."
+          },
+          "complementary": {
+            "name": "Complementary",
+            "ref": "§4",
+            "def": "Two colors facing each other across the wheel — the sharpest contrast a pair can hold."
+          },
+          "coneCell": {
+            "name": "Cone cell",
+            "ref": "§2",
+            "def": "One of the retina's three color receptors — short, medium, and long (S, M, L). Their three signals are the whole of color seen by daylight."
+          },
+          "contrastRatio": {
+            "name": "Contrast ratio",
+            "ref": "§9",
+            "def": "The luminance ratio of two colors, from 1:1 to 21:1. WCAG asks at least 4.5:1 of body text."
+          },
+          "gamut": {
+            "name": "Gamut",
+            "ref": "§7",
+            "def": "The set of colors a given device or space can actually produce — always smaller than all the eye can see."
+          },
+          "harmony": {
+            "name": "Harmony",
+            "ref": "§6",
+            "def": "Colors that belong together, set by simple geometry on the wheel: a grammar for combining color, not a law."
+          },
+          "hsl": {
+            "name": "HSL",
+            "ref": "§7",
+            "def": "Hue, Saturation, Lightness — an intuitive color space, though its lightness is not perceptually even."
+          },
+          "hue": {
+            "name": "Hue",
+            "ref": "§4",
+            "def": "The quality a color word names — red, green, blue — and the dimension that runs around the wheel."
+          },
+          "metamerism": {
+            "name": "Metamerism",
+            "ref": "§2",
+            "def": "Two physically different lights that fill the three cones to the same levels, and so look identical though they are not."
+          },
+          "munsell": {
+            "name": "Munsell",
+            "ref": "§5",
+            "def": "Albert Munsell's color-order system, around 1905 — the first mapped by measurement, placing every color by hue, value, and chroma."
+          },
+          "oklch": {
+            "name": "OKLCH",
+            "ref": "§7",
+            "def": "A perceptually uniform color space (Björn Ottosson, 2020) where equal steps look equal — the cylindrical form of OKLab, now part of CSS."
+          },
+          "opponentProcess": {
+            "name": "Opponent process",
+            "ref": "§8",
+            "def": "The second stage of color vision: the cone signals set against one another in pairs — red against green, blue against yellow."
+          },
+          "primaryColors": {
+            "name": "Primary colors",
+            "ref": "§3",
+            "def": "A chosen set from which others are mixed. There is no single true set: RGB for light, CMY for pigment, RYB for the painter."
+          },
+          "rgb": {
+            "name": "RGB",
+            "ref": "§3",
+            "def": "Red, Green, Blue: the additive primaries of light, and the color space native to screens."
+          },
+          "saturation": {
+            "name": "Saturation",
+            "ref": "§5",
+            "def": "How vivid or how washed a color looks; in screen and everyday use, the working cousin of chroma."
+          },
+          "simultaneousContrast": {
+            "name": "Simultaneous contrast",
+            "ref": "§8",
+            "def": "The shift a color undergoes on account of its neighbours. The eye grades every color against its surroundings."
+          },
+          "spectralColor": {
+            "name": "Spectral color",
+            "ref": "§1",
+            "def": "A color carried by a single wavelength of light. Magenta is not one — it has no wavelength of its own."
+          },
+          "subtractiveMixing": {
+            "name": "Subtractive mixing",
+            "ref": "§3",
+            "def": "Making color by removing light: begin with white and take away. Each pigment absorbs part of the spectrum."
+          },
+          "tintShadeTone": {
+            "name": "Tint, shade, and tone",
+            "ref": "§5",
+            "def": "Three ways to move a color: a tint adds white, a shade adds black, a tone adds grey."
+          },
+          "trichromatic": {
+            "name": "Trichromatic vision",
+            "ref": "§2",
+            "def": "Human color sight: three cone types, and color assembled by the brain from the ratio of their three signals."
+          },
+          "value": {
+            "name": "Value",
+            "ref": "§5",
+            "def": "How light or dark a color is — its place on the road from black to white. One of color's three dimensions."
+          },
+          "visibleSpectrum": {
+            "name": "Visible spectrum",
+            "ref": "§1",
+            "def": "The narrow band of wavelengths the eye can catch, roughly 380 nanometres (violet) to 700 (red)."
+          },
+          "wavelength": {
+            "name": "Wavelength",
+            "ref": "§1",
+            "def": "The length of one cycle of a light wave, in nanometres — the stimulus the cones absorb in differing proportions to make the three signals the brain reads as color."
+          }
+        }
+      }
+    },
+    "note": {
+      "label": "The last word",
+      "body": "And there the argument rests. Color began as a fact of physics and ends as a discipline of care — and across all ten chapters it was never once a property of things. It is an event: a meeting of light, matter, and a looking eye, and it lasts exactly as long as the looking does."
+    }
+  },
+  "ch12": {
+    "num": "Chapter Twelve",
+    "title": "Pigments",
+    "standfirst": "The history of color is the history of pigments. And pigments are made of chemistry, trade, and power.",
+    "leadIn": "A color, until the late nineteenth century, was almost always a thing — a stone ground to powder, a shellfish boiled until it bled, a beetle scraped from a cactus. The history of color, before the chemists arrived, is mostly the history of finding rare substances in inconvenient places and shipping them at great expense across the world.",
+    "earth": "The oldest pigments are the most generous ones — the ones the earth already had ground up and lying about. The cave painters of Lascaux, seventeen thousand years ago, used <strong>yellow ochre</strong> and <strong>red ochre</strong> — iron oxides — that they could pick up from the ground around the cave mouth. <em>Burnt</em> the same ochre and it darkened to brown; <em>heated</em> it to red glow and it became more saturated still. <strong>Vermilion</strong> — the red of cinnabar, mercury sulfide — was found in red veins and pounded to a fine powder, the most expensive non-blue pigment of the ancient world. <strong>Malachite</strong> for green, <strong>azurite</strong> for blue: both were copper carbonates, both mined where copper was mined, both stable enough to last for millennia on a tomb wall.",
+    "ultramarine": "Of all the pigments before synthesis, the most extraordinary was <strong>ultramarine</strong> — the blue of <em>lapis lazuli</em>, a stone mined in only one place in the world: the Sar-i Sang valley in the mountains of what is now north-eastern Afghanistan. Extracted there from at least the sixth millennium BCE, it travelled by camel and ship to Venice, where it was further refined by being kneaded with wax and ash, and from Venice it dispersed to the workshops of Renaissance Europe. By the fifteenth century it cost more, gram for gram, than gold. The blue of Vermeer's <em>Girl with a Pearl Earring</em>, the blue of every Madonna's robe in early Italian painting, the blue of the lapis ornaments of Tutankhamun's coffin — all came from one Afghan valley. The name <em>ultramarine</em> means simply <em>from beyond the sea</em>.",
+    "tyrian": "The story repeats with <strong>Tyrian purple</strong>, the dye reserved for Roman emperors. It came from a Mediterranean sea snail (<em>Murex brandaris</em>), one of those organisms that produces a tiny amount of a precious substance under just the right conditions of stress. The Phoenicians of Tyre had perfected its extraction by the second millennium BCE. A single gram of dye required around twelve thousand snails, harvested and crushed and left to ferment in vats whose stench, the historians tell us, was unbearable for a city block in every direction. A pound of dyed wool cost roughly its weight in silver. The colour itself was not quite purple in the modern sense — a deep blood-red with an iridescent violet sheen — but it was the most expensive colour anyone had ever produced, and so by social convention it became the colour of power.",
+    "indian": "Other pigments came with stranger biographies. <strong>Indian yellow</strong>, used in European painting from the seventeenth century to the early twentieth, was made — according to the surviving accounts — from the dried urine of cattle in rural Bengal that had been fed exclusively on mango leaves. The mango diet starved the cows and yielded a small daily supply of a brilliant, glowing yellow whose chemistry (a magnesium salt of euxanthic acid) European chemists worked out only in the 1880s. It was banned, on animal-welfare grounds, in 1908. Modern Indian yellow is a synthetic; the old jars in museum drawers are sometimes the last of the cow-given kind.",
+    "mummy": "Stranger still: <strong>mummy brown</strong>. From at least the sixteenth century, European apothecaries imported powdered Egyptian mummies — human and feline — as a pigment, a deep semi-transparent brown popular for shadows and skin tones. The painters of the Pre-Raphaelite Brotherhood, in the 1860s, used it without thinking until Edward Burne-Jones learned where it came from and, the story goes, took the tube of mummy brown out into the garden and buried it. Production trailed off through the twentieth century; the last commercial tube was sold by Roberson's of London in 1964, when, they explained politely, they had run out of mummies.",
+    "mauve": "Everything changed in 1856. An eighteen-year-old chemistry student in London, <strong>William Henry Perkin</strong>, was trying to synthesise quinine for malaria treatment, failed, and produced instead a dark sludge that, when he washed it out of the flask, stained the cloth a vivid purple. The purple was unfading, unbleaching, and could be made from coal tar — a waste product of the gas industry, then piling up in vast and useless heaps. Perkin patented the dye, named it <strong>mauve</strong>, opened a factory, and at twenty-one was rich. The discovery launched the synthetic dye industry; within forty years almost every pigment a painter or dyer used was a coal-tar derivative, and the companies founded to make them — BASF, Hoechst, Bayer, Agfa — became the chemical giants of the twentieth century. The age of natural pigments was, suddenly, over.",
+    "cadmium": "What replaced it was a flood of synthetic colours, each more saturated and lightfast than the rare substance it replaced. <strong>Cadmium yellow</strong> and <strong>cadmium red</strong> — discovered 1817, made commercially from the 1840s — gave painters from Monet to Van Gogh their fierce, glowing oranges and yellows. <strong>Cobalt blue</strong> (1802) replaced ultramarine for everyday use; <strong>cerulean</strong> (1860) joined it. <strong>Titanium white</strong>, commercialised in 1916, replaced the lead white that had poisoned painters for two thousand years — Vermeer, Caravaggio, and many others died young, with lead poisoning long suspected as a major cause — the very white that made their highlights possible. The new whites were, for the first time, safe to use. The new chemistry was no longer a matter of finding the rare; it was a matter of designing the molecule.",
+    "vantablack": "And the cycle continues. In 2014 the firm <strong>Surrey NanoSystems</strong> announced <em>Vantablack</em>, a coating of vertically aligned carbon nanotubes that absorbs 99.965 % of visible light — the blackest substance ever measured. The British sculptor Anish Kapoor secured an exclusive licence to it for artistic use, and a small art-world war broke out over whether a single artist should own a colour. The painter Stuart Semple released a competing pigment called <em>Pinkest Pink</em> with a licence forbidding Kapoor from buying it. Kapoor bought some anyway. The exchanges have continued, comic and serious in turn, but the underlying point is older than they think — every age that has invented a new colour has fought, at least for a while, over who is allowed to use it.",
+    "astm": "By the late twentieth century the chemistry was settled enough that someone had to invent a label for it. The <strong>American Society for Testing and Materials</strong> — ASTM, founded in 1898 — issued <strong>D4303</strong> in 1982, a procedure for measuring a pigment's <em>lightfastness</em>: paint a strip, expose half of it to a year of sunlight, measure the colour shift, and grade the result from <em>I</em> (Excellent) through <em>V</em> (Fugitive). Museum-grade work uses I and II only. A second standard, <strong>D4236</strong>, was added in 1988 after the U.S. Labelling of Hazardous Art Materials Act required chronic-hazard warnings on every tube of paint sold to amateurs — cadmium for cancer risk, lead for neurotoxicity, cobalt for both. The phrase &laquo;Conforms to ASTM D4236&raquo; on a tube means a toxicologist has read the formulation. The third element is the <strong>Colour Index code</strong> — <em>PR108</em> for Cadmium Red, <em>PB29</em> for Ultramarine, <em>PG7</em> for Phthalo Green — a three-character designation maintained by the Society of Dyers and Colourists since 1925 that lets a chemist know exactly which compound is in the tube regardless of what the marketing department called it. Hold a modern paint tube up to the light and you can read its physics, its danger, and its history in less than a square centimetre.",
+    "closing": "The chemists won the argument, by and large. A painter today can buy a tube of every colour an Old Master would have killed for, for the price of lunch. But the older logic of colour — that a hue was a substance, that a substance was a place, and that a place gave you a politics — still lives in the names. <em>Naples yellow</em> came from Vesuvius. <em>Sienna</em> came from Siena. <em>Indian yellow</em>, however briefly we still use it, points to the Bengal where it once was made. The synthetic age has freed us from the substance, but the colour-name carries the substance's ghost.",
+    "fading": "The lightfastness rating is not a slogan but a number, and the slider below lets you accelerate the measurement. Six historical pigments are painted onto a strip; the slider stands for how many decades of museum-light exposure (about 150 lux for eight hours a day, the standard for the Louvre's loaned works) the strip has endured. Pigments with ASTM I and II ratings barely move. Pigments rated III, IV, V — the historical fugitive colours like alizarin crimson, indian yellow, mauveine, dragon's blood — visibly drift toward grey within the first century. Real fading is more complex and depends on humidity, binder, and trace impurities; this is a cartoon, but it is a cartoon with the right rank order.",
+    "fig": {
+      "timeline": {
+        "title": "A timeline of pigments",
+        "hint": "Click a pigment to read its story",
+        "stageAria": "A horizontal timeline from 2000 BCE to today, with dots marking when each notable pigment entered use. Each dot is coloured with the pigment itself.",
+        "selectedPrompt": "Click a pigment dot above to read its story.",
+        "cap": "Each dot marks the approximate date a pigment entered widespread use; its colour is the pigment itself, drawn at typical saturation. The pre-1850 pigments are natural — earths, stones, plants, shellfish. After 1856, the synthetic age opens with Perkin's mauve, and almost every later pigment is a coal-tar derivative, a metal oxide, or a designed organic compound. The cluster of names compresses fifty thousand years of pigment history into a single, walkable line."
+      },
+      "tube": {
+        "title": "A modern paint tube, decoded",
+        "hint": "Six labels · six histories on a square inch of metal",
+        "imgAlt": "A photograph of a real paint tube of Cadmium Red Medium lying on a wooden workbench. The label, printed in black on a cream rectangular field, shows six pieces of information: the colour name 'Cadmium Red Medium' top centre, the series number 'Series 4' top right, the Colour Index pigment code 'PR108' middle left, the lightfastness rating 'ASTM Lightfastness I' middle centre, the genuineness marker 'Hue vs Genuine' middle right, and the safety conformance 'Conforms to ASTM D4236' along the bottom. To the left of the label sits a small red colour swatch — a direct sample of the pigment the tube contains.",
+        "name": "Cadmium Red Medium",
+        "nameNote": "The commercial name. <em>Medium</em> places this colour between the cooler <em>Light</em> and the warmer <em>Deep</em> within the same pigment family — the manufacturer shifts the hue by sintering temperature, not by adding other pigments.",
+        "series": "Series 4",
+        "seriesNote": "The price tier. Series 4 is among the most expensive — the pigment here is genuine cadmium sulfoselenide, not a hue substitute. Manufacturers price tubes by raw material cost from series 1 (earth pigments) through 7 or 8 (cobalt, cadmium, rare modern synthetics).",
+        "ci": "PR108 — Colour Index code",
+        "ciNote": "<em>PR108</em> = Pigment Red 108 = cadmium sulfoselenide. The first letter is the colour family (R, Y, B, G, Br, W, Bk, Vi, O, M); the number is the order of discovery within that family. Registered by the Society of Dyers and Colourists since 1925. Two tubes from different brands with the same CI code contain the same pigment.",
+        "lf": "ASTM Lightfastness I",
+        "lfNote": "<em>ASTM D4303</em> rating. I (Excellent) and II (Very Good) are museum-grade — under accelerated one-year sun exposure the colour shift is below the threshold of perception. III is Fair. IV (Poor) and V (Fugitive) bleach visibly within months and should be avoided for any work intended to last.",
+        "hue": "Hue vs Genuine",
+        "hueNote": "A tube labelled <em>Cadmium Red <strong>Hue</strong></em> contains no cadmium — it is a less expensive, less toxic, and usually less opaque substitute that matches the colour. <em>Genuine</em> means the pigment named on the label is in fact present. The two look identical in the squeeze but behave differently in mixes, layers, and over decades.",
+        "conf": "Conforms to ASTM D4236",
+        "confNote": "<em>ASTM D4236</em>: a U.S. standard requiring chronic-hazard labelling on any art material likely to be inhaled, ingested, or absorbed. The phrase means a toxicologist has reviewed the formulation. Cadmium pigments carry a separate &laquo;harmful if swallowed&raquo; warning; lead pigments are restricted to professional grades; cobalt pigments require a dust warning.",
+        "cap": "A paint tube is one of the few consumer products that legally must declare its physical and chemical contents. Read the labels in order and you have the history of the standards themselves: the Colour Index (1925), ASTM D4303 lightfastness (1982), and ASTM D4236 chronic-hazard conformance (1988). The tube is a small monument to a century of trying to make a hazardous, beautiful chemistry safe to teach to a child."
+      },
+      "fading": {
+        "title": "A century of museum light",
+        "hint": "Drag through the decades · watch the fugitive pigments fade",
+        "stageAria": "A row of six painted pigment swatches: ultramarine (PB29, rated ASTM I), titanium white (PW6, ASTM I), cadmium red (PR108, ASTM I), alizarin crimson (PR83, ASTM III), Indian yellow (PY13, ASTM IV), and mauveine (PV2, ASTM V). A time slider runs from year zero to year one hundred of museum-light exposure. The first three swatches barely change colour. The last three visibly fade — alizarin crimson loses chroma by year twenty, Indian yellow loses both chroma and value by year fifty, mauveine is nearly grey by year eighty.",
+        "labelYears": "Years of museum-light exposure",
+        "ariaYears": "Years of museum-light exposure, 0 to 100",
+        "cap": "Six pigments, six lightfastness ratings. Ultramarine, titanium white, and cadmium red (all ASTM I) hold their colour for centuries with no special precautions. Alizarin crimson (PR83, ASTM III) is the classic example of a beautiful pigment a museum will not collect new work in; it darkens and shifts toward brown within a working artist's lifetime. Indian yellow (PY13, IV) and mauveine (PV2, V) are fugitive enough that almost no surviving examples of nineteenth-century works in them look the colour the artist mixed. The exponential here uses the ASTM-grade decay constant; the real curve depends on humidity, binder, oxygen, and a half-dozen trace impurities, but the rank order is right."
+      }
+    },
+    "note": {
+      "label": "On to the natural side",
+      "body": "Pigments are how we have made colours. The next chapter looks at how nature already made them — without us, and often using machinery we are only beginning to copy."
+    }
+  },
+  "ch13": {
+    "num": "Chapter Thirteen",
+    "title": "Nature",
+    "standfirst": "Nature makes color in two ways: pigment, or structure. Both work without anyone designing them.",
+    "leadIn": "Look at a forest, a coral reef, a flowerbed, a flock of parrots, and the first impression is of a colourist gone mad. Look closer and there are exactly two methods at work, used in different proportions. A leaf, an animal's eye, a brown beetle, a red poppy — these are <em>pigment</em>: a molecule absorbs some wavelengths and reflects the rest. A peacock's tail, a hummingbird's throat, the wing of a morpho butterfly, the surface of a soap bubble — these are <em>structure</em>: not absorption at all, but interference, the way light bends and overlaps in a layer thinner than itself.",
+    "chlorophyll": "The most widespread pigment on Earth is <strong>chlorophyll</strong>, the molecule that makes leaves green. It absorbs most strongly in the red and the blue and reflects the medium wavelengths — green. This is, in some sense, an inefficiency. The sun's peak energy lies in the green; a chlorophyll molecule that absorbed green and reflected red and blue would harvest more light. There is no good account of why the plants ended up with chlorophyll rather than its mirror image. One leading theory is that early purple photosynthetic bacteria, using bacteriorhodopsin, had already taken the green band by the time chlorophyll-based plants evolved; chlorophyll worked with what was left. The Earth is green not because green is best but because, once, it was second.",
+    "melanin": "Animal skin, fur, and hair carry a different family of pigments: the <strong>melanins</strong>. <em>Eumelanin</em> is brown-black, the pigment of dark hair, dark skin, the spots on a leopard. <em>Pheomelanin</em> is reddish-yellow, the pigment of red hair, freckles, and the orange of a tabby cat. The two are produced from the same precursor, tyrosine, and the ratio between them — controlled by a handful of genes — produces almost every variation in human hair colour. Bird feathers, fish scales, and the irises of human eyes use the same two pigments in different proportions. Melanin also absorbs ultraviolet, which is why darker skin protects against sunburn; the pigment is a sunscreen invented several billion years before the chemistry industry got to it.",
+    "carotenoids": "The yellows and oranges of fruits, autumn leaves, the egg yolk of a chicken, and the pink of a flamingo are <strong>carotenoids</strong> — long-chain molecules of which beta-carotene is the most famous. Animals cannot make them; they have to eat them. A flamingo is pink because its diet of brine shrimp and algae is rich in carotenoids; remove the shrimp and the flamingo gradually loses its colour. A canary is yellow for the same reason. Carrots are orange because the plant uses carotene to protect chlorophyll from excess light; we get the colour back when we eat them.",
+    "structural": "Pigment is one method. <strong>Structural colour</strong> is the other, and it is older and stranger. The wing of a <em>Morpho</em> butterfly is brown — under a microscope, the actual chitin is dull brown — but the surface is etched with ridges spaced so that blue light, reflecting off the layers, interferes constructively, and a brilliant iridescent blue results from a pigmentless surface. A peacock's tail uses the same trick at a different scale: the eyespots are not painted, they are <em>structured</em>, the colour produced by thin keratin layers in the feather barbs. Soap films, oil on a wet road, the surface of a CD — all of these are structural colour. Heat or wet or scratch them and the colour vanishes, because what you have damaged is not the molecule but the geometry.",
+    "rayleigh": "The biggest structural colour on the planet is the sky. Sunlight is white; the atmosphere scatters short wavelengths (blue) more than long (red), an effect <strong>Lord Rayleigh (John William Strutt)</strong> worked out in 1871. Looking up away from the sun, you see the scattered light: blue. Looking toward the sun at sunset, when the light has travelled through several times as much air to reach you, the blue has been almost entirely scattered out somewhere over the horizon; what arrives is the red that scattered least. Mars, with a thin and dusty atmosphere, has a butterscotch sky at noon and a blue sunset, the opposite of ours, because the dust grains scatter the longer wavelengths more. The sky is not a colour; the sky is a length of air with the sun's light passing through it.",
+    "biolumin": "Some animals make their own light. The firefly, the angler-fish, the dinoflagellate plankton that sometimes turn a wave breaking on a beach a luminous blue — all of these use a family of enzymes called <em>luciferases</em>, which catalyse a reaction that releases energy as a photon rather than as heat. Most bioluminescence is in a narrow band of blue-green, a wavelength that travels furthest through sea water; the bioluminescence of land insects has spread into yellow and orange because the air does not impose the same constraint. The light is cold — almost no infrared — and so efficient that engineers have spent the last twenty years trying to copy it for lamps. None has yet succeeded.",
+    "fluorescent": "And a colour the human world makes in profusion is almost absent from nature: <strong>fluorescence</strong>, the absorption of ultraviolet light and the re-emission of the energy at a visible wavelength. A highlighter pen, a fluorescent safety vest, a glowing club bracelet — all are bright in a way nothing in nature quite is, because they emit more visible light than the visible light hitting them would predict; they have been borrowing energy from the UV. A few corals, some scorpions, the gills of certain mushrooms do this faintly; the rest is human chemistry. The dazzle that catches your eye on a roadside vest at dusk is, in evolutionary terms, very new.",
+    "closing": "Pigment, structure, scattering, emission. Four methods, used by four billion years of biology and by every chemist since, and they exhaust the inventory of how a thing can be the colour it is. Look at any coloured thing — the page in front of you, the eye that is reading it, the sky behind it — and one of the four is at work.",
+    "fig": {
+      "sky": {
+        "title": "Rayleigh's sky",
+        "hint": "Drag the sun · noon to sunset",
+        "stageAria": "A sky simulation: the sun's altitude controls how much atmosphere its light has travelled through. At noon (high sun), short atmospheric path, the sky is blue and the sun is pale yellow. As the sun lowers, the path through the air lengthens, more blue is scattered away, and the sun and the surrounding sky redden toward sunset.",
+        "altitudeLabel": "Sun altitude",
+        "altitudeRangeAria": "Sun altitude above the horizon in degrees",
+        "cap": "Rayleigh scattering of sunlight through Earth's atmosphere, in cartoon form. At noon the sun is high, its light passes through a thin slice of air, and only short (blue) wavelengths scatter strongly — the sky is blue. As the sun descends, its light passes through more and more atmosphere; by the time it reaches you it has lost almost all of its blue to scattering, and the disc of the sun and the sky around it shift toward red. The same atmosphere does both things at once."
+      },
+      "fluorescence": {
+        "title": "Fluorescence: the Stokes shift",
+        "hint": "Switch the lamp · UV in, visible out",
+        "stageAria": "A dark chamber containing a row of fluorescent samples: a highlighter pen, a coral fragment, a scorpion, and a banknote security fibre. Under ordinary white light the samples look pale; switch the lamp to ultraviolet (365 nm) and the same samples glow vivid green, orange, blue, and pink — emitting visible light from invisible input. The right-hand graph shows a Jablonski diagram: absorption photon arrives at high energy (short wavelength), the molecule relaxes vibrationally, then re-emits at lower energy (longer wavelength) — the Stokes shift.",
+        "labelHighlighter": "highlighter",
+        "labelCoral": "coral",
+        "labelScorpion": "scorpion",
+        "labelFibre": "security fibre",
+        "btnDaylight": "Daylight (white)",
+        "btnUV": "UV (365 nm blacklight)",
+        "cap": "A schematic Stokes shift. A high-energy photon (short wavelength, here ultraviolet at 365 nm) is absorbed by a molecule and lifts an electron to a vibrationally excited state. The electron sheds a little energy to the lattice as heat, falls to the lowest excited level, and only then emits a photon — which is necessarily of lower energy and longer wavelength than the one that arrived. The visible emission you see (the green of a highlighter, the orange of a coral) is the difference. The phenomenon was named for <strong>George Gabriel Stokes</strong>, who described it in 1852. It is why blacklight posters glow and why laundry detergents add fluorescent whiteners that absorb UV and emit blue — the shirt looks more white than white."
+      }
+    },
+    "note": {
+      "label": "To the screens we built",
+      "body": "Chapters 11–13 looked at how a colour comes to be named, made, and grown. The last chapter turns to where most of you reading this are actually looking — a calibrated rectangle of light a few inches across — and asks what to look for when you choose one."
+    }
+  },
+  "ch14": {
+    "num": "Chapter Fourteen",
+    "title": "Practice",
+    "standfirst": "The screen is the last surface a colour reaches. It is also the one that lies the most about itself.",
+    "leadIn": "If you make things with colour — websites, photographs, films, posters, books, branded objects — you are eventually paying for a screen to look at them on. The shop will sell you ten of them at ten different prices and the labels on the boxes are not always straightforward. This chapter is a reader's guide to the labels, and a short tour of the working pipelines (web, print, photography, cinema) that colour passes through on its way from the eye to the world and back.",
+    "monitorSpecs": "The single most consequential number on a monitor spec sheet is <strong>gamut coverage</strong>, given as a percentage of one or more standard colour spaces. <em>99 % sRGB</em> means the screen can produce 99 % of the colours in the standard web colour space — the bare minimum for any colour work. <em>95 % DCI-P3</em> (or <em>Display P3</em>, Apple's variant) means the screen reaches a wider gamut used in cinema and on modern phones — the figure to look for if you edit photographs or video. <em>99 % Adobe RGB</em> is a third standard, slightly narrower than P3 in the reds and wider in the greens, preferred by people who print to CMYK. A screen with all three above 95 % is genuinely wide-gamut; one that quotes only an sRGB number is not.",
+    "deltaE": "After gamut comes <strong>accuracy</strong>. The number to look for is <em>ΔE</em> (delta-E), the perceptual distance between the colour the screen is asked to display and the colour it actually displays, averaged across many test patches. ΔE under 2 is invisibly accurate; under 1 is laboratory-grade. ΔE under 3 is fine for most design work; above 5 begins to look obviously off. A consumer monitor without a quoted ΔE has not been measured and probably should not be trusted for colour work.",
+    "panel": "The <strong>panel technology</strong> determines viewing angle, contrast, and motion. <em>IPS</em> (in-plane switching) panels have the widest viewing angles and the most accurate colour; almost every colour-work monitor is IPS. <em>OLED</em> panels have perfect blacks (each pixel is its own light source and can switch off completely), the highest contrast, and the most saturated colours, but are vulnerable to burn-in if static UI is shown for long periods. <em>VA</em> panels have higher contrast than IPS but narrower viewing angles. <em>TN</em> panels are the cheapest, the fastest, and the worst at colour — fine for office work and competitive gaming, not for design.",
+    "depth": "<strong>Bit depth</strong> controls how many gradations of each colour the screen can show. An 8-bit panel shows 256 levels per channel, or 16.7 million colours total — enough for most work, but gradients can show visible banding. <em>8-bit + FRC</em> (frame-rate control) cheats its way to 10-bit by rapidly flickering between two adjacent levels — good enough that most viewers will not see the difference. <em>True 10-bit</em> shows 1.07 billion colours and is the standard for HDR video and serious photo retouching. Almost every screen that quotes \"10-bit\" in 2024–6 is 8-bit + FRC; the label rarely says which.",
+    "hdr": "<strong>HDR</strong> (high dynamic range) is a bundle of features: wider gamut, higher peak brightness, deeper blacks, often 10-bit colour. The DisplayHDR certification levels (HDR400, HDR600, HDR1000) state the peak brightness in nits; HDR400 is, despite its name, barely HDR — true HDR begins at HDR600 with local dimming, and the most spectacular content needs HDR1000 or above. For desktop work, HDR mostly matters if you grade video; for office work it can be turned off and forgotten.",
+    "calibration": "No screen, however expensive, ships colour-accurate. <strong>Calibration</strong> — a one-time, hour-long procedure using a colorimeter (X-Rite i1Display, Datacolor SpyderX, around $200) — measures the colour the screen actually produces and writes a correction profile. Many high-end monitors ship pre-calibrated with a Pantone or Calman certificate; a few include hardware calibration that adjusts the panel's LUT directly rather than the operating system's. If you cannot or will not calibrate, buy a pre-calibrated screen.",
+    "icc": "Across the entire pipeline, an <strong>ICC profile</strong> — a small file that describes a device's colour behaviour — keeps the colours honest as they move from camera to monitor to printer. The camera tags its RAW with the colour space it used. The image editor reads the tag, converts to the monitor's profile for display, and to the printer's profile for export. A web browser does the same, lazily, with the sRGB profile assumed. If anything in the chain is missing or wrong, the colour shifts — usually in a way you only see when the final piece reaches its destination. The single largest improvement most working colour pipelines could make is to have every device profiled and to assume nothing.",
+    "closing": "There is no perfect screen; there is only the screen accurate enough for the work you do. A web designer needs 99 % sRGB and a calibrated ΔE under 2. A photo retoucher needs that plus 95 % Adobe RGB or P3, 10-bit colour, and a Pantone certification. A video colourist needs all of the above plus HDR1000 and a reference monitor. A casual reader of this essay can use any screen, properly viewed in a room with light no stronger than what they would read a paper book by — which is the colour-management trick the rest of the chapter forgets to mention.",
+    "fig": {
+      "specs": {
+        "title": "What spec for what work",
+        "hint": "Choose your work · see the minimum specs",
+        "stageAria": "A guide to monitor specs by use case. Selecting a use case below highlights the recommended values for sRGB coverage, P3 or Adobe RGB coverage, delta-E accuracy, panel technology, bit depth, HDR, and calibration.",
+        "btnWeb": "Web design",
+        "btnIllust": "Illustration",
+        "btnPhoto": "Photo editing",
+        "btnVideo": "Video grading",
+        "btnGeneral": "General office",
+        "labelSrgb": "sRGB coverage",
+        "labelWide": "Wide gamut (P3 or Adobe RGB)",
+        "labelDeltaE": "ΔE accuracy",
+        "labelPanel": "Panel type",
+        "labelDepth": "Colour depth",
+        "labelHdr": "HDR",
+        "labelCalib": "Calibration",
+        "cap": "A cheat sheet for buying a monitor by the kind of work you do. The numbers tighten as the work demands more of the colour — a casual office worker needs almost nothing on this list, a video colourist needs almost everything. Most makers fall somewhere between the photo and video columns; if you are unsure, photo specs are a good and not too expensive baseline."
+      }
+    },
+    "note": {
+      "label": "End of practice",
+      "body": "Fourteen chapters have looked at colour from its source to its surface. The Chronology that follows is the spine of dates the whole book hangs on; the Coda is a small palette generator that runs everything you have just read. Open them in any order — the book is, finally, yours."
+    }
+  },
+  "ch11": {
+    "num": "Chapter Eleven",
+    "title": "Names",
+    "standfirst": "Color is universal. Its names are made.",
+    "leadIn": "Ten chapters have looked at color through physics, optics, perception, geometry, and practice. One more is owed, and a quieter one. The chapters so far treat color as something to be observed; this one asks what we mean when we name it. A hummingbird's throat is the same wavelength to every retina that can resolve it, but the word for that color — <em>iridescent</em>, <em>gorget</em>, <em>fuchsia</em>, <em>깃털색</em> — is made by the language doing the looking.",
+    "homer": "In 1858, William Gladstone, a serious classical scholar and the future British Prime Minister, sat down with Homer and noticed something strange. The <em>Iliad</em> and <em>Odyssey</em>, in their thousands of lines, almost never name a color the way a modern reader would expect. The sea was <em>oinops</em> — wine-dark, or wine-faced. Sheep were violet. Honey was green. There was no separate word for blue at all, and the sky was, of all things, <em>bronze</em>. Gladstone concluded that the Greeks had defective color vision. He was wrong about the cause. What he had stumbled on was the more interesting fact: ancient Greek had not yet, in 800 BCE, divided the optical world the way English did in 1858.",
+    "berlinKay": "A century later, in 1969, the Berkeley anthropologists Brent Berlin and Paul Kay surveyed a hundred languages and noticed a pattern. Languages do not name colors in random order. They acquire color words in a near-fixed sequence. First, almost always, comes a pair: <em>dark</em> and <em>light</em> — read these onto English as black and white, but the words were once broader. The third color is red. The fourth is either yellow or green. Blue comes fifth, brown sixth, then purple, pink, orange, and grey in any order. The Greek of Homer's day, Berlin and Kay would argue, sat at stage three or four — it had black, white, red, and a barely-separated green-yellow, but had not yet split blue from green. The category covers things English calls forest, sea, sky, and the grey-blue of metal — all the things Homer called bronze, violet, and wine.",
+    "japanese": "Japanese carries a smaller version of the same fault line. <em>Aoi</em> — usually translated as blue — historically covered everything we would call blue and most of what we would call green, and in some compounds it still does. The traffic signal that says <em>go</em> in Japan is officially <em>aoi</em> and is a noticeably blue-green, because when traffic signals arrived they had to fit into the existing word and the word pulled the color toward itself rather than the other way around. <em>Aoba</em> — <em>aoi</em> leaves — means the leaves of spring, green to any English-speaking eye. The split between <em>aoi</em> (blue-green) and <em>midori</em> (specifically green) is a twentieth-century import, and a partial one.",
+    "russian": "Russian goes the other way and splits English's single blue in two. <em>Siniy</em> is the deep, saturated blue of a clear sky at midday. <em>Goluboy</em> is the pale, sky-near-the-horizon blue. To a Russian speaker, these are two different basic colors as distinct as English's blue and red, not two shades of the same word. A study by Jonathan Winawer and colleagues in 2007 showed that Russian speakers, asked to pick a matching shade from a row, were measurably faster at the boundary between <em>siniy</em> and <em>goluboy</em> than English speakers were at any boundary inside <em>blue</em>. The language had given the eye a faster question.",
+    "korean": "Korean carries an older system that maps color onto direction. The <em>obangsaek</em>, the five directional colors, are <em>cheong</em> (blue, east), <em>baek</em> (white, west), <em>jeok</em> (red, south), <em>heuk</em> (black, north), and <em>hwang</em> (yellow, centre). The <em>saekdong</em> sleeves of a child's New Year coat — striped in green, red, yellow, blue, and white — are not chosen for prettiness but for the five directions arrayed across the cloth. The system is older than the language's modern color words, and the modern words still carry the older logic underneath: <em>cheong</em> is the color of blue and green together, the direction-color of the east, of spring, of the wood element. The split between blue and green entered Korean later; <em>cheong</em> persists as the older, broader word.",
+    "pirahã": "The Pirahã of the Amazon basin — the subject of much linguistic argument since Daniel Everett's fieldwork of the 1980s — do not name colors with single words at all. The closest renderings are <em>biísai</em> (blood-like, for red), <em>xahoasai</em> (blackish, for dark), and <em>kohoaibíísai</em> (like a yellow-tailed bird) — descriptions, not names. Whether this means the Pirahã <em>see</em> color differently is the question Berlin and Kay's work asks most sharply. The answer, increasingly, is no — the eye is the same; the language has simply not yet decided to mint a separate word.",
+    "iscc": "Standardisation tried to catch up. In 1955 the <strong>Inter-Society Color Council</strong> and the U.S. <strong>National Bureau of Standards</strong> jointly published the <em>ISCC-NBS Method of Designating Colors</em>, a vocabulary of 267 named regions of color space — from <em>vivid red</em> and <em>brilliant pink</em> through <em>moderate olive brown</em> to <em>dark greenish gray</em> — each tied to a specific block of Munsell coordinates so that a name finally meant something measurable. The system never quite displaced everyday usage outside government laboratories and crayon manufacturers, but it remains the only attempt in English to give every nameable color a name and a definition at once.",
+    "newNames": "And language is still minting them. In 2014 the British artist Anish Kapoor secured exclusive artistic-use rights to Vantablack, a coating that absorbs 99.965 % of visible light, and the colour acquired its first owner. The internet replied with Stuart Semple's Pink, sold to anyone except Kapoor, and a small war was fought over the name of a black none of us could touch. <em>Millennial pink</em> — a peach-leaning pink that swept design between roughly 2014 and 2019 — was named into being by a magazine writer before the color itself had finished settling. <em>Klein blue</em>, the patented ultramarine of Yves Klein, was the first color to be claimed by a person rather than a place or a plant. Every age has added its words; ours has just made the wording faster.",
+    "closing": "The chapters that came before this one looked at color as a property of light and a labor of the eye. This one is for the third party, the one Homer did not have words for: the language. A color exists at the meeting of three things — what reflects, what receives, and what is named. Move any one of them and the color, in the only sense that matters to a sentence, moves.",
+    "fig": {
+      "stages": {
+        "title": "Berlin &amp; Kay's stage theory",
+        "hint": "Drag the slider · watch a language acquire color words",
+        "stageAria": "Color words a language has at each stage of Berlin and Kay's sequence. Slide from Stage I (only dark and light) to Stage VII (the full set of eleven basic terms).",
+        "stageLabel": "Stage",
+        "stageRangeAria": "Stage in Berlin and Kay's color-term acquisition sequence",
+        "cap": "Berlin and Kay surveyed a hundred languages in 1969 and found that color terms enter a language in a near-fixed order. A language at Stage I (the leftmost, almost no recorded human language sits here today) has only <em>dark</em> and <em>light</em>. Add red, and you have Stage II. Add either green or yellow for Stage III, both for Stage IV. Blue enters at Stage V — and that is roughly where Homer's Greek sat. Brown at VI, the remaining four (purple, pink, orange, grey) in any order at VII. Modern English, modern Korean, modern Japanese all sit at Stage VII; the Pirahã do not appear to have left Stage I."
+      },
+      "whorfQuiz": {
+        "title": "Same colour, or different? — a Whorf reaction test",
+        "hint": "Click <em>Same</em> or <em>Different</em> as fast as you can",
+        "stageAria": "A simple speeded reaction test. Two coloured patches appear briefly side by side; the reader clicks Same or Different. Pairs near the linguistic boundary between blue and green (or between Russian siniy and goluboy) are reacted to faster than pairs of equal physical distance within a single name. The average reaction time over 20 trials is reported as a measure of where the reader's mental colour boundaries lie.",
+        "promptStart": "Press start to begin.",
+        "promptAsk": "Same colour, or different?",
+        "btnSame": "Same colour",
+        "btnDiff": "Different",
+        "btnStart": "Start a 12-trial round",
+        "btnStartAgain": "Run again",
+        "cap": "Twelve trials of a paired-colour decision task. Each trial flashes two colour patches; press <em>Same</em> if you would give them the same name in your language, <em>Different</em> otherwise. Reaction times within a single named category (two blues you would both call <em>blue</em>) are typically slower than reactions across a category boundary (one you would call <em>blue</em>, one <em>green</em>), even when the physical distance between the patches is identical. Russian speakers, who have separate basic terms for dark and light blue (<em>siniy</em>, <em>goluboy</em>), are measurably faster at the boundary between those two than English speakers are anywhere inside English <em>blue</em> (Winawer et al., 2007). The effect is small but real, and it is the cleanest experimental evidence we have for a weak version of the Sapir–Whorf hypothesis."
+      }
+    },
+    "note": {
+      "label": "What's next",
+      "body": "We end the book proper here, on the word. The Chronology that follows is a map of the named people and dated events the previous eleven chapters rested on; the Coda is a working palette generator — the small machine the whole essay was a manual for. Open them in any order. The book is yours to fold."
+    }
+  },
+  "chronology": {
+    "num": "A Chronology",
+    "title": "A Chronology",
+    "standfirst": "Three and a half centuries of color, on one line.",
+    "intro": "The story has names and dates. Here they are — the figures and publications that this essay has leaned on, from Newton's first prism to the colour space that ships in browsers today.",
+    "fig": {
+      "stageAria": "A chronology of colour science and design, 1666 to 2023",
+      "events": [
+        {
+          "year": "1666",
+          "title": "Newton's prism, Woolsthorpe",
+          "blurb": "During the plague years, at his family estate in Lincolnshire, Newton darkens a room and demonstrates that white light is a mixture, separable into the colors of the spectrum."
+        },
+        {
+          "year": "1704",
+          "title": "Newton, <em>Opticks</em>",
+          "blurb": "The treatise that named the colors of light and founded the science of optics."
+        },
+        {
+          "year": "1810",
+          "title": "Goethe, <em>Zur Farbenlehre</em>",
+          "blurb": "The artist's reply — colour as experience, attended to with phenomenological care."
+        },
+        {
+          "year": "1839",
+          "title": "Chevreul, <em>De la loi du contraste simultané</em>",
+          "blurb": "Working at the Gobelins tapestry works, the chemist names the law that every colour is read against its neighbours."
+        },
+        {
+          "year": "1860s",
+          "title": "Young–Helmholtz trichromatic theory",
+          "blurb": "Hermann von Helmholtz formalises Thomas Young's earlier conjecture: human vision rests on three receptor types."
+        },
+        {
+          "year": "1874",
+          "title": "Bezold's pattern observations",
+          "blurb": "Wilhelm von Bezold notices that fine stripes do not heighten contrast but blur into their field — the assimilation effect of Chapter Eight."
+        },
+        {
+          "year": "1905",
+          "title": "Munsell, the first measured colour solid",
+          "blurb": "Albert Munsell gives each colour three plain coordinates — hue, value, chroma — and draws the solid as it is rather than as geometry wishes it."
+        },
+        {
+          "year": "1923",
+          "title": "Itten at the Bauhaus",
+          "blurb": "Johannes Itten, teaching the Vorkurs in Weimar, codifies the twelve-hue colour wheel and the harmonies on it; his book, <em>Kunst der Farbe</em>, follows in 1961."
+        },
+        {
+          "year": "1931",
+          "title": "CIE 1931 chromaticity diagram",
+          "blurb": "The Commission internationale de l'éclairage publishes the standard-observer table — the horseshoe of Chapter Seven."
+        },
+        {
+          "year": "1931",
+          "title": "Kubelka & Munk pigment theory",
+          "blurb": "Paul Kubelka and Franz Munk publish the arithmetic of paint mixing — scattering and absorption together — and explain why ultramarine and cadmium yellow become green."
+        },
+        {
+          "year": "1963",
+          "title": "Albers, <em>Interaction of Color</em>",
+          "blurb": "Josef Albers's slim volume teaches that colour is the most relative medium in art — its lesson made flesh in Chapter Eight."
+        },
+        {
+          "year": "1976",
+          "title": "CIE L*a*b*",
+          "blurb": "The first widely used attempt at a perceptually uniform colour space — improved on, half a century later, by OKLab."
+        },
+        {
+          "year": "1996",
+          "title": "sRGB proposed",
+          "blurb": "Hewlett-Packard and Microsoft propose the colour space that, formalised as IEC 61966-2-1 in 1999, becomes the default of the web and most consumer screens."
+        },
+        {
+          "year": "2015",
+          "title": "Display P3 on consumer screens",
+          "blurb": "Apple ships a wider-gamut variant of DCI-P3 (2010) on its iMacs and, soon after, iPhones — expanding the screen colours of Chapter Seven beyond the older sRGB boundary."
+        },
+        {
+          "year": "2020",
+          "title": "Ottosson, OKLab",
+          "blurb": "Björn Ottosson publishes a perceptually uniform colour space tuned to modern data — at last, equal steps look equal."
+        },
+        {
+          "year": "2023",
+          "title": "CSS Color 4 in major browsers",
+          "blurb": "OKLCH, P3, and the new colour functions ship to almost every browser made — the essay's mathematics, now writable directly in a stylesheet."
+        }
+      ]
+    }
+  },
+  "coda": {
+    "num": "Coda",
+    "title": "A Palette of Your Own",
+    "standfirst": "The essay is read. Here is what it was for.",
+    "leadIn": "Ten chapters on color are, in the end, in the service of one ordinary and joyful act: choosing colors that belong together. So here is a parting gift — a small machine that does just that, the way the essay taught it. Every palette it offers is raised on a real harmony from Chapter Six, its five colors spaced by the honest measure of Chapter Seven. Press the button; then press it again.",
+    "fig": {
+      "generator": {
+        "title": "The Palette Generator",
+        "hint": "Click any color to copy it",
+        "paletteAria": "A generated color palette",
+        "actionsAria": "Copy the palette in a format",
+        "btnHex": "Hex",
+        "btnHexTitle": "Copy as plain hex codes",
+        "btnCss": "CSS",
+        "btnCssTitle": "Copy as CSS custom properties",
+        "btnTw": "Tailwind",
+        "btnTwTitle": "Copy as a Tailwind config snippet",
+        "btnSvg": "SVG",
+        "btnSvgTitle": "Copy as an SVG palette",
+        "btnAnother": "Another →",
+        "cap": "Each palette is one base hue, one harmony, and five colors set at even steps of lightness in OKLCH — the very machinery the essay built, now running for you."
+      }
+    },
+    "note": {
+      "label": "Go well",
+      "body": "Every palette this machine will ever make is only a suggestion — a sentence in the grammar, never the last word. The last word, as it has been since the first page, is yours. Go and look at something, and see how much of it was there all along."
+    }
+  },
+  "jsStrings": {
+    "_meta": "JS 동적 문자열 — build.py가 index32.html JS 영역에 치환.",
+    "spectralName": {
+      "deepViolet": "deep violet",
+      "violet": "violet",
+      "blue": "blue",
+      "cyan": "cyan",
+      "green": "green",
+      "yellowGreen": "yellow-green",
+      "yellow": "yellow",
+      "orange": "orange",
+      "red": "red",
+      "deepRed": "deep red"
+    },
+    "spectralDesc": [
+      "The shortest waves the eye admits. Sensitivity is low here — the violet looks dim however bright the light.",
+      "Short waves. The S cone is near its peak; the world of sky and shadow.",
+      "The blue-green hinge, where the S and M cones trade the lead.",
+      "Medium waves. The eye is most alert here — green reads as the brightest hue of all.",
+      "The L and M cones fire almost together. A small shift in wavelength swings the hue quickly.",
+      "Long waves. The L cone dominates; the M cone is fading out.",
+      "The longest waves the eye can catch. Past this edge lies infrared — heat you feel but cannot see."
+    ],
+    "nameRyb": [
+      "red",
+      "red-orange",
+      "orange",
+      "yellow-orange",
+      "yellow",
+      "yellow-green",
+      "green",
+      "blue-green",
+      "blue",
+      "blue-violet",
+      "violet",
+      "red-violet"
+    ],
+    "nameRgb": [
+      "red",
+      "orange",
+      "yellow",
+      "chartreuse",
+      "green",
+      "spring green",
+      "cyan",
+      "azure",
+      "blue",
+      "violet",
+      "magenta",
+      "rose"
+    ],
+    "harmoniesCap": {
+      "complementary": "Two hues straight across the wheel — the sharpest contrast a pair can hold.",
+      "analogous": "Three neighbouring hues — one family, quietly at ease together.",
+      "triadic": "Three hues an equal third of the circle apart — balanced, lively, and stable.",
+      "split": "A base hue with the two neighbours of its complement — tension, gently softened.",
+      "tetradic": "Four hues at the wheel's quarter-points — two complementary pairs, a rich chord that wants one color to lead.",
+      "monochromatic": "A single hue, varied only in value and chroma — the most serene scheme of all."
+    },
+    "ariaValueText": {
+      "nmWithName": "{val} nanometres — {name}",
+      "degrees": "{val} degrees",
+      "kelvinWithName": "{val} Kelvin — {name}",
+      "percentAmbient": "{val} percent ambient light — {name}",
+      "huePercent": "Saturation {sat}%, value {val}%",
+      "baseHue": "base hue {val} degrees — {label}",
+      "apex": "Apex angle {val} degrees",
+      "valueSlice": "Showing the full value range"
+    },
+    "statusMessages": {
+      "perceivedPrefix": "perceived ≈ ",
+      "diskReset": "The three disks were returned to their starting positions.",
+      "harmonyUpdated": "{label} harmony — palette updated.",
+      "copyBtnDefault": "Copy palette",
+      "copyBtnFlash": "Copied!",
+      "saturationPrefix": "Saturation ",
+      "valuePrefix": ", value ",
+      "fromLeft": " — {pct}% from the left, {pcy}% from the top.",
+      "paletteList": "{label} palette — {list}"
+    },
+    "namesGrid": {
+      "stageCaptions": [
+        "Stage I — only dark and light. Almost no recorded human language sits here today.",
+        "Stage II — red is added. The first hue word, in nearly every language.",
+        "Stage III — either green or yellow joins.",
+        "Stage IV — both green and yellow are in. Homer's Greek sat roughly here.",
+        "Stage V — blue is split off from green. Modern Japanese sat here until the 20th century.",
+        "Stage VI — brown is added.",
+        "Stage VII — purple, pink, orange, grey enter in any order. English, modern Korean, and modern Japanese all sit here."
+      ]
+    },
+    "spectralMeta": {
+      "illD65": "daylight (D65)",
+      "illA": "tungsten (A)",
+      "illF2": "fluorescent (F2)",
+      "verdictIndistinguishable": "Indistinguishable under {name}.",
+      "verdictVeryClose": "Very close under {name} (ΔE≈{de}).",
+      "verdictNoticeably": "Noticeably different under {name} (ΔE≈{de}).",
+      "verdictClearly": "Clearly different under {name} (ΔE≈{de})."
+    },
+    "hk": {
+      "verdictHead": "You set the grey at OKLCH L = {gl}; the colour sits at OKLCH L = {cl}.",
+      "greyBar": "grey Y",
+      "colorBar": "colour Y",
+      "yDiff": "Linear luminance Y difference: {dy}.",
+      "noBoost": "You matched at almost the same OKLCH L — at this chroma the H-K boost is very small.",
+      "boost": "You gave the grey {dl} more OKLCH L than the colour to make them feel equally bright. That extra is the Helmholtz–Kohlrausch boost: chroma adds apparent lightness the numbers do not record.",
+      "inverse": "You gave the grey {dl} less OKLCH L than the colour. In this hue and chroma the colour appeared darker to you — a less common direction of the effect, sensitive to monitor calibration."
+    },
+    "hering": {
+      "firing": "Two channels still firing — move both sliders until each bar collapses to its centre line.",
+      "rgDone": "Red–green channel at rest. The yellow–blue channel is still firing — keep going.",
+      "ybDone": "Yellow–blue channel at rest. The red–green channel is still firing — keep going.",
+      "zero": "Both opponent channels at rest. The colour reads as neutral grey — Hering would say you have just performed cancellation."
+    },
+    "land": {
+      "pickInit": "Hover anywhere on the projection to read its raw R, G, B values.",
+      "pickBoth": "Pixel R = {r}, G = {g}, B = {b}. The colour you see is the cortex filling in from edges.",
+      "pickRedOnly": "Pixel R = {r}, G = 0, B = 0 — only the red projector contributes here.",
+      "pickWhiteOnly": "Pixel R = {r}, G = {g}, B = {b} (all three equal) — only the white projector contributes here."
+    },
+    "gamutView": {
+      "pickInit": "Drag the magnifier across the image to sample pixels.",
+      "pickInside": "{n} pixels sampled · {ok} inside {target}, {bad} outside.",
+      "pickAllIn": "{n} pixels sampled · all inside {target}."
+    },
+    "customMatcher": {
+      "match": "Match! Your mix of red, green, and blue light stimulates your cones identically to the pure yellow light. You have created a metameric match!",
+      "noMatch": "Adjust the red, green, and blue light sliders to match the Target S, M, L response values (S: 0.00, M: 0.63, L: 1.06)."
+    },
+    "hueTest": {
+      "perfect": "Perfect Color Vision",
+      "superior": "Superior Vision",
+      "average": "Average Vision",
+      "weak": "Weak Color Discrimination",
+      "shareText": "I scored {score}/100 on the Color IQ Hue Test! Test your color vision on The Book of Color.",
+      "copied": "Copied to clipboard!",
+      "shareTitle": "Color IQ Test Result"
+    }
+  },
+  "footer": {
+    "mark": "The Book of Color",
+    "line": "An interactive essay on color theory — a companion to the music essay <a href=\"https://circle5-eight.vercel.app\" target=\"_blank\" rel=\"noopener noreferrer\">The Circle of Fifths</a>. Ten chapters of ten — the essay complete: from a single wavelength of light to a palette that works for every eye.",
+    "fine": "One HTML file, no build step — no frameworks, no analytics, no accounts. <span class=\"div\">·</span>Revision 34 <span class=\"div\">·</span>Last updated {LAST_UPDATED} <span class=\"div\">·</span><a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0/\" target=\"_blank\" rel=\"noopener noreferrer\">CC BY-NC-SA 4.0</a> <span class=\"div\">·</span><a href=\"#\" id=\"printMonographBtn\">Print Monograph</a> <span class=\"div\">·</span>After Newton, Goethe, Young, Helmholtz, Maxwell, Munsell &amp; Itten."
+  }
+}

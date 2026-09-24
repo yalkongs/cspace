@@ -1,0 +1,1130 @@
+{
+  "_meta": {
+    "scope": "FULL — Hero + §1–§10 + Niên biểu + Coda + Footer + meta/JSON-LD + jsStrings",
+    "source_en": "i18n/en.json",
+    "translator": "Claude Opus 4.7 — bản nháp đầu",
+    "voice": "Thi hien tai truc thuyet, van xuoi trau chuot. Menh lenh ngoi hai.",
+    "title_decision": "Cuon sach ve mau sac. Tieu de chon de phu hop khi dich ra muoi ngon ngu."
+  },
+  "page": {
+    "title": "Cuốn sách về màu sắc · Một tiểu luận tương tác về lý thuyết màu sắc",
+    "description": "Một tiểu luận tương tác về lý thuyết màu sắc. Chạm vào quang phổ khả kiến, quan sát các tế bào nón của bạn dựng nên màu từ ánh sáng, và pha trộn ánh sáng với sắc tố — khoa học màu sắc bạn cử động bằng tay.",
+    "keywords": "lý thuyết màu sắc, bánh xe màu, quang phổ khả kiến, bước sóng, thị giác ba màu, tế bào nón, pha trộn cộng, pha trộn trừ, RGB, CMYK, pha trộn màu, Newton, khoa học màu sắc, tri giác màu",
+    "author": "Cuốn sách về màu sắc",
+    "og": {
+      "title": "Cuốn sách về màu sắc · Một tiểu luận tương tác về lý thuyết màu sắc",
+      "description": "Màu sắc đến từ đâu, mắt dựng nên nó thế nào, và hình học lặng lẽ khiến một số màu cùng cất tiếng. Mỗi hình minh họa là của bạn, để chạm vào.",
+      "siteName": "Cuốn sách về màu sắc"
+    },
+    "twitter": {
+      "title": "Cuốn sách về màu sắc · Một tiểu luận tương tác về lý thuyết màu sắc",
+      "description": "Chạm vào quang phổ khả kiến, quan sát tế bào nón dựng nên màu sắc, pha trộn ánh sáng với sắc tố. Khoa học màu sắc cầm nắm được."
+    }
+  },
+  "jsonld": {
+    "learningResource": {
+      "name": "Cuốn sách về màu sắc",
+      "description": "Một tiểu luận tương tác về lý thuyết màu sắc — từ một bước sóng ánh sáng đơn lẻ đến một bảng màu dùng được cho mọi đôi mắt.",
+      "teaches": [
+        "Quang phổ khả kiến và bước sóng",
+        "Thị giác ba màu và hiện tượng đồng phổ",
+        "Pha trộn cộng và pha trộn trừ",
+        "Bánh xe màu và lịch sử của nó",
+        "Sắc, giá trị và độ thuần — khối màu",
+        "Sự hài hòa của màu sắc",
+        "Các không gian màu: RGB, HSL, CIE và OKLCH",
+        "Tương phản đồng thời và dư ảnh",
+        "Tương phản màu sắc và khả năng tiếp cận"
+      ],
+      "about": [
+        "Lý thuyết màu sắc",
+        "Thị giác màu",
+        "Quang học",
+        "Tri giác màu"
+      ]
+    },
+    "article": {
+      "headline": "Cuốn sách về màu sắc — Một tiểu luận tương tác về lý thuyết màu sắc",
+      "description": "Màu sắc đến từ đâu, mắt dựng nên nó thế nào, và hình học lặng lẽ khiến một số màu cùng cất tiếng.",
+      "articleSection": "Lý thuyết màu sắc",
+      "authorName": "Cuốn sách về màu sắc"
+    }
+  },
+  "hero": {
+    "ariaLabel": "Mở đầu",
+    "eyebrow": "Một tiểu luận tương tác",
+    "titleLine1": "Cuốn sách về",
+    "titleLine2": "màu sắc",
+    "lede": "Màu sắc không phải là một thuộc tính của sự vật. Nó là một sự kiện — một cuộc gặp gỡ giữa ánh sáng, vật chất và tâm trí. Đây là một sách chỉ dẫn thực địa cho sự kiện đó.",
+    "meta1": "Màu sắc đến từ đâu",
+    "meta2": "Mắt dựng nên nó thế nào",
+    "meta3": "Mỗi hình minh họa là của bạn, để chạm vào",
+    "greynoteLabel": "Một ghi chú về màu xám",
+    "greynoteBody": "Mọi mặt phẳng ở đây — mỗi khung, nút, viền — đều có chủ ý là <b>màu xám</b>. Một giao diện có màu sẽ lặng lẽ làm méo phán đoán của bạn về các màu nó bao quanh. Thứ duy nhất bão hòa trên trang này là chính cái màu chúng ta đang nói đến.",
+    "scrollcue": "Bắt đầu"
+  },
+  "ch1": {
+    "num": "Chương Một",
+    "title": "Ánh sáng",
+    "standfirst": "Không có màu đỏ nào trong một bông hồng.",
+    "leadIn": "Một bông hồng không chứa bất cứ màu sắc nào. Cái nó có là một bề mặt hấp thụ phần lớn ánh sáng chạm vào nó và trả lại phần còn lại — chủ yếu là những sóng dài mà chúng ta đã quen gọi là đỏ. Màu sắc không nằm trong bông hoa. Nó cũng không nằm trong ánh sáng. Nó nằm ở cuộc gặp gỡ.",
+    "newton": "Năm 1666, Isaac Newton làm tối một căn phòng, để một tia nắng duy nhất đi qua một lăng kính và thấy nó mở ra thành một dải màu có trật tự. Lăng kính, ông lập luận trong <em>Opticks</em> (1704), không thêm vào điều gì. Ánh sáng trắng vốn đã là một đám đông các màu cùng đi với nhau; thủy tinh chỉ làm chệch hướng mỗi màu một mức khác nhau, vì thế tách đám đông ra.",
+    "wavelengthIntro": "Mỗi màu thuần trong dải đó tương ứng với một <strong>bước sóng</strong> ánh sáng đơn lẻ — một màu <em>quang phổ</em>. Mắt đáp lại một dải bước sóng hẹp, chừng từ 380 nanomet (tím) đến 700 (đỏ), một mảnh nhỏ của quang phổ điện từ trải từ những sóng vô tuyến dài hàng kilômét đến tia gamma nhỏ hơn một nguyên tử. Hãy kéo dọc theo dải đó dưới đây.",
+    "fig": {
+      "prism": {
+        "title": "Lăng kính của Newton",
+        "hint": "Kéo thanh trượt · mở hay khép đỉnh",
+        "svgAria": "Một lăng kính thủy tinh với ánh sáng trắng nằm ngang đi vào mặt trái và một quạt cầu vồng đi ra từ bên phải. Khi thanh trượt góc đỉnh tăng, quạt mở rộng hơn; khi giảm, quạt khép lại.",
+        "apexLabel": "Góc đỉnh của lăng kính",
+        "apexAria": "Góc đỉnh của lăng kính theo độ",
+        "cap": "Ánh sáng trắng không phải là trắng theo kiểu nước là ướt — nó là sự cùng-có-mặt của mọi bước sóng nhìn thấy được. Thủy tinh bẻ cong mỗi bước sóng một độ hơi khác, và sự bẻ cong nhỏ ở mỗi mặt cộng lại thành một cái quạt có thể thấy. Newton gọi cái đi ra phía bên kia là một <em>quang phổ</em>; cầu vồng trên một bức tường là cùng một sự diễn giải, được viết bởi bầu trời."
+      },
+      "spectrum": {
+        "title": "Quang phổ khả kiến",
+        "hint": "Kéo, nhấn, hay đặt tiêu điểm và dùng ← →",
+        "canvasAria": "Quang phổ khả kiến từ 380 đến 700 nanomet",
+        "rangeAria": "Bước sóng theo nanomet",
+        "ultraviolet": "← tử ngoại",
+        "infrared": "hồng ngoại →",
+        "cap": "Gần mỗi đầu, màu có vẻ tối đi — không phải vì ánh sáng yếu đi, mà vì độ nhạy của mắt giảm. Vượt ra ngoài rìa, các sóng vẫn tiếp tục; chúng ta chỉ đơn giản trở nên mù với chúng."
+      }
+    },
+    "note": {
+      "label": "Giữ ý nghĩ này",
+      "body": "Quang phổ là một <em>đường thẳng</em>. Nó có hai đầu — tím sâu và đỏ sâu — và chúng nằm đối diện nhau. Thế nhưng mọi bánh xe màu bạn từng thấy đều nối chúng lại thành một vòng. Ai đã cho phép điều đó? Chương Bốn trả lời. Chương Hai cung cấp lý do."
+    }
+  },
+  "ch2": {
+    "num": "Chương Hai",
+    "title": "Con mắt",
+    "standfirst": "Màu sắc được dựng nên, chứ không phải được tiếp nhận.",
+    "leadIn": "Võng mạc không đo bước sóng. Nó không thể. Phía sau mắt có ba loại tế bào nón, và mỗi loại chỉ là một chiếc xô tự đổ đầy ánh sáng — một loại được chỉnh cho các bước sóng ngắn (<strong>S</strong>), một cho trung bình (<strong>M</strong>), một cho dài (<strong>L</strong>). Ánh sáng của một bước sóng đến; ba chiếc xô đổ đầy đến ba mức khác nhau; và ba con số đó là toàn bộ thông điệp được gửi đến bộ não.",
+    "trichromatic": "Từ ba con số, bộ não chế ra mọi màu sắc bạn từng thấy. Đây là cốt lõi của thị giác <em>ba màu</em>, do Thomas Young đề xuất đầu tiên, được Helmholtz tinh luyện, và một thế kỷ sau được xác nhận dưới kính hiển vi. Điều chỉnh bước sóng dưới đây và quan sát ba tế bào nón đáp lại.",
+    "metamerismIntro": "Từ một con mắt làm bằng ba con số, có hai hệ quả sâu rộng.",
+    "metamerismBody": "Hệ quả thứ nhất là <strong>hiện tượng đồng phổ</strong>. Nếu hai hỗn hợp ánh sáng hoàn toàn khác nhau ngẫu nhiên đổ đầy ba chiếc xô đến cùng ba mức, thì chúng là — đối với bạn — <em>cùng một màu</em>. Không phải gần giống. Đồng nhất. Mắt không có sự thật sâu hơn nào để tham khảo.",
+    "spectralIntro": "Hai ánh sáng trên là một mánh khóe duy nhất kể bằng các tia. Mánh khóe ấy cũng xảy ra với <em>bề mặt</em>. Hai sắc tố dựng nên từ những quang phổ hoàn toàn khác nhau có thể đồng ý hoàn hảo dưới một ánh sáng — và tách ra ngay khoảnh khắc ánh sáng thay đổi. Công nghiệp gọi đây là dạng vận hành của hiện tượng đồng phổ, và là lý do một tấm vải khớp dưới đèn huỳnh quang của cửa hàng lại trông sai bên cửa sổ ở nhà.",
+    "magenta": "Hệ quả thứ hai còn lạ hơn: <strong>màu đỏ tía</strong>. Tìm nó trong quang phổ của Chương Một — bạn sẽ không thấy. Không có bước sóng nào của đỏ tía. Đó là màu mà bộ não tạo ra khi các tế bào nón <em>dài</em> và <em>ngắn</em> đều được kích thích trong khi tế bào nón <em>trung bình</em> tụt lại xa phía sau — nghĩa là, khi mắt đồng thời nhận hai <em>đầu</em> của quang phổ, với rất ít ở giữa. Đỏ tía là ngoài-quang-phổ — một màu không có bước sóng riêng, được bộ não khâu lại từ hai đầu của quang phổ.",
+    "adaptation": "Và bộ não làm nhiều hơn là phát minh: nó còn <strong>cân bằng</strong>. Hãy bước từ một căn phòng đèn sợi đốt ra ánh sáng ban ngày, và trong một khoảnh khắc mọi thứ có vẻ quá xanh; một phút sau nó trở lại là chính nó. Mắt cân bằng lại ánh sáng mà nó nhìn, sao cho một tờ giấy vẫn trắng dưới mọi mặt trời. Cơ chế gọi là <strong>thích ứng sắc độ</strong>, và nó chạy, trong im lặng, ở mỗi khoảnh khắc của đời sống tỉnh thức.",
+    "adaptationRebound": "Thử với thanh trượt ở trên: hãy dừng ở một cực — chẳng hạn 9000 K, bầu trời lạnh — và nhìn chằm vào màu xám được đóng khung trong ba mươi giây, rồi đẩy nó đột ngột về 2500 K, ngọn nến ấm. Trong vài giây mỗi mảng sẽ trông ấm quá mức — màu xám sẽ ánh hồng nhạt, các đỏ sẽ sâu hơn — rồi mắt bạn bắt kịp và căn phòng trở lại bình thường. Khoảnh khắc ngắn nóng ấy chính là cú nảy lại: hệ thị giác, bị khóa vào tham chiếu lạnh, mất một nhịp để buông sự bù trừ khi tham chiếu nhảy. Thích ứng sắc độ không phải là công tắc mà là một vòng lặp chậm.",
+    "rods": "Theo chiều ngược lại, khi ánh sáng tắt dần, mắt được dựng nên để thất bại một cách duyên dáng. Các tế bào nón — những tế bào ban ngày của hình trước — cần ánh sáng để khai hỏa, và lúc chạng vạng chúng bắt đầu chuyển gậy tiếp sức cho một đội thứ hai: các <strong>tế bào que</strong>, đông hơn, nhạy hơn nhiều, và mù màu. Sự bàn giao làm đổi cái gì là sáng. Các tế bào nón đạt đỉnh độ nhạy ở các bước sóng dài; các tế bào que đạt đỉnh gần 498 nanomet, sâu xuống dưới quang phổ. Vì thế ban ngày, một bông anh túc đỏ rực rỡ; lúc chạng vạng nó tối đi trước, trong khi các sắc lục và lam của lá và bầu trời bên cạnh giữ được đến ánh sáng cuối cùng. Nhà giải phẫu Bohemia Jan Evangelista Purkinje nhận thấy hiệu ứng này trên những lần đi dạo năm 1819 của mình, và sự dịch chuyển từ đó mang tên ông.",
+    "closing": "Và đó là cái lý do đã được hứa hẹn. Bởi vì hai đầu của đường quang phổ, tím và đỏ, có thể được nhìn cùng nhau như một màu mới duy nhất, đường ấy được tự do cong lại và khép kín. Các chương tiếp theo bẻ nó thành một vòng tròn — rồi mở vòng tròn ra thành một không gian.",
+    "fig": {
+      "cone": {
+        "title": "Đáp ứng của các tế bào nón",
+        "hint": "Sơ đồ — một biểu đồ minh họa, không phải dữ liệu đo",
+        "canvasAria": "Các đường cong độ nhạy của tế bào nón S, M và L dọc theo quang phổ khả kiến",
+        "nmLabel": "Bước sóng ánh sáng đi vào mắt",
+        "nmAria": "Bước sóng theo nanomet",
+        "sShort": "ngắn",
+        "mMedium": "trung",
+        "lLong": "dài",
+        "verdictPrefix": "Bộ não của bạn báo cáo: ",
+        "verdictNote": "Từ tỉ lệ ba tín hiệu ấy — và không gì khác — màu sắc được lắp ráp."
+      },
+      "spectralMeta": {
+        "title": "Hiện tượng đồng phổ đến từ đâu",
+        "hint": "Kéo các nút phản xạ · đổi ánh sáng",
+        "svgAria": "Hai đường cong phản xạ trên quang phổ khả kiến từ 380 đến 730 nanomet. Trục dọc là phản xạ từ 0 đến 1. Kéo các tay cầm nhỏ trên một trong hai đường cong để định hình lại; hai mảng màu phía dưới vẽ lại để cho thấy mỗi bề mặt trông thế nào dưới ánh sáng đã chọn.",
+        "legendA": "Mảng A — phản xạ",
+        "legendB": "Mảng B — phản xạ",
+        "illumGroupAria": "Chọn một nguồn sáng chuẩn",
+        "illumLabel": "Ánh sáng:",
+        "btnD65": "Ánh sáng ban ngày · D65",
+        "btnTungsten": "Đèn dây tóc · A",
+        "btnFluorescent": "Đèn huỳnh quang · F2",
+        "btnAutoMatch": "Tự khớp B với A dưới D65",
+        "patchLabelA": "Mảng A",
+        "patchLabelB": "Mảng B",
+        "patchAriaA": "Mảng A dưới ánh sáng đã chọn",
+        "patchAriaB": "Mảng B dưới ánh sáng đã chọn",
+        "verdictInitial": "Kéo các nút trên một trong hai đường cong, hoặc nhấn Tự khớp.",
+        "cap": "Mỗi đường cong là cái mà bề mặt trả lại của ánh sáng chạm vào nó, theo từng bước sóng. Màu bạn thấy là tích của ba thứ — đường cong ấy, ánh sáng chiếu lên nó, và ba tế bào nón của mắt — cộng dồn trên toàn quang phổ. <strong>Nhấn Tự khớp</strong>, rồi đổi ánh sáng: hai bề mặt đồng ý dưới ánh sáng ban ngày tách ra dưới đèn dây tóc hoặc đèn huỳnh quang, vì <em>quang phổ</em> của chúng chưa bao giờ giống nhau, chỉ có ba con số chúng tình cờ cộng ra là giống."
+      },
+      "meta": {
+        "title": "Một sự trùng hợp bất khả",
+        "sub": "Hai ánh sáng khác nhau. Một màu duy nhất. Mắt bạn không tìm thấy khác biệt.",
+        "btnGroupAria": "Chọn một nguồn sáng",
+        "btnA": "Một bước sóng thuần duy nhất · 580 nm",
+        "btnB": "Ánh sáng lục + ánh sáng đỏ",
+        "canvasAria": "Ánh sáng vật lý hiện diện, hiển thị như các đỉnh trên trục bước sóng",
+        "initialText": "Một bước sóng thuần duy nhất của ánh sáng vàng — 580 nanomet."
+      },
+      "adapt": {
+        "title": "Sự cân bằng trắng lặng lẽ của bộ não",
+        "hint": "Kéo thanh trượt · ánh sáng từ ấm sang lạnh",
+        "sceneAria": "Một hàng bảy ô màu dưới một nguồn chiếu sáng duy nhất. Khi thanh trượt nhiệt độ màu di chuyển, mọi ô màu cùng dịch chuyển; ô được đóng khung ở giữa là một màu xám trung tính cố định, mà trong đời thật vẫn sẽ trông là xám đối với một người quan sát đã thích ứng đầy đủ.",
+        "cctLabel": "Nhiệt độ màu của ánh sáng",
+        "cctAria": "Nhiệt độ màu của nguồn chiếu sáng theo kelvin",
+        "cap": "Mỗi ô là một sắc tố cố định; chỉ có ánh sáng thay đổi. Trong một căn phòng thật, bộ não của bạn sẽ gần như hoàn toàn hủy bỏ sự dịch chuyển này — ô xám được đóng khung sẽ vẫn là xám. Trang này không có bộ não để làm điều đó cho bạn, vậy hãy quan sát ô xám lang thang trong khi ánh sáng ấm lên hoặc lạnh đi."
+      },
+      "purkinje": {
+        "title": "Hiệu ứng Purkinje",
+        "hint": "Kéo thanh trượt · từ giữa trưa đến nửa đêm",
+        "sceneAria": "Một hàng sáu ô màu — đỏ, cam, vàng, lục, lam và tím. Khi thanh trượt mức ánh sáng giảm từ ngày xuống đêm, các ô tối đi không đồng đều: đầu ấm (đỏ và cam) tối đi trước và nhanh nhất, còn đầu lạnh (lục và lam) tối đi chậm hơn và là cuối cùng tắt.",
+        "ambientLabel": "Ánh sáng môi trường, từ ban ngày đầy đủ đến đêm sâu",
+        "ambientAria": "Mức ánh sáng môi trường theo phần trăm",
+        "cap": "Vẫn sáu sắc tố ấy ở mỗi mức ánh sáng. Khi các tế bào que tiếp quản, đầu ấm của quang phổ — đỏ và cam — chìm vào bóng tối trước, còn đầu lạnh — lục và lam — lưu lại lâu nhất. Vì hiện tượng này, một số đội xe khẩn cấp hiện đại đã chuyển sang một sắc vàng-lục huỳnh quang thân thiện với Purkinje cho công việc cần nhìn rõ, kể cả ở những nơi mà đỏ vẫn là truyền thống."
+      }
+    }
+  },
+  "ch3": {
+    "num": "Chương Ba",
+    "title": "Pha trộn",
+    "standfirst": "Hai logic ngược nhau — và một hộp màu bất đồng với một màn hình.",
+    "leadIn": "Hãy hỏi một đứa trẻ đỏ và lục cho ra cái gì. Nâu, nó nói, và nó đúng — nó có một hộp màu. Hãy hỏi một kỹ sư chiếu sáng: vàng, ông ấy nói, và ông ấy cũng đúng — ông ấy có một sân khấu. Cả hai câu trả lời đều đúng vì có hai cách hoàn toàn ngược nhau để làm ra một màu, và chúng chạy theo những hướng ngược nhau.",
+    "additiveBody": "Pha trộn <strong>cộng</strong> là logic của <em>ánh sáng</em>. Bắt đầu trong bóng tối và thêm vào. Mỗi tia bạn thêm chỉ có thể làm cho mọi thứ sáng hơn. Ánh sáng đỏ và ánh sáng lục chồng lên thành vàng; thêm lam, và bạn đến với trắng. Đây là logic của các màn hình, máy chiếu và đèn sân khấu — và của ánh sáng mặt trời, một hỗn hợp rộng các bước sóng trải khắp dải nhìn thấy. Kéo ba ánh sáng lại với nhau ở dưới.",
+    "subtractiveBody": "Pha trộn <strong>trừ</strong> là logic của <em>sắc tố</em>. Bắt đầu với giấy trắng — ánh sáng đã hoàn chỉnh — và lấy đi. Mỗi sắc tố là một bộ lọc: nó hấp thụ, <em>trừ đi</em>, một phần của quang phổ và phản xạ phần còn lại. Đặt lục lam lên vàng và cùng nhau chúng lấy đi đỏ và lam, còn lại lục. Chồng cả ba và hầu như không gì thoát ra: bạn đến gần đen. Đây là logic của <strong>mực in</strong> và các <strong>bộ lọc</strong> trong suốt — chính xác cho lục lam, đỏ tía và vàng xếp lớp, và cũng là một mô hình đầu tiên hợp lý cho sơn nghệ thuật.",
+    "paintBody": "Nhưng sơn, thật ra, kỳ lạ hơn. Ánh sáng không đi qua nó như qua một bộ lọc; nó đi vào lớp màng ướt, nảy giữa vô số hạt sắc tố, và chỉ một phần quay lại. Lục lam và vàng của mực in được thiết kế để mô hình bộ lọc còn đúng — giữa chúng, chúng chỉ cho lục đi qua. Trộn <em>lam ultramarine</em> và <em>vàng cadmium</em> của họa sĩ, và mắt vẫn thấy lục; nhân hai cái đó như những con số trên một màn hình và chúng rơi vào một sắc gần-đen lầy lội. Paul Kubelka và Franz Munk viết ra phép tính cũ hơn vào năm 1931 — cùng năm biểu đồ sắc độ của Chương Bảy được vẽ — và nó vẫn là mô hình làm việc của mọi bảng màu họa sĩ đến hôm nay.",
+    "maxwellIntro": "Ánh sáng và sắc tố là hai phép số học được dạy ở trên. Có một phép thứ ba, sinh từ chuyển động. Đầu thập niên 1860, James Clerk Maxwell gắn các cánh sơn lên một chiếc con quay và phát hiện rằng mắt cộng chúng trong thời gian: một đĩa chia đôi giữa đỏ và lục, quay đủ nhanh, lắng xuống vàng — không phải trên đĩa mà trong võng mạc, vốn không thể bắt kịp sự thay phiên ấy. Đây là <strong>pha trộn cộng theo thời gian</strong>: mắt, khi bị yêu cầu tích phân quá nhanh, đầu hàng và lấy trung bình.",
+    "closing": "Các màu cơ bản khác nhau vì các logic khác nhau. Ánh sáng dựng nên từ <strong>đỏ, lục, lam</strong>; mực in, như Chương Ba đã cho thấy, từ <strong>lục lam, đỏ tía, vàng</strong>; truyền thống xưởng vẽ giữ đỏ, vàng và lam. Không bộ nào là thiêng liêng — không có <em>các</em> màu cơ bản, chỉ có các màu cơ bản đúng cho hướng bạn đang đi. Điều đó dẫn đến câu hỏi mà chương tiếp theo dựa lên: nếu các màu cơ bản là một sự chọn lựa, thì ta nên sắp xếp chúng vào hình dạng nào?",
+    "fig": {
+      "mixer": {
+        "title": "Hai cách để làm ra một màu",
+        "hint": "Kéo các đĩa · hoặc đặt tiêu điểm vào một và dùng các phím mũi tên",
+        "additive": {
+          "name": "Cộng",
+          "kind": "ánh sáng, trên bóng tối",
+          "fieldAria": "Bộ trộn cộng: ba ánh sáng có màu trên một trường tối",
+          "redAria": "Ánh sáng đỏ — kéo, hoặc dùng phím mũi tên để di chuyển",
+          "greenAria": "Ánh sáng lục — kéo, hoặc dùng phím mũi tên để di chuyển",
+          "blueAria": "Ánh sáng lam — kéo, hoặc dùng phím mũi tên để di chuyển",
+          "footCap": "Bắt đầu từ đen. Các vùng chồng nhau sáng lên về phía <strong>trắng</strong>.",
+          "resetAria": "Đặt lại bộ trộn cộng"
+        },
+        "subtractive": {
+          "name": "Trừ",
+          "kind": "sắc tố, trên giấy",
+          "fieldAria": "Bộ trộn trừ: ba sắc tố trên giấy trắng",
+          "cyanAria": "Sắc tố lục lam — kéo, hoặc dùng phím mũi tên để di chuyển",
+          "magentaAria": "Sắc tố đỏ tía — kéo, hoặc dùng phím mũi tên để di chuyển",
+          "yellowAria": "Sắc tố vàng — kéo, hoặc dùng phím mũi tên để di chuyển",
+          "footCap": "Bắt đầu từ trắng. Các vùng chồng nhau tối đi về phía <strong>đen</strong>.",
+          "resetAria": "Đặt lại bộ trộn trừ"
+        },
+        "resetBtn": "Đặt lại",
+        "cap": "Cùng ba vùng ấy, đọc theo hai cách. Trong ánh sáng, các vùng chồng của <strong>đỏ, lục, lam</strong> cho ra lục lam, đỏ tía, vàng. Trong sắc tố, các vùng chồng của <strong>lục lam, đỏ tía, vàng</strong> cho ra đỏ, lục, lam. Mỗi bộ màu cơ bản chính xác là phần bù của bộ kia — hai logic là hình ảnh phản chiếu của nhau."
+      },
+      "paint": {
+        "title": "Hai phép tính của sự pha trộn",
+        "hint": "Kéo thanh trượt · ultramarine ↔ vàng cadmium",
+        "multTag": "Nhân",
+        "multSub": "phép tính của bộ lọc",
+        "kmTag": "Kubelka–Munk",
+        "kmSub": "sắc tố thật",
+        "multCanvasAria": "Một thanh gradient cho thấy phép trộn bằng nhân giữa ultramarine và vàng cadmium ở mọi tỉ lệ — giữa là lầy lội và tối, không phải lục.",
+        "kmCanvasAria": "Một thanh gradient cho thấy phép trộn Kubelka–Munk của cùng hai sắc tố ở mọi tỉ lệ — giữa rõ ràng là lục.",
+        "sliderAria": "Tỉ lệ pha trộn: phần trăm vàng cadmium so với ultramarine",
+        "pigmentYellow": "vàng cadmium",
+        "pigmentUltramarine": "ultramarine",
+        "swMultTitle": "Cái mà phép tính bộ lọc của màn hình cho ra",
+        "swKmTitle": "Cái mà Kubelka–Munk nói rằng sơn làm",
+        "cap": "Cả hai thanh đi từ <em>ultramarine thuần</em> bên trái đến <em>vàng cadmium thuần</em> bên phải. Thanh trên nhân hai màu màn hình ở mỗi bước — giữa rơi vào một sắc lầy lội tối, như cách hai mẫu RGB sẽ làm. Thanh dưới trộn hai sắc tố ấy theo Kubelka–Munk — ánh sáng đi vào sơn ướt, tán xạ giữa các hạt — và tìm thấy lục ở giữa, như cách hai tuýp sơn làm."
+      },
+      "maxwell": {
+        "title": "Đĩa quay của Maxwell",
+        "hint": "Quay đĩa · mảng bên phải là cái mắt sẽ phân giải",
+        "discAria": "Một đĩa hai cung đang quay. Ở tốc độ thấp hai màu thay phiên rõ rệt; ở tốc độ cao mắt trộn chúng.",
+        "fusedAria": "Màu mà mắt sẽ phân giải ở tốc độ làm mới vô hạn — trung bình ánh sáng tuyến tính của hai màu cung, có trọng số theo phần góc của chúng.",
+        "labelDisc": "Đĩa quay",
+        "labelFused": "Cái mắt sẽ phân giải ở >50 Hz",
+        "labelColorA": "Cung A",
+        "labelColorB": "Cung B",
+        "labelShare": "Phần của cung A",
+        "labelRpm": "Tốc độ quay (RPM)",
+        "ariaShare": "Phần góc của cung A trên đĩa, theo độ trong 360",
+        "ariaRpm": "Tốc độ quay theo vòng mỗi phút",
+        "cap": "Đĩa bên trái quay theo tốc độ bạn đặt; mảng bên phải là màu mà mắt của Maxwell sẽ phân giải khi hợp nhất, được tính như trung bình ánh sáng tuyến tính của hai màu cung có trọng số theo phần góc. Điểm chính là một logic pha trộn thứ ba, bên cạnh ánh sáng (cộng của Chương Ba) và sắc tố (trừ): khi mắt được trình hai màu trong sự thay phiên nhanh, nó lấy trung bình chúng trong <em>thời gian</em> như màn hình trắng lấy trung bình chúng trong không gian. <em>Lưu ý màn hình: màn hình của bạn làm mới ở khoảng 60 Hz, nên trên khoảng 30 RPM bạn sẽ thấy nhấp nháy stroboscopic chứ không phải hợp nhất thật. Mảng bên phải cho thấy cái mà vỏ não thị giác của bạn sẽ phân giải ở tốc độ làm mới vô hạn.</em>"
+      }
+    }
+  },
+  "ch4": {
+    "num": "Chương Bốn",
+    "title": "Bánh xe màu",
+    "standfirst": "Bẻ cong đường thẳng cho đến khi hai đầu của nó chạm nhau.",
+    "leadIn": "Một quang phổ là một đường thẳng, và một đường thẳng có hai đầu. Chương Một để lại cho chúng ta sự khó chịu đó: tím sâu ở một cực, đỏ sâu ở cực kia, và không có đường nối nào giữa chúng. Chương Hai cung cấp cây cầu — đỏ tía, màu ngoài-quang-phổ mà mắt dựng nên khi chỉ hai đầu của quang phổ được thắp sáng. Đỏ tía là mối ghép. Với nó, đường thẳng có thể được nâng lên ở hai đầu và bẻ cong cho đến khi đỏ gặp tím, và quang phổ khép lại thành một vòng không có đầu cũng không có cuối.",
+    "circleBody": "Vòng đó là <strong>bánh xe màu</strong> — không phải một khám phá, mà là một phát minh, và là một phát minh hữu ích. Trên một vòng tròn, mỗi sắc có hàng xóm ở cả hai bên và đúng một màu đối diện với nó qua trung tâm: <strong>màu bổ túc</strong> của nó. Xoay điểm đánh dấu dưới đây, và chuyển bánh xe giữa hai truyền thống lớn của nó.",
+    "primariesBody": "Đặt các sắc ở đâu, và phong sắc nào làm <em>cơ bản</em>, chưa bao giờ được giải quyết — vì nó không thể được giải quyết. Đó là một sự chọn lựa, và lịch sử đã làm điều đó nhiều hơn một lần.",
+    "newtonGoetheItten": "Năm 1704, Isaac Newton vẽ bánh xe màu đầu tiên trong cuốn <em>Opticks</em> của mình, và — là Newton — ông không thể cưỡng lại một khẳng định sâu hơn: ông cho bảy màu của mình những cung được đo theo bảy bước của một thang âm, để quang phổ và quãng tám cùng chia sẻ một hình học. (Người bạn đồng hành của tiểu luận này, <a href=\"https://circle5-eight.vercel.app\" target=\"_blank\" rel=\"noopener noreferrer\">Vòng tròn quãng năm</a>, đi qua phiên bản của nhà nhạc sĩ của cùng vòng tròn ấy.) Một thế kỷ sau, Goethe — người không tin Newton — dựng một vòng tròn nhỏ hơn gồm sáu màu và ghép mỗi màu với một cảm xúc. Và ở Bauhaus, Johannes Itten dạy với một vòng tròn mười hai, dựng trên các màu cơ bản của họa sĩ: <strong>đỏ, vàng, lam</strong>.",
+    "physicistPainter": "Đây không phải là các màu cơ bản của nhà vật lý. Ánh sáng trộn từ đỏ, lục và lam; sắc tố, như Chương Ba đã cho thấy, từ lục lam, đỏ tía và vàng; truyền thống xưởng vẽ giữ đỏ, vàng và lam. Chuyển bánh xe ở trên giữa cách sắp xếp của ánh sáng và của họa sĩ, và quan sát màu bổ túc của một màu thay đổi trước mắt bạn — đỏ đối diện với lục lam trên một bánh xe và với lục trên cái kia. Không có cái nào là sai. Chúng là những câu trả lời cho những câu hỏi khác nhau.",
+    "fig": {
+      "wheel": {
+        "title": "Bánh xe màu",
+        "hint": "Kéo điểm đánh dấu · hoặc đặt tiêu điểm và dùng ← →",
+        "segGroupAria": "Cách sắp xếp bánh xe",
+        "segBtnRGB": "Bánh xe ánh sáng · RGB",
+        "segBtnRYB": "Bánh xe họa sĩ · RYB",
+        "handleAria": "Sắc trên bánh xe",
+        "pairRoleMain": "Màu",
+        "pairRoleComp": "Màu bổ túc của nó",
+        "pairLinkFaces": "đối diện với",
+        "capInitial": "Bánh xe ánh sáng, các sắc của nó theo thứ tự quang phổ."
+      },
+      "history": {
+        "title": "Ba bánh xe, ba thế kỷ",
+        "newtonAria": "Bánh xe bảy màu của Newton với các cung không bằng nhau, theo tỉ lệ âm nhạc",
+        "newtonCap": "<b>Newton</b>, 1704 — bảy màu, các cung được đo theo một thang âm.",
+        "goetheAria": "Bánh xe sáu màu của Goethe",
+        "goetheCap": "<b>Goethe</b>, 1810 — sáu màu, mỗi màu gắn với một cảm xúc.",
+        "ittenAria": "Bánh xe mười hai màu của Itten",
+        "ittenCap": "<b>Itten</b>, khoảng 1920 — mười hai, trên đỏ-vàng-lam của họa sĩ."
+      }
+    },
+    "note": {
+      "label": "Hướng đến một không gian",
+      "body": "Một vòng tròn chứa mọi sắc — nhưng chỉ sắc thôi. Nó chẳng có gì để nói về một bông hồng nhạt bên cạnh một sắc đỏ thẫm sâu, hay một viên gạch nhợt nhạt bên cạnh một sắc đỏ tươi sống động: trên vòng tròn, tất cả chỉ đơn giản là <em>đỏ</em>. Để giữ những khác biệt đó, vòng tròn cần lớn thêm hai chiều nữa. Chương Năm cho nó chiều sâu."
+    }
+  },
+  "ch5": {
+    "num": "Chương Năm",
+    "title": "Ba chiều",
+    "standfirst": "Sắc là một con số. Một màu cần ba.",
+    "leadIn": "Vòng tròn của Chương Bốn là một sự đơn giản hóa lộng lẫy, và như mọi sự đơn giản hóa, nó nói dối một chút. Nó cho thấy mọi sắc, và <em>chỉ</em> sắc. Nhưng hãy nói một màu thành tiếng — <em>đỏ</em> — và bạn gần như chưa gọi tên cái gì. Một xe cứu hỏa, một viên ngói đất sét, lớp lót hồng bên trong một vỏ sò, một vệt máu khô: mỗi cái đều là đỏ, và không có hai cái nào cùng một màu.",
+    "valueChroma": "Cái tách chúng ra là hai phép đo nữa. Cái đầu là <strong>giá trị</strong> — màu sáng hay tối đến đâu, vị trí của nó trên đường từ đen đến trắng. Cái thứ hai là <strong>độ thuần</strong> — màu thuần hay bị giảm bớt đến đâu, khoảng cách của nó đến một sắc xám trung tính. Sắc, giá trị, độ thuần: ba con số, ba chiều độc lập. Màu sắc không phải là một vòng tròn. Nó là một <em>khối</em> — vòng tròn chỉ là một lát cắt của nó, lấy tại một giá trị duy nhất.",
+    "munsellBody": "Người đầu tiên lập bản đồ khối ấy bằng phép đo chứ không phải bằng hình học là Albert Munsell, họa sĩ và giáo viên, khoảng năm 1905. Ông đã mất kiên nhẫn với những cái tên màu không có nghĩa gì đáng tin — \"hồng\", \"rơm\", \"xỉn\" — và thay vào đó cho mỗi màu ba tọa độ đơn giản: sắc, giá trị, độ thuần. Mô hình của riêng ông không phải là một hình cầu hay hình trụ gọn gàng, mà là một cái cây bất đối xứng, và trung thực như vậy — một sắc vàng sống động là sáng và một sắc lam sống động là tối, nên các sắc phình ra ngoài ở những độ cao khác nhau. Không gian của màu có một hình dạng thật và không đều, và Munsell đã vẽ nó như nó vốn là.",
+    "tintShadeTone": "Bên trong khối ấy, các họa sĩ luôn biết ba cách để dịch chuyển một màu. Một <strong>tint</strong> thêm trắng và nâng nó lên ánh sáng. Một <strong>shade</strong> thêm đen và hạ nó xuống bóng tối. Một <strong>tone</strong> thêm xám và kéo nó vào trong, về phía nhân không màu. Chọn một màu trong khung dưới đây — sắc của nó, rồi độ bão hòa và độ sáng — và quan sát ba lối mở ra từ đó.",
+    "fig": {
+      "solid": {
+        "title": "Hai khối màu",
+        "hint": "Kéo bất kỳ khung nào để xoay · trượt để cắt lát",
+        "hslAria": "Khối màu HSL — một hình hai chóp đối xứng với sắc quay quanh trục, độ sáng dâng từ đáy đen lên đỉnh trắng, và độ bão hòa vươn theo hướng tia. Kéo để xoay.",
+        "okAria": "Khối màu OKLCH — gam sRGB thực được đo trong không gian đồng nhất theo tri giác. Hình dạng không đối xứng: vàng phồng cao và nhạt, lam chìm sâu và tối. Kéo để xoay; xoay cùng với khối HSL.",
+        "hslLabel": "HSL · hai chóp, đối xứng theo số",
+        "okLabel": "OKLCH · gam sRGB, không đối xứng theo mắt",
+        "cutLabel": "Cắt ngang ở độ sáng",
+        "cutAria": "Cắt ngang hai khối: độ sáng từ 0 (chỉ đáy) đến 1 (khối đầy đủ). Giá trị thấp hơn cắt bỏ các lớp trên, sáng hơn, của cả hai khối cùng lúc.",
+        "cap": "Cả hai khối đều cho thấy mọi màu mà màn hình có thể hiển thị — nhưng trong các hệ tọa độ khác nhau. HSL <strong>định nghĩa</strong> hình dạng của nó (một hình hai chóp đối xứng, rộng nhất tại L = 0.5); OKLCH <strong>đo</strong> nó từ mắt, và cái xuất ra là một thân thể lệch — vàng phồng cao và nhạt, lam chìm sâu và hẹp, đỏ tía vươn xa hơn lục. Cả hai là cùng một tập hợp màu, áp vào hai cây thước khác nhau. Kéo bất kỳ khung nào để xoay chúng cùng nhau; kéo thanh trượt để nâng đỉnh và nhìn vào trong. Sự không đối xứng bên phải chính là cây Munsell — lần này được vẽ bằng toán học."
+      },
+      "picker": {
+        "title": "Một lát cắt của khối",
+        "hint": "Kéo trong khung · hoặc đặt tiêu điểm vào điểm đánh dấu và dùng phím mũi tên",
+        "markerAria": "Điểm màu — kéo, hoặc dùng phím mũi tên để thay đổi độ bão hòa và giá trị",
+        "axisX": "↑ sáng · giá trị · tối ↓   ·   ← xám · độ bão hòa · rực rỡ →",
+        "hueLabel": "Sắc",
+        "rampTint": "Tints — màu được đưa về phía trắng",
+        "rampShade": "Shades — màu được đưa về phía đen",
+        "rampTone": "Tones — màu được đưa về phía xám"
+      }
+    },
+    "note": {
+      "label": "Từ một màu đến nhiều màu",
+      "body": "Bây giờ chúng ta có thể ghim chính xác bất kỳ màu đơn lẻ nào — một điểm, ba tọa độ, đâu đó trong khối. Nhưng một màu hiếm khi được chọn một mình. Hầu như luôn luôn nó được chọn vì bạn đồng hành, để đặt cạnh những màu khác. Chương Sáu hỏi những màu nào thuộc về nhau, và vì sao."
+    }
+  },
+  "ch6": {
+    "num": "Chương Sáu",
+    "title": "Sự hài hòa",
+    "standfirst": "Các màu giữ bạn đồng hành tốt nhất của chúng bằng hình học.",
+    "leadIn": "Một màu gần như không bao giờ được gặp một mình. Một áp phích, một căn phòng, một bức tranh, một trang như trang này — mỗi cái là một hợp âm của nhiều màu vang lên cùng nhau, và một số hợp âm vang lên trong khi những hợp âm khác lạc điệu. Phần lớn lịch sử, biết được cái nào là cái nào được gọi là <em>thị hiếu</em>, và không thể dạy được. Bánh xe màu đã thay đổi điều đó: nó biến câu hỏi thành hình học. Các màu hài hòa, nó đề nghị, đơn giản là những màu đứng thành một hình rõ ràng, có thể lặp lại trên bánh xe.",
+    "chooseBody": "Chọn một màu cơ sở và một hình dưới đây. Bánh xe vẽ hình; bảng màu và bố cục nhỏ bên cạnh cho thấy những màu đó được sử dụng.",
+    "temperamentBody": "Mỗi hình có một tính khí. Các màu <strong>bổ túc</strong> ngồi đối diện chính xác — xa nhau về sắc xa nhất mà hai màu có thể — và do đó gặp mắt với sự tương phản gay gắt nhất mà một cặp có thể giữ; đặt cạnh nhau, chúng dường như rung lên dọc đường biên giới, một sự căng thẳng mà Chương Tám sẽ giải thích. Các màu <strong>tương cận</strong> là hàng xóm, của một gia đình, và yên lặng nằm cạnh nhau. <strong>Bộ ba</strong> và các hình bốn điểm chia bánh xe đều: sống động nhưng cân bằng, vì không hướng nào được ưu ái. <strong>Bổ túc chia đôi</strong> giữ sự căng thẳng của một màu bổ túc nhưng làm dịu sự khắc nghiệt của nó. <strong>Đơn sắc</strong> hoàn toàn từ bỏ tương phản về sắc và chỉ làm việc theo giá trị và độ thuần — sơ đồ yên lặng nhất trong tất cả.",
+    "grammarBody": "Không gì trong số này là một luật. Đó là một <em>ngữ pháp</em> — cùng loại với các chuỗi hợp âm trong người bạn đồng hành âm nhạc của tiểu luận này, <a href=\"https://circle5-eight.vercel.app\" target=\"_blank\" rel=\"noopener noreferrer\">Vòng tròn quãng năm</a>. Một ngữ pháp không viết câu; nó nói với bạn câu nào sẽ được hiểu. Màu sắc đẹp nhất, như văn viết hay nhất, thường đến từ việc biết chính xác quy tắc — rồi sau đó, vì một lý do, phá vỡ nó.",
+    "fig": {
+      "harmony": {
+        "title": "Bộ thăm dò sự hài hòa",
+        "hint": "Kéo điểm đánh dấu · hoặc đặt tiêu điểm và dùng ← →",
+        "typesGroupAria": "Kiểu hài hòa",
+        "btnComplementary": "Bổ túc",
+        "btnAnalogous": "Tương cận",
+        "btnTriadic": "Bộ ba",
+        "btnSplit": "Bổ túc chia đôi",
+        "btnTetradic": "Bộ bốn",
+        "btnMonochromatic": "Đơn sắc",
+        "handleAria": "Sắc cơ sở của sự hài hòa",
+        "paletteAria": "Bảng màu của sự hài hòa",
+        "nameInitial": "Bộ ba",
+        "copyBtn": "Sao chép bảng màu",
+        "capInitial": "Ba sắc cách nhau bằng một phần ba bằng nhau của bánh xe — cân bằng, sống động và ổn định."
+      }
+    },
+    "note": {
+      "label": "Một vết nứt trên bánh xe",
+      "body": "Mỗi hình được vẽ trên bánh xe đó đã được đo bằng các độ sắc bằng nhau — như thể một bước ba mươi độ có cùng kích thước ở khắp bánh xe. Nó không có. Bánh xe chúng ta đã dùng được cách đều theo con số, không theo mắt. Chương Bảy xây dựng lại không gian theo thước đo của chính mắt."
+    }
+  },
+  "ch7": {
+    "num": "Chương Bảy",
+    "title": "Không gian màu",
+    "standfirst": "Một tấm bản đồ chỉ trung thực bằng lưới của nó.",
+    "leadIn": "Chương Sáu kết thúc bằng một sự thú nhận: bánh xe được cách đều theo con số, không theo mắt. Cả khối của Chương Năm cũng vậy. Một <strong>không gian màu</strong> đơn giản là một hệ tọa độ cho màu — một cách ghim mọi màu bằng một danh sách ngắn các con số — và câu hỏi duy nhất đáng đặt ra với nó là liệu các con số của nó có đồng ý với những gì bạn thấy không.",
+    "rgbHslBody": "Cái quen thuộc nhất là <strong>RGB</strong>: ba giá trị, từ không đến hai trăm năm mươi lăm, mỗi giá trị cho một ánh sáng cơ bản. Đó là tiếng mẹ đẻ của các màn hình, và hoàn toàn trung thực với cỗ máy — nhưng không với mắt. <strong>HSL</strong> — sắc, độ bão hòa, độ sáng — được phát minh để thân thiện hơn với con người, và dễ thao tác hơn. Nhưng độ sáng của nó là một sự hư cấu lịch sự. Yêu cầu HSL <em>năm mươi phần trăm độ sáng</em>, và nó sẽ đưa cho bạn một vàng rực rỡ và một lam sâu xỉn với cùng sự tự tin, và gọi chúng là bằng nhau.",
+    "hkIntro": "HSL ít nhất cũng thành thật khi nói <em>độ sáng</em>. Mánh khóe sâu hơn là ngay cả trong độ sáng tri giác của chính mắt — ngay cả trong L của OKLCH — vẫn có một cú đẩy còn lại mà <em>chính độ thuần</em> mang lại cho độ sáng cảm nhận. Một màu bão hòa rực rỡ, mọi điều kiện khác như nhau, trông sáng hơn người anh em xám của nó. Hermann von Helmholtz và Friedrich Kohlrausch đã ghi lại hiệu ứng này năm 1907; mắt, hóa ra, từ chối cân màu bằng một con số duy nhất.",
+    "cieIntro": "Những tấm bản đồ trung thực đã được thử trước đó. Năm 1931, Commission internationale de l'éclairage đã vẽ tấm đầu tiên trong số đó từ các phép đo thực của thị giác con người — <strong>biểu đồ sắc độ</strong> dưới đây, một hình móng ngựa gom mọi sắc và mọi độ bão hòa mà một con người có thể thấy vào một hình duy nhất, toàn bộ màu sắc trải phẳng.",
+    "gamutBody": "Viền cong của nó là ánh sáng thuần của Chương Một, quang phổ uốn thành cung; chân thẳng của nó là các sắc tía, không có bước sóng và chỉ sống trong tâm trí. Không màn hình và không mực nào có thể tái tạo toàn bộ; mỗi cái chỉ với tới mảnh của mình — một hình tam giác cho các màn hình, một hình bất quy tắc hơn cho máy in — và mọi thứ vượt ra ngoài mảnh đó là một màu bạn có thể thấy nhưng không thể hiển thị. Đó là cái thiếu mà từ <strong>gam</strong> đặt tên. Biểu đồ là một tượng đài — và tuy vậy vẫn không đều ở các góc: khoảng cách bằng nhau trên đó không có nghĩa là khác biệt bằng nhau với mắt. Việc sửa chữa mất gần một thế kỷ.",
+    "gamutIntro": "Móng ngựa ở trên là trừu tượng — mỗi sắc độ mà con người có thể thấy, với ba gam được đánh dấu. Ống ngắm bên dưới là cụ thể: một hình ảnh được vẽ trực tiếp lên canvas Display P3 gam rộng của màn hình, với các đốm màu cố ý nằm ngoài sRGB. Kéo kính lúp tròn trên đó và xem các pixel mà nó bắt được xuất hiện, theo thời gian thực, dưới dạng các chấm trên móng ngựa. Chuyển gam đích để xem những chấm nào rơi ra ngoài — đó là các màu mà màn hình của bạn sẽ nghiền nát, hoặc máy in sẽ phải sáng tạo một màu thay thế, trên đường đến bề mặt của nó.",
+    "oklabBody": "Năm 2020, Björn Ottosson công bố <strong>OKLab</strong>, và hình trụ của nó <strong>OKLCH</strong> — một không gian được chỉnh sao cho các bước bằng nhau trông bằng nhau, và độ sáng cuối cùng có nghĩa là độ sáng. Từ đó nó đã được ghi vào tiêu chuẩn CSS và chạy trong hầu như mọi trình duyệt được tạo ra. Đó là bánh xe màu của Chương Bốn và khối của Chương Năm, được xây dựng lại một lần nữa — và lần này được đo, không phải theo con số mà theo mắt.",
+    "fig": {
+      "hslVsOk": {
+        "title": "HSL so với OKLCH",
+        "hint": "Kéo thanh trượt để đọc bất kỳ sắc nào",
+        "canvasAria": "Hai dải, mỗi dải quét qua mọi sắc. Dải HSL, giữ ở 50 phần trăm độ sáng, dao động đáng kể về độ sáng cảm nhận; dải OKLCH, giữ ở 70 phần trăm độ sáng, vẫn đồng nhất theo tri giác.",
+        "hueLabel": "Sắc, cùng một bước trên khắp bánh xe",
+        "hueAria": "Sắc theo độ",
+        "cap": "Mỗi cặp dải đi qua mọi sắc. Dải rộng là màu; dải hẹp bên dưới là độ sáng mà mắt bạn thực sự cảm nhận. Dải HSL gợn từ sáng đến tối và ngược lại — \"50 %\" của nó gọi tên một độ sáng khác ở mỗi sắc. Dải OKLCH giữ đường: độ sáng của nó <em>là</em> độ sáng của mắt. (Hai cái được đặt ở những con số khác nhau là có chủ ý — \"50 %\" của HSL không có ý nghĩa tri giác cố định, nên làm khớp con số sẽ chỉ so sánh độ sáng, không kiểm tra được luận điểm.)"
+      },
+      "hk": {
+        "title": "Hiệu ứng Helmholtz–Kohlrausch",
+        "hint": "Khớp xám với độ sáng của màu — bằng mắt",
+        "patchAriaGrey": "Mảng xám trung tính — kéo thanh trượt độ sáng của xám để đặt",
+        "patchAriaColor": "Mảng màu bão hòa, cố định ở OKLCH L = 0.60",
+        "tagGrey": "Xám trung tính · bạn điều chỉnh",
+        "tagColor": "Màu bão hòa · OKLCH L = 0.60",
+        "labelHue": "Sắc của màu",
+        "labelChroma": "Độ thuần của màu",
+        "labelGreyL": "Độ sáng xám — kéo cho đến khi hai mảng cảm thấy sáng như nhau",
+        "ariaHue": "Sắc, đơn vị độ",
+        "ariaChroma": "Độ thuần theo đơn vị OKLCH",
+        "ariaGreyL": "L OKLCH của xám trung tính",
+        "btnReveal": "Hiển thị kết quả",
+        "btnReset": "Đặt lại về cùng giá trị",
+        "cap": "Hai mảng có một ràng buộc chung: màu được cố định ở <strong>OKLCH L = 0.60</strong>. Nhiệm vụ của bạn là kéo độ sáng của xám cho đến khi hai mảng cảm thấy sáng như nhau với mắt, rồi nhấn <strong>Hiển thị kết quả</strong>. Bảng kết quả cho thấy — theo đơn vị OKLCH L và theo độ chói thô Y — bạn đã phải cho xám thêm bao nhiêu độ sáng để bắt kịp một màu mà mắt khăng khăng là sáng hơn những gì các con số nói. Cú đẩy phụ thuộc vào sắc (mạnh nhất ở lam và đỏ sâu) và tăng theo độ thuần. <em>Lưu ý hiệu chuẩn: sự khớp chính xác phụ thuộc vào màn hình và ánh sáng môi trường; điều quan trọng là hướng và độ lớn xấp xỉ.</em>"
+      },
+      "cie": {
+        "title": "Hình móng ngựa năm 1931",
+        "hint": "Kéo thanh trượt dọc quang phổ",
+        "canvasAria": "Biểu đồ sắc độ CIE 1931. Một trường hình móng ngựa chứa mọi sắc độ mà mắt người có thể thấy; viền cong của nó là các bước sóng quang phổ thuần từ 380 đến 700 nanomet, và cạnh thẳng ở chân là các sắc tía, không có bước sóng riêng. Bên trong trường, ba hình tam giác đánh dấu các gam làm việc: tam giác liền nét là sRGB chuẩn, tam giác đứt nét là Display P3 rộng hơn, và tam giác chấm — nhỏ hơn cả hai — là một xấp xỉ C/M/Y của gam in offset bốn màu, mà hình dạng thật là một lục giác. Toàn bộ vùng giữa các tam giác và viền là nhìn thấy được với mắt nhưng vượt quá những gì màn hình có thể hiển thị, và được vẽ nhạt.",
+        "nmLabel": "Một bước sóng thuần, đánh dấu trên viền",
+        "nmAria": "Bước sóng theo nanomet",
+        "legendSrgb": "Gam sRGB",
+        "legendP3": "Gam Display P3",
+        "legendCmyk": "In offset (CMYK)",
+        "legendD65": "Điểm trắng D65",
+        "cap": "<strong>Kéo thanh trượt</strong> để dắt điểm đánh dấu dọc viền — mỗi điểm là một bước sóng thuần, quang phổ của Chương Một cuộn lại thành cung. Ba tam giác là các <strong>gam</strong> làm việc: liền nét là sRGB, chuẩn của web; đứt nét là Display P3 rộng hơn của các màn hình mới; tam giác chấm nhỏ hơn là một xấp xỉ C/M/Y của gam in offset (hình dạng thật là một lục giác — tam giác có kích thước gần đúng, không có hình dạng đúng). Vì thế một đồ họa rực rỡ trên màn hình mất đi một chút sức sống khi đến một trang in. Mọi màu bên ngoài tam giác sRGB liền nét được vẽ nhạt có chủ ý: nó vượt ra ngoài gam mà chính trang này được vẽ, nên biểu đồ chỉ có thể chỉ tới một màu mà nó không thực sự hiển thị được."
+      },
+      "gamutView": {
+        "title": "Ống ngắm gam",
+        "hint": "Kéo ống kính · chuyển gam đích",
+        "sideLabelImg": "Hình nguồn gam rộng",
+        "sideLabelCie": "Sắc độ CIE 1931 · pixel được lấy mẫu",
+        "imgAria": "Một hình màu tổng hợp gam rộng được vẽ trực tiếp lên canvas Display P3. Một số vùng chứa các màu nằm ngoài tam giác sRGB. Kéo hoặc đặt tiêu điểm để định vị kính lúp tròn.",
+        "cieAria": "Biểu đồ sắc độ CIE 1931. Các pixel dưới kính lúp xuất hiện dưới dạng chấm; các pixel ngoài gam đích đã chọn được tô đậm bằng viền đỏ.",
+        "targetAriaGroup": "Gam đích cho viền cảnh báo",
+        "targetLabel": "Gam đích:",
+        "targetSRGB": "sRGB (web)",
+        "targetP3": "Display P3 (màn hình mới)",
+        "targetCMYK": "CMYK (in offset)",
+        "cap": "Canvas nguồn được render bằng <strong>Display P3</strong> nơi trình duyệt hỗ trợ (Safari 15+, Chrome 110+, Firefox 113+); trên các trình duyệt cũ hơn, nó sẽ quay về sRGB và các cảnh báo ngoài gam sẽ im lặng. Mỗi chấm trên móng ngựa là một pixel dưới kính lúp, được biến đổi qua ma trận sRGB (hoặc P3) tiêu chuẩn thành CIE XYZ rồi thành <em>xy</em>. Ba tam giác giống như trong móng ngựa ở trên. Viền đỏ đếm bao nhiêu trong số các pixel bạn đã bắt được nằm ngoài đích bạn chọn — các sắc lục và lục lam rực rỡ thường đầu hàng sRGB trước; các sắc cam và đỏ sâu có xu hướng chết khi chuyển sang CMYK."
+      }
+    },
+    "note": {
+      "label": "Cái màu bạn sẽ không thấy",
+      "body": "Bây giờ chúng ta có thể đặt một màu, đo nó và tin vào phép đo. Vậy mà phép đo đó vẫn không phải là màu bạn sẽ thấy — vì mắt không bao giờ phán xét một màu một mình. Nó phán xét mỗi màu theo các màu xung quanh nó. Chương Tám nói về sự phản bội này."
+    }
+  },
+  "ch8": {
+    "num": "Chương Tám",
+    "title": "Sự tương tác của màu sắc",
+    "standfirst": "Không màu nào được thấy một mình.",
+    "leadIn": "Josef Albers dạy màu sắc trong bốn mươi năm — tại Bauhaus, tại Black Mountain, tại Yale — và năm 1963 ông đặt toàn bộ vào một cuốn sách mang tên <em>Sự tương tác của màu sắc</em>. Nguyên lý đầu tiên của ông cũng là nguyên lý khó nhất: màu sắc là phương tiện tương đối nhất của nghệ thuật. Một màu không bao giờ được thấy đúng như nó vốn là. Nó luôn được thấy trong sự đồng hành của những gì bao quanh nó, và sự đồng hành ấy thay đổi nó.",
+    "heringIntro": "Đằng sau tính tương đối ấy là một mạch nối. Chương hai cho thấy ba tế bào nón; điều chưa được cho thấy là não ngay lập tức tái mã hóa các tín hiệu của chúng thành <strong>các cặp đối lập</strong> — đỏ đối lục, vàng đối lam. Nhà sinh lý học người Đức Ewald Hering đề xuất sơ đồ này vào năm 1892, đối chọi với thỏa thuận ba thụ thể của Helmholtz, và ông đã đúng: cả hai đều thật, phân lớp. Dự đoán khó kiểm chứng nhất của lý thuyết ông là hai thành viên của một cặp <em>không thể cùng tồn tại</em> trong cùng một mảng thị giác. Không có thứ gọi là «lục ngả đỏ» hay «vàng ngả lam», theo cách có «lam ngả đỏ» (tím) hoặc «lục ngả vàng» (vàng-lục). Dưới đây là thí nghiệm hủy (cancellation) cho phép bạn cảm nhận ràng buộc ấy bằng chính mắt mình.",
+    "proveBody": "Hai hình vuông ở giữa các khung dưới đây được sơn cùng một màu duy nhất — chính xác cùng một màu, cùng ba con số. Đặt các môi trường xung quanh và xem chúng từ chối trùng khớp.",
+    "simContrastBody": "Đây là <strong>tương phản đồng thời</strong>, được nhà hóa học Michel-Eugène Chevreul đặt tên năm 1839, khi ông được phái đến giải thích vì sao cùng một loại len trông sai trong những kiểu dệt khác nhau ở Xưởng dệt Gobelins. Mắt đánh giá mỗi màu so với môi trường xung quanh: một màu trên nền tối hơn nổi lên, cùng màu đó trên nền sáng hơn chìm xuống — như hai hình vuông ở giữa vừa cho thấy. Tương phản hoạt động trong sắc cũng như trong độ sáng — một sắc xám đặt cạnh cam mát đi về phía lam, đặt cạnh lam ấm lên về phía cam — nhưng bài học rất đơn giản: mắt báo cáo các khác biệt, không bao giờ báo cáo các tuyệt đối.",
+    "bezoldBody": "Ảnh hưởng có thể lan ra. Trong <strong>hiệu ứng Bezold</strong> — được nhà khí tượng học Wilhelm von Bezold nhận thấy khi thiết kế thảm — thay đổi một màu trong một họa tiết lặp lại làm dịch chuyển sắc và tone của toàn bộ thiết kế cùng một lúc, vì màu duy nhất ấy chảy qua mọi hình mà nó chạm vào.",
+    "neonIntro": "Một trường hợp cực đoan của sự lan tỏa ấy là <strong>lan tỏa màu neon</strong>, lần đầu được Dario Varin và Harrie van Tuijl mô tả vào những năm 1970. Khi một nét màu mảnh cắt qua một viền màu khác trên nền tối, mắt lấp đầy bên trong viền bằng màu đang cắt qua, như thể một đĩa nhuộm màu đã được đặt phía sau. Màu chỉ có trong các nét — phần còn lại được phát minh ra.",
+    "successiveBody": "Cái bóng đó là một <strong>tương phản kế tiếp</strong>, một dư ảnh. Mắt không chỉ đếm ba tế bào nón của nó; ở giai đoạn tiếp theo, nó đặt chúng đối đầu nhau theo từng cặp đối nghịch — đỏ đối lục, lam đối vàng. Giữ một màu yên trên một mảnh võng mạc và các tế bào nón mang nó sẽ chậm rãi mệt mỏi; khi màu bị lấy đi, phía kiệt sức của chúng im lặng trong khi phía đối diện đáp lại không bị kiềm chế, và bạn thấy màu bổ túc, được sơn lên không có gì. Đó cũng chính là sự đối nghịch khiến các màu bổ túc rung lên khi được đặt cạnh nhau: mắt được dựng nên để đáp lại tương phản, và không thể bảo nó dừng.",
+    "landIntro": "Nếu điều đó nghe như mắt đang làm nhiều hơn là đọc ánh sáng, đúng là vậy. Năm 1959, kỹ sư và người sáng lập Polaroid Edwin Land cho thấy nó có thể làm điều gần như nực cười: từ <em>hai</em> bức ảnh đen trắng — một chụp qua bộ lọc bước sóng dài, một qua bộ lọc ngắn hơn — chiếu lại qua một bộ lọc đỏ và một đèn trắng, hệ thống thị giác tái tạo một hình ảnh rõ ràng là <em>đầy đủ màu</em>. Không có ánh sáng lục, không có ánh sáng lam, ở bất cứ đâu trong phòng. Não tạo ra các sắc thiếu từ cấu trúc không gian của hai bản ghi, với các cạnh và tỉ lệ làm công việc mà bước sóng thuần không thể. Land gọi cách giải thích nền tảng là lý thuyết <strong>retinex</strong>, từ retina (võng mạc) và cortex (vỏ não). Mô phỏng bên dưới cho bạn đứng bên trong thí nghiệm đó.",
+    "fig": {
+      "hering": {
+        "title": "Thí nghiệm hủy màu của Hering",
+        "hint": "Đẩy mỗi kênh đối lập về 0",
+        "patchAria": "Màu đang được trung hòa",
+        "tagPatch": "Màu bạn đang hủy",
+        "channelRG": "Kênh Đỏ ↔ Lục",
+        "channelYB": "Kênh Vàng ↔ Lam",
+        "axisRGLabel": "Trục Đỏ–Lục",
+        "axisRGPoles": "← thêm đỏ &nbsp;·&nbsp; thêm lục →",
+        "axisYBLabel": "Trục Vàng–Lam",
+        "axisYBPoles": "← thêm vàng &nbsp;·&nbsp; thêm lam →",
+        "ariaRG": "Hủy đối lập Đỏ–Lục",
+        "ariaYB": "Hủy đối lập Vàng–Lam",
+        "btnNew": "Màu mới",
+        "cap": "Mảng bắt đầu ở một độ lệch ngẫu nhiên trong mặt phẳng <em>a*</em>/<em>b*</em> OKLab — phiên bản hiện đại của Ottosson cho hai kênh của Hering. Nhiệm vụ của bạn là kéo từng trục theo hướng ngược lại cho đến khi cả hai thanh sụp xuống 0. Khi chúng làm vậy, mảng lắng xuống xám trung tính — và bạn vừa thực hiện, bằng tay, điều mà vỏ não thị giác làm trong mili-giây mỗi khi bạn nhìn bất cứ thứ gì. Bài học sâu hơn là cấu trúc: cùng một từ chỉ màu — chẳng hạn <em>lục</em> — có thể gọi tên rất nhiều quang phổ vật lý, nhưng tất cả chia sẻ một thuộc tính: kênh đỏ–lục của chúng đọc là lục. Sắc là điều mà hai kênh cùng nhau báo cáo. Nhấn <strong>Màu mới</strong> để thử một điểm khởi đầu khác."
+      },
+      "albers": {
+        "title": "Một màu, hai màu",
+        "hint": "Đặt các nền, rồi chứng minh các tâm bằng nhau",
+        "labelLeft": "Nền trái",
+        "ariaLeft": "Độ sáng của nền trái",
+        "labelRight": "Nền phải",
+        "ariaRight": "Độ sáng của nền phải",
+        "labelCentre": "Màu ở tâm",
+        "ariaCentre": "Sắc của màu ở tâm",
+        "labelPattern": "Họa tiết bao quanh",
+        "ariaPattern": "Tần suất họa tiết trên các nền: không là đặc, cao hơn là các sọc nhỏ hơn",
+        "verdict": "Cả hai hình vuông ở tâm chứa chính xác cùng một màu.",
+        "proveBtn": "Chứng minh",
+        "cap": "Khoảng cách giữa hai nền càng rộng, màu duy nhất ở tâm càng bị tách thành hai — chìm tối so với nền sáng, nhô nhợt so với nền tối. Mắt đánh giá nó so với môi trường xung quanh, không bao giờ đọc nó cho chính nó. Xoay thanh trượt dưới để học bài thứ hai: ở các sọc rộng, tương phản quanh tâm sắc nét hơn, nhưng khi các sọc nhỏ đi, mắt ngừng tách chúng khỏi trường — môi trường trung bình hóa chính nó, và tâm <em>đồng hóa</em> với màu của sọc. Wilhelm von Bezold nhận thấy hiệu ứng năm 1874."
+      },
+      "neon": {
+        "title": "Lan tỏa màu neon",
+        "hint": "Bật/tắt viền ảo",
+        "svgAria": "Một vùng tối được lưới trắng mảnh cắt qua. Tại các giao điểm trung tâm, một nét màu duy nhất thay thế phần trắng. Mắt thấy một đĩa nhuộm màu lấp đầy vùng trung tâm, mặc dù chỉ có những nét cắt qua mang màu.",
+        "labelColor": "Màu của nét",
+        "toggleLabel": "Hiển thị viền ảo",
+        "note": "Vòng chấm khi được hiển thị đánh dấu nơi mắt vẽ một đĩa nhuộm màu mà không có sơn vật lý bên trong — chỉ có vài nét màu bên trong vòng đó mang sắc tố.",
+        "cap": "Nơi các bảng Albers ở trên cho thấy các màu lân cận đẩy nhau ra (tương phản đồng thời) và các sọc mảnh tan vào trường (đồng hóa Bezold), hình này đẩy sự đồng hóa đến giới hạn. Hệ thị giác, được lưới khép kín chuẩn bị để mong đợi một bề mặt liên tục, tô bên trong \"vòng\" bằng màu nó tìm thấy ở biên của vòng — ngay cả khi gần như toàn bộ bên trong là nền tối trần. Cùng cơ chế ấy đứng sau bóng có màu, hiệu ứng màu nước, và gần như mọi cử chỉ tiết chế của nhà thiết kế: <em>cho thấy màu ở mép, bên trong sẽ tự lấp đầy</em>."
+      },
+      "afterimage": {
+        "title": "Dư ảnh",
+        "hint": "Nhìn chằm vào dấu thập, rồi nhìn đi",
+        "hueLabel": "Màu để nhìn",
+        "hueAria": "Sắc của hình",
+        "lookBtn": "Nhìn đi",
+        "cap": "Giữ ánh nhìn của bạn trên dấu thập nhỏ chừng hai mươi giây — đừng để nó lang thang — rồi bấm <em>Nhìn đi</em>. Trên trường xám trần, hình quay lại như một bóng ma, được sơn bằng màu bổ túc của nó."
+      },
+      "land": {
+        "title": "Thí nghiệm chiếu hai màu của Land",
+        "hint": "Di chuột trên kết quả để đọc R, G, B của một pixel",
+        "origLabel": "Cảnh gốc · để tham chiếu",
+        "outLabel": "Chiếu Land · cái phòng cho thấy",
+        "origAria": "Cảnh màu gốc mà từ đó các bản ghi bước sóng dài và ngắn được rút ra",
+        "outAria": "Đầu ra mô phỏng của thiết lập hai máy chiếu của Land. Di chuột hoặc đặt tiêu điểm để đọc giá trị R, G, B thực của bất kỳ pixel nào — chúng sẽ đơn giản hơn nhiều so với màu bạn nhận thức.",
+        "modesAria": "Hiển thị máy chiếu nào",
+        "modesLabel": "Hiển thị:",
+        "modeBoth": "Cả hai máy chiếu",
+        "modeRed": "Chỉ ánh sáng đỏ",
+        "modeWhite": "Chỉ ánh sáng trắng",
+        "labelRed": "Cường độ bộ lọc đỏ (bản ghi bước sóng dài)",
+        "labelWhite": "Cường độ ánh sáng trắng (bản ghi bước sóng ngắn)",
+        "ariaRed": "Cường độ của máy chiếu lọc đỏ",
+        "ariaWhite": "Cường độ của máy chiếu ánh sáng trắng",
+        "cap": "Bảng bên trái cho thấy cảnh màu mà từ đó hai slide đen trắng được \"chụp\". Bảng bên phải là cái mà một người xem trong phòng giảng đường của Land thực sự thấy: chỉ hai ánh sáng vật lý, một đỏ và một trắng, được điều biến bởi hai bản ghi xám. Di chuột hoặc đặt tiêu điểm vào bảng bên phải và đọc kết quả — các pixel trông cam, vàng, hoặc thậm chí có sắc lục <em>không hề chứa ánh sáng lục hay ánh sáng lam</em> nào. Các con số R, G, B của chúng sẽ cho thấy điều này rõ ràng. Các màu bạn vẫn thấy là hệ thống thị giác lấp đầy, từ cạnh và bối cảnh xung quanh, các sắc mà phòng không bao giờ gửi đi. Hiệu ứng mạnh nhất trên màn hình được hiệu chuẩn trong phòng tối; dưới ánh sáng văn phòng sáng nó yếu đi nhưng vẫn nhìn thấy được ở phía ấm của quang phổ."
+      }
+    },
+    "note": {
+      "label": "Màu sắc phải hoạt động",
+      "body": "Nếu màu được đo không bao giờ hoàn toàn là màu được thấy, thì bất cứ ai xây dựng bằng màu cho người khác — một biển hiệu, một giao diện, một trang — đều làm việc trên nền đất rung động. Chương hoàn chỉnh cuối cùng nói về việc vẫn đứng trên đó: màu vẫn dễ đọc, và vẫn thân thiện, cho mọi đôi mắt."
+    }
+  },
+  "ch9": {
+    "num": "Chương Chín",
+    "title": "Màu sắc trong thực hành",
+    "standfirst": "Màu sắc phải được đọc bởi mọi người.",
+    "leadIn": "Tám chương đã dành cho cách màu sắc hành xử. Chương này nói về một bổn phận. Khi màu sắc được yêu cầu mang ý nghĩa — trên một biển hiệu, một màn hình, một trang — nó phải tới được mọi người đọc, không chỉ những người được chiếu sáng tốt và có thị giác điển hình. Hai yêu cầu bao phủ gần như tất cả: màu sắc phải <strong>dễ đọc</strong>, và phải <strong>hòa nhập</strong>.",
+    "contrastBody": "Độ dễ đọc trước hết là vấn đề tương phản. Văn bản có thể đọc được khi nó đủ sáng — hoặc đủ tối — so với nền, và \"đủ\" ấy có thể rút gọn thành một con số duy nhất. Đặt một màu chữ và một màu nền dưới đây.",
+    "wcagBody": "Các Web Content Accessibility Guidelines (WCAG) định nghĩa các ngưỡng mà các huy hiệu kiểm tra. Văn bản chính cần một tỉ lệ ít nhất <strong>4,5 : 1</strong> để đạt mức thông thường AA; văn bản lớn — chừng 24 pixel, hay 19 nếu in đậm — chỉ cần <strong>3 : 1</strong>; mức nghiêm ngặt AAA yêu cầu <strong>7 : 1</strong> từ văn bản chính. Đây không phải là những con số quan liêu. Đó là biên giữa một câu được đọc và một câu bị nheo mắt nhìn, bị bỏ qua, hoặc không được nhận thấy chút nào — bởi một người đọc dưới nắng, trên một màn hình sắp hỏng, hay đơn giản là với đôi mắt già hơn.",
+    "apcaBody": "Hình minh họa cũng đọc một con số mới hơn bên cạnh tỉ lệ: <strong>APCA</strong> (Accessible Perceptual Contrast Algorithm), thước đo tương phản mà W3C đang chuẩn bị cho phiên bản tiếp theo của các hướng dẫn. Trong khi WCAG chỉ đếm chênh lệch độ sáng, APCA đọc chênh lệch như mắt làm, và không giả vờ rằng tối-trên-sáng và sáng-trên-tối là cùng một vấn đề. Hướng dẫn của nó sau đó gắn các mức tối thiểu <em>Lc</em> khác nhau cho các kích cỡ và độ đậm phông chữ khác nhau: văn bản chính muốn ít nhất <strong>Lc 75</strong>, văn bản lớn hoặc in đậm 60, tiêu đề 45, và phi-văn-bản chỉ cần thấy được 30. Thang đo (có dấu, dương cho chữ tối hơn trên nền sáng hơn) lên đến khoảng một trăm ở cực đoan.",
+    "inclusionBody": "Yêu cầu thứ hai là hòa nhập. Trong những người gốc châu Âu, khoảng một trong mười hai nam và một trong hai trăm nữ — tỉ lệ thay đổi theo dòng gốc — gặp gỡ màu sắc với một bộ tế bào nón khác với điều mà tiểu luận này đến nay đã giả định. Phổ biến nhất là một loại tế bào nón đơn lẻ bị dịch chuyển hoặc vắng mặt: <strong>protanopia</strong> và <strong>deuteranopia</strong> làm yếu đường giữa đỏ và lục; <strong>tritanopia</strong> hiếm hơn làm mờ lam so với vàng. Tám màu được gửi đến màn hình dưới đây không bao giờ thay đổi; cái mỗi cài đặt cho thấy là cách một con mắt khác sẽ phân giải chúng.",
+    "rulePracticalBody": "Hãy xem đỏ và lục trượt vào một sắc lầy lội dưới protanopia hay deuteranopia, và quy tắc thực hành tự nó viết ra: <strong>không bao giờ để màu sắc là tín hiệu duy nhất</strong>. Một từ đỏ và một từ lục, giống nhau ở mọi mặt khác, là hai từ mà rất nhiều người đọc không thể phân biệt. Thêm một kênh thứ hai — một hình, một nhãn, một gạch chân, một vị trí — và màu sắc trở thành một sự gia cố được chào đón thay vì một cánh cửa khóa. Màu sắc nên là cách dễ nhất để đọc một thứ; nó không bao giờ được là cách duy nhất.",
+    "balanceBody": "Một ghi chú cuối trước khi con đường kết thúc. Một bảng màu không chỉ là ba màu tốt, mà là các <em>tỉ phần</em> mà chúng chiếm trên trang. Các nhà thiết kế từ lâu dựa vào một quy tắc kinh nghiệm: một căn phòng, một áp phích hay một màn hình đọc <strong>cân bằng</strong> khi một màu làm khoảng sáu mươi phần trăm công việc, một màu thứ hai khoảng ba mươi, và màu thứ ba chỉ khoảng mười. Màu chiếm ưu thế mang không gian; màu thứ cấp hỗ trợ nó; màu nhấn kéo mắt rồi rút lui. Cho mỗi màu một tỉ phần bằng nhau và bố cục mất đi trung tâm.",
+    "fig": {
+      "contrast": {
+        "title": "Trình kiểm tra tương phản",
+        "hint": "Chọn một màu chữ và một màu nền",
+        "labelText": "Chữ",
+        "labelBg": "Nền",
+        "contrastUnit": " : 1 tương phản",
+        "wcagAria": "Kết quả tương phản WCAG",
+        "apcaAria": "Tương phản tri giác APCA",
+        "apcaUnit": "Lc · APCA",
+        "previewLg": "Văn bản lớn, sắp chữ lớn.",
+        "previewSm": "Văn bản chính — kích cỡ mà phần lớn các từ trên một trang được sắp xếp, và kích cỡ đòi hỏi tương phản nhiều nhất.",
+        "cap": "Con số là <strong>tỉ lệ tương phản</strong> — độ chói của màu sáng hơn so với màu tối hơn, đi từ 1:1 (giống hệt) đến 21:1 (đen thuần trên trắng thuần)."
+      },
+      "cvd": {
+        "title": "Qua những đôi mắt khác",
+        "hint": "Một sự mô phỏng — chọn một kiểu thị giác",
+        "typesGroupAria": "Kiểu thị giác màu",
+        "btnNormal": "Thị giác điển hình",
+        "btnProtanopia": "Protanopia",
+        "btnDeuteranopia": "Deuteranopia",
+        "btnTritanopia": "Tritanopia",
+        "severityLabel": "Mức độ nghiêm trọng — từ thị giác ba màu bất thường đến thị giác hai màu hoàn toàn",
+        "severityAria": "Mức độ nghiêm trọng, phần trăm — ở 0 mô phỏng là thị giác điển hình; các giá trị trung gian xấp xỉ thị giác ba màu bất thường; 100 mô hình hóa thị giác hai màu hoàn toàn",
+        "swatchesAria": "Một bảng tám màu hiển thị dưới kiểu thị giác màu đã chọn",
+        "capInitial": "Tám màu riêng biệt, đối với một con mắt điển hình.",
+        "cap": "Một xấp xỉ toán học. Ở <strong>mức độ 100</strong>, nó mô hình hóa thị giác hai màu hoàn toàn — một tế bào nón vắng mặt; các mức trung gian xấp xỉ <strong>thị giác ba màu bất thường</strong> (một tế bào nón bị dịch chuyển thay vì vắng mặt), dạng nhẹ hơn và phổ biến hơn nhiều. Không màn hình thông thường nào có thể tái tạo trải nghiệm thật."
+      },
+      "balance": {
+        "title": "Sáu mươi · Ba mươi · Mười",
+        "hint": "Chọn các màu · trượt tỉ phần",
+        "mockAria": "Một bản phác trang trong ba dải màu. Màu chiếm ưu thế lấp đầy thân giữa, màu thứ cấp lấp một đầu trang phía trên, và màu nhấn lấp một dải mỏng ở chân, với một nút nhỏ trên thân lấy lại màu nhấn. Chiều cao tương đối của các dải cho thấy tỉ lệ của bảng màu.",
+        "labelDominant": "Chiếm ưu thế",
+        "labelSecondary": "Thứ cấp",
+        "labelAccent": "Nhấn",
+        "domShareLabel": "Tỉ phần của màu chiếm ưu thế",
+        "domShareAria": "Tỉ phần của màu chiếm ưu thế, phần trăm",
+        "btn603010": "60 · 30 · 10",
+        "btnEqual": "Ba phần ba bằng nhau",
+        "continueBtn": "Tiếp tục",
+        "cap": "Mỗi thay đổi viết lại khung. Trượt thanh trượt xuống dưới sáu mươi nhiều và mắt mất một trung tâm để nghỉ; đẩy nó gần một trăm và chỉ màu chiếm ưu thế sống sót. Quy tắc là một quy tắc kinh nghiệm, không phải một luật — nhưng vững chắc, và là một điểm khởi đầu tốt khi một bảng màu mới được thả lên một trang."
+      }
+    },
+    "note": {
+      "label": "Cuối con đường",
+      "body": "Và đây là tiểu luận — từ một bước sóng ánh sáng đơn lẻ đến kỷ luật của một bảng màu hoạt động cho mọi đôi mắt. Còn lại một chương ngắn: không phải một luận điểm mà là một tham chiếu, các thuật ngữ của màu sắc được tập hợp ở một nơi duy nhất."
+    }
+  },
+  "ch10": {
+    "num": "Chương Mười",
+    "title": "Một bảng thuật ngữ về màu sắc",
+    "standfirst": "Mỗi thuật ngữ mà tiểu luận đã dựa vào, được tập hợp ở một nơi.",
+    "leadIn": "Lần này không phải một luận điểm, mà là một tham chiếu. Mỗi thuật ngữ dưới đây có nhà của nó trong một trong chín chương; điểm đánh dấu bên cạnh chỉ đường. Gõ vào ô để thu hẹp danh sách.",
+    "fig": {
+      "terms": {
+        "title": "Các thuật ngữ",
+        "searchPlaceholder": "Lọc các thuật ngữ…",
+        "searchAria": "Lọc các thuật ngữ của bảng",
+        "emptyMsg": "Không có thuật ngữ nào khớp.",
+        "list": {
+          "additiveMixing": {
+            "name": "Pha trộn cộng",
+            "ref": "§3",
+            "def": "Làm ra màu bằng cách kết hợp ánh sáng: bắt đầu trong bóng tối và thêm vào. Ánh sáng đỏ, lục và lam cùng nhau cho ra trắng — logic của các màn hình và đèn sân khấu."
+          },
+          "afterimage": {
+            "name": "Dư ảnh",
+            "ref": "§8",
+            "def": "Cái bóng có màu được thấy khi một màu được lấy đi — màu bổ túc của nó, được tạo ra khi các kênh đối nghịch đã mệt của mắt bật lại."
+          },
+          "analogous": {
+            "name": "Tương cận",
+            "ref": "§6",
+            "def": "Một sự hài hòa của các sắc lân cận, gần nhau trên bánh xe — một gia đình, yên lặng cùng nhau."
+          },
+          "chroma": {
+            "name": "Độ thuần (chroma)",
+            "ref": "§5",
+            "def": "Một màu thuần hay bị giảm bớt đến đâu: khoảng cách của nó đến một sắc xám trung tính. Một trong ba chiều của màu."
+          },
+          "chromaticity": {
+            "name": "Sắc độ",
+            "ref": "§7",
+            "def": "Sắc và độ bão hòa của một màu xem cùng nhau, được xem xét tách khỏi độ sáng của nó."
+          },
+          "cie1931": {
+            "name": "CIE 1931",
+            "ref": "§7",
+            "def": "Tiêu chuẩn đo màu được xây dựng từ các phép khớp màu của con người — và nguồn của biểu đồ sắc độ hình móng ngựa."
+          },
+          "cmyk": {
+            "name": "CMYK",
+            "ref": "§3",
+            "def": "Lục lam, đỏ tía, vàng và đen chìa khóa: các màu cơ bản trừ của in ấn."
+          },
+          "colorSpace": {
+            "name": "Không gian màu",
+            "ref": "§7",
+            "def": "Một hệ tọa độ cho màu — một cách ghim mọi màu bằng vài con số. RGB, HSL và OKLCH là các không gian màu."
+          },
+          "cvd": {
+            "name": "Thiếu thị giác màu",
+            "ref": "§9",
+            "def": "Một sự khác biệt trong các tế bào nón — thường là một loại vắng mặt hoặc bị dịch chuyển — làm yếu đường giữa các màu nhất định, phổ biến nhất là đỏ và lục."
+          },
+          "colorWheel": {
+            "name": "Bánh xe màu",
+            "ref": "§4",
+            "def": "Đường quang phổ uốn thành một vòng, hai đầu nối lại bằng các sắc tía không quang phổ. Một phát minh, và là một phát minh hữu ích."
+          },
+          "complementary": {
+            "name": "Màu bổ túc",
+            "ref": "§4",
+            "def": "Hai màu đối diện nhau qua bánh xe — tương phản gay gắt nhất mà một cặp có thể giữ."
+          },
+          "coneCell": {
+            "name": "Tế bào nón",
+            "ref": "§2",
+            "def": "Một trong ba loại thụ thể màu của võng mạc — ngắn, trung và dài (S, M, L). Ba tín hiệu của chúng là toàn bộ màu sắc được thấy dưới ánh ban ngày."
+          },
+          "contrastRatio": {
+            "name": "Tỉ lệ tương phản",
+            "ref": "§9",
+            "def": "Tỉ số độ chói của hai màu, từ 1:1 đến 21:1. WCAG yêu cầu ít nhất 4,5:1 cho văn bản chính."
+          },
+          "gamut": {
+            "name": "Gam màu",
+            "ref": "§7",
+            "def": "Tập hợp các màu mà một thiết bị hoặc không gian nhất định thực sự có thể tạo ra — luôn nhỏ hơn tất cả những gì mắt có thể thấy."
+          },
+          "harmony": {
+            "name": "Sự hài hòa",
+            "ref": "§6",
+            "def": "Các màu thuộc về nhau, được ấn định bằng hình học đơn giản trên bánh xe: một ngữ pháp để kết hợp màu, không phải một luật."
+          },
+          "hsl": {
+            "name": "HSL",
+            "ref": "§7",
+            "def": "Hue, Saturation, Lightness — một không gian màu trực quan, mặc dù độ sáng của nó không đồng nhất theo tri giác."
+          },
+          "hue": {
+            "name": "Sắc",
+            "ref": "§4",
+            "def": "Phẩm chất mà một từ chỉ màu gọi tên — đỏ, lục, lam — và chiều chạy quanh bánh xe."
+          },
+          "metamerism": {
+            "name": "Hiện tượng đồng phổ",
+            "ref": "§2",
+            "def": "Hai ánh sáng khác nhau về vật lý đổ đầy ba tế bào nón đến cùng các mức, và do đó trông giống hệt nhau mặc dù không phải vậy."
+          },
+          "munsell": {
+            "name": "Munsell",
+            "ref": "§5",
+            "def": "Hệ thống sắp xếp màu của Albert Munsell, khoảng năm 1905 — cái đầu tiên được lập bản đồ bằng phép đo, đặt mỗi màu theo sắc, giá trị và độ thuần."
+          },
+          "oklch": {
+            "name": "OKLCH",
+            "ref": "§7",
+            "def": "Một không gian màu đồng nhất theo tri giác (Björn Ottosson, 2020), trong đó các bước bằng nhau trông bằng nhau — dạng trụ của OKLab, nay là một phần của CSS."
+          },
+          "opponentProcess": {
+            "name": "Quá trình đối nghịch",
+            "ref": "§8",
+            "def": "Giai đoạn thứ hai của thị giác màu: các tín hiệu tế bào nón được đặt đối đầu nhau theo từng cặp — đỏ đối lục, lam đối vàng."
+          },
+          "primaryColors": {
+            "name": "Các màu cơ bản",
+            "ref": "§3",
+            "def": "Một bộ được chọn mà từ đó các màu khác được trộn. Không có một bộ thật duy nhất: RGB cho ánh sáng, CMY cho sắc tố, RYB cho họa sĩ."
+          },
+          "rgb": {
+            "name": "RGB",
+            "ref": "§3",
+            "def": "Red, Green, Blue: các màu cơ bản cộng của ánh sáng, và không gian màu bản địa của các màn hình."
+          },
+          "saturation": {
+            "name": "Độ bão hòa (saturation)",
+            "ref": "§5",
+            "def": "Một màu sống động hay phai mờ đến đâu; trên màn hình và trong sử dụng hằng ngày, người anh em làm việc của độ thuần."
+          },
+          "simultaneousContrast": {
+            "name": "Tương phản đồng thời",
+            "ref": "§8",
+            "def": "Sự dịch chuyển mà một màu chịu vì các hàng xóm của nó. Mắt đánh giá mỗi màu so với môi trường xung quanh."
+          },
+          "spectralColor": {
+            "name": "Màu quang phổ",
+            "ref": "§1",
+            "def": "Một màu được mang bởi một bước sóng ánh sáng đơn lẻ. Đỏ tía không phải — nó không có bước sóng riêng."
+          },
+          "subtractiveMixing": {
+            "name": "Pha trộn trừ",
+            "ref": "§3",
+            "def": "Làm ra màu bằng cách lấy đi ánh sáng: bắt đầu với trắng và lấy đi. Mỗi sắc tố hấp thụ một phần của quang phổ."
+          },
+          "tintShadeTone": {
+            "name": "Tint, shade và tone",
+            "ref": "§5",
+            "def": "Ba cách để dịch chuyển một màu: một tint thêm trắng, một shade thêm đen, một tone thêm xám."
+          },
+          "trichromatic": {
+            "name": "Thị giác ba màu",
+            "ref": "§2",
+            "def": "Thị giác màu của con người: ba loại tế bào nón, và màu sắc được bộ não lắp ráp từ tỉ lệ của ba tín hiệu của chúng."
+          },
+          "value": {
+            "name": "Giá trị",
+            "ref": "§5",
+            "def": "Một màu sáng hay tối đến đâu — vị trí của nó trên đường từ đen đến trắng. Một trong ba chiều của màu."
+          },
+          "visibleSpectrum": {
+            "name": "Quang phổ khả kiến",
+            "ref": "§1",
+            "def": "Dải hẹp các bước sóng mà mắt có thể nắm bắt, chừng từ 380 nanomet (tím) đến 700 nanomet (đỏ)."
+          },
+          "wavelength": {
+            "name": "Bước sóng",
+            "ref": "§1",
+            "def": "Chiều dài một chu kỳ của một sóng ánh sáng, theo nanomet — kích thích mà các tế bào nón hấp thụ ở các tỉ lệ khác nhau để tạo ra ba tín hiệu mà bộ não đọc thành màu sắc."
+          }
+        }
+      }
+    },
+    "note": {
+      "label": "Lời cuối",
+      "body": "Và ở đây luận điểm nằm xuống. Màu sắc bắt đầu như một sự kiện của vật lý và kết thúc như một kỷ luật của sự chăm sóc — và xuyên suốt mười chương, nó chưa một lần là một thuộc tính của sự vật. Đó là một sự kiện: một cuộc gặp gỡ giữa ánh sáng, vật chất và một con mắt nhìn, và nó kéo dài đúng bằng thời gian cái nhìn kéo dài."
+    }
+  },
+  "ch11": {
+    "num": "Chương 11",
+    "title": "Tên gọi",
+    "standfirst": "Màu là phổ quát. Tên của nó là do người tạo ra.",
+    "leadIn": "Mười chương trước đã nhìn màu sắc qua vật lý, quang học, tri giác, hình học và nghề. Cần thêm một chương nữa, lặng hơn. Nếu các chương trước coi màu là đối tượng quan sát, chương này hỏi: khi <em>gọi tên</em> một màu, chúng ta đang nói điều gì. Sắc xanh ngũ sắc nơi cổ của một con chim ruồi là cùng một bước sóng đối với bất kỳ võng mạc nào có thể phân giải nó, nhưng những từ áp lên nó — <em>iridescent</em>, <em>gorget</em>, <em>fuchsia</em>, <em>玉虫色</em> — do thứ tiếng đang nhìn tạo ra.",
+    "homer": "Năm 1858, William Gladstone — vị Thủ tướng Anh tương lai và đồng thời là một nhà cổ điển học nghiêm túc — ngồi đọc Homer và nhận ra một điều kỳ lạ. <em>Iliad</em> và <em>Odyssey</em>, qua hàng nghìn câu thơ, hầu như không gọi tên các màu theo cách mà một người đọc hiện đại trông đợi. Biển là <em>oinops</em> — màu rượu, hoặc như rượu. Cừu thì màu tía. Mật ong thì xanh lá. Không có một từ riêng cho màu lam, và bầu trời là — không gì khác hơn — <em>màu đồng</em>. Gladstone kết luận rằng người Hy Lạp bị mù màu. Ông sai ở nguyên nhân. Cái ông gặp là một sự thật thú vị hơn: tiếng Hy Lạp cổ năm 800 trước Công nguyên đơn giản là không phân chia thế giới thị giác theo cách mà tiếng Anh năm 1858 đã làm.",
+    "berlinKay": "Một thế kỷ sau, năm 1969, các nhà nhân học của Berkeley là Brent Berlin và Paul Kay nghiên cứu một trăm ngôn ngữ và phát hiện một mô thức. Các ngôn ngữ không gọi tên màu theo thứ tự tùy ý. Chúng tiếp nhận từ chỉ màu theo một thứ tự gần như cố định. Hầu như luôn xuất hiện trước tiên là một cặp: <em>tối</em> và <em>sáng</em> — trong tiếng Việt thường được đọc là đen/trắng, dù hai từ này ban đầu rộng hơn. Màu thứ ba là đỏ. Thứ tư là vàng hoặc xanh lá. Lam đứng thứ năm, nâu thứ sáu, rồi tím, hồng, cam, xám gia nhập theo bất kỳ thứ tự nào. Tiếng Hy Lạp của Homer, theo Berlin và Kay, đang ở giai đoạn 3 hoặc 4 — đã có đen, trắng, đỏ và một mảng xanh-vàng chưa tách, nhưng chưa rút lam ra khỏi xanh. Phạm trù đó bao trùm tất cả những gì tiếng Anh gọi là rừng, biển, trời và sắc xám ngả lam của kim loại — đúng những thứ mà Homer gọi là đồng, tía và rượu.",
+    "japanese": "Tiếng Nhật mang một phiên bản nhỏ của cùng vết nứt. <em>Aoi</em> — thường được dịch là lam — trong lịch sử bao gồm tất cả những gì ta gọi là lam và phần lớn những gì ta gọi là lục; trong vài từ ghép, nó vẫn còn như vậy. Đèn giao thông Nhật báo «đi» được gọi chính thức là <em>aoi</em>, nhưng trông rõ ràng ngả lục; khi đèn giao thông được du nhập, nó phải khớp vào từ sẵn có, và là từ đã kéo màu về phía mình, không phải ngược lại. <em>Aoba</em> — lá <em>aoi</em> — chỉ tán lá mùa xuân, mà với người nói tiếng Anh thì rõ ràng là xanh lục. Sự tách biệt giữa <em>aoi</em> (lam-lục) và <em>midori</em> (lục rõ rệt) là một nhập khẩu thế kỷ XX, và là nhập khẩu một phần.",
+    "russian": "Tiếng Nga đi theo hướng ngược lại và chia một màu lam duy nhất của tiếng Anh ra làm hai. <em>Siniy</em> là sắc lam đậm, bão hòa của bầu trời quang đãng giữa trưa. <em>Goluboy</em> là sắc lam nhạt của bầu trời gần chân trời. Với người nói tiếng Nga, đây là hai màu cơ bản khác biệt như lam và đỏ trong tiếng Việt, chứ không phải hai sắc độ của cùng một từ. Một nghiên cứu năm 2007 của Jonathan Winawer và đồng nghiệp cho thấy người nói tiếng Nga, khi chọn tông màu khớp từ một hàng, nhanh hơn một cách đo lường được tại ranh giới <em>siniy</em>/<em>goluboy</em> so với người nói tiếng Anh tại bất kỳ ranh giới nào bên trong <em>blue</em>. Ngôn ngữ đã trao cho mắt một câu hỏi nhanh hơn để hỏi.",
+    "korean": "Tiếng Hàn có một hệ thống cổ hơn buộc màu vào các phương hướng. <em>Obangsaek</em>, các màu của năm phương, là <em>cheong</em> (lam, đông), <em>baek</em> (trắng, tây), <em>jeok</em> (đỏ, nam), <em>heuk</em> (đen, bắc) và <em>hwang</em> (vàng, trung tâm). Tay áo <em>saekdong</em> của bộ áo mới mà đứa trẻ mặc dịp năm mới — sọc lục, đỏ, vàng, lam, trắng — không được chọn vì đẹp; đó là năm phương được xếp trên vải. Hệ thống này có trước các từ chỉ màu hiện đại của tiếng Hàn, và những từ hiện đại vẫn mang theo bên dưới mình logic cổ: <em>cheong</em> là một màu chứa lam và lục cùng nhau, màu của đông, của xuân, của hành mộc. Sự tách biệt lam và lục đi vào tiếng Hàn muộn, và <em>cheong</em> vẫn là từ cổ hơn, rộng hơn.",
+    "pirahã": "Người <em>Pirahã</em> ở lưu vực Amazon — đối tượng của nhiều tranh luận ngôn ngữ học kể từ công trình điền dã của Daniel Everett trong những năm 1980 — không gọi tên màu bằng một từ duy nhất. Các cách diễn đạt gần nhất là <em>biísai</em> (như máu, cho màu đỏ), <em>xahoasai</em> (như đen, cho bóng tối), <em>kohoaibíísai</em> (như chim đuôi vàng): đó là mô tả, không phải tên. Liệu điều đó có nghĩa là người Pirahã <em>nhìn</em> màu khác đi không, là câu hỏi sắc bén nhất mà công trình của Berlin và Kay đã đặt ra. Câu trả lời đang lộ ra là không: mắt là một; chỉ có điều ngôn ngữ chưa quyết định chế tạo từ riêng.",
+    "iscc": "Sự chuẩn hóa cũng đã cố theo kịp. Năm 1955, <strong>Hội đồng Màu sắc Liên Hiệp hội (Inter-Society Color Council, ISCC)</strong> và <strong>Cục Tiêu chuẩn Quốc gia Hoa Kỳ (National Bureau of Standards, NBS)</strong> cùng công bố <em>ISCC-NBS Method of Designating Colors</em>, một từ vựng gồm 267 vùng được đặt tên trong không gian màu — từ <em>vivid red</em> và <em>brilliant pink</em> đến <em>moderate olive brown</em> và <em>dark greenish gray</em> — mỗi vùng gắn với một khối tọa độ Munsell cụ thể, để rồi một cái tên cuối cùng cũng có ý nghĩa đo lường được. Hệ thống này chưa từng thực sự thay thế cách dùng hằng ngày ngoài các phòng thí nghiệm chính phủ và các nhà sản xuất bút chì màu, nhưng vẫn là nỗ lực duy nhất trong tiếng Anh nhằm đặt cho mọi màu có thể gọi tên cả một cái tên lẫn một định nghĩa cùng lúc.",
+    "newNames": "Và ngôn ngữ tiếp tục chế tạo từ. Năm 2014, nghệ sĩ Anh Anish Kapoor giành được quyền sử dụng nghệ thuật độc quyền đối với Vantablack, một lớp phủ hấp thụ 99,965 % ánh sáng khả kiến, và lần đầu tiên một màu có chủ. Internet đáp lại bằng sắc hồng của Stuart Semple — bán cho bất kỳ ai trừ Kapoor — và một cuộc chiến nhỏ nổ ra quanh cái tên của một màu đen mà không ai trong chúng ta được chạm vào. <em>Millennial pink</em> — sắc hồng đào quét qua thiết kế giữa các năm 2014–2019 — được một biên tập viên tạp chí đưa vào sự tồn tại bằng cách đặt tên, trước khi chính màu đó kịp định hình. <em>Klein Blue</em>, sắc lam ngọc đã được Yves Klein cấp bằng sáng chế, là màu đầu tiên được yêu sách bằng tên một con người, không phải bằng tên một địa danh hay một loài cây. Mọi thời đại đã thêm vào những từ của mình; thời đại của chúng ta chỉ làm nhanh thêm việc đặt tên.",
+    "closing": "Mỗi chương trước chương này đã nhìn màu như thuộc tính của ánh sáng và lao động của mắt. Chương này dành cho bên thứ ba, cái bên mà Homer không có từ để gọi: ngôn ngữ. Màu tồn tại ở nơi gặp gỡ của ba thứ — cái phản chiếu, cái tiếp nhận, và cái đặt tên cho nó. Dịch chuyển bất kỳ một trong ba, và màu, ở cái nghĩa duy nhất quan trọng đối với một câu, đã dịch chuyển.",
+    "fig": {
+      "stages": {
+        "title": "Các giai đoạn của Berlin & Kay",
+        "hint": "Kéo thanh trượt · xem một ngôn ngữ tiếp nhận từ màu của nó",
+        "stageAria": "Các từ chỉ màu mà một ngôn ngữ có ở mỗi giai đoạn trong chuỗi của Berlin và Kay. Trượt từ giai đoạn 1 (chỉ tối và sáng) đến giai đoạn 7 (toàn bộ mười một từ cơ bản).",
+        "stageLabel": "Giai đoạn",
+        "stageRangeAria": "Giai đoạn trong chuỗi tiếp nhận từ chỉ màu của Berlin và Kay",
+        "cap": "Berlin và Kay năm 1969 khảo sát một trăm ngôn ngữ và phát hiện rằng các từ chỉ màu đi vào một ngôn ngữ theo một thứ tự gần như cố định. Các ngôn ngữ ở giai đoạn 1 (cực trái; gần như không có ngôn ngữ loài người được ghi nhận nào còn ở đây hôm nay) chỉ có <em>tối</em> và <em>sáng</em>. Thêm đỏ thì sang giai đoạn 2. Thêm lục hoặc vàng là 3, cả hai là 4. Lam vào ở giai đoạn 5 — còn tiếng Hy Lạp Homer đại khái ở giai đoạn 3 hoặc 4. Nâu ở 6, và bốn màu còn lại (tím, hồng, cam, xám) theo bất kỳ thứ tự nào ở 7. Tiếng Anh hiện đại, tiếng Hàn hiện đại và tiếng Nhật hiện đại đều ở giai đoạn 7; người Pirahã dường như chưa bao giờ rời giai đoạn 1."
+      }
+    },
+    "note": {
+      "label": "Tiếp theo",
+      "body": "Sách chính kết thúc ở đây, trên từ ngữ. Niên biểu tiếp theo là bản đồ tên và niên đại mà mười một chương trước đã dựa vào; coda là một bộ tạo bảng màu hoạt động được — cỗ máy nhỏ mà toàn bộ tiểu luận chính là cẩm nang hướng dẫn sử dụng. Hãy mở chúng theo thứ tự tùy ý. Cuốn sách, cuối cùng, là của bạn để gập lại."
+    }
+  },
+  "ch12": {
+    "num": "Chương 12",
+    "title": "Sắc liệu",
+    "standfirst": "Lịch sử của màu là lịch sử của sắc liệu. Và sắc liệu được tạo nên bởi hóa học, thương mại và quyền lực.",
+    "leadIn": "Cho đến cuối thế kỷ XIX, màu hầu như luôn là một vật ─ một viên đá được nghiền, một con sò bị đun cho đến chảy máu, một con côn trùng được nạo từ cây xương rồng. Trước khi nhà hóa học xuất hiện, lịch sử của màu phần lớn là chuyện tìm ra những chất hiếm ở những nơi bất tiện và vận chuyển chúng với chi phí lớn đi khắp thế giới.",
+    "earth": "Những sắc liệu cổ xưa nhất cũng là những thứ hào phóng nhất ─ thứ mà đất đã nghiền sẵn và rải đi cho ta. Mười bảy nghìn năm trước, người vẽ tranh hang Lascaux đã dùng <strong>thổ hoàng và thổ đỏ</strong> ─ các oxit sắt ─ mà ông có thể nhặt được trên mặt đất quanh cửa hang. Nung thổ hoàng làm nó sẫm thành nâu; nung mạnh hơn cho ra một sắc đỏ bão hòa hơn. <strong>Chu sa (vermilion)</strong> ─ thần sa, sulfua thủy ngân ─ được tìm thấy trong các mạch đá đỏ, và sau khi được nghiền mịn, đã là sắc liệu phi-lam đắt nhất của thế giới cổ đại. <strong>Malachite</strong> lục và <strong>azurite</strong> lam, cả hai đều là carbonat đồng, được khai thác cùng nơi với đồng và bền hàng nghìn năm trên vách mộ.",
+    "ultramarine": "Sắc liệu đặc biệt nhất trong tất cả các loại tiền công nghiệp là <strong>ultramarine</strong> ─ màu lam của <em>lapis lazuli</em>. Đá này chỉ được khai thác ở một thung lũng duy nhất trên thế giới, Sar-i Sang, thuộc đông bắc Afghanistan ngày nay. Được vận chuyển bằng lạc đà và tàu thủy đến Venice, ở đó nó được nhào với sáp và tro, được tinh chế thêm, rồi phân phối đến các xưởng vẽ khắp châu Âu Phục hưng. Vào thế kỷ XV, mỗi gam đắt hơn vàng. Sắc lam ở áo của <em>Thiếu nữ đeo hoa tai ngọc trai</em> của Vermeer, áo choàng của mọi Đức Mẹ trong tranh Ý sơ kỳ, và những mảnh khảm lapis trên quan tài Tutankhamun ─ tất cả đều đến từ một thung lũng Afghanistan. <em>Ultramarine</em> đơn giản có nghĩa là <em>từ bên kia biển đến</em>.",
+    "tyrian": "Cùng câu chuyện ấy lặp lại với <strong>tía Tyrian (Tyrian purple)</strong>, thuốc nhuộm dành riêng cho các hoàng đế La Mã. Nó đến từ một loài ốc biển Địa Trung Hải (<em>Murex brandaris</em>) chỉ sản xuất chất quý báu này dưới những điều kiện căng thẳng nhất định, và với lượng cực nhỏ. Thành Phoenicia là Tyre hoàn thiện cách chiết xuất vào khoảng năm 2000 trước Công nguyên. Cần khoảng 12.000 con ốc cho mỗi gam thuốc nhuộm. Sự hôi thối, theo các sử gia, là không thể chịu nổi trong phạm vi một khu phố. Một pound len đã nhuộm có giá gần bằng trọng lượng tương đương của bạc. Bản thân màu sắc, theo nghĩa hiện đại, ít tím hơn là một sắc đỏ máu sâu thẳm pha ánh tím ─ nhưng nó là màu đắt nhất từng được tạo ra, và theo quy ước xã hội đã trở thành màu của quyền lực.",
+    "indian": "Một số sắc liệu khác có tiểu sử kỳ lạ hơn. <strong>Vàng Ấn Độ (Indian yellow)</strong>, được dùng trong tranh châu Âu từ thế kỷ XVII đến đầu thế kỷ XX, được sản xuất ─ theo những ghi chép còn lại ─ từ nước tiểu phơi khô của những con bò ở vùng nông thôn Bengal được nuôi chỉ bằng lá xoài. Chế độ ăn ấy làm con vật đói lả và mỗi ngày cho ra một lượng nhỏ thứ vàng sáng chói, mà các nhà hóa học châu Âu chỉ giải mã được hóa học của nó (muối magie của axit euxanthic) vào những năm 1880. Bị cấm vào năm 1908 vì lý do phúc lợi động vật. Vàng Ấn Độ hiện đại là tổng hợp; những lọ cũ trong ngăn kéo bảo tàng đôi khi là thứ cuối cùng mà một con bò đã dâng cho.",
+    "mummy": "Còn kỳ lạ hơn ─ <strong>nâu xác ướp (mummy brown)</strong>. Ít nhất từ thế kỷ XVI, các dược sĩ châu Âu đã nhập khẩu xác ướp Ai Cập đã nghiền ─ cả người lẫn mèo ─ làm sắc liệu. Đó là một sắc nâu sâu thẳm và bán trong, được ưa chuộng cho bóng đổ và da thịt. Vào những năm 1860, các họa sĩ Tiền Raphael dùng nó mà không biết xuất xứ; khi Edward Burne-Jones biết, theo câu chuyện kể, ông đã mang ống màu ấy ra vườn và chôn đi. Sản xuất giảm dần suốt thế kỷ XX; ống màu thương mại cuối cùng được hãng Roberson ở London bán vào năm 1964 ─ họ giải thích lịch sự rằng họ đã hết xác ướp.",
+    "mauve": "Năm 1856 mọi thứ thay đổi. <strong>William Henry Perkin</strong>, một sinh viên hóa học 18 tuổi ở London, thất bại trong việc tổng hợp ký ninh chống sốt rét nhưng lại tạo ra một mớ bùn sẫm màu, mà khi rửa khỏi bình thí nghiệm đã nhuộm vải thành một sắc tím rực rỡ. Màu ấy không phai, không bị tẩy bằng tia sáng ─ và có thể được làm từ <em>nhựa than đá</em>, thứ phế thải của ngành công nghiệp khí đốt đang chất thành những núi vô dụng. Perkin đăng ký bằng sáng chế cho thuốc nhuộm, đặt tên là <strong>mauve</strong>, mở nhà máy, và trở nên giàu có ở tuổi 21. Phát hiện này khai sinh toàn bộ ngành thuốc nhuộm tổng hợp; trong vòng bốn mươi năm, gần như mọi sắc liệu mà họa sĩ và thợ nhuộm dùng đều là dẫn xuất nhựa than, và các công ty được lập ra để sản xuất chúng ─ BASF, Hoechst, Bayer, Agfa ─ trở thành những gã khổng lồ hóa chất của thế kỷ XX. Thời đại sắc liệu tự nhiên đột nhiên kết thúc.",
+    "cadmium": "Cái thay thế nó là một cơn lụt của các màu tổng hợp, mỗi màu bão hòa hơn và bền sáng hơn thứ vật liệu hiếm mà nó thay thế. <strong>Vàng và đỏ cadmium</strong>, được khám phá năm 1817 và được thương mại hóa từ những năm 1840, mang đến cho các họa sĩ từ Monet đến Van Gogh những sắc cam và vàng dữ dội. <strong>Lam coban</strong> (1802) thay thế ultramarine trong sử dụng hàng ngày, và <strong>cerulean</strong> (1860) gia nhập bên cạnh. <strong>Trắng titan</strong>, thương mại hóa năm 1916, thay thế trắng chì đã đầu độc các họa sĩ suốt hai nghìn năm ─ Vermeer, Caravaggio và nhiều người khác đã chết trẻ; chì từ lâu được nghi ngờ là một nguyên nhân chính — chính sắc trắng đã làm nên những điểm sáng của họ. Sắc trắng mới lần đầu tiên là an toàn. Hóa học mới không còn là tìm kiếm thứ hiếm, mà là thiết kế phân tử.",
+    "vantablack": "Và vòng quay vẫn tiếp tục. Năm 2014, công ty Anh <strong>Surrey NanoSystems</strong> công bố <em>Vantablack</em>, một lớp phủ ống nano carbon thẳng đứng hấp thụ 99,965 % ánh sáng khả kiến ─ chất đen nhất từng được đo. Nghệ sĩ điêu khắc người Anh Anish Kapoor giành được quyền nghệ thuật độc quyền đối với nó, và một cuộc chiến nhỏ của giới mỹ thuật nổ ra về câu hỏi liệu một nghệ sĩ có thể sở hữu một màu sắc hay không. Họa sĩ Stuart Semple tung ra một sắc liệu đối thủ, <em>Pinkest Pink</em>, với giấy phép cấm bán cho Kapoor. Kapoor, dù sao, vẫn xoay xở mua được. Các cuộc trao đổi đó tiếp diễn, nửa hài hước nửa nghiêm túc; điểm mấu chốt bên dưới lại cổ xưa hơn người trong cuộc tưởng ─ mọi thời đại từng phát minh ra một màu mới đều đã đấu nhau, ít nhất trong một thời gian, về việc ai được phép dùng nó.",
+    "astm": "Đến cuối thế kỷ XX, hóa học đã đủ ổn định để buộc ai đó phải đặt ra một cái nhãn cho nó. <strong>Hiệp hội Vật liệu và Thử nghiệm Hoa Kỳ (American Society for Testing and Materials, ASTM)</strong> — thành lập năm 1898 — đã công bố tiêu chuẩn <strong>D4303</strong> năm 1982, một quy trình đo <em>độ bền sáng</em> của sắc liệu: vẽ một dải, để một nửa phơi dưới một năm ánh nắng mặt trời, đo độ dịch màu rồi xếp hạng kết quả từ <em>I</em> (Excellent) đến <em>V</em> (Fugitive). Các tác phẩm cấp bảo tàng chỉ dùng I và II. Tiêu chuẩn thứ hai, <strong>D4236</strong>, được bổ sung năm 1988 sau khi Đạo luật Ghi nhãn Vật liệu Mỹ thuật Nguy hiểm của Hoa Kỳ yêu cầu cảnh báo nguy hại mãn tính trên mọi ống màu bán cho người không chuyên — cadmium vì nguy cơ ung thư, chì vì độc thần kinh, cobalt vì cả hai. Câu «Conforms to ASTM D4236» trên một ống nghĩa là một nhà độc học đã đọc qua công thức. Yếu tố thứ ba là <strong>mã Chỉ số Màu (Colour Index code)</strong> — <em>PR108</em> cho đỏ cadmium, <em>PB29</em> cho ultramarine, <em>PG7</em> cho lục phthalo — một định danh ba ký tự được Hiệp hội Thợ nhuộm và Nhà tạo màu Anh (Society of Dyers and Colourists) duy trì từ năm 1925, cho phép một nhà hóa học biết chính xác hợp chất nào nằm trong ống cho dù bộ phận tiếp thị gọi nó là gì. Giơ một ống màu hiện đại lên ánh sáng và bạn có thể đọc được vật lý, mối nguy và lịch sử của nó trong chưa đầy một cm vuông.",
+    "closing": "Nhìn chung, các nhà hóa học đã thắng cuộc tranh cãi đó. Họa sĩ ngày nay có thể mua, với giá một bữa trưa, các ống màu của mọi sắc mà một bậc thầy cũ có lẽ đã giết người để có. Nhưng cái logic cổ xưa hơn của màu sắc ─ rằng sắc độ chính là chất, chất chính là nơi chốn, và nơi chốn áp đặt chính trị ─ vẫn còn sống trong những cái tên. <em>Vàng Napoli</em> đến từ Vesuvius. <em>Siena</em> đến từ Siena. <em>Vàng Ấn Độ</em>, chừng nào ta còn dùng nó ngắn ngủi, vẫn chỉ về vùng Bengal nơi nó từng được làm ra. Thời đại của tổng hợp đã giải phóng chúng ta khỏi chất liệu; các tên gọi của màu vẫn mang theo những hồn ma của chất liệu.",
+    "fig": {
+      "timeline": {
+        "title": "Một niên biểu sắc liệu",
+        "hint": "Bấm vào một sắc liệu để đọc câu chuyện của nó",
+        "stageAria": "Trục thời gian ngang từ năm 2.000 trước Công nguyên đến nay. Mỗi sắc liệu được đánh dấu tại thời điểm nó được sử dụng rộng rãi và được vẽ bằng chính màu của nó.",
+        "selectedPrompt": "Bấm vào một điểm sắc liệu phía trên để đọc câu chuyện của nó.",
+        "cap": "Mỗi điểm đánh dấu, một cách xấp xỉ, thời điểm một sắc liệu bắt đầu được dùng phổ biến, và được vẽ với mức bão hòa điển hình của chính chất liệu đó. Các sắc liệu trước năm 1850 đều có nguồn gốc tự nhiên ─ đất, đá, cây, sò. Sau 1856, thời đại tổng hợp mở ra với mauve của Perkin, và gần như mọi sắc liệu về sau là dẫn xuất nhựa than, oxit kim loại hoặc phân tử hữu cơ được thiết kế. Bộ sưu tập này nén năm vạn năm lịch sử sắc liệu vào một đường thẳng có thể dạo bước."
+      },
+      "tube": {
+        "title": "Một ống màu hiện đại, giải mã",
+        "hint": "Rê chuột qua các nhãn · đọc xem chúng có nghĩa gì",
+        "stageAria": "Hình minh họa một ống đỏ cadmium trung của họa sĩ. Năm vùng nhãn: tên màu, dòng sản phẩm (Series), mã sắc liệu Colour Index (PR108), xếp hạng độ bền sáng ASTM (I — Excellent) và tuyên bố tuân thủ (Conforms to ASTM D4236). Rê chuột hoặc chạm vào từng nhãn để đọc ý nghĩa của nó.",
+        "readoutPrompt": "Rê chuột qua một nhãn ở trên để đọc ý nghĩa của nó.",
+        "name": "Cadmium Red Medium",
+        "series": "Series 4",
+        "seriesNote": "Series 4 là cấp đắt nhất. Sắc liệu trong ống này là cadmium sulfoselenide thật chứ không phải bản thay thế tông màu. Nhà sản xuất định giá ống theo chi phí nguyên liệu, từ series 1 đến 7 hoặc 8 — series 1 là sắc liệu đất, series 5 trở lên là cobalt, cadmium và những sắc liệu tổng hợp hiện đại hiếm hơn.",
+        "ci": "PR108",
+        "ciNote": "<strong>Colour Index</strong>: PR108 = Pigment Red 108 = cadmium sulfoselenide. Chữ cái đầu chỉ họ màu (R, Y, B, G, Br, W, Bk, Vi, O, M); con số là thứ tự khám phá bên trong họ ấy. Được Society of Dyers and Colourists đăng ký và duy trì từ năm 1925. Hai ống của các nhãn hiệu khác nhau nhưng cùng mã CI thì chứa cùng một sắc liệu.",
+        "lf": "ASTM Lightfastness I",
+        "lfNote": "Xếp hạng <strong>ASTM D4303</strong>. I (Excellent) và II (Very Good) là cấp bảo tàng — dưới một năm phơi nắng được gia tốc, độ dịch màu nằm dưới ngưỡng tri giác. III là Fair. IV (Poor) và V (Fugitive) bạc rõ trong vài tháng và nên tránh cho bất kỳ tác phẩm nào muốn tồn tại lâu.",
+        "conf": "Conforms to ASTM D4236",
+        "confNote": "<strong>ASTM D4236</strong>: tiêu chuẩn Hoa Kỳ yêu cầu ghi nhãn nguy hại mãn tính cho mọi vật liệu mỹ thuật có thể hít, nuốt hoặc hấp thụ phải. Câu này nghĩa là một nhà độc học đã rà soát công thức. Sắc liệu cadmium còn có thêm cảnh báo «có hại nếu nuốt»; sắc liệu chì bị giới hạn ở cấp chuyên nghiệp; sắc liệu cobalt cần cảnh báo về bụi.",
+        "hue": "Hue vs Genuine",
+        "hueNote": "Một ống ghi <em>Cadmium Red <strong>Hue</strong></em> không chứa cadmium — đó là chất thay thế rẻ hơn, ít độc hơn và thường ít đặc hơn, nhưng cho ra cùng màu. <em>Genuine</em> nghĩa là sắc liệu được nêu trên nhãn thực sự có trong ống. Khi vừa nặn ra, hai loại trông giống nhau, nhưng cư xử khác nhau trong pha trộn, trong các lớp, và qua hàng chục năm.",
+        "cap": "Ống màu là một trong số ít sản phẩm tiêu dùng mà luật pháp bắt phải khai báo thành phần vật lý và hóa học. Đọc các nhãn theo thứ tự, bạn có chính lịch sử của các tiêu chuẩn: Colour Index (1925), độ bền sáng ASTM D4303 (1982) và tuân thủ nguy hại mãn tính ASTM D4236 (1988). Ống màu là một đài kỷ niệm nhỏ cho một thế kỷ nỗ lực làm cho một thứ hóa học vừa nguy hiểm vừa đẹp đủ an toàn để dạy cho trẻ con."
+      }
+    },
+    "note": {
+      "label": "Bước sang tự nhiên",
+      "body": "Sắc liệu là cách chúng ta làm ra màu. Chương kế tiếp nhìn vào cách tự nhiên đã làm ra màu ─ không cần chúng ta, và thường bằng những cơ chế mà chúng ta chỉ mới bắt đầu bắt chước."
+    }
+  },
+  "ch13": {
+    "num": "Chương 13",
+    "title": "Tự nhiên",
+    "standfirst": "Tự nhiên tạo màu theo hai cách: sắc liệu, hoặc cấu trúc. Cả hai đều vận hành mà không cần bất kỳ nhà thiết kế nào.",
+    "leadIn": "Hãy nhìn một cánh rừng, một rặng san hô, một cánh đồng hoa, một đàn vẹt. Ấn tượng đầu tiên là tác phẩm của một họa sĩ phối màu phát điên. Nhìn kỹ hơn, ta chỉ thấy hai phương pháp được dùng với tỉ lệ khác nhau. Lá, mắt động vật, bọ cánh cứng nâu, hoa anh túc đỏ ─ đây là <em>sắc liệu</em>: các phân tử hấp thụ một số bước sóng và phản xạ phần còn lại. Đuôi công, cổ chim ruồi, cánh bướm morpho, mặt bong bóng xà phòng ─ đây là <em>cấu trúc</em>: không phải hấp thụ mà là giao thoa, là cách ánh sáng uốn và chồng lên nhau trong những lớp mỏng hơn chính nó.",
+    "chlorophyll": "Sắc liệu phổ biến nhất trên Trái Đất là <strong>chất diệp lục (chlorophyll)</strong>, phân tử khiến lá có màu xanh. Nó hấp thụ mạnh nhất ở đỏ và lam, phản xạ các bước sóng trung gian ─ lục. Theo một nghĩa nào đó, điều này không hiệu quả. Năng lượng đỉnh của mặt trời nằm ở lục; một phân tử hấp thụ lục và phản xạ đỏ-lam hẳn sẽ gặt được nhiều ánh sáng hơn. Không có lời giải thích nào thật thỏa đáng cho việc tại sao thực vật rốt cuộc lại có diệp lục chứ không phải ảnh gương của nó. Một giả thuyết có ảnh hưởng cho rằng những vi khuẩn quang hợp tía sơ khai, sử dụng bacteriorhodopsin, đã chiếm dải lục khi cây cối dựa trên diệp lục tiến hóa; diệp lục buộc phải làm việc với những gì còn lại. Trái Đất xanh không phải vì lục là tốt nhất, mà vì có một thời, nó là lựa chọn thứ hai.",
+    "melanin": "Da, lông và tóc của động vật mang một họ sắc liệu khác ─ <strong>melanin</strong>. <em>Eumelanin</em> là nâu-đen, sắc liệu của tóc sẫm, da sẫm, đốm của báo. <em>Pheomelanin</em> là vàng pha đỏ, sắc liệu của tóc đỏ, tàn nhang, sắc cam của mèo tam thể. Cả hai đều được tạo từ cùng một tiền chất, tyrosine, và tỉ lệ của chúng ─ do vài gene kiểm soát ─ tạo ra gần như toàn bộ biến thể của màu tóc người. Lông chim, vảy cá và mống mắt người cũng dùng hai sắc liệu này theo tỉ lệ khác nhau. Melanin cũng hấp thụ tia tử ngoại, do đó da sẫm bảo vệ khỏi cháy nắng ─ chính sắc liệu này là kem chống nắng được phát minh hàng tỉ năm trước khi ngành công nghiệp hóa chất xuất hiện.",
+    "carotenoids": "Các sắc vàng và cam pha hồng của trái cây, lá thu, lòng đỏ trứng, hồng hạc là <strong>carotenoids</strong> ─ một họ phân tử mạch dài mà beta-carotene là nổi tiếng nhất. Động vật không thể tự tạo chúng; phải ăn vào. Hồng hạc có màu hồng vì chế độ ăn tôm và tảo giàu carotenoid; bỏ tôm đi, hồng hạc dần dần phai màu. Chim hoàng yến vàng cũng vì lý do tương tự. Cà rốt có màu cam vì cây dùng carotene để bảo vệ diệp lục khỏi ánh sáng quá mức; khi ăn cà rốt, ta lấy lại được màu ấy.",
+    "structural": "Sắc liệu là một cách. <strong>Màu cấu trúc</strong> là cách kia, và nó cổ xưa hơn, lạ hơn. Cánh bướm <em>morpho</em> vốn có màu nâu ─ dưới kính hiển vi, kitin thật sự là một sắc nâu xỉn ─ nhưng bề mặt cánh được khắc thành những sống nổi, khiến ánh sáng lam phản xạ ở những lớp đó giao thoa tăng cường, tạo ra từ một bề mặt không sắc liệu một sắc lam ngũ sắc chói lọi. Đuôi công lặp lại cùng thủ thuật ở một quy mô khác: các mắt đuôi không phải được vẽ, mà được <em>cấu trúc hóa</em> ─ màu sinh ra từ những lớp keratin mỏng bên trong các sợi lông. Màng xà phòng, dầu trên mặt đường ướt, bề mặt một đĩa CD ─ tất cả đều là màu cấu trúc. Hãy hơ nóng, làm ướt hoặc cào xước nó, màu sẽ biến mất, vì cái bị hư hại không phải phân tử, mà là hình học.",
+    "rayleigh": "Màu cấu trúc lớn nhất trên Trái Đất là bầu trời. Ánh sáng mặt trời màu trắng; khí quyển tán xạ các bước sóng ngắn (lam) mạnh hơn bước sóng dài (đỏ), một hiệu ứng được <strong>Lord Rayleigh (John William Strutt)</strong> giải vào năm 1871. Hãy nhìn lên phía trên, tránh xa mặt trời, và bạn thấy ánh sáng tán xạ: màu lam. Lúc hoàng hôn, nhìn về phía mặt trời, ánh sáng đã đi qua nhiều lần nhiều không khí hơn để đến được bạn; sắc lam đã tán xạ gần hết, đâu đó phía sau chân trời; cái còn lại là đỏ, thứ bị tán xạ ít nhất. Sao Hỏa, với khí quyển mỏng và bụi, có bầu trời màu caramen vào giữa trưa và hoàng hôn ngả lam ─ ngược với ta ─ vì các hạt bụi của nó tán xạ các bước sóng dài mạnh hơn. Bầu trời không phải là một màu; bầu trời là một dải không khí mà ánh sáng mặt trời đi qua.",
+    "biolumin": "Một số động vật tự tạo ra ánh sáng cho mình. Đom đóm, cá lồng đèn đáy sâu, sinh vật phù du tảo giáp đôi khi nhuộm sóng vỗ vào bờ thành sắc lam phát sáng ─ tất cả đều dùng một họ enzyme gọi là <em>luciferase</em>, xúc tác một phản ứng trong đó năng lượng được giải phóng dưới dạng photon thay vì nhiệt. Phần lớn sự phát quang sinh học nằm trong một dải lam-lục hẹp ─ bước sóng đi xa nhất trong nước biển ─ ánh sáng của côn trùng trên cạn đã dịch sang vàng và cam vì không khí không áp đặt cùng một hạn chế. Ánh sáng này lạnh ─ gần như không có hồng ngoại ─ và hiệu quả đến mức các kỹ sư đã dành hai mươi năm qua để cố sao chép nó vào một chiếc đèn. Vẫn chưa thành công.",
+    "fluorescent": "Còn một màu mà thế giới loài người tạo ra dồi dào và gần như không tồn tại trong tự nhiên là <strong>huỳnh quang</strong>: hấp thụ tia tử ngoại và phát lại năng lượng ở các bước sóng khả kiến. Bút dạ quang, áo vest an toàn, vòng tay phát sáng trong vũ trường ─ tất cả đều rực rỡ ở mức không gì trong tự nhiên sánh kịp, vì chúng phát ra nhiều ánh sáng khả kiến hơn ánh sáng khả kiến chiếu vào chúng; chúng đã mượn năng lượng từ tia tử ngoại. Một số san hô, một số bọ cạp và mũ của vài loại nấm làm điều đó một cách mờ nhạt; phần còn lại là hóa học của con người. Cái sáng chói của chiếc áo vest huỳnh quang bên đường vào lúc nhá nhem, theo thang thời gian tiến hóa, là điều rất mới.",
+    "closing": "Sắc liệu, cấu trúc, tán xạ, phát xạ. Bốn phương pháp được bốn tỷ năm sinh học và mọi nhà hóa học từ đó đến nay sử dụng, và bản kiểm kê về cách một vật trở thành màu của chính nó kết thúc tại đây. Hãy nhìn bất cứ thứ gì có màu ─ trang sách trước mặt bạn, đôi mắt đang đọc nó, bầu trời phía sau ─ và một trong bốn phương pháp ấy đang vận hành.",
+    "fig": {
+      "sky": {
+        "title": "Bầu trời của Rayleigh",
+        "hint": "Kéo mặt trời · từ giữa trưa đến hoàng hôn",
+        "stageAria": "Mô phỏng bầu trời: độ cao mặt trời điều khiển lượng khí quyển mà ánh sáng của nó phải đi qua. Vào giữa trưa (mặt trời cao), đường đi trong khí quyển ngắn, bầu trời màu lam và mặt trời màu vàng nhạt. Khi mặt trời hạ xuống, đường đi qua không khí dài thêm, sắc lam càng nhiều bị tán xạ đi mất, và mặt trời cùng bầu trời quanh nó ngả đỏ như hoàng hôn.",
+        "altitudeLabel": "Độ cao mặt trời",
+        "altitudeRangeAria": "Góc độ cao của mặt trời trên đường chân trời",
+        "cap": "Tán xạ Rayleigh của ánh sáng mặt trời qua khí quyển Trái Đất, ở dạng đơn giản. Giữa trưa, mặt trời ở cao, ánh sáng chỉ đi qua một lát mỏng không khí, và chỉ các bước sóng ngắn (lam) bị tán xạ mạnh ─ bầu trời màu lam. Khi mặt trời hạ thấp, ánh sáng đi qua ngày càng nhiều khí quyển; lúc tới được bạn, nó đã mất gần như toàn bộ sắc lam do tán xạ, và đĩa mặt trời cùng bầu trời quanh nó dịch về phía đỏ. Cùng một lớp khí quyển làm hai việc cùng lúc."
+      }
+    },
+    "note": {
+      "label": "Bước sang màn hình mà ta đã làm ra",
+      "body": "Các chương 11–13 đã nhìn cách màu được đặt tên, được làm ra, được nuôi lớn. Chương cuối quay trở lại nơi mà phần đông người đang đọc cuốn này thực sự đang nhìn ─ tấm hình chữ nhật ánh sáng đã hiệu chuẩn, chỉ vài inch ─ và hỏi: cần nhìn vào điều gì khi chọn nó."
+    }
+  },
+  "ch14": {
+    "num": "Chương 14",
+    "title": "Thực hành",
+    "standfirst": "Màn hình là bề mặt cuối cùng mà màu sắc chạm tới. Nó cũng là thứ nói dối nhiều nhất về chính mình.",
+    "leadIn": "Nếu bạn làm bất cứ thứ gì với màu ─ một trang web, một bức ảnh, một bộ phim, một tấm áp phích, một cuốn sách, một sản phẩm thương hiệu ─ rốt cuộc bạn vẫn phải trả tiền cho một màn hình để xem nó. Cửa hàng bán mười máy với mười giá khác nhau, và nhãn trên hộp hiếm khi đơn giản. Chương này là một hướng dẫn đọc cho cái nhãn đó, và một chuyến du hành ngắn qua các quy trình sản xuất (web, in ấn, ảnh, phim) mà màu sắc đi qua trên hành trình từ mắt đến thế giới ─ và quay lại.",
+    "monitorSpecs": "Con số đơn lẻ quan trọng nhất trong bảng thông số kỹ thuật của màn hình là <strong>độ bao phủ gam màu</strong>, được biểu diễn dưới dạng phần trăm của một không gian màu tiêu chuẩn. <em>99 % sRGB</em> nghĩa là màn hình có thể hiển thị 99 % không gian web tiêu chuẩn ─ mức tối thiểu cho bất kỳ công việc về màu nào. <em>95 % DCI-P3</em> (hoặc biến thể của Apple, <em>Display P3</em>) nghĩa là màn hình đạt được gam màu rộng hơn được dùng trong điện ảnh và điện thoại hiện đại ─ con số cần nhìn nếu bạn chỉnh ảnh hoặc video. <em>99 % Adobe RGB</em> là chuẩn thứ ba, hẹp hơn P3 một chút ở vùng đỏ và rộng hơn ở vùng lục ─ được những người in CMYK ưa chuộng. Một màn hình trên 95 % ở cả ba mới thực sự là gam màu rộng; chỉ trích dẫn con số sRGB thì không.",
+    "deltaE": "Sau gam màu là <strong>độ chính xác</strong>. Con số cần nhìn là <em>ΔE</em> (Delta E) ─ khoảng cách tri giác giữa màu được yêu cầu hiển thị và màu thực sự được hiển thị, trung bình trên nhiều ô màu thử. ΔE dưới 2 là chính xác ở mức không nhìn ra; dưới 1 là cấp phòng thí nghiệm. ΔE dưới 3 đủ cho phần lớn việc thiết kế; trên 5 thì bắt đầu trông rõ rệt là sai. Một màn hình tiêu dùng không công bố ΔE đồng nghĩa với chưa từng được đo, và không nên tin dùng cho công việc về màu.",
+    "panel": "<strong>Công nghệ tấm nền</strong> quyết định góc nhìn, độ tương phản và thời gian phản hồi. Tấm nền <em>IPS</em> (in-plane switching) có góc nhìn rộng nhất và màu chính xác nhất; gần như mọi màn hình dành cho công việc về màu đều là IPS. Tấm nền <em>OLED</em> có màu đen hoàn hảo (mỗi điểm ảnh là nguồn sáng của chính nó và có thể tắt hoàn toàn), độ tương phản cao nhất và màu bão hòa nhất, nhưng dễ bị lưu ảnh khi giao diện tĩnh hiển thị lâu. <em>VA</em> có độ tương phản cao hơn IPS nhưng góc nhìn hẹp hơn. <em>TN</em> rẻ nhất, nhanh nhất, và tệ nhất về màu ─ tốt cho văn phòng và chơi game cạnh tranh, không tốt cho thiết kế.",
+    "depth": "<strong>Độ sâu bit</strong> điều khiển số bước trên mỗi màu mà màn hình hiển thị. Tấm nền 8 bit hiển thị 256 bước trên mỗi kênh, tổng cộng 16,7 triệu màu ─ đủ cho phần lớn công việc, nhưng có thể hiện sọc rõ ở các vùng chuyển sắc. <em>8-bit + FRC</em> (điều khiển tốc độ khung hình) chớp nhanh giữa hai bước kế nhau để giả lập 10 bit ─ đủ tốt để hầu hết người xem không thấy khác biệt. <em>10-bit thật</em> hiển thị 1,07 tỷ màu, là chuẩn cho video HDR và chỉnh ảnh nghiêm túc. Gần như mọi màn hình được quảng cáo là «10-bit» giai đoạn 2024–6 đều là 8-bit + FRC; nhãn ít khi nói rõ là loại nào.",
+    "hdr": "<strong>HDR</strong> (dải động cao) là một tập hợp chức năng: gam màu rộng hơn, độ sáng đỉnh cao hơn, đen sâu hơn, thường là màu 10 bit. Các chứng nhận DisplayHDR (HDR400, HDR600, HDR1000) chỉ định độ sáng đỉnh tính bằng nit. HDR400 dù mang tên HDR nhưng vừa đủ tính là HDR; HDR thật sự bắt đầu từ HDR600 với điều chỉnh độ sáng cục bộ, và nội dung gây ấn tượng mạnh nhất đòi hỏi HDR1000 trở lên. Trong công việc bàn giấy, HDR chủ yếu có ý nghĩa với việc grading video; với công việc văn phòng, hãy tắt nó và quên đi.",
+    "calibration": "Không màn hình nào, dù đắt tiền đến đâu, xuất xưởng với màu chính xác. <strong>Hiệu chuẩn</strong> ─ một quy trình một lần kéo dài một giờ với máy đo màu (X-Rite i1Display, Datacolor SpyderX, khoảng 200 USD) ─ đo những màu mà màn hình thực sự tạo ra và ghi một hồ sơ hiệu chỉnh. Nhiều màn hình cao cấp xuất xưởng đã được hiệu chuẩn sẵn kèm chứng chỉ Pantone hoặc Calman; một số có hiệu chuẩn phần cứng điều chỉnh trực tiếp LUT của tấm nền, chứ không phải LUT của hệ điều hành. Nếu bạn không thể hoặc không định hiệu chuẩn, hãy mua một màn hình đã hiệu chuẩn sẵn.",
+    "icc": "Xuyên suốt toàn bộ pipeline, các <strong>hồ sơ ICC</strong> ─ những tệp nhỏ mô tả hành vi màu của một thiết bị ─ giữ cho màu được trung thực khi di chuyển từ máy ảnh sang màn hình sang máy in. Máy ảnh gắn nhãn cho RAW với không gian màu nó đã dùng. Trình chỉnh sửa ảnh đọc nhãn đó, chuyển sang hồ sơ màn hình khi hiển thị, sang hồ sơ máy in khi xuất. Trình duyệt web làm điều tương tự một cách lười biếng ─ giả định hồ sơ sRGB. Nếu bất kỳ mắt xích nào trong chuỗi thiếu hoặc sai, màu sẽ dịch chuyển ─ thường theo cách chỉ nhìn thấy được khi tác phẩm cuối đến đích. Cải tiến lớn nhất mà một pipeline màu sản xuất có thể làm là đảm bảo mọi thiết bị đều có hồ sơ và không có gì bị giả định.",
+    "closing": "Không có màn hình hoàn hảo; chỉ có màn hình đủ chính xác cho công việc bạn đang làm. Nhà thiết kế web cần 99 % sRGB và ΔE hiệu chuẩn dưới 2. Người chỉnh ảnh cộng thêm 95 % Adobe RGB hoặc P3, 10 bit và chứng nhận Pantone. Người grading video cần tất cả những thứ trên cộng HDR1000+ và màn hình tham chiếu. Người đọc bình thường của bài tiểu luận này có thể dùng bất kỳ màn hình nào ─ được nhìn đúng cách trong một căn phòng có ánh sáng không mạnh hơn ánh sáng mà người ta dùng để đọc sách giấy ─ đó là mẹo quản lý màu mà phần còn lại của chương này quên không nói.",
+    "fig": {
+      "specs": {
+        "title": "Thông số nào cho công việc nào",
+        "hint": "Chọn một mục đích · xem thông số tối thiểu",
+        "stageAria": "Hướng dẫn thông số màn hình theo trường hợp sử dụng. Khi chọn một mục đích ở dưới, các giá trị khuyến nghị về độ bao phủ sRGB, độ bao phủ P3 hoặc Adobe RGB, độ chính xác Delta E, công nghệ tấm nền, độ sâu bit, HDR và hiệu chuẩn sẽ được làm nổi bật.",
+        "btnWeb": "Thiết kế web",
+        "btnIllust": "Minh họa",
+        "btnPhoto": "Chỉnh ảnh",
+        "btnVideo": "Grading video",
+        "btnGeneral": "Văn phòng chung",
+        "labelSrgb": "Độ bao phủ sRGB",
+        "labelWide": "Gam màu rộng",
+        "labelDeltaE": "Độ chính xác ΔE",
+        "labelPanel": "Loại tấm nền",
+        "labelDepth": "Độ sâu màu",
+        "labelHdr": "HDR",
+        "labelCalib": "Hiệu chuẩn",
+        "cap": "Một bảng tham chiếu nhanh để chọn màn hình theo công việc bạn làm. Công việc đòi hỏi màu càng nhiều, các con số càng thắt chặt ─ văn phòng gần như không cần bất kỳ thứ gì trong danh sách này, grading video gần như cần tất cả. Phần lớn người sáng tạo nằm đâu đó giữa cột ảnh và cột video; nếu không chắc, hàng ảnh là một mức nền vừa phải mà không quá đắt."
+      }
+    },
+    "note": {
+      "label": "Khép lại phần thực hành",
+      "body": "Mười bốn chương đã nhìn màu từ nguồn cội đến bề mặt. Niên biểu tiếp theo là cột sống các mốc thời gian mà toàn bộ cuốn sách dựa vào; coda là một bộ tạo bảng màu nhỏ pha trộn tất cả những gì vừa đọc. Hãy mở chúng theo bất kỳ thứ tự nào ─ cuốn sách, cuối cùng, là của bạn."
+    }
+  },
+  "chronology": {
+    "num": "Một niên biểu",
+    "title": "Một niên biểu",
+    "standfirst": "Ba thế kỷ rưỡi của màu sắc, trên một đường thẳng.",
+    "intro": "Lịch sử có tên và ngày tháng. Đây là chúng — những hình bóng và ấn phẩm mà tiểu luận này đã dựa vào, từ lăng kính đầu tiên của Newton đến không gian màu hôm nay được giao trong các trình duyệt.",
+    "fig": {
+      "stageAria": "Một niên biểu của khoa học và thiết kế màu sắc, từ 1666 đến 2023",
+      "events": [
+        {
+          "year": "1666",
+          "title": "Lăng kính của Newton, Woolsthorpe",
+          "blurb": "Trong những năm dịch hạch, tại trang trại gia đình ở Lincolnshire, Newton làm tối một căn phòng và chứng minh rằng ánh sáng trắng là một hỗn hợp, có thể tách thành các màu của quang phổ."
+        },
+        {
+          "year": "1704",
+          "title": "Newton, <em>Opticks</em>",
+          "blurb": "Chuyên luận đặt tên cho các màu của ánh sáng và sáng lập khoa học quang học."
+        },
+        {
+          "year": "1810",
+          "title": "Goethe, <em>Zur Farbenlehre</em>",
+          "blurb": "Câu trả lời của nghệ sĩ — màu sắc như trải nghiệm, được tham gia với sự chăm sóc hiện tượng học."
+        },
+        {
+          "year": "1839",
+          "title": "Chevreul, <em>De la loi du contraste simultané</em>",
+          "blurb": "Làm việc tại Xưởng dệt Gobelins, nhà hóa học đặt tên cho luật rằng mỗi màu được đọc so với các hàng xóm của nó."
+        },
+        {
+          "year": "Thập niên 1860",
+          "title": "Lý thuyết ba màu Young–Helmholtz",
+          "blurb": "Hermann von Helmholtz hình thức hóa giả thuyết trước đó của Thomas Young: thị giác con người dựa trên ba loại thụ thể."
+        },
+        {
+          "year": "1874",
+          "title": "Các quan sát họa tiết của Bezold",
+          "blurb": "Wilhelm von Bezold nhận thấy các sọc nhỏ không làm sắc nét tương phản mà mờ vào trường của chúng — hiệu ứng đồng hóa của Chương Tám."
+        },
+        {
+          "year": "1905",
+          "title": "Munsell, khối màu đầu tiên được đo",
+          "blurb": "Albert Munsell cho mỗi màu ba tọa độ đơn giản — sắc, giá trị, độ thuần — và vẽ khối như nó vốn là, thay vì như hình học mong muốn."
+        },
+        {
+          "year": "1923",
+          "title": "Itten tại Bauhaus",
+          "blurb": "Johannes Itten, dạy Vorkurs ở Weimar, hệ thống hóa bánh xe màu mười hai sắc và các sự hài hòa trên đó; cuốn sách của ông, <em>Kunst der Farbe</em>, theo sau năm 1961."
+        },
+        {
+          "year": "1931",
+          "title": "Biểu đồ sắc độ CIE 1931",
+          "blurb": "Commission internationale de l'éclairage công bố bảng người quan sát chuẩn — hình móng ngựa của Chương Bảy."
+        },
+        {
+          "year": "1931",
+          "title": "Lý thuyết sắc tố Kubelka–Munk",
+          "blurb": "Paul Kubelka và Franz Munk công bố phép tính của sự pha trộn sơn — tán xạ và hấp thụ cùng nhau — và giải thích vì sao ultramarine và vàng cadmium trở thành lục."
+        },
+        {
+          "year": "1963",
+          "title": "Albers, <em>Sự tương tác của màu sắc</em>",
+          "blurb": "Cuốn sách mỏng của Josef Albers dạy rằng màu sắc là phương tiện tương đối nhất của nghệ thuật — bài học của nó hóa thân trong Chương Tám."
+        },
+        {
+          "year": "1976",
+          "title": "CIE L*a*b*",
+          "blurb": "Nỗ lực được sử dụng rộng rãi đầu tiên về một không gian màu đồng nhất theo tri giác — được cải tiến, nửa thế kỷ sau, bởi OKLab."
+        },
+        {
+          "year": "1996",
+          "title": "sRGB được đề xuất",
+          "blurb": "Hewlett-Packard và Microsoft đề xuất không gian màu mà, được chuẩn hóa thành IEC 61966-2-1 năm 1999, trở thành chuẩn của web và của hầu hết các màn hình tiêu dùng."
+        },
+        {
+          "year": "2015",
+          "title": "Display P3 trên các màn hình tiêu dùng",
+          "blurb": "Apple giao một biến thể có gam rộng hơn của DCI-P3 (2010) trên các iMac của mình và không lâu sau là iPhone — mở rộng các màu màn hình của Chương Bảy ra ngoài biên giới sRGB cũ."
+        },
+        {
+          "year": "2020",
+          "title": "Ottosson, OKLab",
+          "blurb": "Björn Ottosson công bố một không gian màu đồng nhất theo tri giác được chỉnh theo dữ liệu hiện đại — cuối cùng, các bước bằng nhau trông bằng nhau."
+        },
+        {
+          "year": "2023",
+          "title": "CSS Color 4 trên các trình duyệt lớn",
+          "blurb": "OKLCH, P3 và các hàm màu mới đến gần như mọi trình duyệt được tạo — toán học của tiểu luận, nay có thể viết trực tiếp trong một stylesheet."
+        }
+      ]
+    }
+  },
+  "coda": {
+    "num": "Coda",
+    "title": "Một bảng màu của riêng bạn",
+    "standfirst": "Tiểu luận đã được đọc. Đây là điều mà nó phục vụ.",
+    "leadIn": "Mười chương về màu sắc, ở cuối, phục vụ một hành động bình thường và vui vẻ: chọn các màu thuộc về nhau. Vậy đây là một món quà chia tay — một cỗ máy nhỏ làm chính xác điều đó, theo cách mà tiểu luận đã dạy. Mỗi bảng màu nó cung cấp được dựng trên một sự hài hòa thật của Chương Sáu, năm màu của nó được cách đều theo thước đo trung thực của Chương Bảy. Bấm nút; rồi bấm lại.",
+    "fig": {
+      "generator": {
+        "title": "Bộ sinh bảng màu",
+        "hint": "Nhấn một màu để sao chép",
+        "paletteAria": "Một bảng màu được sinh ra",
+        "actionsAria": "Sao chép bảng màu ở một định dạng",
+        "btnHex": "Hex",
+        "btnHexTitle": "Sao chép dưới dạng mã hex thuần",
+        "btnCss": "CSS",
+        "btnCssTitle": "Sao chép dưới dạng custom properties CSS",
+        "btnTw": "Tailwind",
+        "btnTwTitle": "Sao chép dưới dạng đoạn cấu hình Tailwind",
+        "btnSvg": "SVG",
+        "btnSvgTitle": "Sao chép dưới dạng bảng màu SVG",
+        "btnAnother": "Một cái khác →",
+        "cap": "Mỗi bảng màu là một sắc cơ sở, một sự hài hòa, và năm màu được đặt ở các bước bằng nhau về độ sáng trong OKLCH — chính là cỗ máy mà tiểu luận đã xây, nay chạy cho bạn."
+      }
+    },
+    "note": {
+      "label": "Đi bình an",
+      "body": "Mỗi bảng màu mà cỗ máy này sẽ làm ra chỉ là một gợi ý — một câu trong ngữ pháp, không bao giờ là lời cuối. Lời cuối, như đã thế từ trang đầu, là của bạn. Hãy đi ra ngoài và nhìn một thứ gì đó, và xem có bao nhiêu trong đó đã ở đó suốt thời gian qua."
+    }
+  },
+  "footer": {
+    "mark": "Cuốn sách về màu sắc",
+    "line": "Một tiểu luận tương tác về lý thuyết màu sắc — bạn đồng hành của tiểu luận âm nhạc <a href=\"https://circle5-eight.vercel.app\" target=\"_blank\" rel=\"noopener noreferrer\">Vòng tròn quãng năm</a>. Mười chương trong mười — tiểu luận trọn vẹn: từ một bước sóng ánh sáng đơn lẻ đến một bảng màu hoạt động cho mọi đôi mắt.",
+    "fine": "Một tệp HTML duy nhất, không có bước build — không framework, không analytics, không tài khoản. <span class=\"div\">·</span>Bản sửa đổi 34 <span class=\"div\">·</span>Cập nhật lần cuối {LAST_UPDATED} <span class=\"div\">·</span><a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0/\" target=\"_blank\" rel=\"noopener noreferrer\">CC BY-NC-SA 4.0</a> <span class=\"div\">·</span>Theo Newton, Goethe, Young, Helmholtz, Maxwell, Munsell và Itten."
+  },
+  "jsStrings": {
+    "_meta": "Cac chuoi JS dong — build.py thay the trong vung JS cua index32.html.",
+    "spectralName": {
+      "deepViolet": "tím sâu",
+      "violet": "tím",
+      "blue": "lam",
+      "cyan": "lục lam",
+      "green": "lục",
+      "yellowGreen": "vàng-lục",
+      "yellow": "vàng",
+      "orange": "cam",
+      "red": "đỏ",
+      "deepRed": "đỏ sâu"
+    },
+    "spectralDesc": [
+      "Những sóng ngắn nhất mà mắt thừa nhận. Độ nhạy ở đây thấp — tím trông nhợt nhạt dù ánh sáng có rực rỡ đến đâu.",
+      "Sóng ngắn. Tế bào nón S gần đỉnh của nó; thế giới của bầu trời và bóng tối.",
+      "Bản lề lam-lục, nơi tế bào nón S và M đổi vai trò dẫn dắt.",
+      "Sóng trung. Mắt ở đây tỉnh táo nhất — lục đọc thành sắc sáng nhất trong tất cả.",
+      "Tế bào nón L và M cháy gần như cùng nhau. Một dịch chuyển bước sóng nhỏ làm sắc đung đưa nhanh chóng.",
+      "Sóng dài. Tế bào nón L chiếm ưu thế; tế bào nón M phai dần.",
+      "Những sóng dài nhất mà mắt có thể nắm bắt. Vượt ra ngoài biên này là hồng ngoại — nhiệt bạn cảm nhận được nhưng không thể thấy."
+    ],
+    "nameRyb": [
+      "đỏ",
+      "đỏ-cam",
+      "cam",
+      "vàng-cam",
+      "vàng",
+      "vàng-lục",
+      "lục",
+      "lam-lục",
+      "lam",
+      "lam-tím",
+      "tím",
+      "đỏ-tím"
+    ],
+    "nameRgb": [
+      "đỏ",
+      "cam",
+      "vàng",
+      "chartreuse",
+      "lục",
+      "lục mùa xuân",
+      "lục lam",
+      "azur",
+      "lam",
+      "tím",
+      "đỏ tía",
+      "hồng"
+    ],
+    "harmoniesCap": {
+      "complementary": "Hai sắc đối diện nhau qua bánh xe — tương phản gay gắt nhất mà một cặp có thể giữ.",
+      "analogous": "Ba sắc lân cận — một gia đình, yên lặng cùng nhau.",
+      "triadic": "Ba sắc cách nhau bằng một phần ba bằng nhau của bánh xe — cân bằng, sống động và ổn định.",
+      "split": "Một sắc cơ sở với hai hàng xóm của màu bổ túc của nó — sự căng thẳng, được dịu đi nhẹ nhàng.",
+      "tetradic": "Bốn sắc ở các phần tư của bánh xe — hai cặp bổ túc, một hợp âm phong phú đòi hỏi một màu dẫn dắt.",
+      "monochromatic": "Một sắc duy nhất, chỉ thay đổi về giá trị và độ thuần — sơ đồ yên lặng nhất trong tất cả."
+    },
+    "ariaValueText": {
+      "nmWithName": "{val} nanomet — {name}",
+      "degrees": "{val} độ",
+      "kelvinWithName": "{val} Kelvin — {name}",
+      "percentAmbient": "{val} phần trăm ánh sáng môi trường — {name}",
+      "huePercent": "Độ bão hòa {sat}%, giá trị {val}%",
+      "baseHue": "sắc cơ sở {val} độ — {label}",
+      "apex": "Góc đỉnh {val} độ",
+      "valueSlice": "Đang hiển thị toàn bộ dải giá trị"
+    },
+    "statusMessages": {
+      "perceivedPrefix": "cảm nhận ≈ ",
+      "diskReset": "Ba đĩa đã trở về vị trí ban đầu.",
+      "harmonyUpdated": "Hài hòa {label} — bảng màu đã được cập nhật.",
+      "copyBtnDefault": "Sao chép bảng màu",
+      "copyBtnFlash": "Đã sao chép!",
+      "saturationPrefix": "Độ bão hòa ",
+      "valuePrefix": ", giá trị ",
+      "fromLeft": " — {pct}% từ trái, {pcy}% từ trên.",
+      "paletteList": "Bảng màu {label} — {list}"
+    },
+    "spectralMeta": {
+      "illD65": "ánh sáng ban ngày (D65)",
+      "illA": "đèn dây tóc (A)",
+      "illF2": "đèn huỳnh quang (F2)",
+      "verdictIndistinguishable": "Không phân biệt được dưới {name}.",
+      "verdictVeryClose": "Rất gần nhau dưới {name} (ΔE≈{de}).",
+      "verdictNoticeably": "Khác biệt rõ dưới {name} (ΔE≈{de}).",
+      "verdictClearly": "Khác biệt rõ ràng dưới {name} (ΔE≈{de})."
+    },
+    "hk": {
+      "verdictHead": "Bạn đặt xám ở OKLCH L = {gl}; màu ở OKLCH L = {cl}.",
+      "greyBar": "Y của xám",
+      "colorBar": "Y của màu",
+      "yDiff": "Hiệu độ chói tuyến tính Y: {dy}.",
+      "noBoost": "Bạn khớp ở gần cùng một OKLCH L — ở độ thuần này cú đẩy H-K rất nhỏ.",
+      "boost": "Bạn cho xám nhiều hơn màu {dl} OKLCH L để cảm thấy sáng như nhau. Phần dư đó là cú đẩy Helmholtz–Kohlrausch: độ thuần thêm độ sáng biểu kiến mà các con số không ghi.",
+      "inverse": "Bạn cho xám ít hơn màu {dl} OKLCH L. Ở sắc và độ thuần này màu trông tối hơn với bạn — một hướng hiếm gặp của hiệu ứng, nhạy với hiệu chuẩn màn hình."
+    },
+    "hering": {
+      "firing": "Hai kênh vẫn đang phát — di chuyển cả hai thanh trượt cho đến khi mỗi thanh sụp xuống đường giữa.",
+      "rgDone": "Kênh đỏ–lục đã nghỉ. Kênh vàng–lam vẫn đang phát — tiếp tục.",
+      "ybDone": "Kênh vàng–lam đã nghỉ. Kênh đỏ–lục vẫn đang phát — tiếp tục.",
+      "zero": "Cả hai kênh đối lập đã nghỉ. Màu được đọc là xám trung tính — Hering sẽ nói bạn vừa thực hiện một sự hủy."
+    },
+    "land": {
+      "pickInit": "Di chuột bất kỳ đâu trên hình chiếu để đọc giá trị R, G, B thô.",
+      "pickBoth": "Pixel R = {r}, G = {g}, B = {b}. Màu bạn thấy là vỏ não lấp đầy từ các cạnh.",
+      "pickRedOnly": "Pixel R = {r}, G = 0, B = 0 — chỉ máy chiếu đỏ đóng góp ở đây.",
+      "pickWhiteOnly": "Pixel R = {r}, G = {g}, B = {b} (cả ba bằng nhau) — chỉ máy chiếu trắng đóng góp ở đây."
+    },
+    "gamutView": {
+      "pickInit": "Kéo kính lúp trên hình để lấy mẫu pixel.",
+      "pickInside": "Đã lấy mẫu {n} pixel · {ok} trong {target}, {bad} ngoài.",
+      "pickAllIn": "Đã lấy mẫu {n} pixel · tất cả trong {target}."
+    },
+    "namesGrid": {
+      "stageCaptions": [
+        "Giai đoạn 1 — chỉ tối và sáng. Gần như không ngôn ngữ loài người nào được ghi nhận hôm nay còn ở đây.",
+        "Giai đoạn 2 — đỏ được thêm vào. Từ chỉ màu đầu tiên trong hầu hết mọi ngôn ngữ.",
+        "Giai đoạn 3 — lục hoặc vàng gia nhập.",
+        "Giai đoạn 4 — lục và vàng, cả hai đã vào. Tiếng Hy Lạp của Homer ở khoảng đây.",
+        "Giai đoạn 5 — lam tách khỏi lục. Tiếng Nhật hiện đại lưu lại đây đến tận thế kỷ XX.",
+        "Giai đoạn 6 — nâu được thêm vào.",
+        "Giai đoạn 7 — tím, hồng, cam, xám gia nhập theo bất kỳ thứ tự nào. Anh, Hàn, Nhật hiện đại đều ở đây."
+      ]
+    }
+  }
+}
