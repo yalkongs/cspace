@@ -2278,35 +2278,79 @@ footer{
   .js .chapter, .js .chapter.in { opacity: 1 !important; transform: none !important; }
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Il libro del colore", "item": "https://yalkongs.github.io/cspace/it/"}, {"@type": "ListItem", "position": 2, "name": "Capitolo Otto · L'interazione del colore · Albers · simultaneous contrast · Hering · Il libro del colore", "item": "https://yalkongs.github.io/cspace/it/interaction/"}]}</script>
-<style>.lab-related{border-top:1px solid #aaa69b;margin:36px auto 0;padding:22px 0;max-width:1140px;font:14px/1.8 system-ui,sans-serif}.lab-related strong{display:block;margin-bottom:10px}.lab-related a{display:inline-block;margin:0 22px 10px 0;color:inherit;text-underline-offset:4px;padding:8px 0}.lab-hub-entry{display:block;margin:72px auto 24px;padding:16px 24px;max-width:1140px;color:inherit;font:14px/1.6 system-ui,sans-serif}.lab-related a:focus-visible,.lab-hub-entry:focus-visible{outline:3px solid #215591;outline-offset:3px}</style></head>
-<body>
+<style id="reading-style">/* Reading chrome stays neutral so it does not compete with colour experiments. */
+[class^="reading-"]{box-sizing:border-box}
+.reading-cover .hero{min-height:calc(100svh - 130px);padding-top:110px;padding-bottom:65px}
+.reading-cover .hero h1{margin-top:28px}
+.reading-cover .hero .greynote{margin-top:30px}
+.reading-cover .hero .meta{margin-top:22px}
+.reading-choices{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin:35px auto 0;font:14px/1.5 var(--sans)}
+.reading-choices a{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:13px 22px;color:var(--ink);border:1px solid var(--frame);text-decoration:none;border-radius:4px;background:var(--wall-lit)}
+.reading-choices .reading-start{background:var(--ink);color:var(--wall-lit)}
+.reading-choices a:hover{outline:1px solid var(--ink)}
+.reading-tools{position:sticky;top:56px;z-index:90;display:flex;align-items:center;gap:16px;min-height:58px;padding:6px max(24px,calc((100vw - 1140px)/2));background:var(--wall-lit);border-bottom:1px solid var(--frame);font:13px/1.5 var(--sans);margin-top:56px}
+.reading-chapter .topbar,.reading-book .topbar{background:var(--wall);border-bottom:1px solid var(--frame-soft)}
+.reading-menu{position:relative;min-width:0}
+.reading-menu summary{display:flex;align-items:center;gap:8px;min-height:44px;padding:8px 10px;cursor:pointer;list-style:none;color:var(--ink);border:1px solid transparent;border-radius:3px}
+.reading-menu summary::-webkit-details-marker{display:none}
+.reading-menu summary:after{content:'⌄';margin-left:4px}
+.reading-menu[open] summary{border-color:var(--frame);background:var(--wall)}
+.reading-menu[open] summary:after{content:'⌃'}
+.reading-menu nav{position:absolute;top:calc(100% + 7px);left:0;width:340px;max-width:calc(100vw - 40px);max-height:65svh;overflow:auto;overscroll-behavior:contain;padding:10px;background:var(--wall-lit);border:1px solid var(--frame);border-radius:4px;box-shadow:0 8px 28px #211f1c26}
+.reading-menu nav a{display:flex;align-items:baseline;gap:12px;min-height:44px;padding:10px 12px;color:var(--ink);text-decoration:none;line-height:1.5;border-left:3px solid transparent}
+.reading-menu nav a span{color:var(--ink-soft);font:12px/1.6 var(--mono)}
+.reading-menu nav a:hover,.reading-menu nav a[aria-current]{background:var(--wall);border-left-color:var(--ink)}
+.reading-mode-switch{color:var(--ink);margin-left:auto;padding:10px 4px;min-height:44px;display:flex;align-items:center;text-underline-offset:4px;text-align:right}
+.reading-mode-label{color:var(--ink-soft)}
+#reading-position{font:11px/1.5 var(--mono);color:var(--ink-soft)}
+.reading-location{max-width:var(--maxw);margin:28px auto 0;padding:0 36px;font:12px/1.7 var(--sans);color:var(--ink-soft)}
+.reading-location a{color:inherit;text-underline-offset:3px}
+.reading-chapter .chapter{padding-top:42px;opacity:1!important;transform:none!important}
+.reading-chapter .chapter h1{font-family:var(--serif);font-size:clamp(42px,6vw,76px);font-weight:400;line-height:1.12;letter-spacing:-.025em;margin:0 0 22px;color:var(--ink)}
+.reading-chapter .chapter,.reading-chapter .figure,.reading-chapter h1,.reading-book .chapter,.reading-book .figure{scroll-margin-top:var(--reading-offset,160px)}
+.reading-chapter .lab-hub-entry,.reading-book .lab-hub-entry{display:none}
+.reading-pager{max-width:var(--maxw);padding:0 36px;display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:0 auto 64px;font-family:var(--sans)}
+.reading-pager a{display:flex;flex-direction:column;gap:10px;min-height:108px;padding:20px 24px;border:1px solid var(--frame);border-radius:4px;color:var(--ink);text-decoration:none;background:var(--wall-lit)}
+.reading-pager a:hover{border-color:var(--ink)}
+.reading-pager span{font-size:12px;color:var(--ink-soft)}
+.reading-pager strong{font-family:var(--serif);font-size:22px;line-height:1.4;font-weight:500}
+.reading-pager .reading-next{text-align:right}
+.reading-book-contents{display:flex;justify-content:center;flex-wrap:wrap;gap:8px 18px;max-width:780px;margin:32px auto 0;font:13px/1.5 var(--sans)}
+.reading-book-contents a{color:var(--ink);padding:8px 0;min-height:40px;text-underline-offset:3px}
+.reading-tools a:focus-visible,.reading-tools summary:focus-visible,.reading-pager a:focus-visible,.reading-choices a:focus-visible,.reading-book-contents a:focus-visible{outline:3px solid #215591;outline-offset:3px}
+@media(max-width:680px){
+ .reading-tools{gap:4px;padding:4px 12px;font-size:12px;min-height:56px;align-items:stretch}
+ .reading-tools summary{padding:8px 6px;gap:4px}
+ .reading-tools .reading-mode-label{display:none}
+ .reading-menu{position:static}
+ .reading-menu nav,.reading-sections nav{left:12px;right:12px;top:calc(100% + 7px);width:auto;max-width:none}
+ .reading-mode-switch{max-width:34%;padding:8px 6px}
+ .reading-location{padding:0 24px;margin-top:22px}
+ .reading-pager{padding:0 24px;gap:12px;margin-bottom:40px}
+ .reading-pager a{padding:16px 14px;min-height:108px}
+ .reading-pager strong{font-size:18px}
+ .reading-cover .hero{padding-top:100px}
+ .reading-choices{flex-direction:column;max-width:330px;gap:10px}
+ #reading-position{display:none}
+}
+@media print{.reading-tools,.reading-pager,.reading-choices,.reading-location,.reading-book-contents{display:none}.reading-chapter .chapter{padding-top:0}}
+</style><style>.lab-related{border-top:1px solid #aaa69b;margin:36px auto 0;padding:22px 0;max-width:1140px;font:14px/1.8 system-ui,sans-serif}.lab-related strong{display:block;margin-bottom:10px}.lab-related a{display:inline-block;margin:0 22px 10px 0;color:inherit;text-underline-offset:4px;padding:8px 0}.lab-hub-entry{display:block;margin:72px auto 24px;padding:16px 24px;max-width:1140px;color:inherit;font:14px/1.6 system-ui,sans-serif}.lab-related a:focus-visible,.lab-hub-entry:focus-visible{outline:3px solid #215591;outline-offset:3px}</style></head>
+<body class="reading-chapter">
 
-<a class="skip-link" href="/cspace/it/#light">Skip to the essay</a>
+<a class="skip-link" href="#interaction-h">Skip to the essay</a>
 
 <noscript>
   <div class="noscript-bar">The figures on this page are interactive and need JavaScript. The essay still reads without it.</div>
 </noscript>
 
 <header class="topbar" id="topbar">
-  <a class="wordmark" href="#top"><span class="mk" aria-hidden="true"></span>The Book of Color</a>
+  <a class="wordmark" href="https://yalkongs.github.io/cspace/it/"><span class="mk" aria-hidden="true"></span>The Book of Color</a>
   <span class="topbar-meta">An interactive essay</span>
-</header><a class="lab-hub-entry" href="/cspace/labs/">Laboratory · 8 deeper experiments →</a>
+</header><a class="lab-hub-entry" href="/cspace/labs/">Laboratory · 8 deeper experiments →</a><div class="reading-tools" id="reading-tools"><details class="reading-menu"><summary>8 / 14 · Capitoli</summary><nav aria-label="Capitoli"><a href="https://yalkongs.github.io/cspace/it/light/"><span>01</span> La luce</a><a href="https://yalkongs.github.io/cspace/it/eye/"><span>02</span> L&#x27;occhio</a><a href="https://yalkongs.github.io/cspace/it/mixing/"><span>03</span> La mescolanza</a><a href="https://yalkongs.github.io/cspace/it/wheel/"><span>04</span> La ruota dei colori</a><a href="https://yalkongs.github.io/cspace/it/space/"><span>05</span> Tre dimensioni</a><a href="https://yalkongs.github.io/cspace/it/harmony/"><span>06</span> Harmony</a><a href="https://yalkongs.github.io/cspace/it/spaces/"><span>07</span> Gli spazi colore</a><a href="https://yalkongs.github.io/cspace/it/interaction/" aria-current="page"><span>08</span> L&#x27;interazione del colore</a><a href="https://yalkongs.github.io/cspace/it/practice/"><span>09</span> Il colore nella pratica</a><a href="https://yalkongs.github.io/cspace/it/glossary/"><span>10</span> A Glossary of Color</a><a href="https://yalkongs.github.io/cspace/it/names/"><span>11</span> Names</a><a href="https://yalkongs.github.io/cspace/it/pigments/"><span>12</span> Pigments</a><a href="https://yalkongs.github.io/cspace/it/nature/"><span>13</span> Nature</a><a href="https://yalkongs.github.io/cspace/it/practice2/"><span>14</span> Practice</a></nav></details><details class="reading-menu reading-sections"><summary>In questo capitolo <span id="reading-position" aria-hidden="true"></span></summary><nav aria-label="In questo capitolo"><a href="#interaction-h" data-reading-anchor="interaction-h">Introduzione</a><a href="#fig-hering" data-reading-anchor="fig-hering">Hering&#x27;s Color Cancellation</a><a href="#fig-albers" data-reading-anchor="fig-albers">Un colore, due colori</a><a href="#fig-neon" data-reading-anchor="fig-neon">Diffusione del colore neon</a><a href="#fig-afterimage" data-reading-anchor="fig-afterimage">La postimmagine</a><a href="#fig-land" data-reading-anchor="fig-land">La proiezione a due colori di Land</a></nav></details><a class="reading-mode-switch" href="https://yalkongs.github.io/cspace/it/book/#interaction">Leggi il libro completo</a></div>
 
-<nav class="chapnav" aria-label="Chapters">
-  <a href="/cspace/it/#light"><span class="cn-label">1 · Light</span><span class="cn-dot"></span></a>
-  <a href="/cspace/it/#eye"><span class="cn-label">2 · The Eye</span><span class="cn-dot"></span></a>
-  <a href="/cspace/it/#mixing"><span class="cn-label">3 · Mixing</span><span class="cn-dot"></span></a>
-  <a href="/cspace/it/#wheel"><span class="cn-label">4 · The Wheel</span><span class="cn-dot"></span></a>
-  <a href="/cspace/it/#space"><span class="cn-label">5 · Three Dimensions</span><span class="cn-dot"></span></a>
-  <a href="/cspace/it/#harmony"><span class="cn-label">6 · Armonia</span><span class="cn-dot"></span></a>
-  <a href="/cspace/it/#spaces"><span class="cn-label">7 · Color Spaces</span><span class="cn-dot"></span></a>
-  <a href="#interaction"><span class="cn-label">8 · The Interaction of Color</span><span class="cn-dot"></span></a>
-  <a href="/cspace/it/#practice"><span class="cn-label">9 · Color in Practice</span><span class="cn-dot"></span></a>
-  <a href="/cspace/it/#glossary"><span class="cn-label">10 · Glossary</span><span class="cn-dot"></span></a>
-  <a href="/cspace/it/#coda"><span class="cn-label">Coda · Make a Palette</span><span class="cn-dot"></span></a>
-</nav>
 
-<main id="top">
+
+<main id="top"><p class="reading-location"><a href="https://yalkongs.github.io/cspace/it/">Copertina</a> / Lettura per capitoli · 8 / 14</p>
 
   <!-- ============== HERO ============== -->
 
@@ -2319,7 +2363,7 @@ footer{
   <section class="chapter" id="interaction" aria-labelledby="interaction-h">
     <div class="container">
       <p class="chapter-num"><span class="glyph">8</span>Chapter Eight</p>
-      <h2 id="interaction-h">L'interazione del colore</h2>
+      <h1 id="interaction-h" tabindex="-1">L'interazione del colore</h1>
       <p class="standfirst">Nessun colore è mai visto da solo.</p>
 
       <div class="prose">
@@ -2533,8 +2577,7 @@ footer{
 <div class="visually-hidden" id="disk-status" aria-live="polite"></div>
 </main>
 
-<nav class="chapter-nav" aria-label="Chapter navigation"><a class="chapter-nav-prev" href="/cspace/it/spaces/"><span class="label">← Capitolo Sette</span><span class="title">Gli spazi colore</span></a><a class="chapter-nav-next" href="/cspace/it/practice/"><span class="label">Capitolo Nove →</span><span class="title">Il colore nella pratica</span></a></nav>
-<footer>
+<nav class="reading-pager" aria-label="Capitoli"><a class="reading-prev" href="https://yalkongs.github.io/cspace/it/spaces/"><span>← Capitolo precedente</span><strong>Gli spazi colore</strong></a><a class="reading-next" href="https://yalkongs.github.io/cspace/it/practice/"><span>Capitolo successivo →</span><strong>Il colore nella pratica</strong></a></nav><footer>
   <div class="container">
     <p class="footer-mark">Il libro del colore</p>
     <p class="footer-line">Un saggio interattivo sulla teoria del colore — compagno del saggio musicale <a href="https://circle5-eight.vercel.app" target="_blank" rel="noopener noreferrer">Il circolo delle quinte</a>. Dieci capitoli su dieci — il saggio completo: da una singola lunghezza d'onda di luce a una tavolozza che funziona per ogni occhio.</p>
@@ -6952,7 +6995,7 @@ footer{
   var chapter = segments[segments.length - 1] || '';
   var isChapter = ["eye", "glossary", "harmony", "interaction", "light", "mixing", "names", "nature", "pigments", "practice", "practice2", "space", "spaces", "wheel"].indexOf(chapter) >= 0;
   function langTarget(lang){
-    return basePath + '/' + (lang === 'en' ? '' : lang + '/') + (isChapter ? chapter + '/' : '') + location.hash;
+    return basePath + '/' + (lang === 'en' ? '' : lang + '/') + ((isChapter || chapter === 'book') ? chapter + '/' : '') + location.hash;
   }
   codeEl.textContent = current.toUpperCase();
 
@@ -7066,25 +7109,65 @@ footer{
 })();
 </script>
 
-
-<script id="chapter-scroll-shim">
-(function(){
-  var langs = ['en','ko','ja','es','zh','fr','de','pt','it','vi'];
-  var chapters = ['light','eye','mixing','wheel','space','harmony','spaces','interaction','practice','glossary','names','pigments','nature','practice2'];
-  var path = location.pathname.replace(/\/$/,'').split('/').filter(Boolean);
-  var slug = path[path.length-1];
-  if(chapters.indexOf(slug) < 0) return;
-  // Wait for layout before scrolling.
-  window.addEventListener('DOMContentLoaded', function(){
-    var el = document.getElementById(slug);
-    if(el){
-      // 'instant' so the user lands on the chapter, not animates to it.
-      setTimeout(function(){
-        el.scrollIntoView({block:'start'});
-      }, 30);
-    }
+<script id="reading-config" type="application/json">{"mode": "chapter", "root": "https://yalkongs.github.io/cspace/it/", "book": "https://yalkongs.github.io/cspace/it/book/", "chapters": ["light", "eye", "mixing", "wheel", "space", "harmony", "spaces", "interaction", "practice", "glossary", "names", "pigments", "nature", "practice2"], "anchors": {}}</script><script>(() => {
+  'use strict';
+  const config=JSON.parse(document.getElementById('reading-config').textContent);
+  if(config.mode==='cover'){
+    // Compatibility for existing /ko/#spaces, /#fig-prism, /#coda links.
+    const forward=()=>{
+      let anchor;try{anchor=decodeURIComponent(location.hash.slice(1));}catch{return;}
+      const target=Object.hasOwn(config.anchors,anchor)?config.anchors[anchor]:null;
+      if(target)location.replace(target+location.hash);
+    };
+    forward();window.addEventListener('hashchange',forward);return;
+  }
+  const menus=[...document.querySelectorAll('.reading-menu')];
+  for(const menu of menus){
+    menu.addEventListener('toggle',()=>{
+      if(menu.open)for(const other of menus)if(other!==menu)other.open=false;
+    });
+    menu.addEventListener('click',event=>{
+      const link=event.target.closest('a');if(!link)return;
+      const href=link.getAttribute('href');menu.open=false;
+      if(href.startsWith('#')){
+        const target=document.getElementById(href.slice(1));
+        if(target){target.setAttribute('tabindex','-1');target.focus({preventScroll:true});}
+      }
+    });
+  }
+  document.addEventListener('click',event=>{for(const menu of menus)if(!menu.contains(event.target))menu.open=false;});
+  document.addEventListener('keydown',event=>{
+    if(event.key!=='Escape')return;
+    const open=menus.find(menu=>menu.open);
+    if(open){open.open=false;open.querySelector('summary').focus();}
   });
+  const entries=[...document.querySelectorAll('[data-reading-anchor]')];
+  const targets=entries.map(link=>document.getElementById(link.dataset.readingAnchor));
+  const sections=[...document.querySelectorAll('.chapter[id]')];
+  const switchLink=document.getElementById('reading-chapter-switch');
+  let pending=false;
+  function update(){
+    pending=false;
+    const bar=document.getElementById('reading-tools'),line=bar.getBoundingClientRect().bottom+35;
+    document.documentElement.style.setProperty('--reading-offset',line+'px');
+    if(entries.length){
+      let active=0;
+      // Fractional font/layout pixels must not select the preceding section
+      // when the browser has landed exactly on a fragment's scroll margin.
+      targets.forEach((el,i)=>{if(el&&el.getBoundingClientRect().top<=line+2)active=i;});
+      entries.forEach((link,i)=>{if(i===active)link.setAttribute('aria-current','location');else link.removeAttribute('aria-current');});
+      document.getElementById('reading-position').textContent=`${active+1} / ${entries.length}`;
+    }
+    if(switchLink){
+      let active=config.chapters[0];
+      sections.forEach(el=>{if(el.getBoundingClientRect().top<=line+2&&config.chapters.includes(el.id))active=el.id;});
+      switchLink.href=config.root+active+'/';
+    }
+  }
+  const schedule=()=>{if(!pending){pending=true;requestAnimationFrame(update);}};
+  window.addEventListener('scroll',schedule,{passive:true});window.addEventListener('resize',schedule);
+  window.addEventListener('hashchange',schedule);window.addEventListener('load',schedule);
+  update();
 })();
-</script>
-</body>
+</script></body>
 </html>
