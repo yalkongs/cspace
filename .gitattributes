@@ -1,0 +1,3 @@
+# Preserve downloaded CIE bytes, including CRLF and the original final blank row.
+# Upstream fixtures are exempt from source-code whitespace normalization/checks.
+experiments/data/CIE* -text -whitespace

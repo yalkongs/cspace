@@ -6,6 +6,14 @@ accompanying source — is licensed under the Creative Commons
 Attribution-NonCommercial-ShareAlike 4.0 International License
 (CC BY-NC-SA 4.0).
 
+Exception for third-party data: the CIE 1931 and CIE 1964 standard
+observer datasets in experiments/data/ and their labelled subsets
+embedded in generated HTML retain their separate CC BY-SA 4.0
+licence. No NonCommercial restriction is applied to those datasets.
+See experiments/data/README.md and the original CIE metadata for
+attribution and modifications. Licence:
+https://creativecommons.org/licenses/by-sa/4.0/
+
 You are free to:
   · Share — copy and redistribute the material in any medium or format
   · Adapt — remix, transform, and build upon the material

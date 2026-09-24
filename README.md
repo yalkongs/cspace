@@ -35,6 +35,27 @@
 
 본문 뒤에는 색채 이론의 주요 사건을 모은 [연대기](https://yalkongs.github.io/cspace/ko/#chronology)와 [나만의 팔레트 생성기](https://yalkongs.github.io/cspace/ko/#coda)가 이어집니다. 팔레트 생성기는 배색 관계와 OKLCH 명도 단계를 활용해 다섯 색을 제안하고, **Hex·CSS 변수·Tailwind 설정·SVG** 형식으로 복사할 수 있게 합니다.
 
+## 심화 실험실: 8개의 독립 학습 페이지
+
+[한국어 실험실](https://yalkongs.github.io/cspace/ko/labs/) · [English laboratory](https://yalkongs.github.io/cspace/labs/)
+
+긴 본문을 더 늘리지 않도록 새 이론은 **한 질문·한 실험·한 페이지**로 구성했습니다. 관련 장에서 실험을 열고 다시 장으로 돌아갈 수 있으며, 각 페이지에 관찰 과제, 조작부, 수치·곡선·색 패치, 원리, 계산의 한계와 출처를 제공합니다. 8개 실험은 한국어와 영어로 각각 제공됩니다.
+
+| 실험 | 조작과 학습 내용 |
+|---|---|
+| [등색과 XYZ](https://yalkongs.github.io/cspace/ko/labs/xyz/) | 파장·대역 폭·RGB 조절, CIE 2°/10° 표준 관찰자, XYZ·xyY와 디스플레이 색역 한계 |
+| [감마와 선형광](https://yalkongs.github.io/cspace/ko/labs/gamma/) | sRGB 코드값·선형광·OKLab 보간, 혼합 비율과 상대 휘도 비교 |
+| [색차](https://yalkongs.github.io/cspace/ko/labs/delta-e/) | 동일한 CIELAB 거리의 색 쌍과 CIEDE2000 가중 색차 비교 |
+| [연색성](https://yalkongs.github.io/cspace/ko/labs/rendering/) | 백색 XYZ는 같지만 스펙트럼이 다른 두 광원과 가상 반사율 표본 비교 |
+| [색역 매핑과 종이 백색](https://yalkongs.github.io/cspace/ko/labs/gamut-mapping/) | 상대·절대 색도계적 처리와 지각적 압축의 교육용 예시 |
+| [색 외관](https://yalkongs.github.io/cspace/ko/labs/appearance/) | CAM16 순방향 모형으로 적응 휘도·주변·배경·백색점에 따른 J·Q·C·M·s·h 비교 |
+| [망점](https://yalkongs.github.io/cspace/ko/labs/halftone/) | 면적률·확대·물리적/광학적 도트 게인, 두 격자의 각도에 따른 모아레 |
+| [박막 간섭](https://yalkongs.github.io/cspace/ko/labs/thin-film/) | 두께·굴절률·각도로 계산한 프레넬/Airy 반사 스펙트럼과 구조색 |
+
+연색성 실험의 표본 평균 색차는 **Ra·Rf 지수가 아니며**, 색역 매핑은 **실제 ICC 프로파일 변환이 아닙니다**. 광원과 반사율 표본은 명시적인 가상 모형입니다. 박막은 공기–무흡수 단층 막–공기의 제한된 조건을 계산합니다. CIE 데이터는 출처·변형 범위·별도 라이선스를 보존합니다.
+
+전체 책의 기본 형식을 목차형 홈과 장별 읽기로 바꾸는 [탐색 구조 개선안](research/navigation-proposal.md)도 정리했습니다. 독립 실험실은 구현되었고, 기본 홈 전환·장별 소목차·이어 읽기는 제안 상태입니다.
+
 ## 먼저 해 볼 실험
 
 1. **빛을 움직여 보기 — 1·2장.** 파장을 바꾸며 스펙트럼의 위치, 표시되는 색, 원추세포 반응을 비교합니다. 빛의 물리량과 지각의 관계를 생각해 볼 출발점입니다.
@@ -76,6 +97,7 @@
 | [`i18n/`](i18n/) | 언어별 번역 JSON과 용어집 |
 | [`static/`](static/) | 소개·인용·404 페이지, 이미지, 보존 PDF |
 | [`build/`](build/) | HTML 생성, 검증, 게시 도구 |
+| [`experiments/`](experiments/) | 심화 실험 계산·화면·CIE 원본 데이터; 빌드 시 HTML 안에 포함 |
 | `site/` | 로컬에서 생성되는 배포 결과물; `main`에는 포함하지 않음 |
 | `main` | 소스, 번역, 빌드 도구와 정적 원본을 보관하는 공개 브랜치 |
 | [`gh-pages`](https://github.com/yalkongs/cspace/tree/gh-pages) | 생성 결과를 그대로 게시하는 공개 배포 브랜치 |
@@ -102,10 +124,11 @@ python3 -B build/build.py --source index32.html --output site
 
 ```sh
 python3 -B -m unittest discover -s build -p 'test_*.py'
+node build/test-color-math.cjs
 node build/validate.mjs site https://yalkongs.github.io/cspace
 ```
 
-빌드는 JavaScript 구문, JSON-LD, canonical URL, 언어 링크 중복, 내부 경로 및 자산을 검사합니다. 선택적인 브라우저 검사는 [`build/smoke.mjs`](build/smoke.mjs)에 있으며, Playwright와 Chrome이 별도로 필요합니다.
+빌드는 JavaScript 구문, JSON/JSON-LD, canonical URL, 언어 링크 중복, 내부 경로 및 자산을 검사합니다. 색 계산 검사는 기준 색차·CAM16 예제, CIE 파일 해시, 광원 백색 일치, 박막의 물리적 범위를 확인합니다. 선택적인 브라우저 검사는 [`build/smoke.mjs`](build/smoke.mjs)와 [`build/labs-smoke.mjs`](build/labs-smoke.mjs)에 있으며, Playwright와 Chrome이 별도로 필요합니다. `PLAYWRIGHT_MODULE`과 `CHROME_PATH`로 설치 경로를 지정할 수 있습니다.
 
 ### GitHub Pages 배포
 
@@ -126,4 +149,4 @@ gh auth login
 
 내용 오류, 번역, 실험 동작과 접근성 개선은 [이슈](https://github.com/yalkongs/cspace/issues)로 제안할 수 있습니다. 해당 장과 언어, 문제가 있는 문장 또는 조작 단계, 가능하다면 근거 자료를 함께 남겨 주세요. 새로운 이론이나 실험을 제안할 때는 학습 질문, 조작할 변수, 예상 관찰 결과와 모형의 한계를 설명해 주세요.
 
-본문·그림·인터랙티브 실험과 소스의 라이선스는 **CC BY-NC-SA 4.0**입니다. 이용 조건은 저장소의 [LICENSE](LICENSE)를 확인하세요.
+본문·그림·인터랙티브 실험과 소스의 라이선스는 **CC BY-NC-SA 4.0**입니다. 이용 조건은 저장소의 [LICENSE](LICENSE)를 확인하세요. 단, 포함된 CIE 표준 관찰자 데이터와 그 발췌 데이터는 별도 **CC BY-SA 4.0**이며 [데이터 출처·변경 안내](experiments/data/README.md)가 적용됩니다.

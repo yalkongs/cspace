@@ -35,6 +35,27 @@ It is intended for students and teachers, designers and developers, people worki
 
 The chapters are followed by [A Chronology](https://yalkongs.github.io/cspace/#chronology), tracing milestones in the history of color, and [A Palette of Your Own](https://yalkongs.github.io/cspace/#coda). The palette generator combines harmony relationships with OKLCH lightness steps to suggest five colors, exportable as **Hex values, CSS custom properties, a Tailwind configuration snippet, or SVG**.
 
+## A laboratory of eight focused experiments
+
+[English laboratory](https://yalkongs.github.io/cspace/labs/) · [한국어 실험실](https://yalkongs.github.io/cspace/ko/labs/)
+
+The new material follows **one question, one experiment, one page**, instead of extending the long book page. Related chapters link to each experiment, with a route back. Every page includes a task, controls, numerical and visual comparisons, theory, limitations and sources. All eight are available in both English and Korean.
+
+| Experiment | What you explore |
+|---|---|
+| [Colour matching and XYZ](https://yalkongs.github.io/cspace/labs/xyz/) | Wavelength, bandwidth and RGB controls; CIE 2°/10° observers; XYZ, xyY and display-gamut limits |
+| [Gamma and linear light](https://yalkongs.github.io/cspace/labs/gamma/) | Encoded sRGB, linear-light and OKLab interpolation, with relative-luminance curves |
+| [Colour difference](https://yalkongs.github.io/cspace/labs/delta-e/) | Equal CIELAB displacements compared with CIEDE2000 weighting |
+| [Colour rendering](https://yalkongs.github.io/cspace/labs/rendering/) | Different spectra with matched white XYZ, illuminating synthetic reflectance samples |
+| [Gamut mapping and paper white](https://yalkongs.github.io/cspace/labs/gamut-mapping/) | Educational relative/absolute colourimetric examples and perceptual compression |
+| [Colour appearance](https://yalkongs.github.io/cspace/labs/appearance/) | CAM16 forward predictions of J, Q, C, M, s and h as viewing conditions change |
+| [Halftones](https://yalkongs.github.io/cspace/labs/halftone/) | Area coverage, magnification, physical/optical dot gain and rotated-screen moiré |
+| [Thin-film interference](https://yalkongs.github.io/cspace/labs/thin-film/) | Fresnel/Airy reflectance and structural colour from thickness, index and angle |
+
+The rendering experiment’s sample mean difference is **not Ra or Rf**, and gamut mapping is **not an actual ICC-profile transform**. Light spectra and reflectance samples are explicitly synthetic. Thin-film calculations model a lossless single layer between air. CIE data retains its attribution, modification notes and separate licence.
+
+The [navigation proposal](research/navigation-proposal.md) recommends a contents-led home and chapter-based reading. The independent laboratory is implemented; replacing the default home, adding chapter mini-contents and remembering reading position remain proposals.
+
 ## Experiments to try first
 
 1. **Move through the spectrum — Chapters 1 and 2.** Change the wavelength and compare its position in the spectrum, the displayed color, and the cone-response representation. Start connecting a physical stimulus to visual perception.
@@ -120,10 +141,16 @@ The publisher verifies that `yalkongs/cspace` is **public**, then pushes only th
 
 The former Vercel deployment remains as a historical deployment; the current `deploy.sh` targets GitHub Pages.
 
+## Laboratory source and checks
+
+[`experiments/`](experiments/) contains the shared colour calculations, controls, styles and original CIE data. [`build/labs.py`](build/labs.py) embeds them into self-contained HTML, using the bilingual teaching text in [`build/lab_content.py`](build/lab_content.py). No runtime fetch or application server is required.
+
+Run `node build/test-color-math.cjs` for reference colour-difference and CAM16 fixtures, CIE checksums, matched-white spectra and physical bounds. The normal deployment script includes this test. [`build/labs-smoke.mjs`](build/labs-smoke.mjs) additionally checks both languages, control boundaries, reset, keyboard input, mobile overflow and navigation. Like the existing smoke check, it requires Playwright and Chrome; `PLAYWRIGHT_MODULE` and `CHROME_PATH` can specify their locations.
+
 ## References, contributions, and license
 
 See [About and references](https://yalkongs.github.io/cspace/about/) for the book's background and bibliography. The [citation guide](https://yalkongs.github.io/cspace/cite/) provides APA, Chicago, MLA, and BibTeX formats for the whole book or a selected chapter.
 
 Corrections to the text, translations, experiment behavior, and accessibility are welcome through [GitHub issues](https://github.com/yalkongs/cspace/issues). Include the chapter and language, the relevant passage or reproduction steps, and supporting references where possible. For a new theory or experiment, explain the learning question, the variable the reader would manipulate, the expected observation, and the model's limitations.
 
-The text, illustrations, interactive figures, and accompanying source are licensed under **CC BY-NC-SA 4.0**. See [LICENSE](LICENSE) for the repository's license notice and terms.
+The text, illustrations, interactive figures, and accompanying source are licensed under **CC BY-NC-SA 4.0**. See [LICENSE](LICENSE) for the repository's license notice and terms. The included CIE observer datasets and their embedded subsets are separately licensed **CC BY-SA 4.0**; see [data attribution and changes](experiments/data/README.md).

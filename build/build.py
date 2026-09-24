@@ -13,6 +13,7 @@ import re
 import shutil
 import subprocess
 import sys
+import labs
 from urllib.parse import urlsplit, urlunsplit
 from pathlib import Path
 
@@ -1453,6 +1454,7 @@ def public_url(value: str) -> str:
 
 
 def prepare_page(html: str, lang: str = 'en') -> str:
+    html = labs.book_links(html, lang)
     html = html.replace(LEGACY_URL, BASE_URL)
     html = re.sub(r'\b(href|src)=("|\')([^"\']*)\2',
                   lambda m: m[1] + '=' + m[2] + public_url(m[3]) + m[2], html)
@@ -1531,9 +1533,11 @@ def main():
     for lang in langs:
         build_lang(lang)
     copy_static()
+    lab_urls = labs.generate(DIST, BASE_URL)
     if not args.langs:
         sitemap = generate_sitemap()
         sitemap = re.sub(r'https://[^<"\s]+', lambda m: public_url(m[0]), sitemap)
+        sitemap = sitemap.replace('</urlset>', ''.join(f'<url><loc>{url}</loc></url>\n' for url in lab_urls) + '</urlset>')
         (DIST / 'sitemap.xml').write_text(sitemap, encoding='utf-8')
     subprocess.run(['node', str(ROOT / 'build/validate.mjs'), str(DIST), BASE_URL], check=True)
 

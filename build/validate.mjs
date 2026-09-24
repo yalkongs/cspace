@@ -17,7 +17,7 @@ for (const file of files) {
     if (checkedScripts.has(key)) continue;
     checkedScripts.add(key);
     try {
-      if (m[1].includes('ld+json')) JSON.parse(m[2]);
+      if (/type=["']application\/(?:ld\+)?json["']/.test(m[1])) JSON.parse(m[2]);
       else new vm.Script(m[2], {filename: file});
     } catch (e) { fail(e.message); }
   }
