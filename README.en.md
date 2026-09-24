@@ -33,7 +33,13 @@ It is intended for students and teachers, designers and developers, people worki
 | [13. Nature](https://yalkongs.github.io/cspace/nature/) | Pigment and structural color, atmospheric scattering, and fluorescence | Rayleigh's sky and a fluorescence experiment illustrating the Stokes shift |
 | [14. Practice: Displays and Production](https://yalkongs.github.io/cspace/practice2/) | Display gamut, accuracy, bit depth, HDR, calibration, and ICC profiles | A monitor-specification guide that changes with the selected use case |
 
-The chapters are followed by [A Chronology](https://yalkongs.github.io/cspace/#chronology), tracing milestones in the history of color, and [A Palette of Your Own](https://yalkongs.github.io/cspace/#coda). The palette generator combines harmony relationships with OKLCH lightness steps to suggest five colors, exportable as **Hex values, CSS custom properties, a Tailwind configuration snippet, or SVG**.
+The complete book ends with [A Chronology](https://yalkongs.github.io/cspace/book/#chronology), tracing milestones in the history of color, and [A Palette of Your Own](https://yalkongs.github.io/cspace/book/#coda). The palette generator combines harmony relationships with OKLCH lightness steps to suggest five colors, exportable as **Hex values, CSS custom properties, a Tailwind configuration snippet, or SVG**.
+
+### Chapter reading or the complete book
+
+The cover offers [chapter-by-chapter reading](https://yalkongs.github.io/cspace/light/) and an optional [continuous edition](https://yalkongs.github.io/cspace/book/). Each chapter contains only its own material, with collapsible chapter and section menus, a current-section indicator, and previous/next chapter links. The continuous edition also links back to the current chapter’s standalone page.
+
+Language switching preserves reading mode, chapter and fragment. Legacy links such as `/#spaces`, `/#fig-prism` and `/#coda` forward to their new destinations when JavaScript is enabled. Native chapter, mini-contents and complete-book links still work without JavaScript. Existing chapter URLs and PDF files are unchanged.
 
 ## A laboratory of eight focused experiments
 
@@ -54,7 +60,7 @@ The new material follows **one question, one experiment, one page**, instead of 
 
 The rendering experiment’s sample mean difference is **not Ra or Rf**, and gamut mapping is **not an actual ICC-profile transform**. Light spectra and reflectance samples are explicitly synthetic. Thin-film calculations model a lossless single layer between air. CIE data retains its attribution, modification notes and separate licence.
 
-The [navigation proposal](research/navigation-proposal.md) recommends a contents-led home and chapter-based reading. The independent laboratory is implemented; replacing the default home, adding chapter mini-contents and remembering reading position remain proposals.
+The [navigation proposal](research/navigation-proposal.md) now has an independent laboratory, chapter mini-contents, previous/next navigation and optional continuous reading implemented. The original cover design remains; a contents-led home and automatic reading-position storage have not been introduced.
 
 ## Experiments to try first
 
@@ -126,7 +132,7 @@ python3 -B -m unittest discover -s build -p 'test_*.py'
 node build/validate.mjs site https://yalkongs.github.io/cspace
 ```
 
-The build checks JavaScript syntax, JSON-LD, canonical URLs, duplicate language links, internal routes, and assets. Optional browser checks live in [`build/smoke.mjs`](build/smoke.mjs) and require a separate Playwright and Chrome installation.
+The build checks JavaScript syntax, JSON/JSON-LD, canonical URLs, duplicate language links, internal routes, and assets. Optional browser checks live in [`build/smoke.mjs`](build/smoke.mjs), [`build/labs-smoke.mjs`](build/labs-smoke.mjs) and [`build/reading-smoke.mjs`](build/reading-smoke.mjs), requiring a separate Playwright and Chrome installation. Reading checks cover mobile menus, previous/next links, language and reading-mode preservation, legacy anchors and navigation without JavaScript.
 
 ### Publish to GitHub Pages
 

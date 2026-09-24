@@ -33,7 +33,13 @@
 | [13. 자연](https://yalkongs.github.io/cspace/ko/nature/) | 안료색과 구조색, 대기의 산란, 형광 | 레일리 산란의 하늘, 스토크스 이동과 형광 실험 |
 | [14. 화면과 제작 환경](https://yalkongs.github.io/cspace/ko/practice2/) | 디스플레이 색역·정확도·비트 깊이·HDR, 캘리브레이션과 ICC 프로파일 | 작업 목적에 따라 바뀌는 모니터 사양 안내 |
 
-본문 뒤에는 색채 이론의 주요 사건을 모은 [연대기](https://yalkongs.github.io/cspace/ko/#chronology)와 [나만의 팔레트 생성기](https://yalkongs.github.io/cspace/ko/#coda)가 이어집니다. 팔레트 생성기는 배색 관계와 OKLCH 명도 단계를 활용해 다섯 색을 제안하고, **Hex·CSS 변수·Tailwind 설정·SVG** 형식으로 복사할 수 있게 합니다.
+전체 책 뒤에는 색채 이론의 주요 사건을 모은 [연대기](https://yalkongs.github.io/cspace/ko/book/#chronology)와 [나만의 팔레트 생성기](https://yalkongs.github.io/cspace/ko/book/#coda)가 이어집니다. 팔레트 생성기는 배색 관계와 OKLCH 명도 단계를 활용해 다섯 색을 제안하고, **Hex·CSS 변수·Tailwind 설정·SVG** 형식으로 복사할 수 있게 합니다.
+
+### 장별 읽기와 전체 이어 읽기
+
+표지에서 [장별로 읽기](https://yalkongs.github.io/cspace/ko/light/)를 시작하거나 [전체 이어 읽기](https://yalkongs.github.io/cspace/ko/book/)를 선택할 수 있습니다. 장별 페이지는 해당 장만 표시하며, 상단의 접을 수 있는 **장 이동·소목차**, 현재 절 표시, 하단의 **이전·다음 장**을 제공합니다. 전체 읽기에서도 현재 장의 독립 페이지로 돌아갈 수 있습니다.
+
+읽기 방식과 장·실험 앵커는 언어 전환 시 유지됩니다. 예전 `/ko/#spaces`, `/ko/#fig-prism`, `/ko/#coda` 주소는 JavaScript가 켜져 있으면 새 위치로 자동 연결됩니다. JavaScript가 없어도 새 주소의 장 이동·소목차·전체 읽기 링크는 작동합니다. PDF와 기존 장별 주소는 변경하지 않았습니다.
 
 ## 심화 실험실: 8개의 독립 학습 페이지
 
@@ -54,7 +60,7 @@
 
 연색성 실험의 표본 평균 색차는 **Ra·Rf 지수가 아니며**, 색역 매핑은 **실제 ICC 프로파일 변환이 아닙니다**. 광원과 반사율 표본은 명시적인 가상 모형입니다. 박막은 공기–무흡수 단층 막–공기의 제한된 조건을 계산합니다. CIE 데이터는 출처·변형 범위·별도 라이선스를 보존합니다.
 
-전체 책의 기본 형식을 목차형 홈과 장별 읽기로 바꾸는 [탐색 구조 개선안](research/navigation-proposal.md)도 정리했습니다. 독립 실험실은 구현되었고, 기본 홈 전환·장별 소목차·이어 읽기는 제안 상태입니다.
+[탐색 구조 개선안](research/navigation-proposal.md) 중 독립 실험실, 장별 소목차·이전/다음 이동, 선택형 전체 읽기를 구현했습니다. 목차형 홈과 읽던 위치 자동 저장은 적용하지 않았으며, 기존 표지 디자인을 유지합니다.
 
 ## 먼저 해 볼 실험
 
@@ -98,6 +104,7 @@
 | [`static/`](static/) | 소개·인용·404 페이지, 이미지, 보존 PDF |
 | [`build/`](build/) | HTML 생성, 검증, 게시 도구 |
 | [`experiments/`](experiments/) | 심화 실험 계산·화면·CIE 원본 데이터; 빌드 시 HTML 안에 포함 |
+| [`reading/`](reading/) | 장별·전체 읽기 탐색 스타일과 점진적 향상 스크립트 |
 | `site/` | 로컬에서 생성되는 배포 결과물; `main`에는 포함하지 않음 |
 | `main` | 소스, 번역, 빌드 도구와 정적 원본을 보관하는 공개 브랜치 |
 | [`gh-pages`](https://github.com/yalkongs/cspace/tree/gh-pages) | 생성 결과를 그대로 게시하는 공개 배포 브랜치 |
@@ -128,7 +135,7 @@ node build/test-color-math.cjs
 node build/validate.mjs site https://yalkongs.github.io/cspace
 ```
 
-빌드는 JavaScript 구문, JSON/JSON-LD, canonical URL, 언어 링크 중복, 내부 경로 및 자산을 검사합니다. 색 계산 검사는 기준 색차·CAM16 예제, CIE 파일 해시, 광원 백색 일치, 박막의 물리적 범위를 확인합니다. 선택적인 브라우저 검사는 [`build/smoke.mjs`](build/smoke.mjs)와 [`build/labs-smoke.mjs`](build/labs-smoke.mjs)에 있으며, Playwright와 Chrome이 별도로 필요합니다. `PLAYWRIGHT_MODULE`과 `CHROME_PATH`로 설치 경로를 지정할 수 있습니다.
+빌드는 JavaScript 구문, JSON/JSON-LD, canonical URL, 언어 링크 중복, 내부 경로 및 자산을 검사합니다. 색 계산 검사는 기준 색차·CAM16 예제, CIE 파일 해시, 광원 백색 일치, 박막의 물리적 범위를 확인합니다. 선택적인 브라우저 검사는 [`build/smoke.mjs`](build/smoke.mjs), [`build/labs-smoke.mjs`](build/labs-smoke.mjs), [`build/reading-smoke.mjs`](build/reading-smoke.mjs)에 있으며, Playwright와 Chrome이 별도로 필요합니다. 읽기 검사는 모바일 목차, 이전/다음, 언어·읽기 방식 전환, 기존 앵커 호환과 JavaScript 없는 탐색을 포함합니다. `PLAYWRIGHT_MODULE`과 `CHROME_PATH`로 설치 경로를 지정할 수 있습니다.
 
 ### GitHub Pages 배포
 

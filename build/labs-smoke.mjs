@@ -63,7 +63,7 @@ try{
  await page.locator('.masthead a[lang=en]').click();await page.waitForURL('**/labs/xyz/');
  await page.goto(origin+'ko/spaces/');assert.equal(await page.locator('.lab-related a[href*="/labs/"]').count(),5);
  await page.goto(origin+'ko/');await page.screenshot({path:'/tmp/cspace-labs-review/book-entry.png'});
- await page.locator('.lab-hub-entry').click();await page.waitForURL('**/ko/labs/');
+ await page.locator('.reading-choices a[href$="/labs/"]').click();await page.waitForURL('**/ko/labs/');
  assert.deepEqual(issues,[]);
  console.log(`Labs: 16 bilingual experiment routes, ${controls} controls at boundaries, reset, keyboard, 16 mobile layouts, hub and chapter navigation passed.`);
 }finally{if(browser)await browser.close();await new Promise(r=>server.close(r));}

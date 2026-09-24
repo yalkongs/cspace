@@ -14,6 +14,7 @@ import shutil
 import subprocess
 import sys
 import labs
+import reading
 from urllib.parse import urlsplit, urlunsplit
 from pathlib import Path
 
@@ -439,7 +440,7 @@ __LANG_OPTIONS__
   var chapter = segments[segments.length - 1] || '';
   var isChapter = __CHAPTER_CODES__.indexOf(chapter) >= 0;
   function langTarget(lang){
-    return basePath + '/' + (lang === 'en' ? '' : lang + '/') + (isChapter ? chapter + '/' : '') + location.hash;
+    return basePath + '/' + (lang === 'en' ? '' : lang + '/') + ((isChapter || chapter === 'book') ? chapter + '/' : '') + location.hash;
   }
   codeEl.textContent = current.toUpperCase();
 
@@ -690,37 +691,6 @@ def inject_lang_selector(html: str) -> str:
     return html + selector
 
 
-# Inline script that scrolls to the chapter anchor on chapter-deep-link
-# pages (e.g. /light, /ko/eye). Skips main pages (/, /ko, etc.).
-CHAPTER_SCROLL_SCRIPT = """
-<script id="chapter-scroll-shim">
-(function(){
-  var langs = ['en','ko','ja','es','zh','fr','de','pt','it','vi'];
-  var chapters = ['light','eye','mixing','wheel','space','harmony','spaces','interaction','practice','glossary','names','pigments','nature','practice2'];
-  var path = location.pathname.replace(/\\/$/,'').split('/').filter(Boolean);
-  var slug = path[path.length-1];
-  if(chapters.indexOf(slug) < 0) return;
-  // Wait for layout before scrolling.
-  window.addEventListener('DOMContentLoaded', function(){
-    var el = document.getElementById(slug);
-    if(el){
-      // 'instant' so the user lands on the chapter, not animates to it.
-      setTimeout(function(){
-        el.scrollIntoView({block:'start'});
-      }, 30);
-    }
-  });
-})();
-</script>
-"""
-
-
-def inject_chapter_scroll(html: str) -> str:
-    if "</body>" in html:
-        return html.replace("</body>", CHAPTER_SCROLL_SCRIPT + "</body>", 1)
-    return html + CHAPTER_SCROLL_SCRIPT
-
-
 def inject_tube_label_i18n(html: str, lang_json: dict) -> str:
     """Inject window.jsStrings.tubeLabel for §12 fig-tube interactive readout.
     Falls back silently if ch12.fig.tube isn't present in the language json."""
@@ -822,8 +792,8 @@ def reduce_to_chapter(html: str, chapter_n: int) -> str:
     the CHRONOLOGY and CODA sections. Keeps: topbar, lang selector,
     the chosen chapter <section>, footer, modal, and all <style>/<script>.
 
-    Returns the original HTML if any section count doesn't match (safe
-    fallback so the build doesn't silently break)."""
+    Fails if the section structure changes: a chapter page must never
+    silently become the whole book."""
     # 1) Drop hero
     html = re.sub(
         r'\s*<section class="hero"[^>]*>.*?</section>\s*',
@@ -846,8 +816,7 @@ def reduce_to_chapter(html: str, chapter_n: int) -> str:
     )
     matches = list(pattern.finditer(html))
     if len(matches) != 14:
-        # Structure changed; bail and serve the full page (safe).
-        return html
+        raise ValueError(f'Expected 14 chapter sections, found {len(matches)}')
     keep_idx = chapter_n - 1
     # Remove from end to start so earlier offsets stay valid.
     for i in range(len(matches) - 1, -1, -1):
@@ -937,37 +906,7 @@ def build_chapter_html(base_html: str, cfg: dict, lang: str,
                       f'\\1\n<meta name="citation_fulltext_html_url" content="{canonical}">',
                       html, count=1)
 
-    # Inject a Prev/Next chapter nav between the article and the footer.
-    # Only on chapter deep-link pages, not on the main essay — strengthens
-    # internal linking (B.15) without altering the i18n JSON.
-    nav_items = []
-    base_path = "" if cfg["htmlLang"] == "en" else cfg["canonicalPath"]
-    # Prev
-    if chapter_n > 1:
-        prev_slug, prev_key, _, _ = CHAPTERS[chapter_n - 2]
-        prev_ch = json_data.get(prev_key, {})
-        prev_num = prev_ch.get('num', '')
-        prev_title = prev_ch.get('title', prev_slug)
-        nav_items.append(
-            f'<a class="chapter-nav-prev" href="{base_path}/{prev_slug}">'
-            f'<span class="label">← {prev_num}</span>'
-            f'<span class="title">{prev_title}</span></a>'
-        )
-    # Next
-    if chapter_n < len(CHAPTERS):
-        next_slug, next_key, _, _ = CHAPTERS[chapter_n]
-        next_ch = json_data.get(next_key, {})
-        next_num = next_ch.get('num', '')
-        next_title = next_ch.get('title', next_slug)
-        nav_items.append(
-            f'<a class="chapter-nav-next" href="{base_path}/{next_slug}">'
-            f'<span class="label">{next_num} →</span>'
-            f'<span class="title">{next_title}</span></a>'
-        )
-    if nav_items:
-        nav_html = '<nav class="chapter-nav" aria-label="Chapter navigation">' + ''.join(nav_items) + '</nav>'
-        html = html.replace('<footer', nav_html + '\n<footer', 1)
-
+    # Reading menus and previous/next links are added by reading.decorate().
     # Inject BreadcrumbList JSON-LD so each chapter shows up in Google
     # rich snippets with a breadcrumb back to the main book.
     book_root = (f"{BASE_URL}/" if cfg["htmlLang"] == "en"
@@ -1350,6 +1289,23 @@ def apply_special(html: str, repl: list) -> tuple[str, int]:
     return html, n
 
 
+def write_reading_editions(html: str, lang: str, data: dict) -> None:
+    """Cover + complete book + chapter routes, all ordinary static HTML."""
+    cfg = LANG_CONFIG[lang]
+    destinations = [cfg['outputDir']] + ([DIST] if lang == 'en' else [])
+    cover = reading.decorate(html, html, lang, BASE_URL, 'cover')
+    book = reading.decorate(html, html, lang, BASE_URL, 'book')
+    for directory in destinations:
+        write_page(directory / 'index.html', cover, lang)
+        write_page(directory / 'book/index.html', book, lang)
+    for slug, ch_key, anchor, ch_n in CHAPTERS:
+        chapter = build_chapter_html(html, cfg, lang, slug, ch_key, ch_n, data)
+        chapter = reading.decorate(chapter, html, lang, BASE_URL, 'chapter', slug)
+        for directory in destinations:
+            write_page(directory / slug / 'index.html', chapter, lang)
+    print(f'[build] {lang}: cover + complete book + {len(CHAPTERS)} chapters', file=sys.stderr)
+
+
 def build_lang(lang: str) -> None:
     cfg = LANG_CONFIG[lang]
     print(f"[build] {lang} → {cfg['outputDir']}", file=sys.stderr)
@@ -1363,27 +1319,10 @@ def build_lang(lang: str) -> None:
         html = apply_hreflang(html, cfg)
         html = inject_lang_selector(html)
         html = inject_font_fallback(html, lang)
-        html = inject_chapter_scroll(html)
         html = inject_timeline_i18n(html, en)
         html = inject_specs_i18n(html, en)
         html = html.replace("{LAST_UPDATED}", LAST_UPDATED)
-        cfg["outputDir"].mkdir(parents=True, exist_ok=True)
-        out_path = cfg["outputDir"] / "index.html"
-        write_page(out_path, html, lang)
-        # 영문은 dist root에도 복사 (Vercel `/` 라우팅)
-        if cfg["htmlLang"] == "en":
-            write_page(DIST / "index.html", html, lang)
-            print(f"[build] also wrote {DIST/'index.html'} (root)", file=sys.stderr)
-        # Generate chapter deep-link variants. English baseline uses en.json
-        # so we load it on demand here.
-        en_json = json.loads(EN_JSON.read_text(encoding="utf-8"))
-        for slug, ch_key, anchor, ch_n in CHAPTERS:
-            ch_html = build_chapter_html(html, cfg, lang, slug, ch_key, ch_n, en_json)
-            ch_path = cfg["outputDir"] / slug / "index.html"
-            write_page(ch_path, ch_html, lang)
-            if cfg["htmlLang"] == "en":
-                write_page(DIST / slug / "index.html", ch_html, lang)
-        print(f"[build] wrote {out_path} + {len(CHAPTERS)} chapter variants ({len(html)} bytes each)", file=sys.stderr)
+        write_reading_editions(html, lang, en)
         return
 
     if not cfg["json"].exists():
@@ -1406,23 +1345,12 @@ def build_lang(lang: str) -> None:
     html = apply_hreflang(html, cfg)
     html = inject_lang_selector(html)
     html = inject_font_fallback(html, lang)
-    html = inject_chapter_scroll(html)
     _ljson = ko if cfg["json"] is not None else en
     html = inject_timeline_i18n(html, _ljson)
     html = inject_specs_i18n(html, _ljson)
     html = html.replace("{LAST_UPDATED}", LAST_UPDATED)
 
-    cfg["outputDir"].mkdir(parents=True, exist_ok=True)
-    out_path = cfg["outputDir"] / "index.html"
-    write_page(out_path, html, lang)
-
-    # Generate chapter deep-link variants (10 per language).
-    for slug, ch_key, anchor, ch_n in CHAPTERS:
-        ch_html = build_chapter_html(html, cfg, lang, slug, ch_key, ch_n, ko)
-        ch_path = cfg["outputDir"] / slug / "index.html"
-        write_page(ch_path, ch_html, lang)
-    print(f"[build] {lang}: +{len(CHAPTERS)} chapter variants", file=sys.stderr)
-    print(f"[build] wrote {out_path} ({len(html)} bytes)", file=sys.stderr)
+    write_reading_editions(html, lang, ko)
 
     if missing:
         print(f"\n[build] WARNING: {len(missing)} key(s) not found in source HTML:",
@@ -1480,7 +1408,7 @@ def prepare_page(html: str, lang: str = 'en') -> str:
     # Chapter variants omit other sections: send their cross-references to
     # the full book rather than leaving dead anchors behind.
     ids = set(re.findall(r'\bid="([^"]+)"', html))
-    book_path = public_url('/' if lang == 'en' else '/' + lang)
+    book_path = public_url('/book' if lang == 'en' else '/' + lang + '/book')
     html = re.sub(r'href="#([^"]+)"',
                   lambda m: m[0] if m[1] in ids else f'href="{book_path}#{m[1]}"', html)
     return html
@@ -1538,6 +1466,8 @@ def main():
         sitemap = generate_sitemap()
         sitemap = re.sub(r'https://[^<"\s]+', lambda m: public_url(m[0]), sitemap)
         sitemap = sitemap.replace('</urlset>', ''.join(f'<url><loc>{url}</loc></url>\n' for url in lab_urls) + '</urlset>')
+        book_urls = [BASE_URL + ('' if lang == 'en' else '/' + lang) + '/book/' for lang in LANG_CONFIG]
+        sitemap = sitemap.replace('</urlset>', ''.join(f'<url><loc>{url}</loc></url>\n' for url in book_urls) + '</urlset>')
         (DIST / 'sitemap.xml').write_text(sitemap, encoding='utf-8')
     subprocess.run(['node', str(ROOT / 'build/validate.mjs'), str(DIST), BASE_URL], check=True)
 
